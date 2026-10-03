@@ -68,13 +68,30 @@
   }
 
   function speakTTS(text) {
+    if (!text) return;
+    const cleanText = text.trim();
+
+    // 1. Ưu tiên Native Android TTS Bridge (trên ứng dụng điện thoại APK)
+    if (window.AndroidTTS && typeof window.AndroidTTS.speak === 'function') {
+      window.AndroidTTS.speak(cleanText);
+      return;
+    }
+
+    // 2. Sử dụng Web Speech API chuẩn hệ điều hành (trên trình duyệt điện thoại/máy tính)
     if ('speechSynthesis' in window) {
       window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(text);
+      const utterance = new SpeechSynthesisUtterance(cleanText);
       utterance.lang = 'zh-CN';
       utterance.rate = 0.85;
+      utterance.pitch = 1.0;
       window.speechSynthesis.speak(utterance);
+      return;
     }
+
+    // 3. Dự phòng qua Audio Cloud Streaming nếu thiết bị không có voice offline
+    const audioUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanText)}&type=1`;
+    const audio = new Audio(audioUrl);
+    audio.play().catch(() => {});
   }
   window.speakTTS = speakTTS;
 
