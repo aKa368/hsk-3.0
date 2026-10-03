@@ -96,7 +96,25 @@
   window.speakTTS = speakTTS;
 
   // --- TAB 1: LUYỆN VIẾT BẰNG BÚT (TỪNG CHỮ) ---
-  
+  function getHandwritingList(lvl) {
+    if (data.handwriting && data.handwriting[lvl] && data.handwriting[lvl].length > 0) {
+      return data.handwriting[lvl];
+    }
+    const dict = window.HSK_DICTIONARY || [];
+    const lvlNum = parseInt((lvl || '').replace(/[^0-9]/g, '')) || 1;
+    const chars = dict.filter(d => (d.lvl_num === lvlNum || d.lvl === (lvl || '').replace('HSK', 'HSK ')) && d.zh && d.zh.length === 1);
+    if (chars.length > 0) {
+      return chars.map(c => ({
+        char: c.zh,
+        pinyin: c.py || '',
+        hanviet: c.hv || '',
+        meaning: c.vi || c.en || '',
+        compounds: []
+      }));
+    }
+    return data.handwriting['HSK4'] || [];
+  }
+
   // Hàm tải bất kỳ chữ Hán nào vào bàn tập viết nét HanziWriter
   function loadCharacterToWriter(char, meta) {
     if (!char) return;
@@ -129,13 +147,9 @@
       audioBtn.onclick = () => speakTTS(ch);
     }
 
-    const visImg = document.getElementById('char-visual-img');
     const visDesc = document.getElementById('char-visual-desc');
-    if (visImg && typeof getIllustrationSvg === 'function') {
-      visImg.innerHTML = getIllustrationSvg(ch);
-    }
     if (visDesc) {
-      visDesc.innerHTML = `<strong>Tập viết chữ:</strong> ${ch} (${hanviet || ''})`;
+      visDesc.innerHTML = `<strong>Tập viết chữ Hán:</strong> ${ch} (${hanviet || ''})`;
     }
 
     const target = document.getElementById('hanzi-target');
@@ -143,7 +157,7 @@
       target.innerHTML = '';
       const style = getComputedStyle(document.documentElement);
       const strokeColor = style.getPropertyValue('--hanzi-stroke').trim() || '#2d2621';
-      const outlineColor = style.getPropertyValue('--hanzi-outline').trim() || '#d6c8b4';
+      const outlineColor = style.getPropertyValue('--hanzi-outline').trim() || '#9e8a75';
       const drawingColor = style.getPropertyValue('--hanzi-drawing').trim() || '#b93829';
 
       const writerSize = getResponsiveWriterSize();
@@ -152,7 +166,8 @@
         height: writerSize,
         padding: 20,
         showOutline: outlineVisible,
-        strokeAnimationSpeed: 1.2,
+        showCharacter: true,
+        strokeAnimationSpeed: 1.4,
         delayBetweenStrokes: 150,
         strokeColor: strokeColor,
         outlineColor: outlineColor,
@@ -161,24 +176,39 @@
           if (window.HSK_STROKES && window.HSK_STROKES[c]) {
             onComplete(window.HSK_STROKES[c]);
           } else {
-            fetch('https://cdn.jsdelivr.net/npm/hanzi-writer-data@2.0/' + encodeURIComponent(c) + '.json')
-              .then(r => r.json())
-              .then(onComplete)
-              .catch(() => {});
+            const u1 = 'https://cdn.jsdelivr.net/npm/hanzi-writer-data@2.0/' + encodeURIComponent(c) + '.json';
+            const u2 = 'https://unpkg.com/hanzi-writer-data@2.0/' + encodeURIComponent(c) + '.json';
+            fetch(u1)
+              .then(r => { if (!r.ok) throw new Error(); return r.json(); })
+              .then(data => {
+                window.HSK_STROKES = window.HSK_STROKES || {};
+                window.HSK_STROKES[c] = data;
+                onComplete(data);
+              })
+              .catch(() => {
+                fetch(u2)
+                  .then(r => r.json())
+                  .then(data => {
+                    window.HSK_STROKES = window.HSK_STROKES || {};
+                    window.HSK_STROKES[c] = data;
+                    onComplete(data);
+                  })
+                  .catch(() => {});
+              });
           }
         }
       });
 
       setTimeout(() => {
         if (hanziWriter) hanziWriter.animateCharacter();
-      }, 300);
+      }, 250);
     }
   }
 
   window.loadCharacterToWriter = loadCharacterToWriter;
 
   function renderWritingTab() {
-    const list = data.handwriting[currentLevel] || [];
+    const list = getHandwritingList(currentLevel);
     if (list.length === 0) return;
     if (currentCharIndex >= list.length) currentCharIndex = 0;
     const item = list[currentCharIndex];
@@ -198,10 +228,8 @@
       audioBtn.onclick = () => playAudio(item.char, item.audio);
     }
 
-    // Render HSK Compounds & Visual Context
-    const visImg = document.getElementById('char-visual-img');
+    // Render HSK Compounds & Context
     const visDesc = document.getElementById('char-visual-desc');
-    if (visImg) visImg.innerHTML = getIllustrationSvg(item.char);
     if (visDesc) {
       const compounds = item.compounds || [];
       if (compounds.length > 0) {
@@ -212,7 +240,7 @@
         ).join(' ');
         visDesc.innerHTML = `<div class="comp-title">📚 Từ ghép HSK thông dụng:</div><div class="comp-chips">${compHtml}</div>`;
       } else {
-        visDesc.innerHTML = `<strong>Chữ Hán chuẩn HSK:</strong> ${item.char} (${item.hanviet})`;
+        visDesc.innerHTML = `<strong>Chữ Hán chuẩn HSK:</strong> ${item.char} (${item.hanviet || ''})`;
       }
     }
 
@@ -221,11 +249,11 @@
       target.innerHTML = '';
       if (typeof HanziWriter !== 'undefined') {
         const targetEl = document.getElementById('hanzi-target');
-        if (targetEl) targetEl.innerHTML = ''; // Clean old SVG canvas to prevent memory leak
+        if (targetEl) targetEl.innerHTML = '';
 
         const style = getComputedStyle(document.documentElement);
         const strokeColor = style.getPropertyValue('--hanzi-stroke').trim() || '#2d2621';
-        const outlineColor = style.getPropertyValue('--hanzi-outline').trim() || '#d6c8b4';
+        const outlineColor = style.getPropertyValue('--hanzi-outline').trim() || '#9e8a75';
         const drawingColor = style.getPropertyValue('--hanzi-drawing').trim() || '#b93829';
 
         const writerSize = getResponsiveWriterSize();
@@ -234,7 +262,8 @@
           height: writerSize,
           padding: 20,
           showOutline: outlineVisible,
-          strokeAnimationSpeed: 1.2,
+          showCharacter: true,
+          strokeAnimationSpeed: 1.4,
           delayBetweenStrokes: 150,
           strokeColor: strokeColor,
           outlineColor: outlineColor,
@@ -243,16 +272,39 @@
             if (window.HSK_STROKES && window.HSK_STROKES[char]) {
               onComplete(window.HSK_STROKES[char]);
             } else {
-              fetch('https://cdn.jsdelivr.net/npm/hanzi-writer-data@2.0/' + encodeURIComponent(char) + '.json')
-                .then(r => r.json())
-                .then(onComplete)
-                .catch(() => {});
+              const u1 = 'https://cdn.jsdelivr.net/npm/hanzi-writer-data@2.0/' + encodeURIComponent(char) + '.json';
+              const u2 = 'https://unpkg.com/hanzi-writer-data@2.0/' + encodeURIComponent(char) + '.json';
+              fetch(u1)
+                .then(r => { if (!r.ok) throw new Error(); return r.json(); })
+                .then(data => {
+                  window.HSK_STROKES = window.HSK_STROKES || {};
+                  window.HSK_STROKES[char] = data;
+                  onComplete(data);
+                })
+                .catch(() => {
+                  fetch(u2)
+                    .then(r => r.json())
+                    .then(data => {
+                      window.HSK_STROKES = window.HSK_STROKES || {};
+                      window.HSK_STROKES[char] = data;
+                      onComplete(data);
+                    })
+                    .catch(() => {});
+                });
             }
           },
           onComplete: () => {
-            alert(`🎉 Chúc mừng! Bạn đã hoàn thành đúng thứ tự nét chữ [${item.char}]!`);
+            const tip = document.getElementById('writing-status-tip');
+            if (tip) tip.innerHTML = `🎉 <strong>Tuyệt vời!</strong> Bạn đã hoàn thành đúng thứ tự nét chữ [${item.char}]!`;
           }
         });
+
+        // Tự động thị phạm nét chữ sau khi tải
+        setTimeout(() => {
+          if (hanziWriter && typeof hanziWriter.animateCharacter === 'function') {
+            hanziWriter.animateCharacter();
+          }
+        }, 250);
       }
     }
   }
@@ -1885,35 +1937,88 @@
 
     // 4. Tab 1: Handwriting controls
     const btnAnim = document.getElementById('btn-animate');
-    if (btnAnim) btnAnim.onclick = () => { if (hanziWriter) hanziWriter.animateCharacter(); };
-
     const btnToggleOutline = document.getElementById('btn-toggle-outline');
+    const btnQuizWrite = document.getElementById('btn-quiz');
+    const btnResetWrite = document.getElementById('btn-reset');
+    const tipEl = document.getElementById('writing-status-tip');
+
+    if (btnAnim) {
+      btnAnim.onclick = () => {
+        if (hanziWriter) {
+          if (typeof hanziWriter.cancelQuiz === 'function') hanziWriter.cancelQuiz();
+          hanziWriter.showOutline();
+          hanziWriter.animateCharacter();
+          btnAnim.classList.add('active');
+          btnQuizWrite?.classList.remove('active');
+          if (tipEl) tipEl.innerHTML = `▶ <strong>Đang thị phạm:</strong> Quan sát thứ tự và hướng đi của từng nét chữ...`;
+        }
+      };
+    }
+
     if (btnToggleOutline) {
       btnToggleOutline.onclick = () => {
         outlineVisible = !outlineVisible;
         if (hanziWriter) {
           if (outlineVisible) {
             hanziWriter.showOutline();
-            btnToggleOutline.textContent = '✏️ Tắt nét mờ tập tô';
+            btnToggleOutline.textContent = '✏️ Tắt nét mờ';
+            btnToggleOutline.classList.add('active');
           } else {
             hanziWriter.hideOutline();
-            btnToggleOutline.textContent = '✏️ Bật nét mờ tập tô';
+            btnToggleOutline.textContent = '✏️ Bật nét mờ';
+            btnToggleOutline.classList.remove('active');
           }
         }
       };
     }
 
-    const btnQuizWrite = document.getElementById('btn-quiz');
-    if (btnQuizWrite) btnQuizWrite.onclick = () => { if (hanziWriter) hanziWriter.quiz(); };
-    const btnResetWrite = document.getElementById('btn-reset');
-    if (btnResetWrite) btnResetWrite.onclick = () => { if (hanziWriter) hanziWriter.quiz(); };
+    if (btnQuizWrite) {
+      btnQuizWrite.onclick = () => {
+        if (hanziWriter) {
+          btnQuizWrite.classList.add('active');
+          btnAnim?.classList.remove('active');
+          if (tipEl) tipEl.innerHTML = `✍️ <strong>Chế độ tự viết:</strong> Hãy dùng ngón tay hoặc bút viết từng nét vào ô Mễ!`;
+          hanziWriter.quiz({
+            showOutline: outlineVisible,
+            onComplete: (summary) => {
+              if (tipEl) tipEl.innerHTML = `🎉 <strong>Hoàn thành xuất sắc!</strong> (Sai số: ${summary?.totalMistakes || 0} nét)`;
+            }
+          });
+        }
+      };
+    }
+
+    if (btnResetWrite) {
+      btnResetWrite.onclick = () => {
+        if (hanziWriter) {
+          if (btnQuizWrite?.classList.contains('active')) {
+            hanziWriter.quiz({
+              showOutline: outlineVisible,
+              onComplete: (summary) => {
+                if (tipEl) tipEl.innerHTML = `🎉 <strong>Hoàn thành xuất sắc!</strong> (Sai số: ${summary?.totalMistakes || 0} nét)`;
+              }
+            });
+            if (tipEl) tipEl.innerHTML = `🔄 Đã xóa nét. Hãy thử viết lại từ đầu!`;
+          } else {
+            if (typeof hanziWriter.cancelQuiz === 'function') hanziWriter.cancelQuiz();
+            hanziWriter.showOutline();
+            hanziWriter.animateCharacter();
+            btnAnim?.classList.add('active');
+            btnQuizWrite?.classList.remove('active');
+            if (tipEl) tipEl.innerHTML = `🔄 Đang thị phạm lại thứ tự nét...`;
+          }
+        }
+      };
+    }
 
     const btnPrevChar = document.getElementById('btn-prev-char');
     if (btnPrevChar) {
       btnPrevChar.onclick = () => {
-        const list = data.handwriting[currentLevel] || [];
+        const list = getHandwritingList(currentLevel);
         if (list.length > 0) {
           currentCharIndex = (currentCharIndex - 1 + list.length) % list.length;
+          btnAnim?.classList.add('active');
+          btnQuizWrite?.classList.remove('active');
           renderWritingTab();
         }
       };
@@ -1921,9 +2026,11 @@
     const btnNextChar = document.getElementById('btn-next-char');
     if (btnNextChar) {
       btnNextChar.onclick = () => {
-        const list = data.handwriting[currentLevel] || [];
+        const list = getHandwritingList(currentLevel);
         if (list.length > 0) {
           currentCharIndex = (currentCharIndex + 1) % list.length;
+          btnAnim?.classList.add('active');
+          btnQuizWrite?.classList.remove('active');
           renderWritingTab();
         }
       };
@@ -2614,7 +2721,7 @@
     if (tabBtn) tabBtn.click();
 
     // Check if character is in handwriting list
-    const list = (data.handwriting && data.handwriting[currentLevel]) || [];
+    const list = getHandwritingList(currentLevel);
     const idx = list.findIndex(item => item.char === ch);
     if (idx !== -1) {
       currentCharIndex = idx;

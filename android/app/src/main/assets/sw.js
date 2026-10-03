@@ -1,8 +1,10 @@
-const CACHE_NAME = 'hsk3-cache-v35';
+const CACHE_NAME = 'hsk3-cache-v36';
 const ASSETS = [
   './',
   './index.html',
   './style.css',
+  './icon.png',
+  './favicon.png',
   './practice_essays_data.js',
   './app.js',
   './srs_quiz_engine.js',

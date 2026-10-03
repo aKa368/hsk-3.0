@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans:wght@400;500;600&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
   <meta name="theme-color" content="#f8f4eb">
 </head>
 <body>
@@ -100,55 +102,55 @@
       <!-- TAB 1: LUYỆN VIẾT BẰNG BÚT (TỪNG CHỮ) -->
       <section id="tab-writing" class="page-pane active">
         <div class="paper-card writing-studio-layout">
-          <div class="char-meta-panel">
-            <!-- Ô tìm kiếm & tra cứu cách viết chữ Hán tùy chọn -->
-            <div class="char-lookup-bar">
-              <input type="text" id="custom-char-input" class="paper-input" placeholder="🔍 Nhập chữ Hán (VD: 我, 爱, 学)..." maxlength="10" autocomplete="off" />
-              <button id="btn-custom-char-lookup" class="paper-btn primary-btn sm-btn">Tra nét</button>
-            </div>
+          <!-- Ô tìm kiếm & tra cứu cách viết chữ Hán tùy chọn -->
+          <div class="char-lookup-bar">
+            <input type="text" id="custom-char-input" class="paper-input" placeholder="🔍 Nhập chữ Hán cần tra nét (VD: 我, 爱, 保)..." maxlength="10" autocomplete="off" />
+            <button id="btn-custom-char-lookup" class="paper-btn primary-btn sm-btn">Tra nét</button>
+          </div>
 
-            <div class="char-index-indicator">
-              <span class="indicator-label">Mục tiêu HSK 3.0:</span>
-              <span id="char-progress" class="indicator-value">1 / 150</span>
-            </div>
-            
-            <div class="char-reading-box">
-              <div class="pinyin-row">
+          <!-- HERO: BÀN TẬP VIẾT NÉT CHỮ HÁN (米字格) -->
+          <div class="canvas-writing-panel">
+            <div class="char-header-row">
+              <div class="char-reading-box">
                 <span id="char-pinyin" class="pinyin-large">bā</span>
                 <button id="char-audio-btn" class="paper-btn audio-btn" title="Phát âm chuẩn">🔊 Nghe</button>
+                <span id="char-hanviet" class="hanviet-badge">Hán-Việt: BA</span>
               </div>
-              <div id="char-hanviet" class="hanviet-badge">Hán-Việt: BA</div>
+              <div class="char-index-indicator">
+                <span class="indicator-label">Mục tiêu HSK:</span>
+                <span id="char-progress" class="indicator-value">1 / 150</span>
+              </div>
             </div>
 
-            <!-- Khung từ ghép thông dụng & minh họa trực quan -->
-            <div id="char-visual-anchor" class="char-visual-preview">
-              <div id="char-visual-img" class="char-visual-img"></div>
-              <div id="char-visual-desc" class="char-visual-desc">Đang tải từ ghép HSK...</div>
+            <div class="mige-canvas-frame">
+              <div id="hanzi-target" class="hanzi-mige-box"></div>
             </div>
 
-            <div class="char-meaning-box">
-              <h4 class="section-label">Giải nghĩa từ điển chuẩn:</h4>
-              <p id="char-meaning" class="meaning-text">Đang tải giải nghĩa...</p>
+            <div class="writing-action-bar">
+              <button id="btn-animate" class="paper-btn active">▶ Thị phạm nét</button>
+              <button id="btn-toggle-outline" class="paper-btn">✏️ Bật nét mờ</button>
+              <button id="btn-quiz" class="paper-btn">✍️ Tự viết</button>
+              <button id="btn-reset" class="paper-btn">🔄 Vẽ lại</button>
             </div>
 
             <div class="nav-controls">
               <button id="btn-prev-char" class="paper-btn">◀ Chữ trước</button>
               <button id="btn-next-char" class="paper-btn primary-btn">Chữ tiếp theo ▶</button>
             </div>
+
+            <p id="writing-status-tip" class="writing-tip">💡 Nhấn <strong>"Thị phạm"</strong> để xem chuyển động từng nét, hoặc <strong>"Tự viết"</strong> để viết trực tiếp vào ô Mễ.</p>
           </div>
 
-          <div class="canvas-writing-panel">
-            <div class="mige-canvas-frame">
-              <div id="hanzi-target" class="hanzi-mige-box"></div>
+          <!-- KHỐI BỔ TRỢ: TỪ GHÉP & GIẢI NGHĨA CHUẨN -->
+          <div class="char-meta-panel">
+            <div id="char-visual-anchor" class="char-visual-preview">
+              <div id="char-visual-desc" class="char-visual-desc">Đang tải từ ghép HSK...</div>
             </div>
 
-            <div class="writing-action-bar">
-              <button id="btn-animate" class="paper-btn">▶ Thị phạm nét</button>
-              <button id="btn-toggle-outline" class="paper-btn">✏️ Bật nét mờ tập tô</button>
-              <button id="btn-quiz" class="paper-btn primary-btn">✍️ Tự viết (Chấm điểm)</button>
-              <button id="btn-reset" class="paper-btn">🔄 Xóa viết lại</button>
+            <div class="char-meaning-box">
+              <h4 class="section-label">📖 Giải nghĩa từ điển chuẩn:</h4>
+              <p id="char-meaning" class="meaning-text">Đang tải giải nghĩa...</p>
             </div>
-            <p class="writing-tip">💡 Hướng dẫn: Nhấn "Bật nét mờ tập tô" để hiện khung nét chữ chìm bên dưới rồi đồ nét theo, hoặc chọn "Tự viết" để thi thử thứ tự nét.</p>
           </div>
         </div>
       </section>
