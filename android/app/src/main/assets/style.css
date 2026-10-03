@@ -2918,3 +2918,204 @@ body {
     gap: 20px;
   }
 }
+
+/* ==========================================================================
+   SUBNAV & BỘ LỌC PHÂN HỆ LUYỆN TẬP (SUB-TABS)
+   ========================================================================== */
+.exercise-subnav-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+  border-bottom: 2px solid var(--paper-border);
+  padding-bottom: 10px;
+  overflow-x: auto;
+}
+.subnav-btn {
+  background: var(--paper-card-sub);
+  border: 1px solid var(--paper-border);
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--paper-text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.subnav-btn.active {
+  background: var(--paper-accent);
+  color: #ffffff;
+  border-color: var(--paper-accent);
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.25);
+}
+.subtab-pane {
+  display: none;
+}
+.subtab-pane.active {
+  display: block;
+}
+
+/* QUIZ STYLES */
+.quiz-control-card {
+  padding: 16px;
+  margin-bottom: 20px;
+  background: var(--paper-card);
+  border-radius: 10px;
+  border: 1px solid var(--paper-border);
+}
+.quiz-filter-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.quiz-display-area {
+  max-width: 680px;
+  margin: 0 auto;
+}
+.quiz-card {
+  background: var(--paper-card);
+  border: 2px solid var(--paper-border);
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--paper-accent);
+  margin-bottom: 14px;
+}
+.quiz-prompt {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 18px 0;
+  font-family: "KaiTi", "STKaiti", "SimSun", serif;
+  color: var(--paper-text);
+}
+.quiz-opt-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 20px;
+}
+.quiz-opt-btn {
+  background: var(--paper-card-sub);
+  border: 1.5px solid var(--paper-border);
+  border-radius: 10px;
+  padding: 12px 18px;
+  text-align: left;
+  font-size: 1rem;
+  color: var(--paper-text);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.quiz-opt-btn:hover {
+  border-color: var(--paper-accent);
+  background: var(--paper-bg);
+}
+.quiz-opt-btn.correct {
+  background: #e8f5e9 !important;
+  border-color: #2e7d32 !important;
+  color: #1b5e20 !important;
+  font-weight: 700;
+}
+.quiz-opt-btn.wrong {
+  background: #ffebee !important;
+  border-color: #c62828 !important;
+  color: #b71c1c !important;
+}
+
+/* SRS FLASHCARD STYLES */
+.srs-control-card {
+  padding: 14px 20px;
+  margin-bottom: 20px;
+  background: var(--paper-card);
+  border-radius: 10px;
+}
+.srs-stats-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.srs-stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stat-number {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--paper-accent);
+}
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--paper-text-muted);
+}
+.srs-display-area {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.srs-card-box {
+  background: var(--paper-card);
+  border: 2px solid var(--paper-border);
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.srs-char-front {
+  font-size: 4rem;
+  font-family: "KaiTi", "STKaiti", serif;
+  color: var(--paper-text);
+}
+.srs-details-back {
+  margin-top: 15px;
+  display: none;
+}
+.srs-details-back.visible {
+  display: block;
+}
+.srs-rating-bar {
+  display: flex;
+  gap: 8px;
+  margin-top: 24px;
+  width: 100%;
+  justify-content: center;
+}
+.srs-rate-btn {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid var(--paper-border);
+  cursor: pointer;
+  background: var(--paper-card-sub);
+}
+.srs-rate-btn.again { color: #c62828; }
+.srs-rate-btn.hard { color: #ef6c00; }
+.srs-rate-btn.good { color: #2e7d32; }
+.srs-rate-btn.easy { color: #1565c0; }
+
+/* TCM SPECIALIST BADGE */
+.badge-tcm {
+  background: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #81c784;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  display: inline-block;
+}

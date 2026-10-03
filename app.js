@@ -288,6 +288,21 @@
       items.push({ ...item, group: 'custom' });
     });
 
+    
+    // 3. Các đoạn văn Y học Cổ truyền kinh điển (TCM Classics)
+    if (window.TCM_DATA && window.TCM_DATA.passages) {
+      window.TCM_DATA.passages.forEach(p => {
+        items.push({
+          id: p.id,
+          title: `🌿 [Đông Y] ${p.title}`,
+          content: p.content_zh,
+          trans: p.translation_vi,
+          pinyin: p.pinyin,
+          group: 'tcm'
+        });
+      });
+    }
+
     return items;
   }
 
@@ -1689,7 +1704,65 @@
 
   window.checkAppUpdate = checkRemoteVersion;
 
+  
+  // ==========================================================================
+  // KHỞI TẠO PHÂN HỆ LUYỆN TẬP, THI THỬ & THẺ NHỚ SRS FLASHCARD
+  // ==========================================================================
+  function initExerciseSubtabs() {
+    // 1. Chuyển đổi giữa 3 subtab: Quiz / SRS / Ghép câu
+    const subnavBtns = document.querySelectorAll('.exercise-subnav-bar .subnav-btn');
+    subnavBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        subnavBtns.forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.subtab-pane').forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        const subId = btn.getAttribute('data-subtab');
+        const targetPane = document.getElementById(subId.replace('sub-', 'subtab-'));
+        if (targetPane) targetPane.classList.add('active');
+
+        if (subId === 'sub-quiz') {
+          triggerQuizStart();
+        } else if (subId === 'sub-srs') {
+          triggerSRSStart();
+        }
+      });
+    });
+
+    // 2. Kích hoạt nút bắt đầu Quiz
+    const btnStartQuiz = document.getElementById('btn-start-quiz');
+    if (btnStartQuiz) {
+      btnStartQuiz.addEventListener('click', triggerQuizStart);
+    }
+
+    // 3. Kích hoạt nút reset SRS
+    const btnResetSRS = document.getElementById('btn-reset-srs');
+    if (btnResetSRS) {
+      btnResetSRS.addEventListener('click', () => {
+        if (window.SRSQuizEngine) {
+          window.SRSQuizEngine.initSRS();
+          triggerSRSStart();
+        }
+      });
+    }
+  }
+
+  function triggerQuizStart() {
+    if (window.SRSQuizEngine) {
+      const lvl = document.getElementById('quiz-level-select')?.value || 'all';
+      const cnt = parseInt(document.getElementById('quiz-count-select')?.value || '10');
+      window.SRSQuizEngine.renderQuizUI('quiz-container', lvl, cnt);
+    }
+  }
+
+  function triggerSRSStart() {
+    if (window.SRSQuizEngine) {
+      window.SRSQuizEngine.initSRS();
+      window.SRSQuizEngine.renderSRSUI('srs-container');
+    }
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
+    initExerciseSubtabs();
     initAutoUpdateChecker();
 
     // Bảo mật chống cào và inspect DevTools trên Web/App
@@ -1985,7 +2058,24 @@
 
     // Filter by Real-world Topic/Category
     if (dictCurrentTopic !== 'all') {
-      filtered = filtered.filter(item => matchItemCategory(item, dictCurrentTopic));
+      if (dictCurrentTopic === 'tcm') {
+        const tcmMapped = (window.TCM_DATA?.terms || []).map(t => ({
+          zh: t.zh,
+          py: t.pinyin || '',
+          py_clean: (t.pinyin || '').replace(/[^a-zA-Z]/g, ''),
+          hv: (t.hanviet || '').toUpperCase(),
+          lvl: 'Đông Y',
+          lvl_num: 0,
+          vi: t.vi || '',
+          en: t.en || '',
+          pos: 'Thuật ngữ Y học',
+          rad: '🌿'
+        }));
+        const hskTcm = rawList.filter(item => matchItemCategory(item, 'tcm'));
+        filtered = [...tcmMapped, ...hskTcm];
+      } else {
+        filtered = filtered.filter(item => matchItemCategory(item, dictCurrentTopic));
+      }
     }
 
     if (!q) {
@@ -2049,6 +2139,13 @@
   // HỆ THỐNG PHÂN LOẠI CHỦ ĐỀ THỰC TẾ CHO TỪ ĐIỂN
   // ==========================================================================
   const DICT_CATEGORIES = {
+    tcm: {
+      label: 'Y Học Cổ Truyền & Đông Y',
+      label_en: 'Traditional Chinese Medicine',
+      vn_terms: ['đông y', 'thuốc', 'châm cứu', 'huyệt', 'kinh lạc', 'phương tễ', 'tạng phủ', 'khí huyết', 'âm dương', 'bắt mạch', 'y học cổ truyền'],
+      en_terms: ['tcm', 'acupuncture', 'meridian', 'chinese medicine', 'herb', 'acupoint'],
+      words: ['中医', '中药', '针灸', '穴位', '经络', '方剂', '阴阳', '气血', '脉象', '脏腑']
+    },
     fruit: {
       label: 'Hoa quả & Trái cây',
       label_en: 'Fruits',
@@ -2144,6 +2241,12 @@
 
   function matchItemCategory(item, catKey) {
     if (!catKey || catKey === 'all') return true;
+    if (catKey === 'tcm') {
+      if (item.lvl === 'Đông Y' || item.pos === 'Thuật ngữ Y học') return true;
+      if (window.TCM_DATA && window.TCM_DATA.terms) {
+        if (window.TCM_DATA.terms.some(t => t.zh === item.zh)) return true;
+      }
+    }
     const cat = DICT_CATEGORIES[catKey];
     if (!cat) return true;
     const zh = item.zh || '';

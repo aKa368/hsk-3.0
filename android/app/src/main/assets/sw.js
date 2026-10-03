@@ -5,6 +5,8 @@ const ASSETS = [
   './style.css',
   './practice_essays_data.js',
   './app.js',
+  './srs_quiz_engine.js',
+  './tcm_data.js',
   './data.js',
   './dict_data.js',
   './visual_vocab_data.js',

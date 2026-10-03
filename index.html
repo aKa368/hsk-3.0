@@ -365,6 +365,59 @@
 
       <!-- TAB 5: GHÉP CÂU & SỬA BỆNH CÚ -->
       <section id="tab-exercise" class="page-pane">
+        <!-- Sub-Nav Phân Hệ Ôn Tập -->
+        <div class="exercise-subnav-bar">
+          <button class="subnav-btn active" data-subtab="sub-quiz">📝 Thi Thử Trắc Nghiệm</button>
+          <button class="subnav-btn" data-subtab="sub-srs">🎴 Thẻ Nhớ SRS Flashcard</button>
+          <button class="subnav-btn" data-subtab="sub-sentence">🧩 Ghép Câu Ngữ Pháp</button>
+        </div>
+
+        <!-- SUBTAB 1: THI THỬ TRẮC NGHIỆM -->
+        <div id="subtab-quiz" class="subtab-pane active">
+          <div class="paper-card quiz-control-card">
+            <div class="quiz-filter-row">
+              <label>Cấp độ HSK:</label>
+              <select id="quiz-level-select" class="paper-select sm-select">
+                <option value="all">Ngẫu nhiên HSK 1 - 9</option>
+                <option value="HSK 1">HSK 1</option>
+                <option value="HSK 2">HSK 2</option>
+                <option value="HSK 3">HSK 3</option>
+                <option value="HSK 4">HSK 4</option>
+                <option value="HSK 5">HSK 5</option>
+                <option value="HSK 6">HSK 6</option>
+              </select>
+              <label>Số lượng câu:</label>
+              <select id="quiz-count-select" class="paper-select sm-select">
+                <option value="5">5 câu (Nhanh)</option>
+                <option value="10" selected>10 câu (Tiêu chuẩn)</option>
+                <option value="20">20 câu (Thử thách)</option>
+              </select>
+              <button id="btn-start-quiz" class="paper-btn primary-btn sm-btn">🚀 Bắt đầu làm bài</button>
+            </div>
+          </div>
+          <div id="quiz-container" class="quiz-display-area"></div>
+        </div>
+
+        <!-- SUBTAB 2: THẺ NHỚ SRS FLASHCARD -->
+        <div id="subtab-srs" class="subtab-pane">
+          <div class="paper-card srs-control-card">
+            <div class="srs-stats-header">
+              <div class="srs-stat-box">
+                <span class="stat-number" id="srs-due-count">0</span>
+                <span class="stat-label">Cần ôn hôm nay</span>
+              </div>
+              <div class="srs-stat-box">
+                <span class="stat-number" id="srs-total-deck">11.485</span>
+                <span class="stat-label">Tổng số thẻ</span>
+              </div>
+              <button id="btn-reset-srs" class="paper-btn sm-btn">🔄 Làm mới phiên ôn</button>
+            </div>
+          </div>
+          <div id="srs-container" class="srs-display-area"></div>
+        </div>
+
+        <!-- SUBTAB 3: GHÉP CÂU NGỮ PHÁP CŨ -->
+        <div id="subtab-sentence" class="subtab-pane">
         <div class="exercise-split-layout">
           <!-- Phần A: Sắp xếp câu -->
           <div class="paper-card exercise-box">
@@ -453,6 +506,7 @@
               <label for="dict-topic-select" class="dict-select-label" id="lbl-dict-topic">🏷️ Chủ đề từ vựng:</label>
               <select id="dict-topic-select" class="paper-select dict-dropdown-select">
                 <option value="all">🌟 Tất cả chủ đề</option>
+                <option value="tcm">🌿 Y Học Cổ Truyền & Đông Y (433+ thuật ngữ)</option>
                 <option value="fruit">🍎 Hoa quả & Trái cây</option>
                 <option value="vegetable">🥦 Rau củ & Nông sản</option>
                 <option value="clothing">👗 Quần áo & Phụ kiện</option>
@@ -494,6 +548,8 @@
   <script src="lazidi_data.js"></script>
   <script src="dict_data.js"></script>
   <script src="practice_essays_data.js"></script>
+  <script src="tcm_data.js"></script>
+  <script src="srs_quiz_engine.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

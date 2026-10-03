@@ -34,6 +34,8 @@ jobs:
             eval(fs.readFileSync('visual_entity_library.js', 'utf8'));
             eval(fs.readFileSync('visual_vocab_data.js', 'utf8'));
             eval(fs.readFileSync('dict_data.js', 'utf8'));
+            eval(fs.readFileSync('tcm_data.js', 'utf8'));
+            eval(fs.readFileSync('srs_quiz_engine.js', 'utf8'));
             console.log('✅ ALL JS DATA MODULES VALIDATED SUCCESSFULLY!');
           "
 
