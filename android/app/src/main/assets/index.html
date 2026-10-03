@@ -29,9 +29,9 @@
             <span class="control-label">Giao diện:</span>
             <select id="theme-select" class="paper-select sm-select">
               <option value="paper">📜 Giấy Ngà</option>
-              <option value="dark">🌙 Đọc ban đêm</option>
-              <option value="bamboo">🎋 Trúc Diệp</option>
-              <option value="notion">✨ Tối Giản</option>
+              <option value="dark">🌙 Đêm</option>
+              <option value="bamboo">🎋 Trúc</option>
+              <option value="notion">✨ Gọn</option>
             </select>
           </div>
 
@@ -69,27 +69,27 @@
       <div class="tabs-inner">
         <button class="tab-btn active" data-tab="tab-writing">
           <span class="tab-num">一</span>
-          <span class="tab-name">Luyện Nét Chữ (手写汉字)</span>
+          <span class="tab-name">Luyện Nét <small class="tab-sub">(手写) </small></span>
         </button>
         <button class="tab-btn" data-tab="tab-tracing">
           <span class="tab-num">二</span>
-          <span class="tab-name">Vở Tập Tô Đoạn (描红字帖)</span>
+          <span class="tab-name">Tập Tô <small class="tab-sub">(描红) </small></span>
         </button>
         <button class="tab-btn" data-tab="tab-essay">
           <span class="tab-num">三</span>
-          <span class="tab-name">Viết & Phân Tích Đoạn (看词写话)</span>
+          <span class="tab-name">Viết Đoạn <small class="tab-sub">(写话) </small></span>
         </button>
         <button class="tab-btn" data-tab="tab-curriculum">
           <span class="tab-num">四</span>
-          <span class="tab-name">Giáo Trình & Từ Mới (标准教程)</span>
+          <span class="tab-name">Giáo Trình <small class="tab-sub">(教程) </small></span>
         </button>
         <button class="tab-btn" data-tab="tab-exercise">
           <span class="tab-num">五</span>
-          <span class="tab-name">Ghép Câu & Bệnh Cú (练习)</span>
+          <span class="tab-name">Ôn Tập <small class="tab-sub">(练习) </small></span>
         </button>
         <button class="tab-btn" data-tab="tab-dictionary">
           <span class="tab-num">六</span>
-          <span class="tab-name">Tra Cứu Từ Điển (字典)</span>
+          <span class="tab-name">Từ Điển <small class="tab-sub">(字典) </small></span>
         </button>
       </div>
     </nav>
@@ -103,8 +103,8 @@
           <div class="char-meta-panel">
             <!-- Ô tìm kiếm & tra cứu cách viết chữ Hán tùy chọn -->
             <div class="char-lookup-bar">
-              <input type="text" id="custom-char-input" class="paper-input" placeholder="🔍 Nhập chữ Hán cần xem cách viết (VD: 我, 爱, 学, 龙)..." maxlength="10" autocomplete="off" />
-              <button id="btn-custom-char-lookup" class="paper-btn primary-btn sm-btn">Tra nét viết</button>
+              <input type="text" id="custom-char-input" class="paper-input" placeholder="🔍 Nhập chữ Hán (VD: 我, 爱, 学)..." maxlength="10" autocomplete="off" />
+              <button id="btn-custom-char-lookup" class="paper-btn primary-btn sm-btn">Tra nét</button>
             </div>
 
             <div class="char-index-indicator">
@@ -479,11 +479,10 @@
 
           <div class="dict-search-bar-wrap">
             <div class="dict-search-input-box">
-              <span class="dict-search-icon">🔍</span>
-              <input type="text" id="dict-search-input" class="dict-search-input" placeholder="Nhập Chữ Hán, Pinyin, Hán-Việt hoặc Tiếng Việt (VD: 坚持, jianchi, kiên trì, bác sĩ, 医生, 学习)..." autocomplete="off">
+              <span class="dict-search-btn-icon">🔍</span>
+              <input type="text" id="dict-search-input" class="dict-search-input" placeholder="Hán tự, Pinyin, nghĩa..." autocomplete="off">
               <button id="dict-clear-btn" class="dict-clear-btn" title="Xóa tìm kiếm">✕</button>
             </div>
-            <button id="dict-search-btn" class="paper-btn primary-btn dict-action-btn">Tra cứu</button>
           </div>
 
           <div class="dict-filter-toolbar">
@@ -523,9 +522,9 @@
               </select>
             </div>
 
-            <div class="dict-stats-inline">
-              <span id="dict-count-info" class="dict-count-text">Đang tải cơ sở dữ liệu từ điển...</span>
-            </div>
+          </div>
+          <div class="dict-stats-inline">
+            <span id="dict-count-info" class="dict-count-text">Đang tải cơ sở dữ liệu từ điển...</span>
           </div>
         </div>
 
