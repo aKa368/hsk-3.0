@@ -1,0 +1,2815 @@
+/* HỆ THỐNG 4 THEMES ĐA DẠNG: GIẤY NGÀ · ĐÊM ĐỌC · TRÚC DIỆP · TỐI GIẢN */
+:root, [data-theme="paper"] {
+  --paper-bg: #f8f4eb;
+  --paper-card: #fffefb;
+  --paper-card-sub: #f3ece0;
+  --tabs-bg: #efe7d6;
+  --canvas-bg: #ffffff;
+  --canvas-line: rgba(185, 56, 41, 0.15);
+  --canvas-line-sub: rgba(185, 56, 41, 0.08);
+  --canvas-border: #b93829;
+  --hanzi-stroke: #2d2621;
+  --hanzi-outline: #d6c8b4;
+  --hanzi-drawing: #b93829;
+  --trace-shadow-char: rgba(185, 56, 41, 0.28);
+  --trace-punct-color: rgba(45, 38, 33, 0.45);
+  --trace-brush-primary: #2d2621;
+  --trace-brush-secondary: #b93829;
+  
+  --ink-primary: #2d2621;
+  --ink-secondary: #63584e;
+  --ink-muted: #94877b;
+  --vermilion: #b93829;
+  --vermilion-soft: #fcf1ef;
+  --amber-gold: #c28334;
+  --bamboo-green: #2e6f40;
+  --border-paper: #e5dac6;
+  --border-dark: #ccbeaa;
+  --shadow-book: 0 4px 20px rgba(78, 62, 45, 0.08);
+}
+
+[data-theme="dark"] {
+  --paper-bg: #0f141c;         /* Nền tổng thể tối than chì trầm dịu mắt */
+  --paper-card: #181f2a;       /* Nền card tối đồng bộ */
+  --paper-card-sub: #222b3a;   /* Khối phụ tối dịu mắt */
+  --tabs-bg: #141a24;          /* Dải tab tối, không bị trắng chói */
+  --canvas-bg: #141a24;        /* Nền ô tập tô tối đồng bộ */
+  --canvas-line: rgba(224, 159, 88, 0.35);         /* Designer recommendation: Tăng tương phản đường kẻ Mễ */
+  --canvas-line-sub: rgba(224, 159, 88, 0.18);
+  --canvas-border: #475569;
+  --hanzi-stroke: #f8fafc;     /* Chữ Hán nét trắng kem sáng rõ nét */
+  --hanzi-outline: #475569;    /* Nét viền xám mờ */
+  --hanzi-drawing: #fbbf24;    /* Nét vẽ vàng kim */
+  --trace-shadow-char: rgba(248, 250, 252, 0.60);  /* Designer recommendation: Tăng opacity nét mờ tập tô đạt 5.2:1 */
+  --trace-punct-color: #cbd5e1;
+  --trace-brush-primary: #f8fafc;                  /* Nét vẽ chính: Trắng ngọc rõ ràng */
+  --trace-brush-secondary: #f87171;                /* Nét vẽ son: Đỏ hồng sáng */
+  
+  --ink-primary: #f1f5f9;      /* Chữ chính trắng sáng */
+  --ink-secondary: #cbd5e1;    /* Chữ phụ xám sáng */
+  --ink-muted: #94a3b8;        /* Chữ mờ */
+  --vermilion: #e09f58;        /* Điểm nhấn vàng cam ấm */
+  --vermilion-soft: rgba(224, 159, 88, 0.15);
+  --amber-gold: #fbbf24;
+  --bamboo-green: #34d399;
+  --border-paper: #283345;     /* Viền tối đồng bộ */
+  --border-dark: #37455c;
+  --shadow-book: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="bamboo"] {
+  --paper-bg: #f2f7f2;
+  --paper-card: #ffffff;
+  --paper-card-sub: #e6f0e6;
+  --tabs-bg: #dceadc;
+  --canvas-bg: #ffffff;
+  --canvas-line: rgba(46, 111, 64, 0.15);
+  --canvas-line-sub: rgba(46, 111, 64, 0.08);
+  --canvas-border: #2e6f40;
+  --hanzi-stroke: #1b3823;
+  --hanzi-outline: #b8d4ba;
+  --hanzi-drawing: #16a34a;
+  --trace-shadow-char: rgba(46, 111, 64, 0.28);
+  --trace-punct-color: rgba(27, 56, 35, 0.45);
+  --trace-brush-primary: #1b3823;
+  --trace-brush-secondary: #2e6f40;
+  
+  --ink-primary: #1b3823;
+  --ink-secondary: #3b5e44;
+  --ink-muted: #6f8c76;
+  --vermilion: #2e6f40;
+  --vermilion-soft: #edf7ee;
+  --amber-gold: #15803d;
+  --bamboo-green: #166534;
+  --border-paper: #cfe0d0;
+  --border-dark: #b5cbb7;
+  --shadow-book: 0 4px 20px rgba(46, 111, 64, 0.08);
+}
+
+[data-theme="notion"] {
+  --paper-bg: #f9fafb;
+  --paper-card: #ffffff;
+  --paper-card-sub: #f3f4f6;
+  --tabs-bg: #f3f4f6;
+  --canvas-bg: #ffffff;
+  --canvas-line: rgba(37, 99, 235, 0.15);
+  --canvas-line-sub: rgba(37, 99, 235, 0.08);
+  --canvas-border: #2563eb;
+  --hanzi-stroke: #111827;
+  --hanzi-outline: #cbd5e1;
+  --hanzi-drawing: #2563eb;
+  --trace-shadow-char: rgba(37, 99, 235, 0.28);
+  --trace-punct-color: rgba(17, 24, 39, 0.45);
+  --trace-brush-primary: #111827;
+  --trace-brush-secondary: #2563eb;
+  
+  --ink-primary: #111827;
+  --ink-secondary: #4b5563;
+  --ink-muted: #9ca3af;
+  --vermilion: #2563eb;
+  --vermilion-soft: #eff6ff;
+  --amber-gold: #0284c7;
+  --bamboo-green: #059669;
+  --border-paper: #e5e7eb;
+  --border-dark: #d1d5db;
+  --shadow-book: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-latin);
+  background-color: var(--paper-bg);
+  color: var(--ink-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+#book-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* 1. Header Bìa Sách */
+.book-header {
+  background-color: var(--paper-card);
+  border-bottom: 2px solid var(--border-paper);
+  padding: 16px 28px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.book-title-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.seal-mark {
+  background-color: var(--vermilion);
+  color: #fff;
+  font-family: var(--font-chinese);
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(185, 56, 41, 0.3);
+  letter-spacing: 2px;
+}
+
+.title-text h1 {
+  font-family: var(--font-chinese);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+  line-height: 1.2;
+}
+
+.title-text .sub-title {
+  font-size: 0.85rem;
+  color: var(--ink-secondary);
+  font-weight: 500;
+}
+
+.book-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.level-badge-selector {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.control-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-secondary);
+}
+
+.lvl-btn {
+  background: var(--paper-card-sub);
+  border: 1px solid var(--border-paper);
+  color: var(--ink-primary);
+  padding: 5px 14px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.lvl-btn:hover {
+  border-color: var(--vermilion);
+}
+
+.lvl-btn.active {
+  background: var(--vermilion);
+  color: #fff;
+  border-color: var(--vermilion);
+}
+
+.mode-toggle {
+  display: flex;
+  background: var(--paper-card-sub);
+  border: 1px solid var(--border-paper);
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.mode-btn {
+  background: transparent;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mode-btn.active {
+  background: var(--paper-card);
+  color: var(--vermilion);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* 2. Mục lục / Tab điều hướng */
+.book-tabs {
+  background-color: var(--tabs-bg);
+  border-bottom: 1px solid var(--border-paper);
+  padding: 0 28px;
+}
+
+.tabs-inner {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  background: transparent;
+  border: none;
+  padding: 12px 14px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.tab-num {
+  font-family: var(--font-chinese);
+  font-weight: 700;
+  color: var(--vermilion);
+  background: rgba(185, 56, 41, 0.1);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.tab-btn:hover {
+  color: var(--ink-primary);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.tab-btn.active {
+  color: var(--vermilion);
+  background: var(--paper-card);
+  border-bottom-color: var(--vermilion);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+/* 3. Khung trang sách chính */
+.book-page {
+  flex: 1;
+  padding: 28px;
+}
+
+.page-pane {
+  display: none;
+}
+
+.page-pane.active {
+  display: block;
+}
+
+/* Thẻ giấy (Paper Card) */
+.paper-card {
+  background: var(--paper-card);
+  border: 1px solid var(--border-paper);
+  border-radius: var(--radius-page);
+  box-shadow: var(--shadow-book);
+  padding: 28px;
+  margin-bottom: 24px;
+}
+
+/* Nút bấm kiểu giấy */
+.paper-btn {
+  background: var(--paper-card);
+  border: 1px solid var(--border-paper);
+  color: var(--ink-primary);
+  padding: 9px 18px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.paper-btn:hover {
+  background: var(--paper-card-sub);
+  border-color: var(--border-dark);
+}
+
+.paper-btn.primary-btn {
+  background: var(--vermilion);
+  color: #fff;
+  border-color: var(--vermilion);
+}
+
+.paper-btn.primary-btn:hover {
+  background: #a22f21;
+}
+
+.sm-btn {
+  padding: 5px 12px;
+  font-size: 0.8rem;
+}
+
+/* TAB 1: LUYỆN VIẾT BẰNG BÚT */
+.writing-studio-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .writing-studio-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.char-meta-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 1px dashed var(--border-paper);
+  padding-right: 28px;
+}
+
+@media (max-width: 900px) {
+  .char-meta-panel {
+    border-right: none;
+    border-bottom: 1px dashed var(--border-paper);
+    padding-right: 0;
+    padding-bottom: 24px;
+  }
+}
+
+.char-index-indicator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-paper);
+}
+
+.indicator-label {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+}
+
+.indicator-value {
+  font-weight: 700;
+  color: var(--vermilion);
+}
+
+.char-reading-box {
+  background: var(--paper-card-sub);
+  border-radius: 6px;
+  padding: 16px;
+  border: 1px solid var(--border-paper);
+}
+
+.pinyin-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.pinyin-large {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--ink-primary);
+  font-family: var(--font-pinyin);
+  letter-spacing: 0.5px;
+}
+
+.hanviet-badge {
+  display: inline-block;
+  background: var(--vermilion-soft);
+  color: var(--vermilion);
+  border: 1px solid rgba(185, 56, 41, 0.25);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+.section-label {
+  font-size: 0.85rem;
+  color: var(--ink-secondary);
+  margin-bottom: 6px;
+}
+
+.meaning-text {
+  font-size: 0.95rem;
+  color: var(--ink-primary);
+  line-height: 1.6;
+}
+
+.nav-controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Ô Mễ Tự Cách (米字格 Canvas) */
+.canvas-writing-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.mige-canvas-frame {
+  width: 290px;
+  height: 290px;
+  background: var(--canvas-bg);
+  border: 2px solid var(--canvas-border);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(78, 62, 45, 0.1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: 
+    linear-gradient(to right, transparent 49.5%, var(--canvas-line) 50%, transparent 50.5%),
+    linear-gradient(to bottom, transparent 49.5%, var(--canvas-line) 50%, transparent 50.5%),
+    linear-gradient(45deg, transparent 49.6%, var(--canvas-line) 50%, transparent 50.4%),
+    linear-gradient(-45deg, transparent 49.6%, var(--canvas-line) 50%, transparent 50.4%);
+}
+
+.hanzi-mige-box {
+  width: 280px;
+  height: 280px;
+}
+
+.writing-action-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.writing-tip {
+  font-size: 0.85rem;
+  color: var(--ink-secondary);
+  text-align: center;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+/* TAB 2: WRITING LAB 4 LỚP */
+.essay-lab-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card-header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-paper);
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.header-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-chinese);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+}
+
+/* Khối văn bản 4 tầng */
+.annotated-box {
+  background: var(--paper-card-sub);
+  border-left: 4px solid var(--vermilion);
+  padding: 18px 22px;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.layer-zh {
+  font-family: var(--font-chinese);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+  line-height: 1.7;
+}
+
+.layer-py {
+  font-family: var(--font-pinyin);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--vermilion);
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+}
+
+.layer-hv {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--amber-gold);
+  line-height: 1.5;
+}
+
+.layer-vi {
+  font-size: 0.95rem;
+  color: var(--ink-secondary);
+  font-style: italic;
+  line-height: 1.6;
+  border-top: 1px dashed var(--border-paper);
+  padding-top: 6px;
+}
+
+.structure-breakdown-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.struct-item {
+  background: var(--paper-card-sub);
+  border: 1px solid var(--border-paper);
+  border-radius: 6px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.struct-role {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--vermilion);
+}
+
+.struct-sample-zh {
+  font-family: var(--font-chinese);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+}
+
+.struct-sample-py {
+  font-family: var(--font-pinyin);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--vermilion);
+}
+
+.struct-sample-hv {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--amber-gold);
+}
+
+.struct-sample-vi {
+  font-size: 0.85rem;
+  color: var(--ink-secondary);
+  font-style: italic;
+}
+
+.struct-tip {
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+  border-top: 1px dashed var(--border-paper);
+  padding-top: 4px;
+  margin-top: 2px;
+}
+
+/* Thẻ từ vựng chi tiết */
+.vocab-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.vocab-card {
+  background: var(--paper-card);
+  border: 1px solid var(--border-paper);
+  border-left: 3px solid var(--vermilion);
+  border-radius: 6px;
+  padding: 10px 14px;
+}
+
+.vc-zh {
+  font-family: var(--font-chinese);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+}
+
+.vc-py {
+  font-family: var(--font-pinyin);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--vermilion);
+}
+
+.vc-hv {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--amber-gold);
+}
+
+.vc-mean {
+  font-size: 0.85rem;
+  color: var(--ink-secondary);
+  margin-top: 2px;
+}
+
+.paper-textarea {
+  width: 100%;
+  background: var(--paper-card);
+  border: 1px solid var(--border-paper);
+  border-radius: 6px;
+  padding: 16px;
+  font-family: var(--font-chinese);
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--ink-primary);
+  resize: vertical;
+}
+
+.paper-textarea:focus {
+  outline: none;
+  border-color: var(--vermilion);
+  box-shadow: 0 0 0 3px rgba(185, 56, 41, 0.1);
+}
+
+.essay-word-meter {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--vermilion);
+}
+
+.rubric-checklist-box {
+  background: var(--paper-card-sub);
+  border: 1px solid var(--border-paper);
+  border-radius: 6px;
+  padding: 14px 18px;
+  margin: 14px 0;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rubric-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink-secondary);
+}
+
+.rubric-item.passed {
+  color: var(--bamboo-green);
+  font-weight: 600;
+}
+
+.essay-bottom-bar {
+  display: flex;
+  gap: 10px;
+}
+
+/* Feedback Paper */
+.feedback-paper-card {
+  display: none;
+  margin-top: 14px;
+  padding: 14px 18px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.feedback-paper-card.show {
+  display: block;
+}
+
+.feedback-paper-card.success {
+  background: rgba(46, 111, 64, 0.1);
+  border: 1px solid var(--bamboo-green);
+  color: var(--bamboo-green);
+}
+
+.feedback-paper-card.warning {
+  background: rgba(185, 56, 41, 0.1);
+  border: 1px solid var(--vermilion);
+  color: var(--vermilion);
+}
+
+/* TAB 3: GRAMMAR LIBRARY */
+.grammar-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.paper-search-input {
+  flex: 1;
+  background: var(--paper-card);
+  border: 1px solid var(--border-paper);
+  border-radius: 6px;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  color: var(--ink-primary);
+}
+
+.paper-search-input:focus {
+  outline: none;
+  border-color: var(--vermilion);
+}
+
+.badge-total {
+  background: var(--vermilion-soft);
+  color: var(--vermilion);
+  border: 1px solid rgba(185, 56, 41, 0.3);
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.grammar-cards-scroll {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+  max-height: 650px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.grammar-entry-card {
+  background: var(--paper-card);
+  border: 1px solid var(--border-paper);
+  border-left: 3px solid var(--vermilion);
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.grammar-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.grammar-point-title {
+  font-family: var(--font-chinese);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--vermilion);
+}
+
+.grammar-category-badge {
+  font-size: 0.75rem;
+  background: var(--paper-card-sub);
+  color: var(--ink-secondary);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.grammar-full-label {
+  font-size: 0.9rem;
+  color: var(--ink-secondary);
+  margin-bottom: 8px;
+}
+
+.grammar-examples-box {
+  background: var(--paper-card-sub);
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ex-block {
+  border-bottom: 1px dashed var(--border-paper);
+  padding-bottom: 6px;
+}
+.ex-block:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.ex-zh {
+  font-family: var(--font-chinese);
+  font-weight: 700;
+  color: var(--ink-primary);
+}
+.ex-py {
+  font-family: var(--font-pinyin);
+  font-size: 0.8rem;
+  color: var(--vermilion);
+}
+.ex-hv {
+  font-size: 0.8rem;
+  color: var(--amber-gold);
+}
+
+/* TAB 4: EXERCISE */
+.exercise-split-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .exercise-split-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.exercise-box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.exercise-type-tag {
+  font-family: var(--font-chinese);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+}
+
+.exercise-counter {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--vermilion);
+}
+
+.exercise-inst {
+  font-size: 0.95rem;
+  color: var(--ink-secondary);
+}
+
+.meaning-hint-text {
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+  font-style: italic;
+}
+
+/* Khay ghép câu */
+.paper-drop-tray {
+  min-height: 70px;
+  background: var(--paper-card);
+  border: 2px dashed var(--border-dark);
+  border-radius: 6px;
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.tray-empty-hint {
+  color: var(--ink-muted);
+  font-size: 0.9rem;
+  width: 100%;
+  text-align: center;
+}
+
+.paper-token-pool {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 6px 0;
+}
+
+.paper-word-chip {
+  background: var(--paper-card-sub);
+  color: var(--ink-primary);
+  border: 1px solid var(--border-dark);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-family: var(--font-chinese);
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.paper-word-chip:hover {
+  border-color: var(--vermilion);
+  background: var(--paper-card-sub);
+}
+
+.paper-word-chip.selected {
+  background: var(--vermilion-soft);
+  border-color: var(--vermilion);
+  color: var(--vermilion);
+}
+
+.exercise-btn-row {
+  display: flex;
+  gap: 10px;
+}
+
+/* Bệnh cú options */
+.bingju-choice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bingju-option-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--paper-card);
+  border: 1px solid var(--border-paper);
+  padding: 12px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.bingju-option-row:hover {
+  border-color: var(--vermilion);
+  background: var(--vermilion-soft);
+}
+
+.option-prefix {
+  font-weight: 700;
+  color: var(--vermilion);
+  font-size: 1rem;
+}
+
+.option-text {
+  font-family: var(--font-chinese);
+  font-size: 1.15rem;
+}
+
+.badge-small {
+  font-size: 0.8rem;
+  background: var(--paper-card-sub);
+  color: var(--ink-secondary);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* VỞ TẬP TÔ ĐOẠN VĂN (TRACING COPYBOOK) */
+.tracing-lab-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.tracing-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  background: var(--paper-card-sub);
+  border: 1px solid var(--border-paper);
+  border-radius: 6px;
+  padding: 12px 18px;
+}
+
+.toolbar-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tool-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-secondary);
+}
+
+.paper-select {
+  background: var(--paper-card);
+  border: 1px solid var(--border-paper);
+  color: var(--ink-primary);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  max-width: 300px;
+}
+
+.brush-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.brush-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--border-paper);
+  background: var(--paper-card);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.brush-btn.active {
+  border-color: var(--vermilion);
+  transform: scale(1.1);
+}
+
+.color-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.color-dot.black { background: var(--trace-brush-primary); }
+.color-dot.red { background: var(--trace-brush-secondary); }
+
+.size-btn {
+  background: var(--paper-card);
+  border: 1px solid var(--border-paper);
+  color: var(--ink-secondary);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.size-btn.active {
+  background: var(--vermilion);
+  color: #ffffff;
+  border-color: var(--vermilion);
+}
+
+.tracing-summary-box {
+  background: var(--paper-card-sub);
+  border-left: 3px solid var(--vermilion);
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: var(--ink-secondary);
+  font-style: italic;
+}
+
+.tracing-paper-viewport {
+  background: var(--paper-card);
+  border: 1px solid var(--border-paper);
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.03);
+  overflow-x: auto;
+}
+
+.tracing-sheet {
+  position: relative;
+  min-height: 380px;
+  width: 100%;
+}
+
+.mige-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  user-select: none;
+}
+
+/* Ô chữ tập tô cá nhân */
+.trace-cell {
+  width: 76px;
+  height: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trace-cell.punct {
+  width: 36px;
+  justify-content: center;
+}
+
+.trace-py {
+  font-family: var(--font-pinyin);
+  font-size: 0.75rem;
+  color: var(--vermilion);
+  font-weight: 600;
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.trace-box {
+  width: 72px;
+  height: 72px;
+  background: var(--paper-card);
+  border: 1px solid var(--canvas-border);
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Kẻ ô 米字格 nhạt */
+  background-image: 
+    linear-gradient(to right, transparent 49.2%, var(--canvas-line) 50%, transparent 50.8%),
+    linear-gradient(to bottom, transparent 49.2%, var(--canvas-line) 50%, transparent 50.8%),
+    linear-gradient(45deg, transparent 49.4%, var(--canvas-line-sub) 50%, transparent 50.6%),
+    linear-gradient(-45deg, transparent 49.4%, var(--canvas-line-sub) 50%, transparent 50.6%);
+}
+
+.trace-punct-box {
+  width: 36px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-chinese);
+  font-size: 1.8rem;
+  color: var(--trace-punct-color);
+}
+
+.trace-shadow-char {
+  font-family: var(--font-chinese);
+  font-size: 2.5rem;
+  color: var(--trace-shadow-char);
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.trace-hv {
+  font-size: 0.7rem;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  height: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+
+/* Canvas đè lên trên để tô nét vẽ */
+.tracing-canvas-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.tracing-instructions {
+  font-size: 0.85rem;
+  color: var(--ink-secondary);
+  text-align: center;
+  margin-top: 6px;
+}
+
+
+/* THẺ TỪ VỰNG TRỰC QUAN (PICTURE FLASHCARDS - THEO ẢNH MẪU) */
+.visual-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.visual-flashcard {
+  background: var(--paper-card);
+  border: 1px solid var(--border-paper);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(78, 62, 45, 0.05);
+  padding: 14px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.visual-flashcard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(78, 62, 45, 0.12);
+  border-color: var(--vermilion);
+}
+
+/* 1. Nghĩa tiếng Việt ở trên */
+.vcard-vi {
+  font-family: var(--font-latin);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+  margin-bottom: 8px;
+}
+
+/* 2. Khung hình ảnh minh họa */
+.vcard-img-wrap {
+  width: 82px;
+  height: 82px;
+  background: var(--paper-card-sub);
+  border: 1px solid var(--canvas-line);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.vis-svg {
+  width: 72px;
+  height: 72px;
+  display: block;
+}
+
+/* 3. Chữ Hán to ở dưới */
+.vcard-zh {
+  font-family: var(--font-chinese);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+  line-height: 1.2;
+}
+
+/* 4. Pinyin chuẩn kèm thanh điệu */
+.vcard-py {
+  font-family: var(--font-pinyin);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--vermilion);
+  letter-spacing: 0.3px;
+  margin-top: 2px;
+}
+
+/* 5. Âm Hán-Việt */
+.vcard-hv {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--amber-gold);
+  text-transform: uppercase;
+  margin-top: 1px;
+}
+
+/* Nút phát âm trên thẻ */
+.vcard-sound-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  font-size: 0.85rem;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+.vcard-sound-btn:hover {
+  opacity: 1;
+}
+
+/* Khung tranh minh họa trong Tab 1 (Luyện nét chữ) */
+.char-visual-preview {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--paper-card-sub);
+  border: 1px solid var(--border-paper);
+  border-radius: 6px;
+  padding: 10px 14px;
+}
+
+.char-visual-img {
+  width: 60px;
+  height: 60px;
+  background: var(--paper-card-sub);
+  border: 1px solid var(--border-paper);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.char-visual-img .vis-svg {
+  width: 50px;
+  height: 50px;
+}
+
+.char-visual-desc {
+  font-size: 0.85rem;
+  color: var(--ink-secondary);
+  line-height: 1.4;
+}
+
+/* Section bộ thẻ phương vị trong Tab Ngữ Pháp */
+.directional-gallery-section {
+  background: var(--paper-card);
+  border: 1px solid var(--border-paper);
+  border-radius: var(--radius-page);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border-paper);
+  padding-bottom: 10px;
+}
+
+.gallery-title {
+  font-family: var(--font-chinese);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--vermilion);
+}
+
+
+/* Từ ghép HSK thông dụng trong thẻ học chữ */
+.comp-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--vermilion);
+  margin-bottom: 6px;
+}
+
+.comp-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.compound-chip {
+  background: var(--paper-card-sub);
+  border: 1px solid var(--border-paper);
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 0.82rem;
+  color: var(--ink-primary);
+  cursor: pointer;
+  transition: all 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.compound-chip:hover {
+  border-color: var(--vermilion);
+  background: var(--vermilion-soft);
+}
+
+.compound-chip strong {
+  font-family: var(--font-chinese);
+  color: var(--vermilion);
+  font-size: 0.95rem;
+}
+
+.cp-py {
+  color: var(--amber-gold);
+  font-family: var(--font-pinyin);
+  font-size: 0.8rem;
+}
+
+
+/* Khung hiển thị trọn vẹn 4 tầng đoạn văn tập tô phía trên */
+.tracing-summary-box {
+  background: var(--paper-card-sub);
+  border-left: 4px solid var(--vermilion);
+  padding: 16px 20px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tracing-full-zh {
+  font-family: var(--font-chinese);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+  line-height: 1.7;
+}
+
+.tracing-full-py {
+  font-family: var(--font-pinyin);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--vermilion);
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+}
+
+.tracing-full-hv {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--amber-gold);
+  line-height: 1.4;
+}
+
+.tracing-full-vi {
+  font-size: 0.9rem;
+  color: var(--ink-secondary);
+  font-style: italic;
+  line-height: 1.5;
+  border-top: 1px dashed var(--border-paper);
+  padding-top: 6px;
+  margin-top: 2px;
+}
+
+/* Định dạng Pinyin và Hán-Việt trên từng ô Mễ */
+.trace-py {
+  font-family: var(--font-pinyin);
+  font-size: 0.82rem;
+  color: var(--vermilion);
+  font-weight: 600;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.trace-hv {
+  font-size: 0.7rem;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+/* Theme Switcher Header Wrap */
+.theme-selector-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sm-select {
+  padding: 4px 8px;
+  font-size: 0.85rem;
+}
+
+/* KHUNG GIÁO TRÌNH 98 BÀI HỌC BLCU */
+.curriculum-card {
+  margin-bottom: 24px;
+}
+
+.curriculum-selectors {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.curriculum-lesson-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--paper-card-sub);
+  border-left: 3px solid var(--vermilion);
+  padding: 10px 16px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.lesson-title {
+  font-family: var(--font-chinese);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+}
+
+.lesson-count-badge {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--vermilion);
+}
+
+.curriculum-words-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  max-height: 520px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.curr-word-card {
+  background: var(--paper-card);
+  border: 1px solid var(--border-paper);
+  border-radius: 6px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.curr-word-card:hover {
+  border-color: var(--vermilion);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.cw-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cw-zh {
+  font-family: var(--font-chinese);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+}
+
+.cw-pos {
+  font-size: 0.75rem;
+  background: var(--paper-card-sub);
+  color: var(--ink-secondary);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.cw-py {
+  font-family: var(--font-pinyin);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--vermilion);
+}
+
+.cw-hv {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--amber-gold);
+}
+
+.cw-vi {
+  font-size: 0.85rem;
+  color: var(--ink-secondary);
+  line-height: 1.4;
+  margin-top: 2px;
+  border-top: 1px dashed var(--border-paper);
+  padding-top: 4px;
+}
+
+/* DESIGN AUDIT ENHANCEMENTS: Đảm bảo tương phản WCAG AA/AAA cho các nút nhấn Dark Mode */
+[data-theme="dark"] .seal-mark,
+[data-theme="dark"] .lvl-btn.active,
+[data-theme="dark"] .paper-btn.primary-btn {
+  background-color: #b22222;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .paper-btn.primary-btn:hover {
+  background-color: #961c1c;
+}
+
+
+/* ==========================================================================
+   VI. TAB TRA CỨU TỪ ĐIỂN HSK 3.0 & TRUNG - VIỆT (字典)
+   ========================================================================== */
+.dict-header-banner {
+  background: var(--paper-card);
+  border: 1px solid var(--border-paper);
+  border-radius: 8px;
+  padding: 22px 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-book);
+}
+
+.dict-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.dict-title-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.dict-seal {
+  background: var(--vermilion);
+  color: #ffffff;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-family: var(--font-chinese);
+  font-weight: 700;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.35);
+  flex-shrink: 0;
+}
+
+.dict-main-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+  margin: 0 0 4px 0;
+}
+
+.dict-subtitle {
+  font-size: 0.88rem;
+  color: var(--ink-secondary);
+  margin: 0;
+}
+
+.dict-search-bar-wrap {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.dict-search-input-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: var(--paper-card-sub);
+  border: 1.5px solid var(--border-paper);
+  border-radius: 6px;
+  padding: 0 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.dict-search-input-box:focus-within {
+  border-color: var(--vermilion);
+  box-shadow: 0 0 0 3px var(--vermilion-soft);
+}
+
+.dict-search-icon {
+  font-size: 1.1rem;
+  color: var(--ink-muted);
+  margin-right: 8px;
+}
+
+.dict-search-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 12px 0;
+  font-size: 1.05rem;
+  color: var(--ink-primary);
+  outline: none;
+  font-family: inherit;
+}
+
+.dict-clear-btn {
+  background: transparent;
+  border: none;
+  color: var(--ink-muted);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: color 0.2s;
+}
+
+.dict-clear-btn:hover {
+  color: var(--vermilion);
+}
+
+.dict-action-btn {
+  padding: 0 24px;
+  font-size: 0.95rem;
+}
+
+.dict-filter-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.dict-filter-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-secondary);
+}
+
+.dict-level-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.dict-lvl-chip {
+  background: var(--paper-card-sub);
+  border: 1px solid var(--border-paper);
+  color: var(--ink-secondary);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.dict-lvl-chip:hover {
+  border-color: var(--vermilion);
+  color: var(--vermilion);
+}
+
+.dict-lvl-chip.active {
+  background: var(--vermilion);
+  color: #ffffff;
+  border-color: var(--vermilion);
+}
+
+.dict-stats-bar {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  font-style: italic;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dict-results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.dict-card {
+  background: var(--paper-card);
+  border: 1px solid var(--border-paper);
+  border-radius: 8px;
+  padding: 16px 18px;
+  box-shadow: var(--shadow-book);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+}
+
+.dict-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--vermilion);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.dict-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px dashed var(--border-paper);
+  padding-bottom: 10px;
+}
+
+.dict-zh-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.dict-zh {
+  font-family: var(--font-chinese);
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+  line-height: 1.1;
+}
+
+.dict-trad {
+  font-family: var(--font-chinese);
+  font-size: 0.95rem;
+  color: var(--ink-muted);
+}
+
+.dict-badge {
+  background: var(--vermilion-soft);
+  color: var(--vermilion);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--vermilion);
+  flex-shrink: 0;
+}
+
+.dict-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dict-py {
+  font-family: var(--font-pinyin);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--vermilion);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dict-audio-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: transform 0.15s;
+}
+
+.dict-audio-btn:hover {
+  transform: scale(1.2);
+}
+
+.dict-hv {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--amber-gold);
+  text-transform: uppercase;
+}
+
+.dict-pos {
+  font-size: 0.78rem;
+  background: var(--paper-card-sub);
+  color: var(--ink-secondary);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.dict-rad {
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+}
+
+.dict-vi {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--ink-primary);
+  background: var(--paper-card-sub);
+  padding: 10px 14px;
+  border-radius: 6px;
+  border-left: 3px solid var(--vermilion);
+  word-break: break-word;
+}
+
+.dict-action-row {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 6px;
+}
+
+.dict-mini-btn {
+  background: var(--paper-card-sub);
+  border: 1px solid var(--border-paper);
+  color: var(--ink-secondary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dict-mini-btn:hover {
+  color: var(--vermilion);
+  border-color: var(--vermilion);
+  background: var(--paper-card);
+}
+
+.dict-pagination-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0 40px;
+}
+
+.dict-page-btn {
+  background: var(--paper-card);
+  border: 1px solid var(--border-paper);
+  color: var(--ink-primary);
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.dict-page-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.dict-page-btn:not(:disabled):hover {
+  border-color: var(--vermilion);
+  color: var(--vermilion);
+}
+
+.dict-page-info {
+  font-size: 0.9rem;
+  color: var(--ink-secondary);
+  font-weight: 600;
+}
+
+
+/* ==========================================================================
+   NÂNG CẤP TAB 4: GIÁO TRÌNH HÁN NGỮ TOÀN DIỆN HSK 1 - HSK 9
+   ========================================================================== */
+.curr-subnav-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--border-paper);
+  padding-bottom: 8px;
+  overflow-x: auto;
+}
+
+.curr-subtab-btn {
+  background: var(--paper-card-sub);
+  border: 1px solid var(--border-paper);
+  color: var(--ink-secondary);
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.curr-subtab-btn:hover {
+  color: var(--vermilion);
+  border-color: var(--vermilion);
+}
+
+.curr-subtab-btn.active {
+  background: var(--vermilion);
+  color: #ffffff;
+  border-color: var(--vermilion);
+}
+
+.curr-content-pane {
+  display: none;
+}
+
+.curr-content-pane.active {
+  display: block;
+}
+
+/* Bài đọc & Hội thoại */
+.curr-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.curr-text-card {
+  background: var(--paper-card);
+  border: 1px solid var(--border-paper);
+  border-radius: 8px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow-book);
+}
+
+.curr-text-header {
+  margin-bottom: 14px;
+  border-bottom: 1px dashed var(--border-paper);
+  padding-bottom: 10px;
+}
+
+.curr-text-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+  margin: 0 0 4px 0;
+}
+
+.curr-text-scene {
+  font-size: 0.85rem;
+  color: var(--ink-secondary);
+  font-style: italic;
+  margin: 0;
+}
+
+.curr-dialogue-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dialogue-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: var(--paper-card-sub);
+  padding: 10px 14px;
+  border-radius: 6px;
+  border-left: 3px solid var(--border-paper);
+}
+
+.dialogue-item:hover {
+  border-left-color: var(--vermilion);
+}
+
+.speaker-badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--vermilion);
+  background: var(--vermilion-soft);
+  padding: 2px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.line-content-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.line-zh-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.line-zh {
+  font-family: var(--font-chinese);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+  line-height: 1.3;
+}
+
+.line-audio-btn {
+  background: transparent;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+
+.line-audio-btn:hover {
+  opacity: 1;
+}
+
+.line-py {
+  font-family: var(--font-pinyin);
+  font-size: 0.88rem;
+  color: var(--vermilion);
+  font-weight: 500;
+}
+
+.line-en {
+  font-size: 0.85rem;
+  color: var(--ink-secondary);
+}
+
+/* Ngữ pháp bài học */
+.curr-grammar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.curr-grammar-card {
+  background: var(--paper-card);
+  border: 1px solid var(--border-paper);
+  border-left: 4px solid var(--amber-gold);
+  border-radius: 8px;
+  padding: 16px 20px;
+  box-shadow: var(--shadow-book);
+}
+
+.curr-grammar-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+  margin: 0 0 8px 0;
+}
+
+.curr-grammar-pattern {
+  background: var(--paper-card-sub);
+  border: 1px dashed var(--border-paper);
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-family: var(--font-chinese);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--vermilion);
+  margin-bottom: 10px;
+}
+
+.curr-grammar-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--ink-primary);
+  margin-bottom: 12px;
+}
+
+.curr-grammar-examples-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px dashed var(--border-paper);
+  padding-top: 10px;
+}
+
+.grammar-ex-item {
+  background: var(--paper-card-sub);
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.grammar-ex-zh {
+  font-family: var(--font-chinese);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+}
+
+.grammar-ex-py {
+  font-family: var(--font-pinyin);
+  font-size: 0.85rem;
+  color: var(--vermilion);
+}
+
+.grammar-ex-en {
+  font-size: 0.85rem;
+  color: var(--ink-secondary);
+}
+
+/* Đề cương 593 điểm ngữ pháp HSK 3.0 */
+.official-grammar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 14px;
+}
+
+.off-grammar-card {
+  background: var(--paper-card);
+  border: 1px solid var(--border-paper);
+  border-radius: 6px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: var(--shadow-book);
+}
+
+.off-grammar-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.off-grammar-content {
+  font-family: var(--font-chinese);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--vermilion);
+}
+
+.off-grammar-tags {
+  font-size: 0.75rem;
+  background: var(--paper-card-sub);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--ink-secondary);
+  font-weight: 600;
+}
+
+.off-grammar-cases {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--ink-primary);
+  background: var(--paper-card-sub);
+  padding: 8px 10px;
+  border-radius: 4px;
+}
+
+
+/* ==========================================================================
+   THẺ TỪ VỰNG TRỰC QUAN (DYNAMIC VISUAL VOCABULARY FLASHCARDS)
+   ========================================================================== */
+.level-selector-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.vocab-visual-card {
+  background: var(--paper-card);
+  border: 1px solid var(--border-paper);
+  border-radius: 8px;
+  padding: 14px 16px;
+  box-shadow: var(--shadow-book);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.vocab-visual-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--vermilion);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.vcard-svg-hero {
+  width: 100%;
+  height: 105px;
+  background: var(--paper-card-sub);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--canvas-line);
+  overflow: hidden;
+}
+
+.vcard-svg-hero svg {
+  max-width: 90%;
+  max-height: 85px;
+}
+
+.vcard-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.vcard-zh {
+  font-family: var(--font-chinese);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+  line-height: 1.2;
+}
+
+.vcard-pos-badge {
+  font-size: 0.75rem;
+  background: var(--vermilion-soft);
+  color: var(--vermilion);
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.vcard-audio-btn {
+  background: transparent;
+  border: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: transform 0.15s;
+}
+
+.vcard-audio-btn:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.vcard-sub-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.vcard-py {
+  font-family: var(--font-pinyin);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--vermilion);
+}
+
+.vcard-hv {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--amber-gold);
+  text-transform: uppercase;
+}
+
+.vcard-vi {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--ink-primary);
+  background: var(--paper-card-sub);
+  padding: 8px 10px;
+  border-radius: 5px;
+  border-left: 3px solid var(--vermilion);
+  word-break: break-word;
+}
+
+.vcard-example {
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--ink-secondary);
+  border-top: 1px dashed var(--border-paper);
+  padding-top: 6px;
+  margin-top: 2px;
+}
+
+.vcard-btn-row {
+  display: flex;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 4px;
+}
+
+.vcard-mini-btn {
+  background: var(--paper-card-sub);
+  border: 1px solid var(--border-paper);
+  color: var(--ink-secondary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.vcard-mini-btn:hover {
+  color: var(--vermilion);
+  border-color: var(--vermilion);
+  background: var(--paper-card);
+}
+
+.lang-selector-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Hình minh họa & Dữ liệu chiết tự từ điển (Dictionary Visual & Etymology) */
+.dict-card-img {
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.dict-lazidi-box {
+  background: var(--paper-card-sub);
+  border: 1px solid var(--border-paper);
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-top: 6px;
+  font-size: 0.83rem;
+  line-height: 1.45;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dict-lazidi-item {
+  color: var(--ink-secondary);
+}
+
+.dict-lazidi-item strong {
+  color: var(--vermilion);
+}
+
+/* Bộ lọc Chủ Đề Từ Điển (Topic Filter Chips) */
+.dict-topic-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.dict-topic-chip {
+  background: var(--paper-card-sub);
+  border: 1px solid var(--border-paper);
+  color: var(--ink-secondary);
+  padding: 4px 11px;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dict-topic-chip:hover {
+  border-color: #2e7d32;
+  color: #2e7d32;
+}
+
+.dict-topic-chip.active {
+  background: #2e7d32;
+  color: #ffffff;
+  border-color: #2e7d32;
+  box-shadow: 0 2px 6px rgba(46, 125, 50, 0.25);
+}
+
+/* Khung hiển thị hình ảnh minh họa cao cấp (Art Illustration Viewport) */
+.dict-card-img {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.dict-art-viewport {
+  width: 100%;
+  height: 140px;
+  border-radius: 8px;
+  background: var(--paper-card-sub);
+  border: 1px solid var(--border-paper);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.dict-art-img {
+  max-width: 90%;
+  max-height: 125px;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.08));
+}
+
+.dict-art-viewport:hover .dict-art-img {
+  transform: scale(1.05);
+}
+
+.dict-art-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  white-space: nowrap;
+}
+
+.dict-art-watermark {
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  font-family: var(--font-chinese);
+  font-size: 4rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+}
+
+.dict-art-svg {
+  max-width: 85%;
+  max-height: 110px;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.dict-art-viewport:hover .dict-art-svg {
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   TOOLBAR BỘ LỌC TỪ ĐIỂN DẠNG DROPDOWN TINH GỌN (COMPACT FILTER TOOLBAR)
+   ========================================================================== */
+.dict-filter-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-top: 14px;
+  padding: 10px 16px;
+  background: var(--paper-card-sub);
+  border-radius: 8px;
+  border: 1px solid var(--paper-border);
+}
+.dict-select-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dict-select-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--paper-text-muted);
+  white-space: nowrap;
+}
+.dict-dropdown-select {
+  min-width: 175px;
+  font-size: 0.88rem;
+  padding: 7px 12px;
+  border-radius: 6px;
+  background: var(--paper-card);
+  color: var(--paper-text);
+  border: 1px solid var(--paper-border);
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.dict-dropdown-select:hover, .dict-dropdown-select:focus {
+  border-color: var(--paper-accent);
+}
+.dict-stats-inline {
+  margin-left: auto;
+  font-size: 0.88rem;
+  color: var(--paper-text-muted);
+}
+@media (max-width: 768px) {
+  .dict-filter-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .dict-select-group {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .dict-dropdown-select {
+    flex: 1;
+  }
+  .dict-stats-inline {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/* ==========================================================================
+   PANEL TỰ TẠO ĐOẠN VĂN MẪU THEO TỪ VỰNG TỰ CHỌN (CUSTOM ESSAY GENERATOR)
+   ========================================================================== */
+.tracing-custom-panel {
+  margin: 12px 0 16px 0;
+  padding: 14px 18px;
+  background: var(--paper-card-sub);
+  border: 1px solid var(--paper-accent);
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  animation: fadeIn 0.2s ease-in-out;
+}
+.custom-panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: var(--paper-accent);
+}
+.custom-input-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.custom-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--paper-text);
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .custom-input-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* ==========================================================================
+   NHẤN MẠNH TỪ MỚI & NGỮ PHÁP TRONG BÀI ĐỌC GIÁO TRÌNH
+   ========================================================================== */
+.kw-new-word {
+  color: #c2410c !important; /* Cam san hô nổi bật */
+  font-weight: 700 !important;
+  border-bottom: 2.5px solid #f97316;
+  padding: 0 2px;
+  border-radius: 3px;
+  background: rgba(249, 115, 22, 0.08);
+  cursor: help;
+  transition: all 0.2s ease;
+}
+.kw-new-word:hover {
+  background: rgba(249, 115, 22, 0.18);
+  color: #ea580c !important;
+}
+
+.kw-grammar {
+  color: #6d28d9 !important; /* Tím hoàng gia nổi bật */
+  font-weight: 700 !important;
+  border-bottom: 2.5px dashed #8b5cf6;
+  padding: 0 2px;
+  border-radius: 3px;
+  background: rgba(139, 92, 246, 0.08);
+  cursor: help;
+  transition: all 0.2s ease;
+}
+.kw-grammar:hover {
+  background: rgba(139, 92, 246, 0.18);
+  color: #5b21b6 !important;
+}
+
+[data-theme="dark"] .kw-new-word {
+  color: #fb923c !important;
+  border-bottom-color: #f97316;
+  background: rgba(249, 115, 22, 0.15);
+}
+[data-theme="dark"] .kw-grammar {
+  color: #c084fc !important;
+  border-bottom-color: #a855f7;
+  background: rgba(139, 92, 246, 0.15);
+}
+
+.line-en {
+  font-size: 0.85rem;
+  color: var(--ink-secondary);
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
+.line-vi {
+  font-size: 0.88rem;
+  color: var(--ink-primary);
+  font-weight: 500;
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
+.lang-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 3px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.lang-tag.en {
+  background: rgba(59, 130, 246, 0.12);
+  color: #2563eb;
+}
+.lang-tag.vi {
+  background: rgba(16, 185, 129, 0.12);
+  color: #059669;
+}
+
+/* ==========================================================================
+   THANH TRA CỨU CÁCH VIẾT CHỮ HÁN TỰ DO (TAB 1)
+   ========================================================================== */
+.char-lookup-bar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--border-paper);
+}
+.char-lookup-bar input {
+  flex: 1;
+  font-size: 0.88rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border-paper);
+  background: var(--paper-card);
+  color: var(--ink-primary);
+  outline: none;
+}
+.char-lookup-bar input:focus {
+  border-color: var(--vermilion);
+}
+
+/* ==========================================================================
+   TOAST THÔNG BÁO TỰ ĐỘNG CẬP NHẬT (AUTO UPDATE NOTIFICATION)
+   ========================================================================== */
+.app-update-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 99999;
+  background: var(--paper-card);
+  border: 2px solid var(--paper-accent);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+  padding: 14px 18px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 380px;
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.update-toast-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.update-toast-icon {
+  font-size: 1.6rem;
+}
+.update-toast-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--paper-accent);
+}
+.update-toast-msg {
+  font-size: 0.85rem;
+  color: var(--paper-text-muted);
+  line-height: 1.35;
+  margin-top: 2px;
+}
+.update-toast-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

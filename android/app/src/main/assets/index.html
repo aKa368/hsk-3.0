@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="paper">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>HSK 3.0 Thư Phòng — Luyện Viết & Giáo Trình Song Ngữ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans:wght@400;500;600&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#f8f4eb">
+</head>
+<body>
+  <div id="book-container">
+    <!-- Header bìa sách phong cách thư phòng -->
+    <header class="book-header">
+      <div class="header-inner">
+        <div class="book-title-group">
+          <span class="seal-mark">漢語</span>
+          <div class="title-text">
+            <h1>HSK 3.0 書寫與語法</h1>
+            <span class="sub-title">Sổ Tay Học Tập: Tập Tô · Viết Bút · Giáo Trình Chuẩn · Song Ngữ</span>
+          </div>
+        </div>
+
+        <div class="book-controls">
+          <!-- Bộ chọn giao diện (Theme Switcher) -->
+          <div class="theme-selector-wrap">
+            <span class="control-label">Giao diện:</span>
+            <select id="theme-select" class="paper-select sm-select">
+              <option value="paper">📜 Giấy Ngà</option>
+              <option value="dark">🌙 Đọc ban đêm</option>
+              <option value="bamboo">🎋 Trúc Diệp</option>
+              <option value="notion">✨ Tối Giản</option>
+            </select>
+          </div>
+
+          <div class="level-selector-wrap">
+            <span class="control-label" id="label-level">Cấp độ:</span>
+            <select id="level-select" class="paper-select sm-select">
+              <option value="HSK1">HSK 1</option>
+              <option value="HSK2">HSK 2</option>
+              <option value="HSK3">HSK 3</option>
+              <option value="HSK4">HSK 4</option>
+              <option value="HSK5" selected>HSK 5</option>
+              <option value="HSK6">HSK 6</option>
+              <option value="HSK7-9">HSK 7–9</option>
+            </select>
+          </div>
+
+          <!-- Bộ chọn ngôn ngữ Quốc tế (i18n) -->
+          <div class="lang-selector-wrap">
+            <span class="control-label" id="label-lang">Ngôn ngữ:</span>
+            <select id="lang-select" class="paper-select sm-select">
+              <option value="vi" selected>🇻🇳 Tiếng Việt</option>
+              <option value="en">🇬🇧 English</option>
+            </select>
+          </div>
+          <div class="mode-toggle">
+            <button id="mode-study" class="mode-btn active">📖 Học tập</button>
+            <button id="mode-quiz" class="mode-btn">✍️ Thử thách</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mục lục 5 Tab điều hướng -->
+    <nav class="book-tabs">
+      <div class="tabs-inner">
+        <button class="tab-btn active" data-tab="tab-writing">
+          <span class="tab-num">一</span>
+          <span class="tab-name">Luyện Nét Chữ (手写汉字)</span>
+        </button>
+        <button class="tab-btn" data-tab="tab-tracing">
+          <span class="tab-num">二</span>
+          <span class="tab-name">Vở Tập Tô Đoạn (描红字帖)</span>
+        </button>
+        <button class="tab-btn" data-tab="tab-essay">
+          <span class="tab-num">三</span>
+          <span class="tab-name">Viết & Phân Tích Đoạn (看词写话)</span>
+        </button>
+        <button class="tab-btn" data-tab="tab-curriculum">
+          <span class="tab-num">四</span>
+          <span class="tab-name">Giáo Trình & Từ Mới (标准教程)</span>
+        </button>
+        <button class="tab-btn" data-tab="tab-exercise">
+          <span class="tab-num">五</span>
+          <span class="tab-name">Ghép Câu & Bệnh Cú (练习)</span>
+        </button>
+        <button class="tab-btn" data-tab="tab-dictionary">
+          <span class="tab-num">六</span>
+          <span class="tab-name">Tra Cứu Từ Điển (字典)</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Nội dung chính -->
+    <main class="book-page">
+
+      <!-- TAB 1: LUYỆN VIẾT BẰNG BÚT (TỪNG CHỮ) -->
+      <section id="tab-writing" class="page-pane active">
+        <div class="paper-card writing-studio-layout">
+          <div class="char-meta-panel">
+            <!-- Ô tìm kiếm & tra cứu cách viết chữ Hán tùy chọn -->
+            <div class="char-lookup-bar">
+              <input type="text" id="custom-char-input" class="paper-input" placeholder="🔍 Nhập chữ Hán cần xem cách viết (VD: 我, 爱, 学, 龙)..." maxlength="10" autocomplete="off" />
+              <button id="btn-custom-char-lookup" class="paper-btn primary-btn sm-btn">Tra nét viết</button>
+            </div>
+
+            <div class="char-index-indicator">
+              <span class="indicator-label">Mục tiêu HSK 3.0:</span>
+              <span id="char-progress" class="indicator-value">1 / 150</span>
+            </div>
+            
+            <div class="char-reading-box">
+              <div class="pinyin-row">
+                <span id="char-pinyin" class="pinyin-large">bā</span>
+                <button id="char-audio-btn" class="paper-btn audio-btn" title="Phát âm chuẩn">🔊 Nghe</button>
+              </div>
+              <div id="char-hanviet" class="hanviet-badge">Hán-Việt: BA</div>
+            </div>
+
+            <!-- Khung từ ghép thông dụng & minh họa trực quan -->
+            <div id="char-visual-anchor" class="char-visual-preview">
+              <div id="char-visual-img" class="char-visual-img"></div>
+              <div id="char-visual-desc" class="char-visual-desc">Đang tải từ ghép HSK...</div>
+            </div>
+
+            <div class="char-meaning-box">
+              <h4 class="section-label">Giải nghĩa từ điển chuẩn:</h4>
+              <p id="char-meaning" class="meaning-text">Đang tải giải nghĩa...</p>
+            </div>
+
+            <div class="nav-controls">
+              <button id="btn-prev-char" class="paper-btn">◀ Chữ trước</button>
+              <button id="btn-next-char" class="paper-btn primary-btn">Chữ tiếp theo ▶</button>
+            </div>
+          </div>
+
+          <div class="canvas-writing-panel">
+            <div class="mige-canvas-frame">
+              <div id="hanzi-target" class="hanzi-mige-box"></div>
+            </div>
+
+            <div class="writing-action-bar">
+              <button id="btn-animate" class="paper-btn">▶ Thị phạm nét</button>
+              <button id="btn-toggle-outline" class="paper-btn">✏️ Bật nét mờ tập tô</button>
+              <button id="btn-quiz" class="paper-btn primary-btn">✍️ Tự viết (Chấm điểm)</button>
+              <button id="btn-reset" class="paper-btn">🔄 Xóa viết lại</button>
+            </div>
+            <p class="writing-tip">💡 Hướng dẫn: Nhấn "Bật nét mờ tập tô" để hiện khung nét chữ chìm bên dưới rồi đồ nét theo, hoặc chọn "Tự viết" để thi thử thứ tự nét.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 2: VỞ TẬP TÔ CÂU & ĐOẠN VĂN -->
+      <section id="tab-tracing" class="page-pane">
+        <div class="paper-card tracing-lab-card">
+          <div class="tracing-toolbar">
+            <div class="toolbar-group">
+              <span class="tool-label">Chọn đoạn tập tô:</span>
+              <select id="tracing-select" class="paper-select" style="max-width: 320px;">
+                <!-- Dynamically loaded essay / sentences -->
+              </select>
+              <button id="btn-tracing-random" class="paper-btn sm-btn" title="Đổi ngẫu nhiên đoạn văn">🎲 Ngẫu nhiên</button>
+              <button id="btn-tracing-custom" class="paper-btn sm-btn primary-btn" title="Tự tạo đoạn văn theo từ vựng tự chọn">✨ Tự tạo đoạn</button>
+              <button id="btn-tracing-audio" class="paper-btn sm-btn">🔊 Nghe đọc</button>
+            </div>
+
+            <div class="toolbar-group brush-controls">
+              <span class="tool-label">Bút vẽ:</span>
+              <button id="brush-black" class="brush-btn active" title="Mực đen"><span class="color-dot black"></span></button>
+              <button id="brush-red" class="brush-btn" title="Mực đỏ son"><span class="color-dot red"></span></button>
+              
+              <span class="tool-label" style="margin-left:8px;">Cỡ nét:</span>
+              <button id="size-sm" class="size-btn">Mảnh</button>
+              <button id="size-md" class="size-btn active">Vừa</button>
+              <button id="size-lg" class="size-btn">Đậm</button>
+              
+              <button id="btn-clear-tracing" class="paper-btn sm-btn" style="margin-left:8px;">🗑️ Xóa nét tô</button>
+            </div>
+          </div>
+
+          <!-- Khung Tự Tạo Đoạn Văn Mẫu Theo Từ Vựng Tự Chọn (Custom Essay Generator) -->
+          <div id="tracing-custom-panel" class="tracing-custom-panel" style="display: none;">
+            <div class="custom-panel-head">
+              <strong>✨ Bộ Sinh Đoạn Văn Mẫu HSK Theo Từ Vựng Người Dùng Tự Chọn</strong>
+              <button id="btn-close-custom-panel" class="paper-btn sm-btn">✕ Đóng</button>
+            </div>
+            <div class="custom-panel-body">
+              <div class="custom-input-row">
+                <label class="custom-label">Cấp độ HSK:</label>
+                <select id="custom-essay-level" class="paper-select sm-select">
+                  <option value="1">HSK 1</option>
+                  <option value="2">HSK 2</option>
+                  <option value="3">HSK 3</option>
+                  <option value="4" selected>HSK 4</option>
+                  <option value="5">HSK 5</option>
+                  <option value="6">HSK 6</option>
+                </select>
+                <label class="custom-label" style="margin-left: 10px;">Nhập 2-5 từ vựng (phân tách bởi dấu phẩy):</label>
+                <input type="text" id="custom-essay-words" class="paper-input" placeholder="VD: 坚持, 健康, 锻炼 hoặc 苹果, 喜欢, 吃..." style="flex: 1; min-width: 220px;" />
+                <button id="btn-submit-generate-essay" class="paper-btn primary-btn sm-btn">🚀 Tạo đoạn & Luyện viết ngay</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Khung hiển thị trọn vẹn 4 tầng đoạn văn tổng thể phía trên -->
+          <div class="tracing-summary-box">
+            <div id="tracing-meaning-text">Đang tải đoạn văn mẫu...</div>
+          </div>
+
+          <!-- Trang giấy kẻ ô Mễ Tự Cách có chữ Hán in mờ & Canvas đè lên -->
+          <div class="tracing-paper-viewport">
+            <div class="tracing-sheet" id="tracing-sheet">
+              <div id="mige-grid-container" class="mige-grid-container"></div>
+              <canvas id="tracing-canvas" class="tracing-canvas-overlay"></canvas>
+            </div>
+          </div>
+          
+          <p class="tracing-instructions">💡 Mẹo tập tô: Đặt ngón tay hoặc bút cảm ứng Stylus lên trang giấy trên, tô đè nét mực theo từng chữ Hán in mờ từ trái sang phải như trong vở tập viết chữ Hán.</p>
+        </div>
+      </section>
+
+      <!-- TAB 3: VIẾT & PHÂN TÍCH ĐOẠN VĂN (WRITING LAB) -->
+      <section id="tab-essay" class="page-pane">
+        <div class="essay-lab-layout">
+          <!-- NỬA TRÊN: Đoạn văn mẫu & Phân tích 4 tầng -->
+          <div class="paper-card sample-essay-card">
+            <div class="card-header-bar">
+              <div class="header-tag">
+                <span class="tag-icon">📑</span>
+                <span class="tag-text">Đoạn Văn Mẫu & Bóc Tách Cấu Trúc Song Ngữ</span>
+              </div>
+              <button id="btn-toggle-struct" class="paper-btn sm-btn">Ẩn/Hiện Phân Tích</button>
+            </div>
+
+            <div class="sample-essay-body">
+              <div class="annotated-box">
+                <div class="layer-zh" id="sample-essay-zh">Đang tải chữ Hán...</div>
+                <div class="layer-py" id="sample-essay-py">Đang tải pinyin...</div>
+                <div class="layer-hv" id="sample-essay-hv">Đang tải Hán-Việt...</div>
+                <div class="layer-vi" id="sample-essay-vi">Đang tải dịch nghĩa...</div>
+              </div>
+            </div>
+
+            <div id="structure-analysis-box" class="structure-breakdown-grid"></div>
+          </div>
+
+          <!-- NỬA DƯỚI: Khung luyện viết học viên -->
+          <div class="paper-card active-writing-card">
+            <div class="card-header-bar">
+              <div class="header-tag">
+                <span class="tag-icon">✒️</span>
+                <span class="tag-text">Khu Vực Luyện Viết Của Bạn</span>
+              </div>
+              <div class="essay-word-meter">
+                <span id="char-counter" class="counter-text">0 / 65 chữ</span>
+              </div>
+            </div>
+
+            <div class="prompt-meta-box">
+              <p id="essay-guideline" class="prompt-desc">Đang tải đề bài...</p>
+              
+              <!-- Danh mục từ mới dạng Flashcard trực quan -->
+              <div class="required-words-wrap">
+                <span class="req-title">Từ mới bắt buộc lồng ghép:</span>
+                <div id="essay-keywords" class="visual-cards-grid"></div>
+              </div>
+            </div>
+
+            <div class="textarea-wrapper">
+              <textarea id="essay-input" class="paper-textarea" rows="6" placeholder="Gõ hoặc viết đoạn văn tiếng Trung của bạn tại đây..."></textarea>
+            </div>
+
+            <div id="checklist-section" class="rubric-checklist-box"></div>
+
+            <div class="essay-bottom-bar">
+              <button id="btn-check-essay" class="paper-btn primary-btn">🔍 Đánh giá bài viết</button>
+              <button id="btn-copy-essay" class="paper-btn">📋 Sao chép</button>
+              <button id="btn-reset-essay" class="paper-btn">Xóa làm lại</button>
+            </div>
+
+            <div id="essay-feedback" class="feedback-paper-card"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 4: GIÁO TRÌNH CHUẨN 98 BÀI & NGỮ PHÁP (MỚI BỔ SUNG) -->
+      <section id="tab-curriculum" class="page-pane">
+        <!-- 1. Bộ Giáo Trình Chuẩn HSK 1 đến HSK 9 (160 Bài Học & 593 Điểm Ngữ Pháp) -->
+        <div class="paper-card curriculum-card">
+          <div class="card-header-bar">
+            <div class="header-tag">
+              <span class="tag-icon">📚</span>
+              <span class="tag-text">Bộ Giáo Trình Hán Ngữ Chuẩn HSK 1 - HSK 9 (160 Bài Học Toàn Diện)</span>
+            </div>
+            <div class="curriculum-selectors">
+              <select id="curriculum-level-select" class="paper-select sm-select">
+                <option value="HSK 1">HSK 1: Giáo Trình Chuẩn HSK 3.0 (15 bài)</option>
+                <option value="HSK 2">HSK 2: Giáo Trình Chuẩn HSK 3.0 (15 bài)</option>
+                <option value="HSK 3">HSK 3: Giáo Trình Chuẩn HSK 3.0 (18 bài)</option>
+                <option value="HSK 4">HSK 4: Giáo Trình Tiêu Chuẩn HSK 4 (20 bài)</option>
+                <option value="HSK 5" selected>HSK 5: Giáo Trình Tiêu Chuẩn HSK 5 (36 bài)</option>
+                <option value="HSK 6">HSK 6: Giáo Trình Tiêu Chuẩn HSK 6 (40 bài)</option>
+                <option value="HSK 7-9">HSK 7-9: Giáo Trình Chuyên Sâu (16 bài - Thương mại & Học thuật)</option>
+              </select>
+              <select id="curriculum-lesson-select" class="paper-select sm-select">
+                <!-- Dynamically populated lessons -->
+              </select>
+            </div>
+          </div>
+
+          <div class="curriculum-lesson-header">
+            <h4 id="curr-lesson-title" class="lesson-title">Đang tải bài học...</h4>
+            <span id="curr-lesson-count" class="lesson-count-badge"></span>
+          </div>
+
+          <!-- Dải Tab Con Phân Mục Bài Học -->
+          <div class="curr-subnav-bar">
+            <button class="curr-subtab-btn active" data-subtab="subtab-texts">📜 Bài Đọc & Hội Thoại (课文)</button>
+            <button class="curr-subtab-btn" data-subtab="subtab-grammar">💡 Ngữ Pháp Bài Học (语法)</button>
+            <button class="curr-subtab-btn" data-subtab="subtab-vocab">📝 Từ Mới Bài Học (生词)</button>
+            <button class="curr-subtab-btn" data-subtab="subtab-official-grammar">📊 Đề Cương HSK 3.0 (593 điểm)</button>
+          </div>
+
+          <!-- 1. Phân mục Bài Đọc & Hội thoại -->
+          <div id="subtab-texts" class="curr-content-pane active">
+            <div id="curr-texts-container" class="curr-text-container"></div>
+          </div>
+
+          <!-- 2. Phân mục Ngữ pháp bài học -->
+          <div id="subtab-grammar" class="curr-content-pane">
+            <div id="curr-grammar-container" class="curr-grammar-container"></div>
+          </div>
+
+          <!-- 3. Phân mục Từ mới -->
+          <div id="subtab-vocab" class="curr-content-pane">
+            <div id="curr-words-container" class="curriculum-words-grid"></div>
+          </div>
+
+          <!-- 4. Phân mục Đề cương Ngữ pháp HSK 3.0 -->
+          <div id="subtab-official-grammar" class="curr-content-pane">
+            <div style="margin-bottom: 14px; font-size: 0.9rem; color: var(--ink-secondary);">
+              Đề cương ngữ pháp chính thức từ Chinesetest (Bộ GD Trung Quốc) cho cấp độ này:
+            </div>
+            <div id="curr-official-grammar-container" class="official-grammar-grid"></div>
+          </div>
+        </div>
+
+
+
+        <!-- 3. Thư Viện 212 Điểm Ngữ Pháp -->
+        <div class="paper-card grammar-library-card">
+          <div class="card-header-bar">
+            <h3 class="gallery-title">📐 Thư Viện 212 Điểm Ngữ Pháp HSK 4–6</h3>
+          </div>
+          <div class="grammar-search-bar">
+            <input type="text" id="grammar-search-input" class="paper-search-input" placeholder="Tìm kiếm điểm ngữ pháp (ví dụ: 把, 被, 比, liên từ, bổ ngữ...)">
+            <span id="grammar-total-count" class="badge-total">212 điểm</span>
+          </div>
+          <div id="grammar-items-list" class="grammar-cards-scroll"></div>
+        </div>
+      </section>
+
+      <!-- TAB 5: GHÉP CÂU & SỬA BỆNH CÚ -->
+      <section id="tab-exercise" class="page-pane">
+        <div class="exercise-split-layout">
+          <!-- Phần A: Sắp xếp câu -->
+          <div class="paper-card exercise-box">
+            <div class="card-header-bar">
+              <span class="exercise-type-tag">一 · Sắp Xếp Câu (连词成句)</span>
+              <span id="order-progress-tag" class="exercise-counter">Câu 1/12</span>
+            </div>
+
+            <p class="exercise-inst">Chạm vào các khối từ bên dưới theo đúng trật tự ngữ pháp để ghép thành câu:</p>
+            <p id="order-meaning-hint" class="meaning-hint-text">Dịch nghĩa...</p>
+
+            <div id="order-drop-zone" class="paper-drop-tray">
+              <span class="tray-empty-hint">Chạm vào các khối từ bên dưới để ghép câu</span>
+            </div>
+
+            <div id="order-pool-zone" class="paper-token-pool"></div>
+
+            <div class="exercise-btn-row">
+              <button id="btn-check-order" class="paper-btn primary-btn">Kiểm tra kết quả</button>
+              <button id="btn-reset-order" class="paper-btn">Xếp lại</button>
+              <button id="btn-next-order" class="paper-btn">Câu tiếp theo ❯</button>
+            </div>
+
+            <div id="order-feedback" class="feedback-paper-card"></div>
+          </div>
+
+          <!-- Phần B: Sửa bệnh cú -->
+          <div class="paper-card exercise-box">
+            <div class="card-header-bar">
+              <span class="exercise-type-tag">二 · Sửa Câu Sai (病句修改)</span>
+              <span id="bingju-type-badge" class="badge-small">Phân tích lỗi sai</span>
+            </div>
+
+            <p class="exercise-inst">Chạm vào phân đoạn [A], [B], [C], [D] có lỗi sai cú pháp:</p>
+
+            <div id="bingju-segments-zone" class="bingju-choice-list"></div>
+
+            <div class="exercise-btn-row">
+              <button id="btn-next-bingju" class="paper-btn">Câu bệnh cú tiếp ❯</button>
+            </div>
+
+            <div id="bingju-feedback" class="feedback-paper-card"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. TAB TRA CỨU TỪ ĐIỂN HSK 3.0 & TRUNG - VIỆT -->
+      <section id="tab-dictionary" class="page-pane">
+        <div class="dict-header-banner paper-card">
+          <div class="dict-title-row">
+            <div class="dict-title-group">
+              <span class="dict-seal">典</span>
+              <div>
+                <h2 class="dict-main-title">Tra Cứu Từ Điển HSK 3.0 & Trung - Việt (字典)</h2>
+                <p class="dict-subtitle">11.470+ từ vựng chuẩn HSK 3.0 (Cấp 1 đến 7-9) · 122.000+ từ điển Trung - Việt hiện đại CC-CEDICT · Âm Hán-Việt & Phát âm</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="dict-search-bar-wrap">
+            <div class="dict-search-input-box">
+              <span class="dict-search-icon">🔍</span>
+              <input type="text" id="dict-search-input" class="dict-search-input" placeholder="Nhập Chữ Hán, Pinyin, Hán-Việt hoặc Tiếng Việt (VD: 坚持, jianchi, kiên trì, bác sĩ, 医生, 学习)..." autocomplete="off">
+              <button id="dict-clear-btn" class="dict-clear-btn" title="Xóa tìm kiếm">✕</button>
+            </div>
+            <button id="dict-search-btn" class="paper-btn primary-btn dict-action-btn">Tra cứu</button>
+          </div>
+
+          <div class="dict-filter-toolbar">
+            <div class="dict-select-group">
+              <label for="dict-level-select" class="dict-select-label" id="lbl-dict-level">📊 Phân cấp HSK:</label>
+              <select id="dict-level-select" class="paper-select dict-dropdown-select">
+                <option value="all">Tất cả cấp độ (11.470)</option>
+                <option value="1">HSK 1 (500 từ)</option>
+                <option value="2">HSK 2 (772 từ)</option>
+                <option value="3">HSK 3 (973 từ)</option>
+                <option value="4">HSK 4 (1.000 từ)</option>
+                <option value="5">HSK 5 (1.071 từ)</option>
+                <option value="6">HSK 6 (1.140 từ)</option>
+                <option value="7">HSK 7-9 (5.636 từ)</option>
+                <option value="full">Toàn bộ CC-CEDICT (122k)</option>
+              </select>
+            </div>
+
+            <div class="dict-select-group">
+              <label for="dict-topic-select" class="dict-select-label" id="lbl-dict-topic">🏷️ Chủ đề từ vựng:</label>
+              <select id="dict-topic-select" class="paper-select dict-dropdown-select">
+                <option value="all">🌟 Tất cả chủ đề</option>
+                <option value="fruit">🍎 Hoa quả & Trái cây</option>
+                <option value="vegetable">🥦 Rau củ & Nông sản</option>
+                <option value="clothing">👗 Quần áo & Phụ kiện</option>
+                <option value="appliance">🔌 Đồ điện gia dụng</option>
+                <option value="daily_goods">🧴 Đồ dùng sinh hoạt</option>
+                <option value="food_drink">🍲 Ẩm thực & Món ăn</option>
+                <option value="medical_health">🏥 Y tế & Sức khỏe</option>
+                <option value="travel_transport">🚗 Giao thông & Đi lại</option>
+                <option value="education_study">📚 Trường học & Sách vở</option>
+                <option value="business_economy">💰 Mua sắm & Kinh tế</option>
+                <option value="animal_nature">🐾 Động vật & Tự nhiên</option>
+                <option value="family_love">👨👩👧 Gia đình & Con người</option>
+                <option value="emotion_mind">😊 Cảm xúc & Tâm lý</option>
+              </select>
+            </div>
+
+            <div class="dict-stats-inline">
+              <span id="dict-count-info" class="dict-count-text">Đang tải cơ sở dữ liệu từ điển...</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Danh sách kết quả từ điển -->
+        <div id="dict-results-container" class="dict-results-grid"></div>
+
+        <!-- Phân trang từ điển -->
+        <div id="dict-pagination" class="dict-pagination-bar"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="strokes.js"></script>
+  <script src="data.js"></script>
+  <script src="js/hanzi-writer.min.js"></script>
+  <script src="lazidi_images.js"></script>
+  <script src="visual_entity_library.js"></script>
+  <script src="visual_vocab_data.js"></script>
+  <script src="curriculum_data.js"></script>
+  <script src="lazidi_data.js"></script>
+  <script src="dict_data.js"></script>
+  <script src="practice_essays_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

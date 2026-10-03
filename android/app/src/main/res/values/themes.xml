@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.HSKStudyRoom" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#2e7d32</item>
+        <item name="colorPrimaryDark">#1b5e20</item>
+        <item name="colorAccent">#b93829</item>
+        <item name="android:windowBackground">#fcfbf9</item>
+    </style>
+</resources>

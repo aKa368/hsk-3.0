@@ -1,0 +1,122 @@
+[
+  {
+    "id": "bj-01",
+    "level": 4,
+    "type": "把字句语序错误",
+    "wrong": "我把作业没做完。",
+    "correct": "我没把作业做完。",
+    "explanation": "Phó từ phủ định '没/不' hoặc động từ năng nguyện '想/要/能' phải đứng TRƯỚC chữ '把', không được đặt sau.",
+    "options": [
+      "我",
+      "把作业",
+      "没做完",
+      "。"
+    ],
+    "error_segment_index": 2
+  },
+  {
+    "id": "bj-02",
+    "level": 4,
+    "type": "动量补语位置错误",
+    "wrong": "他看了一次那个电影。",
+    "correct": "他看了那个电影一次。/ 他看了一次那部电影。",
+    "explanation": "Bổ ngữ động lượng '一次' khi tân ngữ là đại từ chỉ định + danh từ thì thường đặt sau tân ngữ hoặc đổi lượng từ.",
+    "options": [
+      "他",
+      "看了",
+      "一次",
+      "那个电影。"
+    ],
+    "error_segment_index": 2
+  },
+  {
+    "id": "bj-03",
+    "level": 4,
+    "type": "比字句否定错误",
+    "wrong": "他比我不高。",
+    "correct": "他不比我高。/ 他没有我高。",
+    "explanation": "Phủ định của câu so sánh '比' không dùng '比不+tính từ' mà phải đưa phó từ '不' lên trước chữ '比' (人不比我高), hoặc dùng câu '没有'.",
+    "options": [
+      "他",
+      "比我",
+      "不高",
+      "。"
+    ],
+    "error_segment_index": 2
+  },
+  {
+    "id": "bj-04",
+    "level": 5,
+    "type": "被字句与结果补语",
+    "wrong": "钱包被偷了走。",
+    "correct": "钱包被偷走了。",
+    "explanation": "Bổ ngữ kết quả/xu hướng gắn liền trực tiếp ngay sau động từ ('偷走'), trợ từ động thái '了' đứng sau cụm động-bổ ('偷走了').",
+    "options": [
+      "钱包",
+      "被",
+      "偷了走",
+      "。"
+    ],
+    "error_segment_index": 2
+  },
+  {
+    "id": "bj-05",
+    "level": 5,
+    "type": "关联词语搭配不当",
+    "wrong": "尽管下大雨，所以他还是按时到了。",
+    "correct": "尽管下大雨，但他还是按时到了。",
+    "explanation": "Cặp liên từ nhượng bộ '尽管' thường đi kèm với '但是/但/还是', không đi với liên từ nguyên nhân kết quả '所以'.",
+    "options": [
+      "尽管下大雨",
+      "，",
+      "所以",
+      "他还是按时到了。"
+    ],
+    "error_segment_index": 2
+  },
+  {
+    "id": "bj-06",
+    "level": 5,
+    "type": "成分残缺（缺主语）",
+    "wrong": "通过这次讨论，使我们认识到了团队的重要性。",
+    "correct": "通过这次讨论，我们认识到了团队的重要性。",
+    "explanation": "Dùng đồng thời '通过……' và '使……' làm câu bị mất chủ ngữ. Cần bỏ '使' để '我们' làm chủ ngữ.",
+    "options": [
+      "通过这次讨论",
+      "，",
+      "使我们",
+      "认识到了团队的重要性。"
+    ],
+    "error_segment_index": 2
+  },
+  {
+    "id": "bj-07",
+    "level": 6,
+    "type": "语意重复赘余",
+    "wrong": "他的病情正在逐渐慢慢好转。",
+    "correct": "他的病情正在逐渐好转。/ 他的病情正在慢慢好转。",
+    "explanation": "'逐渐' (dần dần) và '慢慢' (từ từ) đồng nghĩa, đặt cạnh nhau gây lỗi trùng lặp ngữ nghĩa (语意重复).",
+    "options": [
+      "他的病情",
+      "正在",
+      "逐渐慢慢",
+      "好转。"
+    ],
+    "error_segment_index": 2
+  },
+  {
+    "id": "bj-08",
+    "level": 6,
+    "type": "词义混淆（致使/导致）",
+    "wrong": "这个好消息导致大家非常兴奋。",
+    "correct": "这个好消息使大家非常兴奋。/ 这个好消息让大家非常兴奋。",
+    "explanation": "'导致' (dẫn đến) luôn dùng cho kết quả tiêu cực/xấu, không dùng cho kết quả tích cực như '非常兴奋'.",
+    "options": [
+      "这个好消息",
+      "导致",
+      "大家",
+      "非常兴奋。"
+    ],
+    "error_segment_index": 1
+  }
+]

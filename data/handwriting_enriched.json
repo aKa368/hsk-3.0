@@ -1,0 +1,3158 @@
+{
+  "HSK4": [
+    {
+      "char": "巴",
+      "hanviet": "ba",
+      "pinyin": "Ba1",
+      "meaning": "nước Ba thời nhà Chu (ở phía đông Tứ Xuyên hiện đại); viết tắt của đông Tứ Xuyên hoặc Trùng Khánh; họ [Ba1]; viết tắt của Palestine hoặc người Palestine; viết tắt của Pakistan",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%B7%B4.mp3"
+    },
+    {
+      "char": "保",
+      "hanviet": "bảo",
+      "pinyin": "Bao3",
+      "meaning": "Bulgaria (viết tắt của 保加利亞|保加利亚[Bao3jia1li4ya4])",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BF%9D.mp3"
+    },
+    {
+      "char": "抱",
+      "hanviet": "bão",
+      "pinyin": "bao4",
+      "meaning": "ôm; mang (trong tay); ôm ấp; bao quanh; trân trọng; (khẩu ngữ) (quần áo) vừa vặn",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8A%B1.mp3"
+    },
+    {
+      "char": "背",
+      "hanviet": "bối",
+      "pinyin": "bei1",
+      "meaning": "biến thể của 背[bei1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%83%8C.mp3"
+    },
+    {
+      "char": "标",
+      "hanviet": "",
+      "pinyin": "biao1",
+      "meaning": "đánh dấu; biểu tượng; nhãn; dán nhãn bằng ký hiệu, nhãn, chữ v.v.; mang (tên thương hiệu, số đăng ký v.v.); giải thưởng; phần thưởng; thầu; mục tiêu; chỉ tiêu; (cũ) cành cao nhất của cây; triệu chứng rõ ràng; lượng từ cho đơn vị quân đội",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%A0%87.mp3"
+    },
+    {
+      "char": "并",
+      "hanviet": "",
+      "pinyin": "bing4",
+      "meaning": "và; hơn nữa; cũng; cùng với; (không) hề; đồng thời; kết hợp; gia nhập; sáp nhập",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%B9%B6.mp3"
+    },
+    {
+      "char": "部",
+      "hanviet": "bộ",
+      "pinyin": "bu4",
+      "meaning": "bộ; phòng; ban; phần; khoa; quân đội; cục; lượng từ cho tác phẩm văn học, phim ảnh, máy móc, v.v.",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%83%A8.mp3"
+    },
+    {
+      "char": "餐",
+      "hanviet": "",
+      "pinyin": "can1",
+      "meaning": "bữa ăn; ăn; lượng từ cho bữa ăn",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%A4%90.mp3"
+    },
+    {
+      "char": "产",
+      "hanviet": "",
+      "pinyin": "chan3",
+      "meaning": "sinh đẻ; sinh sản; sản xuất; sản phẩm; tài nguyên; tài sản; bất động sản",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BA%A7.mp3"
+    },
+    {
+      "char": "厂",
+      "hanviet": "",
+      "pinyin": "han3",
+      "meaning": "bộ \"hán\" trong chữ Hán (bộ Khang Hy số 27), xuất hiện trong 原, 历, 压 v.v.",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8E%82.mp3"
+    },
+    {
+      "char": "晨",
+      "hanviet": "thần",
+      "pinyin": "chen2",
+      "meaning": "buổi sáng; bình minh; tảng sáng",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%99%A8.mp3"
+    },
+    {
+      "char": "程",
+      "hanviet": "trình",
+      "pinyin": "Cheng2",
+      "meaning": "họ [Cheng2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%A8%8B.mp3"
+    },
+    {
+      "char": "吹",
+      "hanviet": "xuy",
+      "pinyin": "chui1",
+      "meaning": "thổi; chơi nhạc cụ hơi; thổi tung; phồng lên; khoe khoang; tự phụ; kết thúc thất bại; hỏng việc",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%90%B9.mp3"
+    },
+    {
+      "char": "此",
+      "hanviet": "thử",
+      "pinyin": "ci3",
+      "meaning": "này; những...này",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%AD%A4.mp3"
+    },
+    {
+      "char": "村",
+      "hanviet": "thôn",
+      "pinyin": "cun1",
+      "meaning": "ngôi làng",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%9D%91.mp3"
+    },
+    {
+      "char": "达",
+      "hanviet": "",
+      "pinyin": "Da2",
+      "meaning": "họ [Da2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%BE%BE.mp3"
+    },
+    {
+      "char": "刀",
+      "hanviet": "đao",
+      "pinyin": "Dao1",
+      "meaning": "họ [Dao1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%88%80.mp3"
+    },
+    {
+      "char": "导",
+      "hanviet": "",
+      "pinyin": "dao3",
+      "meaning": "truyền; dẫn; hướng dẫn; chỉ đạo; đạo diễn",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%AF%BC.mp3"
+    },
+    {
+      "char": "倒",
+      "hanviet": "đảo",
+      "pinyin": "dao3",
+      "meaning": "ngã; sụp đổ; nằm ngang; thất bại; phá sản; lật đổ; đổi (tàu hoặc xe buýt); di chuyển xung quanh; buôn bán kiếm lời",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%80%92.mp3"
+    },
+    {
+      "char": "低",
+      "hanviet": "đây",
+      "pinyin": "di1",
+      "meaning": "thấp; bên dưới; cúi (đầu); để rũ xuống; treo xuống; nghiêng",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BD%8E.mp3"
+    },
+    {
+      "char": "掉",
+      "hanviet": "trao",
+      "pinyin": "diao4",
+      "meaning": "rơi; rớt; tụt lại; mất; thất lạc; giảm; rớt (giá); mất (giá trị, cân nặng v.v.); vẫy; đung đưa; quay; đổi; thay; trao đổi; khoe; rụng (tóc); (dùng sau một số động từ để biểu đạt hoàn thành, thực hiện xong, loại bỏ v.v.)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8E%89.mp3"
+    },
+    {
+      "char": "度",
+      "hanviet": "độ",
+      "pinyin": "du4",
+      "meaning": "vượt qua; trải qua (thời gian); đo; lượng giới hạn; mức độ; mức độ cường độ; độ (góc, nhiệt độ, v.v.); kilowatt-giờ; lượng từ cho sự kiện và tình huống",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%BA%A6.mp3"
+    },
+    {
+      "char": "断",
+      "hanviet": "đoạn",
+      "pinyin": "duan4",
+      "meaning": "làm gãy; bẻ gãy; cắt đứt; từ bỏ hoặc kiêng cữ cái gì; phán đoán; (thường dùng ở dạng phủ định) tuyệt đối; chắc chắn; dứt khoát",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%96%AD.mp3"
+    },
+    {
+      "char": "队",
+      "hanviet": "",
+      "pinyin": "dui4",
+      "meaning": "phi đội; đội; nhóm; LT: 個|个[ge4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%98%9F.mp3"
+    },
+    {
+      "char": "烦",
+      "hanviet": "",
+      "pinyin": "fan2",
+      "meaning": "cảm thấy bực bội; làm phiền; quấy rầy; dư thừa và rối rắm; bức bối",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%83%A6.mp3"
+    },
+    {
+      "char": "反",
+      "hanviet": "phản",
+      "pinyin": "fan3",
+      "meaning": "ngược; lộn ngược; lộn trái; đảo ngược; trở lại; phản đối; đối lập; chống; phản-; nổi loạn; sử dụng phép loại suy; thay vì; viết tắt của hệ thống phiên thiết 反切[fan3 qie4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8F%8D.mp3"
+    },
+    {
+      "char": "份",
+      "hanviet": "phần",
+      "pinyin": "fen4",
+      "meaning": "lượng từ cho quà tặng, báo, tạp chí, giấy tờ, báo cáo, hợp đồng, v.v.; biến thể của 分[fen4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BB%BD.mp3"
+    },
+    {
+      "char": "否",
+      "hanviet": "bĩ",
+      "pinyin": "fou3",
+      "meaning": "phủ định; từ chối; không",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%90%A6.mp3"
+    },
+    {
+      "char": "父",
+      "hanviet": "",
+      "pinyin": "fu4",
+      "meaning": "cha",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%88%B6.mp3"
+    },
+    {
+      "char": "改",
+      "hanviet": "",
+      "pinyin": "gai3",
+      "meaning": "thay đổi; sửa đổi; biến đổi; sửa chữa",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%94%B9.mp3"
+    },
+    {
+      "char": "敢",
+      "hanviet": "cám",
+      "pinyin": "gan3",
+      "meaning": "dám; cả gan; (lịch sự) tôi xin mạo muội",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%95%A2.mp3"
+    },
+    {
+      "char": "各",
+      "hanviet": "các",
+      "pinyin": "ge4",
+      "meaning": "mỗi; từng",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%90%84.mp3"
+    },
+    {
+      "char": "够",
+      "hanviet": "",
+      "pinyin": "gou4",
+      "meaning": "đủ (đầy đủ); đủ (quá nhiều); (thông tục) (trước tính từ) thật sự; (thông tục) với tới bằng cách vươn ra",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%A4%9F.mp3"
+    },
+    {
+      "char": "挂",
+      "hanviet": "quẩy",
+      "pinyin": "gua4",
+      "meaning": "treo; móc (từ móc v.v.); gác máy (điện thoại); (đường dây) bị ngắt; lo lắng; quan tâm; (tiếng địa phương) gọi điện thoại; đăng ký (bệnh viện); hẹn (bác sĩ); (tiếng lóng) giết; chết; xong; rớt (kỳ thi); lượng từ cho bộ hoặc cụm vật",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8C%82.mp3"
+    },
+    {
+      "char": "观",
+      "hanviet": "",
+      "pinyin": "Guan4",
+      "meaning": "họ [Guan4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%A7%82.mp3"
+    },
+    {
+      "char": "管",
+      "hanviet": "quản",
+      "pinyin": "guan3",
+      "meaning": "biến thể của 管[guan3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%AE%A1.mp3"
+    },
+    {
+      "char": "广",
+      "hanviet": "",
+      "pinyin": "yan3",
+      "meaning": "bộ \"nhà trên vách núi\" trong chữ Hán (bộ Khang Hy số 53), xuất hiện trong 店, 序, 底, v.v.",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%B9%BF.mp3"
+    },
+    {
+      "char": "喊",
+      "hanviet": "",
+      "pinyin": "han3",
+      "meaning": "la hét; hò hét; gọi to (người)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%96%8A.mp3"
+    },
+    {
+      "char": "忽",
+      "hanviet": "hốt",
+      "pinyin": "Hu1",
+      "meaning": "họ [Hu1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%BF%BD.mp3"
+    },
+    {
+      "char": "虎",
+      "hanviet": "hổ",
+      "pinyin": "hu3",
+      "meaning": "con hổ; LT:隻|只[zhi1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%99%8E.mp3"
+    },
+    {
+      "char": "划",
+      "hanviet": "",
+      "pinyin": "hua2",
+      "meaning": "chèo; lái; có lời; đáng (công sức); đáng làm",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%88%92.mp3"
+    },
+    {
+      "char": "基",
+      "hanviet": "cơ",
+      "pinyin": "ji1",
+      "meaning": "(hình thức kết hợp) cơ sở; nền tảng; (hình thức kết hợp) gốc (hóa học); (hình thức kết hợp) gay (từ mượn từ tiếng Anh sang tiếng Quảng Đông, Jyutping: gei1, sau đó mượn chữ từ Quảng Đông)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%9F%BA.mp3"
+    },
+    {
+      "char": "及",
+      "hanviet": "cập",
+      "pinyin": "ji2",
+      "meaning": "và; để đạt tới; lên đến; kịp lúc cho",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8F%8A.mp3"
+    },
+    {
+      "char": "计",
+      "hanviet": "",
+      "pinyin": "Ji4",
+      "meaning": "họ [Ji4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%AE%A1.mp3"
+    },
+    {
+      "char": "技",
+      "hanviet": "kĩ",
+      "pinyin": "ji4",
+      "meaning": "kỹ năng",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8A%80.mp3"
+    },
+    {
+      "char": "际",
+      "hanviet": "",
+      "pinyin": "ji4",
+      "meaning": "biên giới; rìa; ranh giới; khoảng thời gian; giữa; liên-; gặp gỡ; thời gian; dịp; tình cờ gặp phải (hoàn cảnh)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%99%85.mp3"
+    },
+    {
+      "char": "济",
+      "hanviet": "",
+      "pinyin": "Ji3",
+      "meaning": "dùng trong địa danh liên quan đến sông Tế 濟水|济水[Ji3 Shui3]; họ [Ji3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%B5%8E.mp3"
+    },
+    {
+      "char": "寄",
+      "hanviet": "gửi",
+      "pinyin": "ji4",
+      "meaning": "gửi; gửi thư; giao phó; phụ thuộc; tựa vào; sống (trong nhà); ở nhờ; nuôi dưỡng (con trai,...)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%AF%84.mp3"
+    },
+    {
+      "char": "建",
+      "hanviet": "kiến",
+      "pinyin": "jian4",
+      "meaning": "thiết lập; sáng lập; dựng lên; xây dựng; kiến thiết",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%BB%BA.mp3"
+    },
+    {
+      "char": "江",
+      "hanviet": "giang",
+      "pinyin": "Jiang1",
+      "meaning": "họ [Jiang1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%B1%9F.mp3"
+    },
+    {
+      "char": "将",
+      "hanviet": "",
+      "pinyin": "jiang1",
+      "meaning": "sẽ; dùng; lấy; chiếu tướng; vừa mới đây; (giới thiệu tân ngữ của động từ chính, dùng giống như 把[ba3])",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%B0%86.mp3"
+    },
+    {
+      "char": "金",
+      "hanviet": "kim",
+      "pinyin": "Jin1",
+      "meaning": "họ [Jin1]; họ Kim (Hàn Quốc); nhà Kim của người Nữ Chân (1115-1234)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%87%91.mp3"
+    },
+    {
+      "char": "京",
+      "hanviet": "kinh",
+      "pinyin": "Jing1",
+      "meaning": "họ [Jing1]; dân tộc Jing; viết tắt của Bắc Kinh 北京[Bei3jing1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BA%AC.mp3"
+    },
+    {
+      "char": "究",
+      "hanviet": "cứu",
+      "pinyin": "jiu1",
+      "meaning": "rốt cuộc; điều tra; nghiên cứu cẩn thận; Đài Loan phát âm [jiu4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%A9%B6.mp3"
+    },
+    {
+      "char": "举",
+      "hanviet": "",
+      "pinyin": "ju3",
+      "meaning": "biến thể của 舉|举[ju3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%B8%BE.mp3"
+    },
+    {
+      "char": "科",
+      "hanviet": "khoa",
+      "pinyin": "ke1",
+      "meaning": "ngành học; phòng ban; học phần; lĩnh vực; ngành; hướng dẫn sân khấu; họ (phân loại); quy tắc; pháp luật; phân xử (hình phạt); truy thu (thuế, v.v.); phạt ai đó; LT: 個|个[ge4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%A7%91.mp3"
+    },
+    {
+      "char": "克",
+      "hanviet": "khắc",
+      "pinyin": "Ke4",
+      "meaning": "viết tắt của 克羅地亞|克罗地亚[Ke4 luo2 di4 ya4], Croatia; (Đài Loan) viết tắt của 克羅埃西亞|克罗埃西亚[Ke4 luo2 ai1 xi1 ya4], Croatia",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%85%8B.mp3"
+    },
+    {
+      "char": "况",
+      "hanviet": "huống",
+      "pinyin": "kuang4",
+      "meaning": "hơn nữa; tình hình",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%86%B5.mp3"
+    },
+    {
+      "char": "困",
+      "hanviet": "khốn",
+      "pinyin": "kun4",
+      "meaning": "bẫy; bao vây; bị áp lực; mắc kẹt; cùng quẫn",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%9B%B0.mp3"
+    },
+    {
+      "char": "拉",
+      "hanviet": "lấp",
+      "pinyin": "la1",
+      "meaning": "kéo; chơi (nhạc cụ dùng vĩ kéo); kéo lê; vẽ; trò chuyện; (khẩu ngữ) đi tiêu",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8B%89.mp3"
+    },
+    {
+      "char": "利",
+      "hanviet": "lợi",
+      "pinyin": "Li4",
+      "meaning": "họ [Li4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%88%A9.mp3"
+    },
+    {
+      "char": "例",
+      "hanviet": "lề",
+      "pinyin": "li4",
+      "meaning": "ví dụ; tiền lệ; quy tắc; trường hợp; tình huống",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BE%8B.mp3"
+    },
+    {
+      "char": "俩",
+      "hanviet": "",
+      "pinyin": "lia3",
+      "meaning": "hai (cách nói thông tục của 兩個|两个); cả hai; một vài",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BF%A9.mp3"
+    },
+    {
+      "char": "连",
+      "hanviet": "",
+      "pinyin": "Lian2",
+      "meaning": "họ [Lian2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%BF%9E.mp3"
+    },
+    {
+      "char": "联",
+      "hanviet": "",
+      "pinyin": "lian2",
+      "meaning": "hình thức kết hợp: liên minh với; đoàn kết; kết hợp; gia nhập; hình thức kết hợp: (thơ ca) câu đối",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%81%94.mp3"
+    },
+    {
+      "char": "量",
+      "hanviet": "",
+      "pinyin": "liang2",
+      "meaning": "đo lường",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%87%8F.mp3"
+    },
+    {
+      "char": "另",
+      "hanviet": "lánh",
+      "pinyin": "ling4",
+      "meaning": "khác; nữa; tách biệt; một cách riêng rẽ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8F%A6.mp3"
+    },
+    {
+      "char": "流",
+      "hanviet": "lưu",
+      "pinyin": "liu2",
+      "meaning": "chảy; truyền bá; lưu thông hoặc lan truyền; di chuyển hoặc trôi dạt; sa sút; đày ải hoặc lưu đày; dòng nước hoặc thứ gì đó giống dòng nước; hạng, mức hoặc cấp",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%B5%81.mp3"
+    },
+    {
+      "char": "论",
+      "hanviet": "",
+      "pinyin": "Lun2",
+      "meaning": "viết tắt của 論語|论语[Lun2 yu3], Luận Ngữ (của Khổng Tử)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%AE%BA.mp3"
+    },
+    {
+      "char": "麻",
+      "hanviet": "ma",
+      "pinyin": "ma2",
+      "meaning": "biến thể của 麻[ma2]; cây gai",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%BA%BB.mp3"
+    },
+    {
+      "char": "美",
+      "hanviet": "mỉ",
+      "pinyin": "Mei3",
+      "meaning": "(hình thái kết hợp) Châu Mỹ (viết tắt của 美洲[Mei3 zhou1]); (hình thái kết hợp) Mỹ (viết tắt của 美國|美国[Mei3 guo2])",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%BE%8E.mp3"
+    },
+    {
+      "char": "民",
+      "hanviet": "dân",
+      "pinyin": "Min2",
+      "meaning": "họ [Min2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%B0%91.mp3"
+    },
+    {
+      "char": "内",
+      "hanviet": "nội",
+      "pinyin": "nei4",
+      "meaning": "bên trong; nội bộ; trong; nội địa",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%86%85.mp3"
+    },
+    {
+      "char": "农",
+      "hanviet": "",
+      "pinyin": "Nong2",
+      "meaning": "họ [Nong2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%86%9C.mp3"
+    },
+    {
+      "char": "弄",
+      "hanviet": "lộng",
+      "pinyin": "long4",
+      "meaning": "đường nhỏ; hẻm",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%BC%84.mp3"
+    },
+    {
+      "char": "排",
+      "hanviet": "bài",
+      "pinyin": "pai2",
+      "meaning": "một hàng; một dòng; sắp xếp; theo thứ tự; xếp hàng; loại bỏ; thoát nước; đẩy ra; tiểu đội; bè; lượng từ cho hàng, dòng, v.v.",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8E%92.mp3"
+    },
+    {
+      "char": "牌",
+      "hanviet": "bài",
+      "pinyin": "pai2",
+      "meaning": "quân mạt chược; lá bài; quân cờ; biển hiệu; tấm biển; tấm bảng; huy chương; LT:片[pian4],個|个[ge4],塊|块[kuai4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%89%8C.mp3"
+    },
+    {
+      "char": "篇",
+      "hanviet": "",
+      "pinyin": "pian1",
+      "meaning": "tờ; mảnh viết; tập thẻ tre dùng để ghi chép (xưa); lượng từ cho tác phẩm viết: chương, bài viết",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%AF%87.mp3"
+    },
+    {
+      "char": "品",
+      "hanviet": "phẩm",
+      "pinyin": "pin3",
+      "meaning": "(hình thức kết hợp) hàng hóa; sản phẩm; hàng; (hình thức kết hợp) cấp; hạng; loại; kiểu; dạng; tính cách; phẩm chất; bản chất; tính tình; nếm thứ gì đó; thử; phê bình; bình luận; đánh giá; nhận xét; phím (trên đàn guitar hoặc tỳ bà)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%93%81.mp3"
+    },
+    {
+      "char": "普",
+      "hanviet": "phổ",
+      "pinyin": "pu3",
+      "meaning": "chung; phổ biến; khắp nơi; phổ quát",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%99%AE.mp3"
+    },
+    {
+      "char": "强",
+      "hanviet": "",
+      "pinyin": "Qiang2",
+      "meaning": "họ [Qiang2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%BC%BA.mp3"
+    },
+    {
+      "char": "青",
+      "hanviet": "thanh",
+      "pinyin": "Qing1",
+      "meaning": "viết tắt của 青海[Qing1 hai3], tỉnh Thanh Hải",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%9D%92.mp3"
+    },
+    {
+      "char": "取",
+      "hanviet": "thủ",
+      "pinyin": "qu3",
+      "meaning": "lấy; nhận; chọn; mang về",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8F%96.mp3"
+    },
+    {
+      "char": "确",
+      "hanviet": "",
+      "pinyin": "que4",
+      "meaning": "biến thể của 確|确[que4]; biến thể của 埆[que4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%A1%AE.mp3"
+    },
+    {
+      "char": "任",
+      "hanviet": "nhậm",
+      "pinyin": "Ren2",
+      "meaning": "họ [Ren2]; Huyện Nhậm 任縣|任县[Ren2 Xian4] ở Hà Bắc",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BB%BB.mp3"
+    },
+    {
+      "char": "扔",
+      "hanviet": "nẫy",
+      "pinyin": "reng1",
+      "meaning": "ném; vứt đi",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%89%94.mp3"
+    },
+    {
+      "char": "入",
+      "hanviet": "nhập",
+      "pinyin": "ru4",
+      "meaning": "đi vào; tham gia; trở thành thành viên; xác nhận hoặc đồng ý với; viết tắt của 入聲|入声[ru4 sheng1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%85%A5.mp3"
+    },
+    {
+      "char": "社",
+      "hanviet": "xã",
+      "pinyin": "she4",
+      "meaning": "(dạng kết hợp) xã hội; tổ chức; cơ quan; (cổ) thần đất đai",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%A4%BE.mp3"
+    },
+    {
+      "char": "深",
+      "hanviet": "thâm",
+      "pinyin": "shen1",
+      "meaning": "biến thể cũ của 深[shen1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%B7%B1.mp3"
+    },
+    {
+      "char": "省",
+      "hanviet": "tỉnh",
+      "pinyin": "sheng3",
+      "meaning": "tiết kiệm; kinh tế; tằn tiện; lược bỏ; xoá; bỏ ra; tỉnh; tỉnh lỵ; một bộ (của chính phủ Nhật Bản)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%9C%81.mp3"
+    },
+    {
+      "char": "食",
+      "hanviet": "",
+      "pinyin": "shi2",
+      "meaning": "ăn; thức ăn; thức ăn chăn nuôi; nhật thực, nguyệt thực",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%A3%9F.mp3"
+    },
+    {
+      "char": "使",
+      "hanviet": "sứ",
+      "pinyin": "shi3",
+      "meaning": "khiến; làm cho; cho phép; sử dụng; thuê; phái; dạy ai làm việc gì; đặc phái viên; người đưa tin",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BD%BF.mp3"
+    },
+    {
+      "char": "示",
+      "hanviet": "kì thị",
+      "pinyin": "shi4",
+      "meaning": "cho thấy; bộc lộ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%A4%BA.mp3"
+    },
+    {
+      "char": "式",
+      "hanviet": "thức",
+      "pinyin": "shi4",
+      "meaning": "loại; hình thức; mẫu; phong cách",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%BC%8F.mp3"
+    },
+    {
+      "char": "输",
+      "hanviet": "",
+      "pinyin": "shu1",
+      "meaning": "thua; bị đánh bại; (dạng kết hợp) vận chuyển; (văn học) quyên góp; đóng góp; (thông tục) nhập (mật khẩu)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%BE%93.mp3"
+    },
+    {
+      "char": "熟",
+      "hanviet": "thục",
+      "pinyin": "shu2",
+      "meaning": "chín; trưởng thành; nấu chín; xong; quen thuộc; quen biết; có kinh nghiệm; thành thạo; (về giấc ngủ, v.v.) sâu; sâu sắc; cũng phát âm là [shou2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%86%9F.mp3"
+    },
+    {
+      "char": "术",
+      "hanviet": "",
+      "pinyin": "shu4",
+      "meaning": "phương pháp; kỹ thuật",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%9C%AF.mp3"
+    },
+    {
+      "char": "顺",
+      "hanviet": "",
+      "pinyin": "shun4",
+      "meaning": "tuân theo; theo; sắp xếp; làm cho hợp lý; dọc theo; thuận lợi",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%A1%BA.mp3"
+    },
+    {
+      "char": "随",
+      "hanviet": "",
+      "pinyin": "Sui2",
+      "meaning": "họ [Sui2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%9A%8F.mp3"
+    },
+    {
+      "char": "台",
+      "hanviet": "thai",
+      "pinyin": "Tai2",
+      "meaning": "Đài Loan (viết tắt); họ [Tai2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8F%B0.mp3"
+    },
+    {
+      "char": "态",
+      "hanviet": "",
+      "pinyin": "tai4",
+      "meaning": "(hình thức kết hợp); diện mạo; hình dáng; hình thức; trạng thái; thái độ; (ngữ pháp) thể",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%80%81.mp3"
+    },
+    {
+      "char": "谈",
+      "hanviet": "",
+      "pinyin": "Tan2",
+      "meaning": "họ [Tan2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%B0%88.mp3"
+    },
+    {
+      "char": "汤",
+      "hanviet": "",
+      "pinyin": "Tang1",
+      "meaning": "họ [Tang1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%B1%A4.mp3"
+    },
+    {
+      "char": "堂",
+      "hanviet": "đường",
+      "pinyin": "tang2",
+      "meaning": "(chính) sảnh; phòng lớn cho mục đích cụ thể; LT:間|间[jian1]; mối quan hệ giữa anh chị em họ bên nội; cùng gia tộc; lượng từ cho lớp học, bài giảng, v.v.; lượng từ cho bộ nội thất",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%A0%82.mp3"
+    },
+    {
+      "char": "讨",
+      "hanviet": "",
+      "pinyin": "tao3",
+      "meaning": "mời; gây ra; đòi hỏi hoặc yêu cầu; gửi quân đội để trấn áp; lên án hoặc kết tội; cưới (vợ); thảo luận hoặc nghiên cứu",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%AE%A8.mp3"
+    },
+    {
+      "char": "套",
+      "hanviet": "",
+      "pinyin": "tao4",
+      "meaning": "che đậy; bọc; vỏ; bao; trùng lặp; đan xen; mô phỏng; theo mẫu; công thức; bộ dây cương; vòng dây; thao tác khéo léo; đạt được một cách lươn lẹo; lượng từ cho bộ, tập hợp; khúc quanh (của sông hoặc dãy núi, trong địa danh); tau (chữ cái Hy Lạp Ττ)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%A5%97.mp3"
+    },
+    {
+      "char": "庭",
+      "hanviet": "đình",
+      "pinyin": "ting2",
+      "meaning": "sảnh chính; sân trước; toà án",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%BA%AD.mp3"
+    },
+    {
+      "char": "停",
+      "hanviet": "đình",
+      "pinyin": "ting2",
+      "meaning": "dừng; ngừng; đỗ (xe)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%81%9C.mp3"
+    },
+    {
+      "char": "通",
+      "hanviet": "thông",
+      "pinyin": "tong1",
+      "meaning": "đi qua; biết rõ; (hậu tố) chuyên gia; kết nối; giao tiếp; mở; thông; lượng từ cho thư, điện báo, cuộc gọi điện thoại, v.v.",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%80%9A.mp3"
+    },
+    {
+      "char": "痛",
+      "hanviet": "thống",
+      "pinyin": "tong4",
+      "meaning": "đau; đau đớn; phiền muộn; sâu sắc; thấu đáo",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%97%9B.mp3"
+    },
+    {
+      "char": "土",
+      "hanviet": "thổ",
+      "pinyin": "Tu3",
+      "meaning": "nhóm dân tộc Thổ; họ [Tu3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%9C%9F.mp3"
+    },
+    {
+      "char": "推",
+      "hanviet": "suy",
+      "pinyin": "tui1",
+      "meaning": "đẩy; cắt; từ chối; bác bỏ; khước từ; đùn đẩy (trách nhiệm); hoãn; trì hoãn; thúc đẩy; đề cử; bầu chọn; massage",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8E%A8.mp3"
+    },
+    {
+      "char": "味",
+      "hanviet": "vị",
+      "pinyin": "wei4",
+      "meaning": "vị; mùi; (bóng) (hậu tố danh từ) cảm giác; chất; lượng; (Đông y) lượng từ cho thành phần trong đơn thuốc",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%91%B3.mp3"
+    },
+    {
+      "char": "温",
+      "hanviet": "ồn",
+      "pinyin": "Wen1",
+      "meaning": "họ [Wen1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%B8%A9.mp3"
+    },
+    {
+      "char": "无",
+      "hanviet": "",
+      "pinyin": "wu2",
+      "meaning": "không có; không; không có gì; thiếu; không-; vô-; -thiếu",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%97%A0.mp3"
+    },
+    {
+      "char": "误",
+      "hanviet": "",
+      "pinyin": "wu4",
+      "meaning": "nhầm lỗi; sai lầm; lỡ; gây hại; trì hoãn; bỏ bê; một cách sai lầm",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%AF%AF.mp3"
+    },
+    {
+      "char": "线",
+      "hanviet": "",
+      "pinyin": "xian4",
+      "meaning": "biến thể của 線|线[xian4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%BA%BF.mp3"
+    },
+    {
+      "char": "象",
+      "hanviet": "tượng",
+      "pinyin": "xiang4",
+      "meaning": "voi; LT:隻|只[zhi1]; hình dáng; hình thức; diện mạo; bắt chước",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%B1%A1.mp3"
+    },
+    {
+      "char": "性",
+      "hanviet": "tính",
+      "pinyin": "xing4",
+      "meaning": "bản chất; tính cách; đặc tính; chất lượng; thuộc tính; tính dục; tình dục; giới tính; hậu tố hình thành tính từ từ động từ; hậu tố hình thành danh từ từ tính từ, tương ứng với -ness hoặc -ity; LT:個|个[ge4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%80%A7.mp3"
+    },
+    {
+      "char": "兄",
+      "hanviet": "huynh",
+      "pinyin": "xiong1",
+      "meaning": "anh trai",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%85%84.mp3"
+    },
+    {
+      "char": "许",
+      "hanviet": "",
+      "pinyin": "Xu3",
+      "meaning": "họ [Xu3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%AE%B8.mp3"
+    },
+    {
+      "char": "血",
+      "hanviet": "huyết",
+      "pinyin": "xue4",
+      "meaning": "máu; khẩu ngữ đọc là [xie3]; Lượng từ: 滴[di1],片[pian4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%A1%80.mp3"
+    },
+    {
+      "char": "压",
+      "hanviet": "",
+      "pinyin": "ya1",
+      "meaning": "đè; ấn xuống; kiềm chế; áp lực",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8E%8B.mp3"
+    },
+    {
+      "char": "亚",
+      "hanviet": "",
+      "pinyin": "Ya4",
+      "meaning": "châu Á; người châu Á; tiếng Đài Loan đọc là [Ya3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BA%9A.mp3"
+    },
+    {
+      "char": "研",
+      "hanviet": "nghiên nghiền nghiến nghiện",
+      "pinyin": "yan2",
+      "meaning": "nghiền; học; nghiên cứu",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%A0%94.mp3"
+    },
+    {
+      "char": "验",
+      "hanviet": "",
+      "pinyin": "yan4",
+      "meaning": "biến thể của 驗|验[yan4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%AA%8C.mp3"
+    },
+    {
+      "char": "夜",
+      "hanviet": "dạ",
+      "pinyin": "ye4",
+      "meaning": "biến thể của 夜[ye4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%A4%9C.mp3"
+    },
+    {
+      "char": "印",
+      "hanviet": "ấn",
+      "pinyin": "Yin4",
+      "meaning": "họ [Yin4]; viết tắt của 印度[Yin4du4], Ấn Độ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8D%B0.mp3"
+    },
+    {
+      "char": "永",
+      "hanviet": "vắng",
+      "pinyin": "yong3",
+      "meaning": "mãi mãi; luôn luôn; vĩnh viễn",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%B0%B8.mp3"
+    },
+    {
+      "char": "由",
+      "hanviet": "do",
+      "pinyin": "you2",
+      "meaning": "theo; từ; bởi vì; do; bằng; qua; thông qua; (trước danh từ và động từ) là để ... làm ...",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%94%B1.mp3"
+    },
+    {
+      "char": "油",
+      "hanviet": "dầu",
+      "pinyin": "you2",
+      "meaning": "dầu; mỡ; chất béo; dầu mỏ; thoa dầu trẩu, sơn hoặc vecni; nhờn; béo; lém lỉnh; xảo quyệt",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%B2%B9.mp3"
+    },
+    {
+      "char": "与",
+      "hanviet": "dữ",
+      "pinyin": "yu2",
+      "meaning": "biến thể của 歟|欤[yu2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%B8%8E.mp3"
+    },
+    {
+      "char": "原",
+      "hanviet": "nguyên",
+      "pinyin": "Yuan2",
+      "meaning": "họ [Yuan2]; (họ Nhật Bản) Hara",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8E%9F.mp3"
+    },
+    {
+      "char": "约",
+      "hanviet": "",
+      "pinyin": "yao1",
+      "meaning": "cân trong cân đĩa hoặc trên cân",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%BA%A6.mp3"
+    },
+    {
+      "char": "云",
+      "hanviet": "vân",
+      "pinyin": "yun2",
+      "meaning": "(văn cổ) nói",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BA%91.mp3"
+    },
+    {
+      "char": "增",
+      "hanviet": "tăng",
+      "pinyin": "zeng1",
+      "meaning": "(dạng kết hợp) tăng; tăng thêm; thêm vào",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%A2%9E.mp3"
+    },
+    {
+      "char": "章",
+      "hanviet": "chương",
+      "pinyin": "Zhang1",
+      "meaning": "họ [Zhang1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%AB%A0.mp3"
+    },
+    {
+      "char": "之",
+      "hanviet": "chi",
+      "pinyin": "zhi1",
+      "meaning": "(trợ từ sở hữu, tương đương trong văn học của 的[de5]); anh; cô; nó",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%B9%8B.mp3"
+    },
+    {
+      "char": "支",
+      "hanviet": "chi",
+      "pinyin": "Zhi1",
+      "meaning": "họ [Zhi1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%94%AF.mp3"
+    },
+    {
+      "char": "止",
+      "hanviet": "chỉ",
+      "pinyin": "zhi3",
+      "meaning": "dừng; cấm; cho đến; chỉ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%AD%A2.mp3"
+    },
+    {
+      "char": "指",
+      "hanviet": "chỉ",
+      "pinyin": "zhi3",
+      "meaning": "ngón tay; chỉ vào hoặc đến; chỉ ra hoặc đề cập đến; phụ thuộc vào; dựa vào; (tóc) dựng đứng lên",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8C%87.mp3"
+    },
+    {
+      "char": "至",
+      "hanviet": "chí",
+      "pinyin": "zhi4",
+      "meaning": "đến; nhất; tới; đến khi",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%87%B3.mp3"
+    },
+    {
+      "char": "志",
+      "hanviet": "chí",
+      "pinyin": "zhi4",
+      "meaning": "khát vọng; tham vọng; ý chí",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%BF%97.mp3"
+    },
+    {
+      "char": "众",
+      "hanviet": "",
+      "pinyin": "Zhong4",
+      "meaning": "viết tắt của 眾議院|众议院[Zhong4 yi4 yuan4], Hạ nghị viện",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BC%97.mp3"
+    },
+    {
+      "char": "专",
+      "hanviet": "",
+      "pinyin": "zhuan1",
+      "meaning": "cho một người, dịp, mục đích cụ thể; tập trung vào một việc; đặc biệt; chuyên gia; cụ thể (đối với cái gì đó); tập trung; chuyên về",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%B8%93.mp3"
+    },
+    {
+      "char": "转",
+      "hanviet": "",
+      "pinyin": "zhuai3",
+      "meaning": "xem 轉文|转文[zhuai3 wen2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%BD%AC.mp3"
+    },
+    {
+      "char": "装",
+      "hanviet": "",
+      "pinyin": "zhuang1",
+      "meaning": "trang sức; trang trí; mặc; quần áo; trang phục (của diễn viên trong vở kịch); đóng vai; giả vờ; lắp đặt; sửa chữa; gói (thứ gì vào túi); tải; đóng gói",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%A3%85.mp3"
+    },
+    {
+      "char": "资",
+      "hanviet": "",
+      "pinyin": "zi1",
+      "meaning": "tài nguyên; vốn; cung cấp; hỗ trợ; tiền; chi phí",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%B5%84.mp3"
+    },
+    {
+      "char": "组",
+      "hanviet": "",
+      "pinyin": "Zu3",
+      "meaning": "họ [Zu3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%BB%84.mp3"
+    },
+    {
+      "char": "座",
+      "hanviet": "toà",
+      "pinyin": "zuo4",
+      "meaning": "chỗ ngồi; cơ sở; đế; (cổ) hậu tố dùng trong cách xưng hô tôn kính, ví dụ: 师座|师座[shi1 zuo4]; LT:個|个[ge4]; lượng từ cho tòa nhà, núi và các vật thể cố định tương tự",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%BA%A7.mp3"
+    }
+  ],
+  "HSK5": [
+    {
+      "char": "版",
+      "hanviet": "bản",
+      "pinyin": "ban3",
+      "meaning": "một đăng ký; khối in; phiên bản; phiên hiệu; trang",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%89%88.mp3"
+    },
+    {
+      "char": "扮",
+      "hanviet": "",
+      "pinyin": "ban4",
+      "meaning": "cải trang; hóa trang; đóng (một vai); tỏ ra (một biểu cảm)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%89%AE.mp3"
+    },
+    {
+      "char": "伴",
+      "hanviet": "bạn",
+      "pinyin": "ban4",
+      "meaning": "bạn đồng hành; đồng chí; cộng sự; đồng hành",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BC%B4.mp3"
+    },
+    {
+      "char": "宝",
+      "hanviet": "bảo",
+      "pinyin": "bao3",
+      "meaning": "biến thể của 寶|宝[bao3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%AE%9D.mp3"
+    },
+    {
+      "char": "贝",
+      "hanviet": "",
+      "pinyin": "Bei4",
+      "meaning": "họ [Bei4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%B4%9D.mp3"
+    },
+    {
+      "char": "币",
+      "hanviet": "",
+      "pinyin": "bi4",
+      "meaning": "tiền; tiền xu; tiền tệ; lụa",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%B8%81.mp3"
+    },
+    {
+      "char": "闭",
+      "hanviet": "",
+      "pinyin": "bi4",
+      "meaning": "đóng; chặn; ngừng; cản trở",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%97%AD.mp3"
+    },
+    {
+      "char": "补",
+      "hanviet": "",
+      "pinyin": "bu3",
+      "meaning": "sửa; chắp vá; vá; bù đắp; lấp đầy (chỗ trống); bổ sung",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%A1%A5.mp3"
+    },
+    {
+      "char": "布",
+      "hanviet": "bố",
+      "pinyin": "bu4",
+      "meaning": "biến thể của 布[bu4]; thông báo; lan truyền",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%B8%83.mp3"
+    },
+    {
+      "char": "采",
+      "hanviet": "",
+      "pinyin": "cai3",
+      "meaning": "hái; ngắt; thu thập; lựa chọn; chọn; thu gom",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%87%87.mp3"
+    },
+    {
+      "char": "册",
+      "hanviet": "sách",
+      "pinyin": "ce4",
+      "meaning": "sách; tập sách; lượng từ cho sách",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%86%8C.mp3"
+    },
+    {
+      "char": "测",
+      "hanviet": "",
+      "pinyin": "ce4",
+      "meaning": "khảo sát; đo; phỏng đoán",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%B5%8B.mp3"
+    },
+    {
+      "char": "叉",
+      "hanviet": "",
+      "pinyin": "cha1",
+      "meaning": "cái nĩa; cái chĩa; ngạnh; dụng cụ xỉa; giao nhau; cắt nhau; \"X\"",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8F%89.mp3"
+    },
+    {
+      "char": "吵",
+      "hanviet": "sảo",
+      "pinyin": "chao3",
+      "meaning": "cãi nhau; gây ồn ào; ồn ào; làm phiền bằng cách gây ồn",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%90%B5.mp3"
+    },
+    {
+      "char": "沉",
+      "hanviet": "tròm",
+      "pinyin": "chen2",
+      "meaning": "chìm; ngâm; lặn; đè xuống; hạ; thả xuống; sâu; sắc sảo; nặng",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%B2%89.mp3"
+    },
+    {
+      "char": "称",
+      "hanviet": "xưng",
+      "pinyin": "chen4",
+      "meaning": "vừa; hợp; thích hợp; (khẩu ngữ) có; sở hữu; phiên âm Đài Loan [cheng4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%A7%B0.mp3"
+    },
+    {
+      "char": "承",
+      "hanviet": "thừa",
+      "pinyin": "Cheng2",
+      "meaning": "họ [Cheng2]; Cheng (khoảng 2000 trước Công nguyên), vị thứ ba trong truyền thuyết về Viêm Đế 炎帝[Yan2 di4] xuất thân từ Thần Nông 神農|神农[Shen2 nong2] Thần Nông",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%89%BF.mp3"
+    },
+    {
+      "char": "尺",
+      "hanviet": "xích",
+      "pinyin": "che3",
+      "meaning": "một trong các ký tự dùng để biểu diễn nốt nhạc trong phổ gongche, 工尺譜|工尺谱[gong1 che3 pu3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%B0%BA.mp3"
+    },
+    {
+      "char": "冲",
+      "hanviet": "",
+      "pinyin": "chong1",
+      "meaning": "(nước) xô vào; trộn với nước; pha; rửa; tráng; phát triển (phim); bay lên không trung; xung đột; va chạm với",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%86%B2.mp3"
+    },
+    {
+      "char": "充",
+      "hanviet": "sung",
+      "pinyin": "chong1",
+      "meaning": "đủ; đầy; làm đầy; làm; đóng vai; giả vờ làm; đóng giả",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%85%85.mp3"
+    },
+    {
+      "char": "虫",
+      "hanviet": "trùng",
+      "pinyin": "chong2",
+      "meaning": "biến thể của 蟲|虫[chong2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%99%AB.mp3"
+    },
+    {
+      "char": "抽",
+      "hanviet": "trừu",
+      "pinyin": "chou1",
+      "meaning": "rút ra; kéo ra từ giữa; gỡ bỏ một phần của toàn bộ; (một số loại cây) nảy mầm hoặc đâm chồi; quất hoặc đánh",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8A%BD.mp3"
+    },
+    {
+      "char": "丑",
+      "hanviet": "sửu",
+      "pinyin": "Chou3",
+      "meaning": "họ [Chou3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%B8%91.mp3"
+    },
+    {
+      "char": "臭",
+      "hanviet": "xú",
+      "pinyin": "chou4",
+      "meaning": "mùi hôi; hôi thối; ngửi (mùi khó chịu); đáng ghét; kinh tởm; tồi tệ; xấu; rất nghiêm khắc; tàn nhẫn; đạn xịt (đạn dược)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%87%AD.mp3"
+    },
+    {
+      "char": "传",
+      "hanviet": "",
+      "pinyin": "chuan2",
+      "meaning": "truyền đạt; lan truyền; lây; truyền nhiễm; chuyển giao; lưu hành; dẫn điện",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BC%A0.mp3"
+    },
+    {
+      "char": "创",
+      "hanviet": "",
+      "pinyin": "chuang4",
+      "meaning": "biến thể của 創|创[chuang4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%88%9B.mp3"
+    },
+    {
+      "char": "代",
+      "hanviet": "đại",
+      "pinyin": "dai4",
+      "meaning": "thay thế; làm thay cho người khác; thế hệ; triều đại; thời đại; giai đoạn; kỷ nguyên (lịch sử); đại (địa chất)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BB%A3.mp3"
+    },
+    {
+      "char": "胆",
+      "hanviet": "đảm",
+      "pinyin": "dan3",
+      "meaning": "túi mật; dũng khí; can đảm; mật; ngăn chứa bên trong (ví dụ: ruột quả bóng, ngăn bên trong của bình giữ nhiệt)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%83%86.mp3"
+    },
+    {
+      "char": "旦",
+      "hanviet": "đán",
+      "pinyin": "dan4",
+      "meaning": "(văn học) bình minh; rạng đông; đán, vai nữ trong kinh kịch Trung Quốc (truyền thống do nam diễn viên chuyên nghiệp đóng)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%97%A6.mp3"
+    },
+    {
+      "char": "挡",
+      "hanviet": "",
+      "pinyin": "dang3",
+      "meaning": "chống cự; cản trở; ngăn chặn; ngăn lại; chắn (một cú đánh); gây cản trở; che; phanh số (ví dụ: trong hộp số ô tô)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8C%A1.mp3"
+    },
+    {
+      "char": "敌",
+      "hanviet": "",
+      "pinyin": "di2",
+      "meaning": "(dạng kết hợp) kẻ thù; (dạng kết hợp) sánh kịp; ngang hàng; (dạng kết hợp) chống lại; chịu đựng",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%95%8C.mp3"
+    },
+    {
+      "char": "冻",
+      "hanviet": "",
+      "pinyin": "dong4",
+      "meaning": "đóng băng; cảm thấy rất lạnh; thạch hoặc đông sương",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%86%BB.mp3"
+    },
+    {
+      "char": "斗",
+      "hanviet": "đấu",
+      "pinyin": "Dou3",
+      "meaning": "viết tắt của chòm sao Đại Hùng 北斗星[Bei3 dou3 xing1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%96%97.mp3"
+    },
+    {
+      "char": "豆",
+      "hanviet": "đậu",
+      "pinyin": "dou4",
+      "meaning": "cây họ đậu; đậu hạt; đậu; đỗ (biến thể của 豆[dou4])",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%B1%86.mp3"
+    },
+    {
+      "char": "独",
+      "hanviet": "",
+      "pinyin": "du2",
+      "meaning": "một mình; độc lập; đơn lẻ; duy nhất; chỉ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%8B%AC.mp3"
+    },
+    {
+      "char": "吨",
+      "hanviet": "đồn",
+      "pinyin": "dun1",
+      "meaning": "tấn (từ mượn); tiếng Đài Loan đọc là [dun4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%90%A8.mp3"
+    },
+    {
+      "char": "范",
+      "hanviet": "",
+      "pinyin": "fan4",
+      "meaning": "mô hình; kiểu mẫu; ví dụ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%8C%83.mp3"
+    },
+    {
+      "char": "防",
+      "hanviet": "phòng",
+      "pinyin": "fang2",
+      "meaning": "bảo vệ; phòng thủ; đề phòng; ngăn chặn",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%98%B2.mp3"
+    },
+    {
+      "char": "访",
+      "hanviet": "",
+      "pinyin": "fang3",
+      "meaning": "(dạng kết hợp) thăm; đến thăm; tìm kiếm; hỏi thăm; điều tra",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%AE%BF.mp3"
+    },
+    {
+      "char": "疯",
+      "hanviet": "",
+      "pinyin": "feng1",
+      "meaning": "điên; khùng; hoang dại",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%96%AF.mp3"
+    },
+    {
+      "char": "佛",
+      "hanviet": "phật",
+      "pinyin": "Fo2",
+      "meaning": "Phật; Phật giáo (viết tắt của 佛陀[Fo2tuo2])",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BD%9B.mp3"
+    },
+    {
+      "char": "府",
+      "hanviet": "phủ",
+      "pinyin": "fu3",
+      "meaning": "trung tâm hành chính; nơi lưu trữ của chính phủ (lưu trữ); công quán; dinh thự; phủ tổng thống; (kính trọng) Nhà của bạn; phủ (từ thời nhà Đường đến nhà Thanh)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%BA%9C.mp3"
+    },
+    {
+      "char": "妇",
+      "hanviet": "",
+      "pinyin": "fu4",
+      "meaning": "phụ nữ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%A6%87.mp3"
+    },
+    {
+      "char": "搞",
+      "hanviet": "cào",
+      "pinyin": "gao3",
+      "meaning": "làm; tạo; dính líu đến; thành lập; lấy được; xử lý",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%90%9E.mp3"
+    },
+    {
+      "char": "贡",
+      "hanviet": "",
+      "pinyin": "Gong4",
+      "meaning": "họ [Gong4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%B4%A1.mp3"
+    },
+    {
+      "char": "构",
+      "hanviet": "",
+      "pinyin": "gou4",
+      "meaning": "biến thể của 構|构[gou4]; (Đài Loan) (thông tục) biến thể của 夠|够[gou4]; với tới bằng cách duỗi ra",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%9E%84.mp3"
+    },
+    {
+      "char": "古",
+      "hanviet": "cổ",
+      "pinyin": "Gu3",
+      "meaning": "họ [Gu3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8F%A4.mp3"
+    },
+    {
+      "char": "柜",
+      "hanviet": "",
+      "pinyin": "gui4",
+      "meaning": "biến thể của 櫃|柜[gui4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%9F%9C.mp3"
+    },
+    {
+      "char": "哈",
+      "hanviet": "hóp",
+      "pinyin": "Ha1",
+      "meaning": "viết tắt của 哈薩克斯坦|哈萨克斯坦[Ha1 sa4 ke4 si1 tan3], Kazakhstan; viết tắt của 哈爾濱|哈尔滨[Ha1 er3 bin1], Harbin",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%93%88.mp3"
+    },
+    {
+      "char": "含",
+      "hanviet": "hàm",
+      "pinyin": "han2",
+      "meaning": "ngậm trong miệng; chứa đựng",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%90%AB.mp3"
+    },
+    {
+      "char": "胡",
+      "hanviet": "",
+      "pinyin": "Hu2",
+      "meaning": "họ [Hu2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%83%A1.mp3"
+    },
+    {
+      "char": "湖",
+      "hanviet": "hồ",
+      "pinyin": "hu2",
+      "meaning": "hồ; LT:個|个[ge4],片[pian4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%B9%96.mp3"
+    },
+    {
+      "char": "华",
+      "hanviet": "",
+      "pinyin": "Hua2",
+      "meaning": "viết tắt của Trung Quốc",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8D%8E.mp3"
+    },
+    {
+      "char": "挥",
+      "hanviet": "",
+      "pinyin": "hui1",
+      "meaning": "vẫy; vung; chỉ huy; tiến hành; rải; rã",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8C%A5.mp3"
+    },
+    {
+      "char": "挤",
+      "hanviet": "",
+      "pinyin": "ji3",
+      "meaning": "chen chúc; nhồi nhét; đẩy người khác sang một bên; ấn; nén; tìm (thời gian trong lịch trình bận rộn)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8C%A4.mp3"
+    },
+    {
+      "char": "甲",
+      "hanviet": "giáp",
+      "pinyin": "jia3",
+      "meaning": "thiên can đầu tiên trong mười thiên can 十天干[shi2 tian1 gan1]; (dùng cho người hoặc vật không xác định); đầu tiên (trong danh sách, là bên trong hợp đồng, v.v.); chữ \"A\" hoặc số la mã \"I\" trong danh sách \"A, B, C\" hoặc \"I, II, III\", v.v.; mạ giáp; vỏ cứng hoặc mai; (của ngón tay hoặc ngón chân) móng; áo giáp da hoặc kim loại (xưa); hệ thống xếp hạng dùng trong kỳ thi khoa bảng (xưa); đơn vị hành chính dân sự trong hệ thống bảo giáp 保甲[bao3 jia3] (xưa); hướng la bàn Trung Quốc cổ: 75°",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%94%B2.mp3"
+    },
+    {
+      "char": "架",
+      "hanviet": "giá",
+      "pinyin": "jia4",
+      "meaning": "chống đỡ; khung; giá; cơ cấu; lượng từ cho máy bay, xe lớn, radio, v.v.",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%9E%B6.mp3"
+    },
+    {
+      "char": "艰",
+      "hanviet": "",
+      "pinyin": "jian1",
+      "meaning": "khó khăn; vất vả; gian khổ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%89%B0.mp3"
+    },
+    {
+      "char": "局",
+      "hanviet": "cục",
+      "pinyin": "ju2",
+      "meaning": "hẹp",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%B1%80.mp3"
+    },
+    {
+      "char": "巨",
+      "hanviet": "",
+      "pinyin": "ju4",
+      "meaning": "rất lớn; khổng lồ; to lớn; kếch xù",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%B7%A8.mp3"
+    },
+    {
+      "char": "军",
+      "hanviet": "",
+      "pinyin": "jun1",
+      "meaning": "(hình thức kết hợp) quân đội; quân sự",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%86%9B.mp3"
+    },
+    {
+      "char": "均",
+      "hanviet": "quân",
+      "pinyin": "jun1",
+      "meaning": "bằng; ngang; bình đẳng; đồng đều",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%9D%87.mp3"
+    },
+    {
+      "char": "靠",
+      "hanviet": "",
+      "pinyin": "kao4",
+      "meaning": "dựa vào; đứng cạnh; đến gần; phụ thuộc vào; tin tưởng; chịch (thô tục); loại kịch mặc trang phục giáp truyền thống (xưa)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%9D%A0.mp3"
+    },
+    {
+      "char": "宽",
+      "hanviet": "",
+      "pinyin": "Kuan1",
+      "meaning": "họ [Kuan1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%AE%BD.mp3"
+    },
+    {
+      "char": "亏",
+      "hanviet": "",
+      "pinyin": "kui1",
+      "meaning": "lỗ (tiền); bị thiếu hụt; bị thiếu; đối xử không công bằng; may mắn; may mà; nhờ vào; (dùng để giới thiệu một nhận xét mỉa mai về ai đó không đạt kỳ vọng)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BA%8F.mp3"
+    },
+    {
+      "char": "括",
+      "hanviet": "quát",
+      "pinyin": "kuo4",
+      "meaning": "bao gồm; bao quát; cũng đọc là [gua1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8B%AC.mp3"
+    },
+    {
+      "char": "劳",
+      "hanviet": "",
+      "pinyin": "lao2",
+      "meaning": "lao động; công việc; người lao động; làm phiền ai (làm gì đó); công trạng; an ủi (ở Đài Loan đọc là [lao4] cho nghĩa này)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8A%B3.mp3"
+    },
+    {
+      "char": "泪",
+      "hanviet": "lệ",
+      "pinyin": "lei4",
+      "meaning": "nước mắt",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%B3%AA.mp3"
+    },
+    {
+      "char": "类",
+      "hanviet": "",
+      "pinyin": "lei4",
+      "meaning": "loại; kiểu; lớp; hạng; tương tự; giống; giống như",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%B1%BB.mp3"
+    },
+    {
+      "char": "立",
+      "hanviet": "lập",
+      "pinyin": "Li4",
+      "meaning": "họ [Li4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%AB%8B.mp3"
+    },
+    {
+      "char": "良",
+      "hanviet": "lương",
+      "pinyin": "liang2",
+      "meaning": "tốt; rất; rất nhiều",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%89%AF.mp3"
+    },
+    {
+      "char": "疗",
+      "hanviet": "lểu",
+      "pinyin": "liao2",
+      "meaning": "điều trị; chữa trị; liệu pháp",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%96%97.mp3"
+    },
+    {
+      "char": "烈",
+      "hanviet": "liệt",
+      "pinyin": "lie4",
+      "meaning": "nồng nhiệt; mãnh liệt; dữ dội; nghiêm nghị; chính trực; hy sinh vì nghĩa; võ công; thành tựu",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%83%88.mp3"
+    },
+    {
+      "char": "领",
+      "hanviet": "",
+      "pinyin": "ling3",
+      "meaning": "cổ; cổ áo; dẫn dắt; nhận; lượng từ cho quần áo, chiếu, màn hình, v.v.",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%A2%86.mp3"
+    },
+    {
+      "char": "令",
+      "hanviet": "lệnh",
+      "pinyin": "ling2",
+      "meaning": "dùng trong 脊令[ji2 ling2]; dùng trong 令狐[Ling2 hu2] (cách phát âm ở Đài Loan: [ling4])",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BB%A4.mp3"
+    },
+    {
+      "char": "龙",
+      "hanviet": "",
+      "pinyin": "Long2",
+      "meaning": "họ [Long2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%BE%99.mp3"
+    },
+    {
+      "char": "陆",
+      "hanviet": "",
+      "pinyin": "Lu4",
+      "meaning": "họ [Lu4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%99%86.mp3"
+    },
+    {
+      "char": "录",
+      "hanviet": "",
+      "pinyin": "lu4",
+      "meaning": "khắc gỗ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%BD%95.mp3"
+    },
+    {
+      "char": "骂",
+      "hanviet": "",
+      "pinyin": "ma4",
+      "meaning": "mắng; chửi; rủa; LT:通[tong4],頓|顿[dun4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%AA%82.mp3"
+    },
+    {
+      "char": "秘",
+      "hanviet": "",
+      "pinyin": "mi4",
+      "meaning": "biến thể của 秘[mi4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%A7%98.mp3"
+    },
+    {
+      "char": "某",
+      "hanviet": "mỗ",
+      "pinyin": "mou3",
+      "meaning": "một vài; một cái nào đó; ai đó hoặc cái gì đó không xác định; nào đó",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%9F%90.mp3"
+    },
+    {
+      "char": "念",
+      "hanviet": "niệm",
+      "pinyin": "nian4",
+      "meaning": "biến thể của 念[nian4], đọc to",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%BF%B5.mp3"
+    },
+    {
+      "char": "派",
+      "hanviet": "phái",
+      "pinyin": "pa1",
+      "meaning": "dùng trong 派司[pa1 si5]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%B4%BE.mp3"
+    },
+    {
+      "char": "配",
+      "hanviet": "phối",
+      "pinyin": "pei4",
+      "meaning": "kết hợp; phù hợp; giao phối; trộn; phối hợp; xứng đáng; chế (đơn thuốc); phân bổ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%85%8D.mp3"
+    },
+    {
+      "char": "盆",
+      "hanviet": "bòn bồn bộn bùn buồn dồn vồn",
+      "pinyin": "pen2",
+      "meaning": "chậu; chậu hoa; đơn vị thể tích bằng 12 斗[dou3] và 8 升[sheng1], xấp xỉ 128 lít; LT:個|个[ge4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%9B%86.mp3"
+    },
+    {
+      "char": "碰",
+      "hanviet": "",
+      "pinyin": "peng4",
+      "meaning": "biến thể của 碰[peng4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%A2%B0.mp3"
+    },
+    {
+      "char": "匹",
+      "hanviet": "thất",
+      "pinyin": "pi1",
+      "meaning": "bạn đời; một trong một cặp",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8C%B9.mp3"
+    },
+    {
+      "char": "拼",
+      "hanviet": "phanh",
+      "pinyin": "pin1",
+      "meaning": "chắp vá; ghép lại; nối lại; dốc toàn lực; liều lĩnh; mạo hiểm; bất chấp nguy hiểm; đánh vần",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8B%BC.mp3"
+    },
+    {
+      "char": "齐",
+      "hanviet": "",
+      "pinyin": "Qi2",
+      "meaning": "(tên các nước và triều đại ở vài thời kỳ khác nhau); họ [Qi2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%BD%90.mp3"
+    },
+    {
+      "char": "欠",
+      "hanviet": "khiếm",
+      "pinyin": "qian4",
+      "meaning": "nợ; thiếu; (văn học) bị thiếu; (hình thức kết hợp) ngáp; nhấc nhẹ (một phần của cơ thể)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%AC%A0.mp3"
+    },
+    {
+      "char": "曲",
+      "hanviet": "khúc",
+      "pinyin": "Qu1",
+      "meaning": "họ [Qu1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%9B%B2.mp3"
+    },
+    {
+      "char": "权",
+      "hanviet": "",
+      "pinyin": "Quan2",
+      "meaning": "họ [Quan2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%9D%83.mp3"
+    },
+    {
+      "char": "劝",
+      "hanviet": "",
+      "pinyin": "quan4",
+      "meaning": "khuyên; giục; cố gắng thuyết phục; khích lệ; an ủi; xoa dịu",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8A%9D.mp3"
+    },
+    {
+      "char": "忍",
+      "hanviet": "nhẫn",
+      "pinyin": "ren3",
+      "meaning": "chịu đựng; nhẫn nhịn; tha thứ; kiềm chế bản thân",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%BF%8D.mp3"
+    },
+    {
+      "char": "晒",
+      "hanviet": "",
+      "pinyin": "shai4",
+      "meaning": "biến thể của 曬|晒[shai4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%99%92.mp3"
+    },
+    {
+      "char": "舍",
+      "hanviet": "xá",
+      "pinyin": "she3",
+      "meaning": "từ bỏ; ruồng bỏ; bố thí",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%88%8D.mp3"
+    },
+    {
+      "char": "设",
+      "hanviet": "",
+      "pinyin": "she4",
+      "meaning": "thiết lập; đặt vào vị trí; (toán học) cho; giả sử; nếu",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%AE%BE.mp3"
+    },
+    {
+      "char": "神",
+      "hanviet": "thần",
+      "pinyin": "Shen2",
+      "meaning": "Thần",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%A5%9E.mp3"
+    },
+    {
+      "char": "升",
+      "hanviet": "thăng",
+      "pinyin": "sheng1",
+      "meaning": "thăng lên; tăng lên chức; thăng chức; kéo lên; lít; đơn vị đo lường ngũ cốc khô bằng một phần mười đấu 斗[dou3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8D%87.mp3"
+    },
+    {
+      "char": "胜",
+      "hanviet": "thắng",
+      "pinyin": "sheng4",
+      "meaning": "chiến thắng; thành công; đánh bại; vượt qua; vượt trội; hơn; thắng; thắng thế; tuyệt đẹp (phong cảnh); đẹp (cảnh sắc); tuyệt vời (quang cảnh); (cách phát âm ở Đài Loan [sheng1]) chịu đựng được; khám nổi (một nhiệm vụ)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%83%9C.mp3"
+    },
+    {
+      "char": "诗",
+      "hanviet": "",
+      "pinyin": "Shi1",
+      "meaning": "viết tắt của Shijing 詩經|诗经[Shi1 jing1], Kinh Thi",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%AF%97.mp3"
+    },
+    {
+      "char": "石",
+      "hanviet": "thạch",
+      "pinyin": "Shi2",
+      "meaning": "họ [Shi2]; viết tắt của Thạch Gia Trang 石家莊|石家庄[Shi2jia1zhuang1], thủ phủ của Hà Bắc",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%9F%B3.mp3"
+    },
+    {
+      "char": "似",
+      "hanviet": "tự",
+      "pinyin": "shi4",
+      "meaning": "dùng trong 似的[shi4de5]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BC%BC.mp3"
+    },
+    {
+      "char": "势",
+      "hanviet": "",
+      "pinyin": "shi4",
+      "meaning": "quyền lực; ảnh hưởng; tiềm năng; đà; khuynh hướng; xu thế; tình hình; điều kiện; bề ngoài; dấu hiệu; cử chỉ; bộ phận sinh dục nam",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8A%BF.mp3"
+    },
+    {
+      "char": "守",
+      "hanviet": "thú",
+      "pinyin": "shou3",
+      "meaning": "canh gác; phòng thủ; theo dõi; tuân thủ pháp luật; tuân theo (quy tắc hoặc nghi thức); gần; bên cạnh",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%AE%88.mp3"
+    },
+    {
+      "char": "私",
+      "hanviet": "tư",
+      "pinyin": "si1",
+      "meaning": "cá nhân; riêng tư; ích kỷ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%A7%81.mp3"
+    },
+    {
+      "char": "素",
+      "hanviet": "tố",
+      "pinyin": "su4",
+      "meaning": "tơ sống; trắng; đơn giản, không trang trí; chay (thức ăn); bản chất; tính chất; thành phần; yếu tố; thông thường; luôn luôn; từng",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%B4%A0.mp3"
+    },
+    {
+      "char": "宿",
+      "hanviet": "túc",
+      "pinyin": "su4",
+      "meaning": "biến thể cũ của 宿[su4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%AE%BF.mp3"
+    },
+    {
+      "char": "挑",
+      "hanviet": "vẹo",
+      "pinyin": "tiao1",
+      "meaning": "gánh bằng đòn gánh; chọn; lựa; chỉ trích; bới móc",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8C%91.mp3"
+    },
+    {
+      "char": "团",
+      "hanviet": "",
+      "pinyin": "tuan2",
+      "meaning": "tròn; cục; khối; cuộn thành bóng; tụ tập; trung đoàn; nhóm; hội; lượng từ cho một khối hoặc chất mềm: nắm (giấy), cuộn (len), đám (khói)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%9B%A2.mp3"
+    },
+    {
+      "char": "退",
+      "hanviet": "thoái",
+      "pinyin": "tui4",
+      "meaning": "rút lui; rút khỏi; từ chối; trả lại (cái gì đó); từ chối",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%80%80.mp3"
+    },
+    {
+      "char": "拖",
+      "hanviet": "đà",
+      "pinyin": "tuo1",
+      "meaning": "biến thể của 拖[tuo1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8B%96.mp3"
+    },
+    {
+      "char": "伟",
+      "hanviet": "",
+      "pinyin": "wei3",
+      "meaning": "to; lớn; vĩ đại",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BC%9F.mp3"
+    },
+    {
+      "char": "未",
+      "hanviet": "mùi",
+      "pinyin": "wei4",
+      "meaning": "chưa; chưa từng; không; chưa có; chi thứ 8 trong Địa chi: 1-3 giờ chiều, tháng 6 âm lịch (7 tháng 7-6 tháng 8), năm Mùi; hướng la bàn cổ của Trung Quốc: 210°",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%9C%AA.mp3"
+    },
+    {
+      "char": "胃",
+      "hanviet": "",
+      "pinyin": "wei4",
+      "meaning": "dạ dày; Lượng từ: 個|个[ge4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%83%83.mp3"
+    },
+    {
+      "char": "武",
+      "hanviet": "vũ",
+      "pinyin": "Wu3",
+      "meaning": "họ [Wu3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%AD%A6.mp3"
+    },
+    {
+      "char": "夕",
+      "hanviet": "tịch",
+      "pinyin": "xi1",
+      "meaning": "chạng vạng; buổi tối; đọc ở Đài Loan: [xi4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%A4%95.mp3"
+    },
+    {
+      "char": "析",
+      "hanviet": "",
+      "pinyin": "xi1",
+      "meaning": "tách; chia; phân tích",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%9E%90.mp3"
+    },
+    {
+      "char": "席",
+      "hanviet": "",
+      "pinyin": "Xi2",
+      "meaning": "họ [Xi2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%B8%AD.mp3"
+    },
+    {
+      "char": "闲",
+      "hanviet": "",
+      "pinyin": "xian2",
+      "meaning": "đóng kín; (biến thể của 閒|闲[xian2]) nhàn rỗi; không có việc; rảnh rỗi",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%97%B2.mp3"
+    },
+    {
+      "char": "显",
+      "hanviet": "",
+      "pinyin": "xian3",
+      "meaning": "làm cho thấy; tiết lộ; nổi bật; dễ thấy",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%98%BE.mp3"
+    },
+    {
+      "char": "县",
+      "hanviet": "",
+      "pinyin": "xian4",
+      "meaning": "huyện",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8E%BF.mp3"
+    },
+    {
+      "char": "形",
+      "hanviet": "hình",
+      "pinyin": "xing2",
+      "meaning": "xuất hiện; trông; hình dạng; hình",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%BD%A2.mp3"
+    },
+    {
+      "char": "宣",
+      "hanviet": "tuyên",
+      "pinyin": "Xuan1",
+      "meaning": "họ [Xuan1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%AE%A3.mp3"
+    },
+    {
+      "char": "寻",
+      "hanviet": "",
+      "pinyin": "xun2",
+      "meaning": "tìm kiếm; tìm",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%AF%BB.mp3"
+    },
+    {
+      "char": "训",
+      "hanviet": "",
+      "pinyin": "xun4",
+      "meaning": "dạy; huấn luyện; khuyên răn; (dạng kết hợp) chỉ thị (từ cấp trên); lời dạy; quy tắc",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%AE%AD.mp3"
+    },
+    {
+      "char": "咬",
+      "hanviet": "rao",
+      "pinyin": "yao3",
+      "meaning": "cắn; đớp",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%92%AC.mp3"
+    },
+    {
+      "char": "依",
+      "hanviet": "y",
+      "pinyin": "yi1",
+      "meaning": "phụ thuộc; dựa vào hoặc nghe lời ai đó; theo; dựa trên",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BE%9D.mp3"
+    },
+    {
+      "char": "乙",
+      "hanviet": "ất",
+      "pinyin": "yi3",
+      "meaning": "đứng thứ hai trong mười Thiên Can 十天干[shi2 tian1 gan1]; hạng hai; chữ \"B\" hoặc số \"II\" trong danh sách \"A, B, C\", hoặc \"I, II, III\" v.v.; bên thứ hai (trong hợp đồng pháp lý, thường là 乙方[yi3 fang1], đối lập với 甲方[jia3 fang1]); ethyl; cong; quanh co; bộ trong chữ Hán (bộ Khang Hy số 5); hướng la bàn cổ Trung Quốc: 105°",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%B9%99.mp3"
+    },
+    {
+      "char": "亿",
+      "hanviet": "",
+      "pinyin": "yi4",
+      "meaning": "100 triệu",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BA%BF.mp3"
+    },
+    {
+      "char": "义",
+      "hanviet": "",
+      "pinyin": "Yi4",
+      "meaning": "họ [Yi4]; (Đài Loan) viết tắt của 義大利|义大利[Yi4da4li4], Ý",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%B9%89.mp3"
+    },
+    {
+      "char": "益",
+      "hanviet": "ích",
+      "pinyin": "Yi4",
+      "meaning": "họ [Yi4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%9B%8A.mp3"
+    },
+    {
+      "char": "映",
+      "hanviet": "ánh",
+      "pinyin": "ying4",
+      "meaning": "phản chiếu (ánh sáng); chiếu; phát (hình ảnh lên màn hình, v.v.)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%98%A0.mp3"
+    },
+    {
+      "char": "余",
+      "hanviet": "dư",
+      "pinyin": "Yu2",
+      "meaning": "họ [Yu2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BD%99.mp3"
+    },
+    {
+      "char": "玉",
+      "hanviet": "ngọc",
+      "pinyin": "yu4",
+      "meaning": "ngọc",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%8E%89.mp3"
+    },
+    {
+      "char": "圆",
+      "hanviet": "",
+      "pinyin": "yuan2",
+      "meaning": "hình tròn; tròn; dạng tròn; hình cầu; (mặt trăng) tròn; đơn vị tiền Trung Quốc (yuan); khéo léo; làm cho nhất quán và hoàn chỉnh (câu chuyện giấc mơ hoặc lời nói dối)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%9C%86.mp3"
+    },
+    {
+      "char": "载",
+      "hanviet": "",
+      "pinyin": "zai3",
+      "meaning": "ghi chép bằng văn bản; đăng tải (trên báo chí, v.v.); cách phát âm Đài Loan [zai4]; năm",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%BD%BD.mp3"
+    },
+    {
+      "char": "造",
+      "hanviet": "tạo",
+      "pinyin": "zao4",
+      "meaning": "làm; xây dựng; sản xuất; phát minh; bịa đặt; đi đến; bên (trong vụ kiện hoặc thỏa thuận pháp lý); mùa vụ; lượng từ cho mùa vụ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%80%A0.mp3"
+    },
+    {
+      "char": "占",
+      "hanviet": "chiêm",
+      "pinyin": "zhan4",
+      "meaning": "biến thể của 占[zhan4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8D%A0.mp3"
+    },
+    {
+      "char": "召",
+      "hanviet": "chịu",
+      "pinyin": "Shao4",
+      "meaning": "họ [Shao4]; tên của một nước cổ đại tồn tại ở khu vực nay là tỉnh Thiểm Tây",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8F%AC.mp3"
+    },
+    {
+      "char": "政",
+      "hanviet": "chính",
+      "pinyin": "zheng4",
+      "meaning": "thuộc về chính trị; chính trị; chính phủ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%94%BF.mp3"
+    },
+    {
+      "char": "织",
+      "hanviet": "",
+      "pinyin": "zhi1",
+      "meaning": "dệt",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%BB%87.mp3"
+    },
+    {
+      "char": "制",
+      "hanviet": "chế",
+      "pinyin": "zhi4",
+      "meaning": "hệ thống; kiểm soát; điều chỉnh; biến thể của 製|制[zhi4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%88%B6.mp3"
+    },
+    {
+      "char": "治",
+      "hanviet": "trị",
+      "pinyin": "zhi4",
+      "meaning": "quản lý; cai trị; kiểm soát; điều hành; khai thác (sông ngòi); điều trị (bệnh); tiêu diệt (sâu bệnh); trừng phạt; nghiên cứu",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%B2%BB.mp3"
+    },
+    {
+      "char": "致",
+      "hanviet": "nhí",
+      "pinyin": "zhi4",
+      "meaning": "(dạng kết hợp) tinh tế; tinh xảo; đẹp đẽ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%87%B4.mp3"
+    },
+    {
+      "char": "猪",
+      "hanviet": "",
+      "pinyin": "zhu1",
+      "meaning": "lợn; heo; LT:口[kou3],頭|头[tou2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%8C%AA.mp3"
+    },
+    {
+      "char": "竹",
+      "hanviet": "trúc",
+      "pinyin": "zhu2",
+      "meaning": "tre; LT:棵[ke1],支[zhi1],根[gen1]; bộ Khang Hy số 118",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%AB%B9.mp3"
+    },
+    {
+      "char": "抓",
+      "hanviet": "co",
+      "pinyin": "zhua1",
+      "meaning": "bắt; nắm; túm; chộp; cào",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8A%93.mp3"
+    },
+    {
+      "char": "状",
+      "hanviet": "",
+      "pinyin": "zhuang4",
+      "meaning": "cáo buộc; kiện trạng; tình trạng; điều kiện; mạnh; mẽ; hình dạng",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%8A%B6.mp3"
+    },
+    {
+      "char": "追",
+      "hanviet": "truy",
+      "pinyin": "dui1",
+      "meaning": "điêu khắc; chạm khắc; nhạc cụ (cổ)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%BF%BD.mp3"
+    }
+  ],
+  "HSK6": [
+    {
+      "char": "岸",
+      "hanviet": "ngàn",
+      "pinyin": "an4",
+      "meaning": "biến thể của 岸[an4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%B2%B8.mp3"
+    },
+    {
+      "char": "昂",
+      "hanviet": "ngang",
+      "pinyin": "ang2",
+      "meaning": "nâng lên; ngẩng; ngẩng đầu; cao; tinh thần cao; phấn chấn; đắt",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%98%82.mp3"
+    },
+    {
+      "char": "拔",
+      "hanviet": "bạt",
+      "pinyin": "ba2",
+      "meaning": "nhổ lên; rút ra; hút ra; chọn; lựa chọn; nổi bật (trên mặt bằng); vượt trội; chiếm lấy",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8B%94.mp3"
+    },
+    {
+      "char": "摆",
+      "hanviet": "",
+      "pinyin": "bai3",
+      "meaning": "sắp xếp; trưng bày; di chuyển qua lại; con lắc",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%91%86.mp3"
+    },
+    {
+      "char": "悲",
+      "hanviet": "bi",
+      "pinyin": "bei1",
+      "meaning": "buồn; nỗi buồn; sầu; tang thương",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%82%B2.mp3"
+    },
+    {
+      "char": "奔",
+      "hanviet": "",
+      "pinyin": "ben1",
+      "meaning": "vội vàng; lao nhanh; chạy nhanh; bỏ trốn",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%A5%94.mp3"
+    },
+    {
+      "char": "编",
+      "hanviet": "",
+      "pinyin": "bian1",
+      "meaning": "dệt; bện; tổ chức; nhóm; sắp xếp; chỉnh lý; biên soạn; viết; sáng tác; bịa; chế tạo",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%BC%96.mp3"
+    },
+    {
+      "char": "兵",
+      "hanviet": "binh",
+      "pinyin": "bing1",
+      "meaning": "lính; một lực lượng; một đội quân; vũ khí; quân dụng; quân sự; hiếu chiến; LT:個|个[ge4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%85%B5.mp3"
+    },
+    {
+      "char": "财",
+      "hanviet": "",
+      "pinyin": "cai2",
+      "meaning": "tiền; tài sản; sự giàu có; của cải; vật quý",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%B4%A2.mp3"
+    },
+    {
+      "char": "仓",
+      "hanviet": "",
+      "pinyin": "cang1",
+      "meaning": "kho; thương khố; nhà kho; khoang; tầng hầm (trên tàu)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BB%93.mp3"
+    },
+    {
+      "char": "侧",
+      "hanviet": "",
+      "pinyin": "ce4",
+      "meaning": "một bên; nghiêng về; nghiêng; ở một phía; bên",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BE%A7.mp3"
+    },
+    {
+      "char": "策",
+      "hanviet": "sách",
+      "pinyin": "Ce4",
+      "meaning": "họ [Ce4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%AD%96.mp3"
+    },
+    {
+      "char": "肠",
+      "hanviet": "",
+      "pinyin": "chang2",
+      "meaning": "ruột",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%82%A0.mp3"
+    },
+    {
+      "char": "畅",
+      "hanviet": "",
+      "pinyin": "chang4",
+      "meaning": "tự do; không bị cản trở; trôi chảy; thanh thản; không lo lắng; lưu loát",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%95%85.mp3"
+    },
+    {
+      "char": "抄",
+      "hanviet": "sao",
+      "pinyin": "chao1",
+      "meaning": "sao chép; đạo văn; khám xét; tịch thu; chụp lấy; mang đi; đi đường tắt; di chuyển vòng; ngồi khoanh tay",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8A%84.mp3"
+    },
+    {
+      "char": "臣",
+      "hanviet": "thần",
+      "pinyin": "Chen2",
+      "meaning": "họ [Chen2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%87%A3.mp3"
+    },
+    {
+      "char": "尘",
+      "hanviet": "",
+      "pinyin": "chen2",
+      "meaning": "bụi; bụi bẩn; đất",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%B0%98.mp3"
+    },
+    {
+      "char": "呈",
+      "hanviet": "trình",
+      "pinyin": "cheng2",
+      "meaning": "trình lên cấp trên; sớ; kiến nghị; trình bày (một dáng vẻ nhất định); mang (hình dạng); có (màu sắc nhất định)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%91%88.mp3"
+    },
+    {
+      "char": "愁",
+      "hanviet": "sầu",
+      "pinyin": "chou2",
+      "meaning": "lo lắng về",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%84%81.mp3"
+    },
+    {
+      "char": "串",
+      "hanviet": "xuyến",
+      "pinyin": "chuan4",
+      "meaning": "xâu lại; xiên; kết nối sai; cấu kết; đi lang thang; xâu; chùm; phân loại cho những thứ được xâu lại, thành chùm, hoặc thành hàng: một xâu, một chùm, một loạt; chuyển động nhanh hoặc đột ngột theo đường thẳng (như hạt trên bàn tính); di chuyển qua",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%B8%B2.mp3"
+    },
+    {
+      "char": "闯",
+      "hanviet": "",
+      "pinyin": "chuang3",
+      "meaning": "lao vào; xông lên; lao tới; đột phá; rèn luyện bản thân (qua khó khăn)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%97%AF.mp3"
+    },
+    {
+      "char": "纯",
+      "hanviet": "",
+      "pinyin": "chun2",
+      "meaning": "thuần khiết; đơn giản; không pha tạp; nguyên chất",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%BA%AF.mp3"
+    },
+    {
+      "char": "匆",
+      "hanviet": "",
+      "pinyin": "cong1",
+      "meaning": "vội vàng; gấp gáp",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8C%86.mp3"
+    },
+    {
+      "char": "寸",
+      "hanviet": "thốn",
+      "pinyin": "cun4",
+      "meaning": "một đơn vị đo chiều dài; inch; ngón cái",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%AF%B8.mp3"
+    },
+    {
+      "char": "呆",
+      "hanviet": "ngốc",
+      "pinyin": "dai1",
+      "meaning": "ngốc; ngớ ngẩn; thẫn thờ; trống rỗng; lưu lại",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%91%86.mp3"
+    },
+    {
+      "char": "诞",
+      "hanviet": "",
+      "pinyin": "dan4",
+      "meaning": "sinh; sinh nhật; khoe khoang; tự hào; tăng",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%AF%9E.mp3"
+    },
+    {
+      "char": "岛",
+      "hanviet": "",
+      "pinyin": "dao3",
+      "meaning": "biến thể của 島|岛[dao3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%B2%9B.mp3"
+    },
+    {
+      "char": "德",
+      "hanviet": "đức",
+      "pinyin": "De2",
+      "meaning": "nước Đức; tiếng Đức; viết tắt của 德國|德国[De2 guo2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%BE%B7.mp3"
+    },
+    {
+      "char": "抵",
+      "hanviet": "",
+      "pinyin": "di3",
+      "meaning": "ấn vào; hỗ trợ; chống đỡ; kháng cự; bằng; cân bằng; bù đắp; thế chấp; đạt đến; vỗ nhẹ (tay) (biểu thị sự vui mừng) (ở Đài Loan đọc là [zhi3] cho nghĩa này)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8A%B5.mp3"
+    },
+    {
+      "char": "吊",
+      "hanviet": "",
+      "pinyin": "diao4",
+      "meaning": "treo; treo lên; treo người",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%90%8A.mp3"
+    },
+    {
+      "char": "顶",
+      "hanviet": "",
+      "pinyin": "ding3",
+      "meaning": "đỉnh; mỏm đầu; trên cùng; mái; người nhất; đội lên đầu; đẩy lên trên; đi ngược lại; thay thế; thế chỗ; chịu đựng (bom đạn từ trên không, mưa đá, v.v.); (lóng) \"đẩy\" một chủ đề trên diễn đàn để tăng tương tác; lượng từ cho mũ, nón, khăn trùm đầu, v.v.",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%A1%B6.mp3"
+    },
+    {
+      "char": "夺",
+      "hanviet": "",
+      "pinyin": "duo2",
+      "meaning": "chiếm; đoạt lấy cưỡng chế; tranh giành; giành quyền kiểm soát; chen lấn; bỏ sót; mất",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%A4%BA.mp3"
+    },
+    {
+      "char": "恶",
+      "hanviet": "",
+      "pinyin": "e3",
+      "meaning": "dùng trong 惡心|恶心[e3 xin1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%81%B6.mp3"
+    },
+    {
+      "char": "帆",
+      "hanviet": "",
+      "pinyin": "fan1",
+      "meaning": "biến thể của 帆[fan1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%B8%86.mp3"
+    },
+    {
+      "char": "凡",
+      "hanviet": "phàm",
+      "pinyin": "fan2",
+      "meaning": "bình thường; tầm thường; phàm tục; trần tục; thuộc về thế giới vật chất (trái ngược với cấp độ siêu nhiên hoặc bất tử); mỗi; tất cả; bất kỳ; tổng cộng; cốt lõi; đại ý; nốt trong hệ thống âm nhạc Trung Quốc",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%87%A1.mp3"
+    },
+    {
+      "char": "犯",
+      "hanviet": "phạm",
+      "pinyin": "fan4",
+      "meaning": "vi phạm; xúc phạm; tấn công; tội phạm; tội; phạm sai lầm; tái phát (sai lầm hoặc điều gì xấu)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%8A%AF.mp3"
+    },
+    {
+      "char": "妨",
+      "hanviet": "",
+      "pinyin": "fang2",
+      "meaning": "gây cản trở; (trong câu phủ định hoặc nghi vấn) không có hại; (có) hại gì",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%A6%A8.mp3"
+    },
+    {
+      "char": "肺",
+      "hanviet": "",
+      "pinyin": "fei4",
+      "meaning": "phổi; LT:個|个[ge4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%82%BA.mp3"
+    },
+    {
+      "char": "氛",
+      "hanviet": "",
+      "pinyin": "fen1",
+      "meaning": "khí độc; hơi",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%B0%9B.mp3"
+    },
+    {
+      "char": "奉",
+      "hanviet": "phụng",
+      "pinyin": "feng4",
+      "meaning": "dâng (cống phẩm); trình bày một cách kính trọng (với cấp trên, tổ tiên, thần linh, v.v.); tôn kính; tôn thờ; tin vào (tôn giáo); phục vụ; chấp nhận mệnh lệnh (từ cấp trên)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%A5%89.mp3"
+    },
+    {
+      "char": "辅",
+      "hanviet": "",
+      "pinyin": "fu3",
+      "meaning": "hỗ trợ; bổ sung; phụ trợ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%BE%85.mp3"
+    },
+    {
+      "char": "肝",
+      "hanviet": "gan",
+      "pinyin": "gan1",
+      "meaning": "gan; LT:葉|叶[ye4],個|个[ge4]; (lóng) cày cuốc thâu đêm (chơi game); (trò chơi điện tử) yêu cầu lặp lại nhiều để tiến bộ; cày",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%82%9D.mp3"
+    },
+    {
+      "char": "岗",
+      "hanviet": "",
+      "pinyin": "gang1",
+      "meaning": "biến thể của 岡|冈 [gang1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%B2%97.mp3"
+    },
+    {
+      "char": "攻",
+      "hanviet": "công",
+      "pinyin": "gong1",
+      "meaning": "tấn công; buộc tội; nghiên cứu",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%94%BB.mp3"
+    },
+    {
+      "char": "巩",
+      "hanviet": "",
+      "pinyin": "Gong3",
+      "meaning": "họ [Gong3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%B7%A9.mp3"
+    },
+    {
+      "char": "孤",
+      "hanviet": "cô",
+      "pinyin": "gu1",
+      "meaning": "cô đơn; cô độc",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%AD%A4.mp3"
+    },
+    {
+      "char": "股",
+      "hanviet": "cổ",
+      "pinyin": "gu3",
+      "meaning": "đùi; một phần của tổng thể; phần của một tổng; (cổ phiếu) cổ phần; sợi của sợi chỉ; đơn vị hành chính cấp thấp, dịch là \"ban\" hoặc \"phòng\" v.v., xếp hạng dưới 科[ke1]; lượng từ cho vật dài uốn lượn như dây thừng, sông ngòi v.v.; lượng từ cho khói, mùi v.v.: sợi, làn, hơi; lượng từ cho nhóm người, băng đảng v.v.; lượng từ cho hành động đột ngột, mạnh mẽ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%82%A1.mp3"
+    },
+    {
+      "char": "骨",
+      "hanviet": "cốt",
+      "pinyin": "gu3",
+      "meaning": "xương",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%AA%A8.mp3"
+    },
+    {
+      "char": "拐",
+      "hanviet": "quảy quái quải quầy",
+      "pinyin": "guai3",
+      "meaning": "rẽ (một góc, v.v.); bắt cóc; lừa đảo; tham ô; bảy (dùng thay cho 七[qi1]); biến thể của 枴|拐[guai3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8B%90.mp3"
+    },
+    {
+      "char": "官",
+      "hanviet": "quan",
+      "pinyin": "Guan1",
+      "meaning": "họ [Guan1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%AE%98.mp3"
+    },
+    {
+      "char": "贯",
+      "hanviet": "",
+      "pinyin": "guan4",
+      "meaning": "xuyên qua; đi qua; được xâu lại; thành xâu tiền 1000 đồng",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%B4%AF.mp3"
+    },
+    {
+      "char": "归",
+      "hanviet": "",
+      "pinyin": "Gui1",
+      "meaning": "họ [Gui1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%BD%92.mp3"
+    },
+    {
+      "char": "龟",
+      "hanviet": "",
+      "pinyin": "gui1",
+      "meaning": "rùa cạn; rùa nước; (khẩu ngữ) người chồng bị cắm sừng",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%BE%9F.mp3"
+    },
+    {
+      "char": "轨",
+      "hanviet": "",
+      "pinyin": "gui3",
+      "meaning": "(hình vị hạn chế) đường ray; đường chạy; quỹ đạo; con đường",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%BD%A8.mp3"
+    },
+    {
+      "char": "罕",
+      "hanviet": "",
+      "pinyin": "han3",
+      "meaning": "hiếm",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%BD%95.mp3"
+    },
+    {
+      "char": "旱",
+      "hanviet": "hạn",
+      "pinyin": "han4",
+      "meaning": "hạn hán",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%97%B1.mp3"
+    },
+    {
+      "char": "恨",
+      "hanviet": "hận",
+      "pinyin": "hen4",
+      "meaning": "ghét; hối tiếc",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%81%A8.mp3"
+    },
+    {
+      "char": "宏",
+      "hanviet": "",
+      "pinyin": "hong2",
+      "meaning": "lớn; vĩ đại; macro (tin học); vĩ mô",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%AE%8F.mp3"
+    },
+    {
+      "char": "幻",
+      "hanviet": "ảo",
+      "pinyin": "huan4",
+      "meaning": "ảo tưởng",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%B9%BB.mp3"
+    },
+    {
+      "char": "皇",
+      "hanviet": "hoàng",
+      "pinyin": "Huang2",
+      "meaning": "họ [Huang2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%9A%87.mp3"
+    },
+    {
+      "char": "击",
+      "hanviet": "",
+      "pinyin": "ji1",
+      "meaning": "đánh; tấn công; phá vỡ; tiếng Đài Loan đọc là [ji2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%87%BB.mp3"
+    },
+    {
+      "char": "饥",
+      "hanviet": "",
+      "pinyin": "ji1",
+      "meaning": "(dạng kết hợp) đói",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%A5%A5.mp3"
+    },
+    {
+      "char": "吉",
+      "hanviet": "cát",
+      "pinyin": "Ji2",
+      "meaning": "họ [Ji2]; viết tắt của Jilin 吉林省[Ji2lin2 Sheng3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%90%89.mp3"
+    },
+    {
+      "char": "夹",
+      "hanviet": "",
+      "pinyin": "jia1",
+      "meaning": "ép từ hai phía; đặt vào giữa; kẹp; mang vật gì dưới nách; bị kẹt giữa; giữa; chen vào; trộn; lẫn; tệp; phát âm Đài Loan [jia2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%A4%B9.mp3"
+    },
+    {
+      "char": "尖",
+      "hanviet": "tiêm",
+      "pinyin": "jian1",
+      "meaning": "nhọn; thon; sắc; (âm thanh) chói tai; inh ỏi; (thính giác, thị giác, v.v.) nhạy bén; sắc sảo; tinh tường; làm cho (giọng nói) chói tai; điểm nhọn; đầu mút; phần tốt nhất của cái gì; tinh hoa; tuyệt phẩm",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%B0%96.mp3"
+    },
+    {
+      "char": "肩",
+      "hanviet": "",
+      "pinyin": "jian1",
+      "meaning": "vai; gánh vác (trách nhiệm, v.v.)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%82%A9.mp3"
+    },
+    {
+      "char": "杰",
+      "hanviet": "kiệt",
+      "pinyin": "jie2",
+      "meaning": "(dạng kết hợp) anh hùng; anh dũng; người xuất chúng; người nổi bật; kiệt xuất",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%9D%B0.mp3"
+    },
+    {
+      "char": "戒",
+      "hanviet": "giới",
+      "pinyin": "jie4",
+      "meaning": "phòng ngừa; khuyên răn; cảnh báo hoặc nhắc nhở; từ bỏ hoặc ngừng làm gì đó; giới luật tu hành Phật giáo; nhẫn (đeo ở ngón tay)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%88%92.mp3"
+    },
+    {
+      "char": "劲",
+      "hanviet": "",
+      "pinyin": "jin4",
+      "meaning": "sức mạnh; năng lượng; nhiệt tình; tinh thần; tâm trạng; biểu cảm; hứng thú; LT:把[ba3]; phát âm Đài Loan: [jing4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8A%B2.mp3"
+    },
+    {
+      "char": "井",
+      "hanviet": "tỉnh",
+      "pinyin": "Jing3",
+      "meaning": "Tĩnh, một trong 28 chòm sao của thiên văn học Trung Quốc; họ [Jing3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BA%95.mp3"
+    },
+    {
+      "char": "径",
+      "hanviet": "",
+      "pinyin": "jing4",
+      "meaning": "đường mòn; đường đi; đường kính; thẳng; trực tiếp",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%BE%84.mp3"
+    },
+    {
+      "char": "纠",
+      "hanviet": "",
+      "pinyin": "jiu1",
+      "meaning": "biến thể cũ của 糾|纠[jiu1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%BA%A0.mp3"
+    },
+    {
+      "char": "刊",
+      "hanviet": "san",
+      "pinyin": "kan1",
+      "meaning": "in; xuất bản; ấn phẩm; tạp chí; gọt bằng dao; khắc; sửa chữa",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%88%8A.mp3"
+    },
+    {
+      "char": "抗",
+      "hanviet": "kháng",
+      "pinyin": "kang4",
+      "meaning": "kháng; chống; cưỡng lại; kháng-",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8A%97.mp3"
+    },
+    {
+      "char": "夸",
+      "hanviet": "khoa",
+      "pinyin": "kua1",
+      "meaning": "dùng trong 夸克[kua1 ke4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%A4%B8.mp3"
+    },
+    {
+      "char": "兰",
+      "hanviet": "",
+      "pinyin": "Lan2",
+      "meaning": "họ [Lan2]; viết tắt của Lan Châu 蘭州|兰州[Lan2zhou1], Cam Túc",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%85%B0.mp3"
+    },
+    {
+      "char": "拦",
+      "hanviet": "",
+      "pinyin": "lan2",
+      "meaning": "chặn đường; cản trở; vẫy (xe taxi)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8B%A6.mp3"
+    },
+    {
+      "char": "牢",
+      "hanviet": "lao",
+      "pinyin": "lao2",
+      "meaning": "chắc chắn; vững chắc; chuồng (cho động vật); cúng tế; nhà tù",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%89%A2.mp3"
+    },
+    {
+      "char": "雷",
+      "hanviet": "lôi",
+      "pinyin": "Lei2",
+      "meaning": "họ [Lei2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%9B%B7.mp3"
+    },
+    {
+      "char": "劣",
+      "hanviet": "",
+      "pinyin": "lie4",
+      "meaning": "kém",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8A%A3.mp3"
+    },
+    {
+      "char": "轮",
+      "hanviet": "",
+      "pinyin": "lun2",
+      "meaning": "bánh xe; đĩa; vòng; chuyến tàu hơi nước; thay phiên; xoay vòng; lượng từ cho các vật tròn lớn: đĩa, hoặc sự kiện lặp lại: vòng, lượt",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%BD%AE.mp3"
+    },
+    {
+      "char": "迈",
+      "hanviet": "",
+      "pinyin": "mai4",
+      "meaning": "bước; mở bước",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%BF%88.mp3"
+    },
+    {
+      "char": "麦",
+      "hanviet": "",
+      "pinyin": "Mai4",
+      "meaning": "họ [Mai4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%BA%A6.mp3"
+    },
+    {
+      "char": "盲",
+      "hanviet": "manh",
+      "pinyin": "mang2",
+      "meaning": "mù",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%9B%B2.mp3"
+    },
+    {
+      "char": "贸",
+      "hanviet": "",
+      "pinyin": "mao4",
+      "meaning": "thương mại; mậu dịch",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%B4%B8.mp3"
+    },
+    {
+      "char": "妙",
+      "hanviet": "diệu",
+      "pinyin": "miao4",
+      "meaning": "khéo léo; tuyệt vời",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%A6%99.mp3"
+    },
+    {
+      "char": "灭",
+      "hanviet": "",
+      "pinyin": "mie4",
+      "meaning": "dập tắt hoặc làm tắt; tắt (lửa, v.v.); tiêu diệt hoặc xóa sổ; nhấn chìm",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%81%AD.mp3"
+    },
+    {
+      "char": "纳",
+      "hanviet": "",
+      "pinyin": "Na4",
+      "meaning": "họ [Na4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%BA%B3.mp3"
+    },
+    {
+      "char": "泥",
+      "hanviet": "lầy ne nè né nê nề nể nễ nệ nơi",
+      "pinyin": "ni2",
+      "meaning": "bùn; đất sét; hỗn hợp sệt; chất bột nhão",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%B3%A5.mp3"
+    },
+    {
+      "char": "拟",
+      "hanviet": "",
+      "pinyin": "ni3",
+      "meaning": "nghi ngờ; đa nghi; biến thể của 擬|拟[ni3]; mô phỏng; bắt chước",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8B%9F.mp3"
+    },
+    {
+      "char": "扭",
+      "hanviet": "",
+      "pinyin": "niu3",
+      "meaning": "xoay; vặn; vắt; bong gân; lắc hông",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%89%AD.mp3"
+    },
+    {
+      "char": "盼",
+      "hanviet": "",
+      "pinyin": "pan4",
+      "meaning": "hy vọng; mong mỏi; mong chờ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%9B%BC.mp3"
+    },
+    {
+      "char": "抛",
+      "hanviet": "phao",
+      "pinyin": "pao1",
+      "meaning": "ném; ném đi; quăng; vất bỏ; từ bỏ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8A%9B.mp3"
+    },
+    {
+      "char": "泡",
+      "hanviet": "bàu",
+      "pinyin": "pao1",
+      "meaning": "phồng; sưng; xốp; hồ nhỏ (đặc biệt trong địa danh); lượng từ cho nước tiểu hoặc phân",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%B3%A1.mp3"
+    },
+    {
+      "char": "佩",
+      "hanviet": "",
+      "pinyin": "pei4",
+      "meaning": "kính trọng; đeo (thắt lưng,...)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BD%A9.mp3"
+    },
+    {
+      "char": "披",
+      "hanviet": "phơ",
+      "pinyin": "pi1",
+      "meaning": "khoác lên vai; mở; trải ra; tách ra",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8A%AB.mp3"
+    },
+    {
+      "char": "贫",
+      "hanviet": "",
+      "pinyin": "pin2",
+      "meaning": "nghèo; không đầy đủ; thiếu; hay nói",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%B4%AB.mp3"
+    },
+    {
+      "char": "坡",
+      "hanviet": "pha",
+      "pinyin": "po1",
+      "meaning": "dốc; LT:個|个[ge4]; nghiêng; dốc nghiêng",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%9D%A1.mp3"
+    },
+    {
+      "char": "迫",
+      "hanviet": "bách",
+      "pinyin": "po4",
+      "meaning": "biến thể của 迫[po4]; ngược đãi; áp bức; xấu hổ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%BF%AB.mp3"
+    },
+    {
+      "char": "扑",
+      "hanviet": "bốc",
+      "pinyin": "pu1",
+      "meaning": "lao vào; xông vào; dốc sức; đập cánh; vỗ phành phạch; chấm; nhẹ nhàng vỗ; cuối xuống",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%89%91.mp3"
+    },
+    {
+      "char": "朴",
+      "hanviet": "phắc",
+      "pinyin": "Piao2",
+      "meaning": "họ [Piao2]; họ Hàn Quốc (Park, Pak hoặc Bak); cũng đọc là [Pu2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%9C%B4.mp3"
+    },
+    {
+      "char": "启",
+      "hanviet": "",
+      "pinyin": "qi3",
+      "meaning": "biến thể của 啟|启[qi3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%90%AF.mp3"
+    },
+    {
+      "char": "枪",
+      "hanviet": "",
+      "pinyin": "Qiang1",
+      "meaning": "họ [Qiang1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%9E%AA.mp3"
+    },
+    {
+      "char": "瞧",
+      "hanviet": "",
+      "pinyin": "qiao2",
+      "meaning": "nhìn; xem; khám (bác sĩ); thăm khám",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%9E%A7.mp3"
+    },
+    {
+      "char": "圈",
+      "hanviet": "khuyên",
+      "pinyin": "juan1",
+      "meaning": "giam giữ; khóa lại; nhốt vào",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%9C%88.mp3"
+    },
+    {
+      "char": "券",
+      "hanviet": "",
+      "pinyin": "quan4",
+      "meaning": "trái phiếu (đặc biệt là tài liệu chia làm hai, mỗi bên giữ một nửa); hợp đồng; văn tự (tức là giấy tờ sở hữu); vé; phiếu; chứng chỉ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%88%B8.mp3"
+    },
+    {
+      "char": "丧",
+      "hanviet": "",
+      "pinyin": "sang1",
+      "meaning": "đồ tang; đám tang; (cũ) thi thể",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%B8%A7.mp3"
+    },
+    {
+      "char": "杀",
+      "hanviet": "",
+      "pinyin": "sha1",
+      "meaning": "giết; sát hại; sát nhân; tấn công; làm suy yếu; giảm; (phương ngữ) làm cho đau nhói; (dùng sau động từ) cực kỳ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%9D%80.mp3"
+    },
+    {
+      "char": "闪",
+      "hanviet": "",
+      "pinyin": "Shan3",
+      "meaning": "họ [Shan3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%97%AA.mp3"
+    },
+    {
+      "char": "尚",
+      "hanviet": "chuộng",
+      "pinyin": "Shang4",
+      "meaning": "họ [Shang4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%B0%9A.mp3"
+    },
+    {
+      "char": "舌",
+      "hanviet": "thiệt",
+      "pinyin": "ji1",
+      "meaning": "dùng trong 喇舌[la3 ji1] để phiên âm từ Đài Loan nghĩa là \"lưỡi\"",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%88%8C.mp3"
+    },
+    {
+      "char": "审",
+      "hanviet": "",
+      "pinyin": "shen3",
+      "meaning": "xem xét; điều tra; cẩn thận; xét xử (trong tòa án)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%AE%A1.mp3"
+    },
+    {
+      "char": "寿",
+      "hanviet": "thọ",
+      "pinyin": "Shou4",
+      "meaning": "họ [Shou4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%AF%BF.mp3"
+    },
+    {
+      "char": "汰",
+      "hanviet": "sưởi thải thãi thảy thẩy",
+      "pinyin": "tai4",
+      "meaning": "loại bỏ; loại trừ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%B1%B0.mp3"
+    },
+    {
+      "char": "坛",
+      "hanviet": "",
+      "pinyin": "tan2",
+      "meaning": "bàn thờ; bục; bục giảng; (dùng trong từ phức) giới (thể thao, văn học, v.v.)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%9D%9B.mp3"
+    },
+    {
+      "char": "吐",
+      "hanviet": "thổ",
+      "pinyin": "tu3",
+      "meaning": "nhổ; phun ra (tơ từ tằm, bông từ hoa coton, v.v.); nói; thổ lộ (nỗi uất ức)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%90%90.mp3"
+    },
+    {
+      "char": "吞",
+      "hanviet": "",
+      "pinyin": "tun1",
+      "meaning": "nuốt; uống",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%90%9E.mp3"
+    },
+    {
+      "char": "托",
+      "hanviet": "thác thách thốc thước thướt",
+      "pinyin": "tuo1",
+      "meaning": "nâng bằng tay; đỡ bằng lòng bàn tay; vật dùng để đỡ: cái chống, cái gác (ví dụ: chỗ gác tay); (hình thức kết hợp) người đóng giả hỏi mua; yêu cầu; nhờ vả; ủy thác (biến thể của 託|托[tuo1]); torr (đơn vị áp suất)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%89%98.mp3"
+    },
+    {
+      "char": "亡",
+      "hanviet": "vong",
+      "pinyin": "wang2",
+      "meaning": "chết; mất; không còn; trốn; qua đời",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BA%A1.mp3"
+    },
+    {
+      "char": "委",
+      "hanviet": "uỷ",
+      "pinyin": "Wei3",
+      "meaning": "họ [Wei3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%A7%94.mp3"
+    },
+    {
+      "char": "谓",
+      "hanviet": "",
+      "pinyin": "Wei4",
+      "meaning": "họ [Wei4]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%B0%93.mp3"
+    },
+    {
+      "char": "沃",
+      "hanviet": "óc",
+      "pinyin": "wo4",
+      "meaning": "màu mỡ; giàu có; tưới tiêu; rửa (của sông)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%B2%83.mp3"
+    },
+    {
+      "char": "乌",
+      "hanviet": "",
+      "pinyin": "Wu1",
+      "meaning": "viết tắt của Ukraine 烏克蘭|乌克兰[Wu1ke4lan2]; họ [Wu1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%B9%8C.mp3"
+    },
+    {
+      "char": "吓",
+      "hanviet": "hách",
+      "pinyin": "he4",
+      "meaning": "dọa; dọa dẫm; đe dọa; (thán từ biểu thị sự không tán thành) chậc chậc; (thán từ biểu thị sự kinh ngạc)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%90%93.mp3"
+    },
+    {
+      "char": "雄",
+      "hanviet": "hùng",
+      "pinyin": "xiong2",
+      "meaning": "đực; thuộc giống đực; hùng vĩ; oai nghiêm; mạnh mẽ; vĩ đại; người hoặc quốc gia có quyền lực và ảnh hưởng lớn",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E9%9B%84.mp3"
+    },
+    {
+      "char": "旬",
+      "hanviet": "",
+      "pinyin": "xun2",
+      "meaning": "mười ngày; mười năm; đủ kỳ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%97%AC.mp3"
+    },
+    {
+      "char": "讯",
+      "hanviet": "",
+      "pinyin": "xun4",
+      "meaning": "hỏi; hỏi thăm; thẩm vấn; nhanh chóng; tốc độ; nhanh; tin tức; thông tin",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%AE%AF.mp3"
+    },
+    {
+      "char": "讶",
+      "hanviet": "",
+      "pinyin": "ya4",
+      "meaning": "kinh ngạc",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%AE%B6.mp3"
+    },
+    {
+      "char": "炎",
+      "hanviet": "viêm",
+      "pinyin": "yan2",
+      "meaning": "ngọn lửa; viêm",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%82%8E.mp3"
+    },
+    {
+      "char": "央",
+      "hanviet": "ương",
+      "pinyin": "yang1",
+      "meaning": "trung tâm; kết thúc; cầu xin; nài nỉ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%A4%AE.mp3"
+    },
+    {
+      "char": "仰",
+      "hanviet": "ngưỡng",
+      "pinyin": "Yang3",
+      "meaning": "họ [Yang3]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BB%B0.mp3"
+    },
+    {
+      "char": "仪",
+      "hanviet": "",
+      "pinyin": "yi2",
+      "meaning": "thiết bị; nghi thức; diện mạo; món quà; lễ nghi",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BB%AA.mp3"
+    },
+    {
+      "char": "异",
+      "hanviet": "",
+      "pinyin": "yi4",
+      "meaning": "khác; khác biệt; dị-; bất thường; lạ; ngạc nhiên; phân biệt; tách biệt; kỳ thị",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%BC%82.mp3"
+    },
+    {
+      "char": "抑",
+      "hanviet": "ức",
+      "pinyin": "yi4",
+      "meaning": "kiềm chế; hạn chế; đè nén; hoặc",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%8A%91.mp3"
+    },
+    {
+      "char": "英",
+      "hanviet": "anh",
+      "pinyin": "Ying1",
+      "meaning": "Anh (nước); Vương Quốc Anh; viết tắt của 英國|英国[Ying1 guo2]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%8B%B1.mp3"
+    },
+    {
+      "char": "忧",
+      "hanviet": "",
+      "pinyin": "you1",
+      "meaning": "lo lắng; bận tâm; lo âu; phiền muộn; nỗi buồn; (văn học) để tang",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%BF%A7.mp3"
+    },
+    {
+      "char": "予",
+      "hanviet": "nhừ",
+      "pinyin": "yu2",
+      "meaning": "(cổ) tôi; tớ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BA%88.mp3"
+    },
+    {
+      "char": "晕",
+      "hanviet": "",
+      "pinyin": "yun1",
+      "meaning": "mơ hồ; chóng mặt; choáng; ngất; xỉu; mất ý thức; ngất đi",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%99%95.mp3"
+    },
+    {
+      "char": "匀",
+      "hanviet": "",
+      "pinyin": "yun2",
+      "meaning": "đều; phân bố đều; đồng đều; phân phối đều; chia sẻ",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%8C%80.mp3"
+    },
+    {
+      "char": "孕",
+      "hanviet": "dựng",
+      "pinyin": "yun4",
+      "meaning": "mang thai",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%AD%95.mp3"
+    },
+    {
+      "char": "灾",
+      "hanviet": "tai",
+      "pinyin": "zai1",
+      "meaning": "thảm họa; tai họa",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E7%81%BE.mp3"
+    },
+    {
+      "char": "扎",
+      "hanviet": "trát",
+      "pinyin": "zha1",
+      "meaning": "chích; đâm hoặc chọc (kim, v.v.); cốc hoặc bình dùng để rót bia (từ mượn từ \"jar\")",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%89%8E.mp3"
+    },
+    {
+      "char": "宅",
+      "hanviet": "",
+      "pinyin": "zhai2",
+      "meaning": "nơi cư trú; (thông tục) ở nhà; rúc ở nhà",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%AE%85.mp3"
+    },
+    {
+      "char": "仗",
+      "hanviet": "trượng",
+      "pinyin": "zhang4",
+      "meaning": "vũ khí; cầm (vũ khí); sử dụng; dựa vào; phụ thuộc; chiến tranh; trận chiến",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E4%BB%97.mp3"
+    },
+    {
+      "char": "枝",
+      "hanviet": "chi",
+      "pinyin": "zhi1",
+      "meaning": "cành; lượng từ cho que, gậy, bút, v.v.",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E6%9E%9D.mp3"
+    },
+    {
+      "char": "肿",
+      "hanviet": "",
+      "pinyin": "zhong3",
+      "meaning": "bị sưng; sưng; phồng",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E8%82%BF.mp3"
+    },
+    {
+      "char": "州",
+      "hanviet": "châu",
+      "pinyin": "zhou1",
+      "meaning": "châu; (cũ) tỉnh; (cũ) đơn vị hành chính; bang (ví dụ: của Mỹ); vùng (Nga); tiểu bang (Thụy Sĩ)",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%B7%9E.mp3"
+    },
+    {
+      "char": "妆",
+      "hanviet": "",
+      "pinyin": "zhuang1",
+      "meaning": "(phụ nữ) trang điểm; trang sức; trang phục hồi môn; trang điểm và trang phục sân khấu",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%A6%86.mp3"
+    },
+    {
+      "char": "庄",
+      "hanviet": "chăng",
+      "pinyin": "zhuang1",
+      "meaning": "biến thể của 莊|庄[zhuang1]",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%BA%84.mp3"
+    },
+    {
+      "char": "壮",
+      "hanviet": "",
+      "pinyin": "Zhuang4",
+      "meaning": "dân tộc Choang ở Quảng Tây, nhóm dân tộc đông thứ hai của Trung Quốc",
+      "audio": "https://raw.githubusercontent.com/krmanik/HSK-3.0/main/New%20HSK%20(2025)/Audio/cmn-%E5%A3%AE.mp3"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "wp-01",
+    "level": 4,
+    "title": "Hoàn thành đoạn văn theo 5 từ gợi ý (HSK 4)",
+    "words": [
+      "坚持",
+      "健康",
+      "习惯",
+      "锻炼",
+      "效果"
+    ],
+    "guideline": "Viết một đoạn văn ngắn khoảng 40-60 chữ liên kết hợp lý 5 từ trên.",
+    "sample": "为了保持身体健康，我们应该养成每天锻炼的好习惯。只要能长期坚持下去，就一定能看到明显的健康效果。"
+  },
+  {
+    "id": "wp-02",
+    "level": 5,
+    "title": "Viết đoạn văn ngắn 80 chữ theo từ khóa (HSK 5)",
+    "words": [
+      "压力",
+      "沟通",
+      "理解",
+      "解决",
+      "态度"
+    ],
+    "guideline": "Viết đoạn văn mạch lạc khoảng 80 chữ bàn về cách xử lý căng thẳng trong công việc/cuộc sống.",
+    "sample": "在面对工作和生活中的压力时，积极的态度尤为重要。遇到矛盾与困难，及时与同事或家人沟通交流，增进彼此的理解，是解决问题的有效途径。良好心态才能带来更好的效率。"
+  }
+]

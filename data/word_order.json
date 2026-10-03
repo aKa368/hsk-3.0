@@ -1,0 +1,98 @@
+[
+  {
+    "id": "wo-01",
+    "level": 4,
+    "target": "请你把桌子上的书整理一下。",
+    "tokens": [
+      "请你",
+      "把",
+      "桌子上的书",
+      "整理",
+      "一下"
+    ],
+    "grammar_point": "把字句 (Câu chữ 把)",
+    "meaning_vn": "Xin bạn hãy thu dọn sách trên bàn một chút."
+  },
+  {
+    "id": "wo-02",
+    "level": 4,
+    "target": "妹妹的中文说得比我流利得多。",
+    "tokens": [
+      "妹妹的中文",
+      "说得",
+      "比我",
+      "流利得多"
+    ],
+    "grammar_point": "比字句 + 程度补语 (So sánh hơn + bổ ngữ mức độ)",
+    "meaning_vn": "Tiếng Trung của em gái nói lưu loát hơn tôi rất nhiều."
+  },
+  {
+    "id": "wo-03",
+    "level": 4,
+    "target": "时间不早了，我得回家了。",
+    "tokens": [
+      "时间",
+      "不早了",
+      "，",
+      "我得",
+      "回家了"
+    ],
+    "grammar_point": "能愿动词 得 (děi - phải)",
+    "meaning_vn": "Thời gian không còn sớm nữa, tôi phải về nhà rồi."
+  },
+  {
+    "id": "wo-04",
+    "level": 5,
+    "target": "这个方案得到了专家们的一致认可。",
+    "tokens": [
+      "这个方案",
+      "得到了",
+      "专家们的",
+      "一致认可"
+    ],
+    "grammar_point": "动词 + 宾语搭配 (得到……认可)",
+    "meaning_vn": "Phương án này đã nhận được sự đồng thuận nhất trí của các chuyên gia."
+  },
+  {
+    "id": "wo-05",
+    "level": 5,
+    "target": "与其在这里抱怨，不如赶紧行动起来。",
+    "tokens": [
+      "与其",
+      "在这里抱怨",
+      "，",
+      "不如",
+      "赶紧行动起来"
+    ],
+    "grammar_point": "选择复句 (与其……不如……)",
+    "meaning_vn": "Thà rằng nhanh chóng hành động, còn hơn ngồi đây than phiền."
+  },
+  {
+    "id": "wo-06",
+    "level": 6,
+    "target": "面对突如其来的变故，他显得格外镇定自若。",
+    "tokens": [
+      "面对",
+      "突如其来的变故",
+      "，",
+      "他显得",
+      "格外镇定自若"
+    ],
+    "grammar_point": "成语与状态描写 (格外的用法)",
+    "meaning_vn": "Đối mặt với biến cố bất ngờ ập đến, anh ấy tỏ ra đặc biệt bình tĩnh tự chủ."
+  },
+  {
+    "id": "wo-07",
+    "level": 6,
+    "target": "这项研究成果为医学领域的发展做出了巨大贡献。",
+    "tokens": [
+      "这项研究成果",
+      "为医学领域的",
+      "发展",
+      "做出了",
+      "巨大贡献"
+    ],
+    "grammar_point": "为……做出贡献 (Đóng góp to lớn cho...)",
+    "meaning_vn": "Thành quả nghiên cứu này đã đóng góp to lớn cho sự phát triển của lĩnh vực y học."
+  }
+]
