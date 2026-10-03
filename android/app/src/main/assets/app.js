@@ -1624,8 +1624,8 @@
   // ==========================================================================
   // HỆ THỐNG TỰ ĐỘNG CẬP NHẬT TRỰC TUYẾN (AUTO-UPDATE HOT RELOAD ENGINE)
   // ==========================================================================
-  window.APP_VERSION = '1.0.0';
-  window.APP_BUILD = 2026100301;
+  window.APP_VERSION = '1.1.1';
+  window.APP_BUILD = 2026100303;
 
   function initAutoUpdateChecker() {
     // 1. Đăng ký Service Worker
@@ -1654,24 +1654,26 @@
   }
 
   function checkRemoteVersion() {
+    // 1. Kiểm tra thời gian hoãn nhắc nhở (Snooze 24h)
+    const snoozeUntil = parseInt(localStorage.getItem('hsk_snooze_update_until') || '0', 10);
+    if (Date.now() < snoozeUntil) return;
+
+    // 2. Kiểm tra bản build đã lưu trong máy
+    const savedBuild = parseInt(localStorage.getItem('hsk_acknowledged_build') || '0', 10);
+    const currentBuild = Math.max(window.APP_BUILD, savedBuild);
+
     const updateUrl = 'https://raw.githubusercontent.com/aKa368/hsk-3.0/main/version.json?t=' + Date.now();
     fetch(updateUrl, { cache: 'no-store' })
       .then(res => res.json())
       .then(remote => {
-        if (remote && remote.build && remote.build > window.APP_BUILD) {
-          showUpdateNotification(`🚀 Bản cập nhật mới v${remote.version} (${remote.changelog || 'Cải tiến dữ liệu và sửa lỗi'})!`, () => {
-            if ('caches' in window) {
-              caches.keys().then(keys => Promise.all(keys.map(k => caches.delete(k)))).then(() => window.location.reload());
-            } else {
-              window.location.reload();
-            }
-          });
+        if (remote && remote.build && remote.build > currentBuild) {
+          showUpdateNotification(remote);
         }
       })
       .catch(() => {});
   }
 
-  function showUpdateNotification(message, onApply) {
+  function showUpdateNotification(remote) {
     let toast = document.getElementById('app-update-toast');
     if (!toast) {
       toast = document.createElement('div');
@@ -1683,8 +1685,8 @@
       <div class="update-toast-content">
         <span class="update-toast-icon">🚀</span>
         <div class="update-toast-body">
-          <div class="update-toast-title">HSK 3.0 — Tự động cập nhật</div>
-          <div class="update-toast-msg">${message}</div>
+          <div class="update-toast-title">HSK 3.0 v${remote.version} — Tự động cập nhật</div>
+          <div class="update-toast-msg">${remote.changelog || 'Cải tiến giao diện và sửa lỗi'}</div>
         </div>
       </div>
       <div class="update-toast-actions">
@@ -1695,14 +1697,33 @@
     toast.style.display = 'flex';
 
     document.getElementById('btn-update-now').onclick = () => {
-      if (onApply) onApply();
+      // Đánh dấu bản build đã được người dùng xác nhận
+      localStorage.setItem('hsk_acknowledged_build', remote.build);
+      toast.innerHTML = '<div style="text-align:center; padding:10px; width:100%;"><strong>🔄 Đang đồng bộ tài nguyên mới...</strong><div style="font-size:0.8rem; margin-top:4px;">Ứng dụng sẽ tự nạp lại trong giây lát.</div></div>';
+
+      if ('caches' in window) {
+        caches.keys().then(keys => Promise.all(keys.map(k => caches.delete(k)))).then(() => {
+          if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+            navigator.serviceWorker.controller.postMessage({ type: 'SKIP_WAITING' });
+          }
+          setTimeout(() => window.location.reload(true), 800);
+        }).catch(() => {
+          setTimeout(() => window.location.reload(true), 800);
+        });
+      } else {
+        setTimeout(() => window.location.reload(true), 800);
+      }
     };
+
     document.getElementById('btn-update-later').onclick = () => {
+      // Tạm hoãn 24 tiếng không quấy rầy người dùng
+      localStorage.setItem('hsk_snooze_update_until', Date.now() + 24 * 60 * 60 * 1000);
       toast.style.display = 'none';
     };
   }
 
   window.checkAppUpdate = checkRemoteVersion;
+  window.showUpdateNotification = showUpdateNotification;
 
   
   // ==========================================================================
