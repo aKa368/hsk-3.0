@@ -21,8 +21,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // Chặn hoàn toàn Web Inspector và DevTools từ bên ngoài
+        WebView.setWebContentsDebuggingEnabled(false);
+
         webView = new WebView(this);
         setContentView(webView);
+
+        // Chặn menu context / copy text mức độ native
+        webView.setLongClickable(false);
+        webView.setOnLongClickListener(v -> true);
+        webView.setHapticFeedbackEnabled(false);
 
         // Cấu hình AssetLoader để tải toàn bộ tài nguyên cục bộ từ assets/
         assetLoader = new WebViewAssetLoader.Builder()
@@ -38,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
         settings.setMediaPlaybackRequiresUserGesture(false);
         settings.setLoadWithOverviewMode(true);
         settings.setUseWideViewPort(true);
+        settings.setSupportZoom(false);
+        settings.setBuiltInZoomControls(false);
+        settings.setDisplayZoomControls(false);
 
         webView.setWebViewClient(new WebViewClient() {
             @Override
@@ -56,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Tải trang chủ ứng dụng HSK 3.0 Thư Phòng
+        // Tải trang chủ ứng dụng HSK 3.0
         webView.loadUrl("https://appassets.androidplatform.net/assets/index.html");
     }
 

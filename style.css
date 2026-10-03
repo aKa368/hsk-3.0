@@ -2813,3 +2813,108 @@ body {
   from { transform: translateY(20px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+
+/* ==========================================================================
+   BẢO MẬT GIAO DIỆN & CHỐNG CÀO DỮ LIỆU (ANTI-SCRAPING / ANTI-INSPECT)
+   ========================================================================== */
+*, *::before, *::after {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Cho phép bôi đen chọn văn bản đối với bài đọc học tập */
+.lesson-zh, .lesson-py, .lesson-vi, .lesson-en, .dict-entry-def, .essay-text-display, input, textarea {
+  -webkit-user-select: text !important;
+  user-select: text !important;
+}
+
+/* ==========================================================================
+   THÍCH ỨNG ĐA MÀN HÌNH (RESPONSIVE FOR PHONES & TABLETS)
+   ========================================================================== */
+:root {
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+}
+
+body {
+  padding-top: var(--sat);
+  padding-bottom: var(--sab);
+  padding-left: var(--sal);
+  padding-right: var(--sar);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Màn hình điện thoại nhỏ (dưới 400px - iPhone SE, Android compact) */
+@media screen and (max-width: 400px) {
+  .app-header {
+    padding: 8px 12px;
+  }
+  .header-title {
+    font-size: 1.15rem !important;
+  }
+  .tab-nav {
+    gap: 4px;
+    padding: 6px 8px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .tab-btn {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+  .char-lookup-bar {
+    flex-direction: column;
+    width: 100%;
+  }
+  #custom-char-input {
+    width: 100% !important;
+  }
+  .writer-viewport {
+    padding: 10px !important;
+  }
+}
+
+/* Màn hình máy tính bảng (Tablet 768px - 1024px, iPad, Galaxy Tab) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .app-container, main {
+    max-width: 95% !important;
+    margin: 0 auto;
+  }
+  .dict-cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+    gap: 16px;
+  }
+  .writer-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .writer-controls {
+    flex: 1;
+    max-width: 320px;
+  }
+  .curriculum-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 20px;
+  }
+}
+
+/* Màn hình lớn (Desktop / Tablet ngang > 1024px) */
+@media screen and (min-width: 1025px) {
+  .app-container, main {
+    max-width: 1200px !important;
+    margin: 0 auto;
+  }
+  .dict-cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
+    gap: 20px;
+  }
+}

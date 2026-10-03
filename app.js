@@ -10,6 +10,17 @@
   let currentOrderIndex = 0;
   let currentBingjuIndex = 0;
   let currentEssayIndex = 0;
+  
+  // Hàm tính toán kích thước ô Mễ linh hoạt theo kích thước màn hình thiết bị
+  function getResponsiveWriterSize() {
+    const w = window.innerWidth;
+    if (w < 360) return 230;
+    if (w < 480) return 270;
+    if (w < 768) return 300;
+    if (w < 1024) return 340;
+    return 360;
+  }
+
   let hanziWriter = null;
   let outlineVisible = true;
 
@@ -118,9 +129,10 @@
       const outlineColor = style.getPropertyValue('--hanzi-outline').trim() || '#d6c8b4';
       const drawingColor = style.getPropertyValue('--hanzi-drawing').trim() || '#b93829';
 
+      const writerSize = getResponsiveWriterSize();
       hanziWriter = HanziWriter.create('hanzi-target', ch, {
-        width: 280,
-        height: 280,
+        width: writerSize,
+        height: writerSize,
         padding: 20,
         showOutline: outlineVisible,
         strokeAnimationSpeed: 1.2,
@@ -199,9 +211,10 @@
         const outlineColor = style.getPropertyValue('--hanzi-outline').trim() || '#d6c8b4';
         const drawingColor = style.getPropertyValue('--hanzi-drawing').trim() || '#b93829';
 
+        const writerSize = getResponsiveWriterSize();
         hanziWriter = HanziWriter.create('hanzi-target', item.char, {
-          width: 280,
-          height: 280,
+          width: writerSize,
+          height: writerSize,
           padding: 20,
           showOutline: outlineVisible,
           strokeAnimationSpeed: 1.2,
@@ -1662,6 +1675,19 @@
   document.addEventListener('DOMContentLoaded', () => {
     initAutoUpdateChecker();
 
+    // Bảo mật chống cào và inspect DevTools trên Web/App
+    document.addEventListener('contextmenu', e => {
+      if (!e.target.matches('input, textarea')) {
+        e.preventDefault();
+      }
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || (e.ctrlKey && e.key === 'U')) {
+        e.preventDefault();
+      }
+    });
+
+
         // 0.1 Internationalization (i18n) Engine
     const langSelect = document.getElementById('lang-select');
     if (langSelect) {
@@ -2473,9 +2499,10 @@
       const outlineColor = style.getPropertyValue('--hanzi-outline').trim() || '#d6c8b4';
       const drawingColor = style.getPropertyValue('--hanzi-drawing').trim() || '#b93829';
 
+      const writerSize = getResponsiveWriterSize();
       hanziWriter = HanziWriter.create('hanzi-target', ch, {
-        width: 280,
-        height: 280,
+        width: writerSize,
+        height: writerSize,
         padding: 20,
         showOutline: true,
         strokeAnimationSpeed: 1.2,
