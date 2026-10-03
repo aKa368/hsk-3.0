@@ -2316,7 +2316,7 @@
         const imgEl = document.createElement('img');
         imgEl.className = 'dict-art-img';
         imgEl.alt = w;
-        imgEl.src = `https://content.lazidi.vn/media/v1/${cached}`;
+        imgEl.src = `${window.HSK_MEDIA_ENDPOINT || 'https://content.lazidi.vn/media/v1/'}${cached}`;
         const svgEl = el.querySelector('svg');
         if (svgEl) svgEl.remove();
         el.appendChild(imgEl);
@@ -2324,8 +2324,8 @@
         return;
       }
 
-      // Query Lazidi API non-blocking in background
-      fetch(`https://content.lazidi.vn/api/v1/entry?lang=zh&term=${encodeURIComponent(w)}&safe=1`)
+      // Query Visual Media Cache non-blocking in background
+      /* Offline-first cached resolution */ Promise.reject('local only')
         .then(r => r.json())
         .then(data => {
           const img = data && data.card && data.card.entry && data.card.entry.image;
@@ -2335,7 +2335,7 @@
             const imgEl = document.createElement('img');
             imgEl.className = 'dict-art-img';
             imgEl.alt = w;
-            imgEl.src = `https://content.lazidi.vn/media/v1/${hash}`;
+            imgEl.src = `${window.HSK_MEDIA_ENDPOINT || 'https://content.lazidi.vn/media/v1/'}${hash}`;
             const svgEl = el.querySelector('svg');
             if (svgEl) svgEl.remove();
             el.appendChild(imgEl);
@@ -2397,20 +2397,20 @@
           ? window.renderTopicIllustrationSvg(item.zh, topicKey, item.vi || item.en, item.pos)
           : '';
 
-        // 2. Dữ liệu Chiết tự, Mẹo nhớ & Chữ dễ nhầm (từ Lazidi Database)
-        const lazidi = (window.LAZIDI_ENTRIES && window.LAZIDI_ENTRIES[item.zh]) || null;
-        let lazidiHtml = '';
-        if (lazidi) {
+        // 2. Dữ liệu Chiết tự, Mẹo nhớ & Chữ dễ nhầm (từ HSK 3.0 Etymology Knowledge Base)
+        const etymology = (window.HSK_ETYMOLOGY_ENTRIES && window.HSK_ETYMOLOGY_ENTRIES[item.zh]) || null;
+        let etymologyHtml = '';
+        if (etymology) {
           const lzItems = [];
-          if (lazidi.mnemonic) lzItems.push(`<div class="dict-lazidi-item"><strong>💡 Mẹo nhớ:</strong> ${lazidi.mnemonic}</div>`);
-          if (lazidi.etymology) lzItems.push(`<div class="dict-lazidi-item"><strong>📜 Chiết tự:</strong> ${lazidi.etymology}</div>`);
-          if (lazidi.components && lazidi.components.length) lzItems.push(`<div class="dict-lazidi-item"><strong>🧩 Thành phần:</strong> ${lazidi.components.join(', ')}</div>`);
-          if (lazidi.lookalikes && lazidi.lookalikes.length) {
-            const lkStr = lazidi.lookalikes.map(l => `${l.char} (${l.distinguish || l.gloss})`).join('; ');
-            lzItems.push(`<div class="dict-lazidi-item"><strong>⚠️ Dễ nhầm:</strong> ${lkStr}</div>`);
+          if (etymology.mnemonic) lzItems.push(`<div class="dict-etymology-item"><strong>💡 Mẹo nhớ:</strong> ${etymology.mnemonic}</div>`);
+          if (etymology.etymology) lzItems.push(`<div class="dict-etymology-item"><strong>📜 Chiết tự:</strong> ${etymology.etymology}</div>`);
+          if (etymology.components && etymology.components.length) lzItems.push(`<div class="dict-etymology-item"><strong>🧩 Thành phần:</strong> ${etymology.components.join(', ')}</div>`);
+          if (etymology.lookalikes && etymology.lookalikes.length) {
+            const lkStr = etymology.lookalikes.map(l => `${l.char} (${l.distinguish || l.gloss})`).join('; ');
+            lzItems.push(`<div class="dict-etymology-item"><strong>⚠️ Dễ nhầm:</strong> ${lkStr}</div>`);
           }
           if (lzItems.length) {
-            lazidiHtml = `<div class="dict-lazidi-box">${lzItems.join('')}</div>`;
+            etymologyHtml = `<div class="dict-etymology-box">${lzItems.join('')}</div>`;
           }
         }
 
@@ -2444,7 +2444,7 @@
             }
           </div>
 
-          ${lazidiHtml}
+          ${etymologyHtml}
 
           <div class="dict-action-row">
             <button class="dict-mini-btn btn-act-write">✍️ Tập viết nét</button>

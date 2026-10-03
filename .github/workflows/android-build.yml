@@ -29,8 +29,8 @@ jobs:
             eval(fs.readFileSync('data.js', 'utf8'));
             eval(fs.readFileSync('practice_essays_data.js', 'utf8'));
             eval(fs.readFileSync('curriculum_data.js', 'utf8'));
-            eval(fs.readFileSync('lazidi_data.js', 'utf8'));
-            eval(fs.readFileSync('lazidi_images.js', 'utf8'));
+            eval(fs.readFileSync('hsk_etymology_data.js', 'utf8'));
+            eval(fs.readFileSync('hsk_visual_media.js', 'utf8'));
             eval(fs.readFileSync('visual_entity_library.js', 'utf8'));
             eval(fs.readFileSync('visual_vocab_data.js', 'utf8'));
             eval(fs.readFileSync('dict_data.js', 'utf8'));

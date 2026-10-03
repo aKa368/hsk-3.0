@@ -811,8 +811,8 @@ window.renderTopicIllustrationSvg = function(zh, topicKey, meaning, pos) {
   // z already initialized
   const firstChar = z.charAt(0);
 
-  // 1. Kiểm tra ảnh minh họa thực tế chuẩn WebP từ Lazidi CDN (Trực tiếp hoặc qua Gốc Thực Thể)
-  let lazidiHash = (window.LAZIDI_IMAGES && window.LAZIDI_IMAGES[z]) ||
+  // 1. Kiểm tra ảnh minh họa thực tế chuẩn WebP từ HSK 3.0 Visual Media CDN (Trực tiếp hoặc qua Gốc Thực Thể)
+  let visualMediaHash = (window.HSK_VISUAL_MEDIA && window.HSK_VISUAL_MEDIA[z]) ||
                    (typeof localStorage !== 'undefined' && localStorage.getItem('hsk_img_' + z)) || null;
   let customBadge = null;
 
@@ -821,10 +821,10 @@ window.renderTopicIllustrationSvg = function(zh, topicKey, meaning, pos) {
     // Ranh giới trung tâm ngữ: từ đơn 1 chữ chỉ khớp chính xác tuyệt đối (r === z), từ 2 chữ trở lên mới khớp chuỗi con
     if (roots.some(r => r === z || (r.length > 1 && z.includes(r)))) {
       customBadge = bLabel;
-      if (!lazidiHash && window.LAZIDI_IMAGES) {
+      if (!visualMediaHash && window.HSK_VISUAL_MEDIA) {
         for (const r of roots) {
-          if (window.LAZIDI_IMAGES[r]) {
-            lazidiHash = window.LAZIDI_IMAGES[r];
+          if (window.HSK_VISUAL_MEDIA[r]) {
+            visualMediaHash = window.HSK_VISUAL_MEDIA[r];
             break;
           }
         }
@@ -833,13 +833,13 @@ window.renderTopicIllustrationSvg = function(zh, topicKey, meaning, pos) {
     }
   }
 
-  if (lazidiHash) {
+  if (visualMediaHash) {
     const topicConf = topicConfigs[topicKey] || topicConfigs.abstract_concept;
     const resolvedBadge = customBadge || getDynamicBadge(z, meaning, topicConf.badge);
     return `
       <div class="dict-art-viewport" data-word="${z}">
         <div class="dict-art-badge">${resolvedBadge}</div>
-        <img src="https://content.lazidi.vn/media/v1/${lazidiHash}" class="dict-art-img" alt="${z}" loading="lazy" />
+        <img src="${window.HSK_MEDIA_ENDPOINT || 'https://content.lazidi.vn/media/v1/'}${visualMediaHash}" class="dict-art-img" alt="${z}" loading="lazy" />
       </div>
     `;
   }

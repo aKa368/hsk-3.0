@@ -2434,7 +2434,7 @@ body {
   margin-bottom: 4px;
 }
 
-.dict-lazidi-box {
+.dict-etymology-box {
   background: var(--paper-card-sub);
   border: 1px solid var(--border-paper);
   border-radius: 6px;
@@ -2447,11 +2447,11 @@ body {
   gap: 4px;
 }
 
-.dict-lazidi-item {
+.dict-etymology-item {
   color: var(--ink-secondary);
 }
 
-.dict-lazidi-item strong {
+.dict-etymology-item strong {
   color: var(--vermilion);
 }
 
