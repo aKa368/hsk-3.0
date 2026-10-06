@@ -407,6 +407,36 @@ window.HSK_PRACTICE_ESSAYS = {
       "sample_pinyin": "zhuī qiú shì yè chéng gōng de tóng shí ， wǒ men gèng yīng gāi xué huì píng héng gōng zuò yǔ jiā tíng 。 zhēn xī yǔ jiā rén xiāng chǔ de měi yí gè shùn jiān ， yīn wèi nèi xīn de píng jìng yǔ chōng shí cái shì zhēn zhèng de xìng fú 。",
       "sample_hanviet": "truy cầu sự nghiệp thành công đích đồng thời ， ngã môn canh ưng cai học hội bình hành công tác dữ gia đình 。 trân tích dữ gia nhân tương xử đích mỗi nhất cá thuận gian ， nhân vị nội tâm đích bình tĩnh dữ sung thực tài thị chân chính đích hạnh phúc 。",
       "sample_vi": "Trong khi theo đuổi thành công sự nghiệp, chúng ta càng nên học cách cân bằng giữa công việc và gia đình. Trân trọng từng khoảnh khắc bên người thân, bởi sự bình yên và trọn vẹn trong tâm hồn mới là hạnh phúc đích thực."
+    },
+    {
+      "id": "essay-5-2",
+      "level": 5,
+      "title": "Bản năng tự chữa lành của động vật (HSK 5)",
+      "words": [
+        { "zh": "本领", "py": "běn lǐng", "hv": "BẢN LĨNH", "mean": "bản lĩnh, kỹ năng" },
+        { "zh": "温泉", "py": "wēn quán", "hv": "ÔN TUYỀN", "mean": "suối nước nóng" },
+        { "zh": "信号", "py": "xìn hào", "hv": "TÍN HIỆU", "mean": "tín hiệu" },
+        { "zh": "生存", "py": "shēng cún", "hv": "SINH TỒN", "mean": "sinh tồn" }
+      ],
+      "sample_zh": "许多野生动物虽然没有接受过生存训练，竟然也是自救的高手。当小熊的皮肤出现问题时，母熊就会带它去泡温泉治病。海豚遇到鲨鱼袭击时，会向同伴发出求救信号，大家联合起来对抗敌人。凭着这些特殊的生存技能，动物在面对疾病或天敌时才得以生存。",
+      "sample_pinyin": "xǔ duō yě shēng dòng wù suī rán méi yǒu jiē shòu guò shēng cún xùn liàn ， jìng rán yě shì zì jiù de gāo shǒu 。 dāng xiǎo xióng de pí fū chū xiàn wèn tí shí ， mǔ xióng jiù huì dài tā qù pào wēn quán zhì bìng 。 hǎi tún yù dào shā yú xí jī shí ， huì xiàng tóng bàn fā chū qiú jiù xìn hào ， dà jiā lián hé qǐ lai duì kàng dí rén 。 píng zhe zhè xiē tè shū de shēng cún jì néng ， dòng wù zài miàn duì jí bìng huò tiān dí shí cái dé yǐ shēng cún 。",
+      "sample_hanviet": "hứa đa dã sinh động vật tuy nhiên một hữu tiếp thụ quá sinh tồn huấn luyện ， cánh nhiên dã thị tự cứu đích cao thủ 。 đương tiểu hùng đích bì phu xuất hiện vấn đề thời ， mẫu hùng tựu hội đới tha khứ bào ôn tuyền trị bệnh 。 hải đồn ngộ đáo sa ngư tập kích thời ， hội hướng đồng bạn phát xuất cầu cứu tín hiệu ， đại gia liên hợp khởi lai đối kháng địch nhân 。 bằng trước giá tiệp đặc thù đích sinh tồn kỹ năng ， động vật tại diện đối tật bệnh hoặc thiên địch thời tài đắc dĩ sinh tồn 。",
+      "sample_vi": "Nhiều loài động vật hoang dã tuy chưa từng trải qua huấn luyện sinh tồn nhưng lại là những cao thủ tự chữa lành. Khi gấu con gặp vấn đề về da, gấu mẹ sẽ dẫn con đi ngâm suối nước nóng để chữa bệnh. Khi cá heo bị cá mập tấn công, chúng sẽ phát tín hiệu cầu cứu để đồng loại cùng hợp lực chống trả kẻ thù. Nhờ vào những kỹ năng sinh tồn đặc biệt này, muôn loài mới có thể tồn tại trước bệnh tật và thiên địch."
+    },
+    {
+      "id": "essay-5-3",
+      "level": 5,
+      "title": "Khách sạn 5 sao từ phế thải xây dựng (HSK 5)",
+      "words": [
+        { "zh": "理念", "py": "lǐ niàn", "hv": "LÝ NIỆM", "mean": "triết lý, quan niệm" },
+        { "zh": "装修", "py": "zhuāng xiū", "hv": "TRANG TU", "mean": "trang trí nội thất" },
+        { "zh": "艺术", "py": "yì shù", "hv": "NGHỆ THUẬT", "mean": "nghệ thuật" },
+        { "zh": "资源", "py": "zī yuán", "hv": "TƯ NGUYÊN", "mean": "tài nguyên" }
+      ],
+      "sample_zh": "在大多数人看来，旧砖、旧瓦、旧木头简直就是一堆让人头疼的建筑垃圾，但它们却被充分利用起来，打造成了一个顶级的五星级酒店。陈旧并不意味着简陋，没有所谓的废弃物，只有放错位置的资源。只要拥有创新的设计理念，旧物也能焕发全新的光彩。",
+      "sample_pinyin": "zài dà duō shù rén kàn lái ， jiù zhuān 、 jiù wǎ 、 jiù mù tou jiǎn zhí jiù shì yì duī ràng rén tóu téng de jiàn zhù lā jī ， dàn tā men què bèi chōng fèn lì yòng qǐ lai ， dǎ zào chéng le yí gè dǐng jí de wǔ xīng jí jiǔ diàn 。 chén jiù bìng bù yì wèi zhe jiǎn lòu ， méi yǒu suǒ wèi de fèi qì wù ， zhǐ yǒu fàng cuò wèi zhi de zī yuán 。 zhǐ yào yōng yǒu chuàng xīn de shè jì lǐ niàn ， jiù wù yě néng huàn fā quán xīn de guāng cǎi 。",
+      "sample_hanviet": "tại đại đa số nhân khán lai ， cựu chuyên 、 cựu ngõa 、 cựu mộc đầu giản trực tựu thị nhất đôi nhượng nhân đầu thống đích kiến trúc lạp kê ， đãn tha môn khước bị sung phần lợi dụng khởi lai ， đả tạo thành liễu nhất cá đỉnh cấp đích ngũ tinh cấp cửu điếm 。 trần cựu tịnh bất ý vị trước giản lậu ， một hữu sở vị đích phế khí vật ， chỉ hữu phóng thác vị trí đích tư nguyên 。 chỉ yếu ung hữu sáng tân đích thiết kế lý niệm ， cựu vật dã năng hoán phát toàn tân đích quang thải 。",
+      "sample_vi": "Trong mắt đa số mọi người, gạch cũ, ngói cũ, gỗ cũ chỉ là đống rác thải xây dựng gây đau đầu, nhưng chúng lại được tận dụng triệt để để tạo nên một khách sạn 5 sao đẳng cấp. Cũ kỹ không đồng nghĩa với đơn sơ mộc mạc; không có thứ gì gọi là phế thải, chỉ có những tài nguyên bị đặt nhầm chỗ. Chỉ cần có tư duy thiết kế đổi mới, đồ cũ cũng có thể tỏa sáng rực rỡ."
     }
   ],
   "HSK6": [

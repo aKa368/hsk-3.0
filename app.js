@@ -1676,8 +1676,8 @@
   // ==========================================================================
   // HỆ THỐNG TỰ ĐỘNG CẬP NHẬT TRỰC TUYẾN (AUTO-UPDATE HOT RELOAD ENGINE)
   // ==========================================================================
-  window.APP_VERSION = '1.1.2';
-  window.APP_BUILD = 2026100304;
+  window.APP_VERSION = '1.1.3';
+  window.APP_BUILD = 2026100601;
 
   function initAutoUpdateChecker() {
     // 1. Đăng ký Service Worker
