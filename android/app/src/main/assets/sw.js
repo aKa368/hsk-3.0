@@ -1,4 +1,4 @@
-const CACHE_NAME = 'hsk3-cache-v37';
+const CACHE_NAME = 'hsk3-cache-v38';
 const ASSETS = [
   './',
   './index.html',
@@ -6,6 +6,7 @@ const ASSETS = [
   './icon.png',
   './favicon.png',
   './practice_essays_data.js',
+  './specialized_tracks_data.js',
   './app.js',
   './srs_quiz_engine.js',
   './tcm_data.js',

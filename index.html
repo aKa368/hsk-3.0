@@ -93,6 +93,10 @@
           <span class="tab-num">六</span>
           <span class="tab-name">Từ Điển <small class="tab-sub">(字典) </small></span>
         </button>
+        <button class="tab-btn" data-tab="tab-specialized">
+          <span class="tab-num">七</span>
+          <span class="tab-name">Chuyên Ngành <small class="tab-sub">(专业) </small></span>
+        </button>
       </div>
     </nav>
 
@@ -536,6 +540,37 @@
         <!-- Phân trang từ điển -->
         <div id="dict-pagination" class="dict-pagination-bar"></div>
       </section>
+
+      <!-- TAB 7: KHÓA HỌC & ÔN LUYỆN THEO CHUYÊN NGÀNH (SPECIALIZED TRACKS) -->
+      <section id="tab-specialized" class="page-pane">
+        <div class="specialized-header">
+          <div class="specialized-title-wrap">
+            <h2 class="specialized-title">🏛️ Khóa Học Tiếng Trung Chuyên Ngành (专业汉语课程)</h2>
+            <p class="specialized-desc">Bóc tách từ vựng, mẫu câu đàm phán và bài đọc thực chiến theo từng lĩnh vực nghề nghiệp tiêu chuẩn.</p>
+          </div>
+          <!-- Track selector pills -->
+          <div class="track-pills-bar" id="track-pills-bar">
+            <button class="track-pill active" data-track="tcm">🩺 Y Dược & Đông Y</button>
+            <button class="track-pill" data-track="business">💼 Thương Mại & Ngoại Thương</button>
+            <button class="track-pill" data-track="tech">💻 Công Nghệ & AI</button>
+            <button class="track-pill" data-track="legal">⚖️ Pháp Luật & Hợp Đồng</button>
+            <button class="track-pill" data-track="tourism">✈️ Du Lịch & Khách Sạn</button>
+          </div>
+        </div>
+
+        <!-- Banner thông tin khóa học chuyên ngành -->
+        <div id="track-hero-card" class="track-hero-card"></div>
+
+        <!-- Subtabs trong chuyên ngành -->
+        <div class="track-subtabs-bar">
+          <button class="track-subtab-btn active" data-sub="vocab">📚 Thuật Ngữ Cốt Lõi (词汇)</button>
+          <button class="track-subtab-btn" data-sub="sentences">💬 Mẫu Câu Thực Chiến (句型)</button>
+          <button class="track-subtab-btn" data-sub="case">📜 Tình Huống & Bài Đọc (案例)</button>
+        </div>
+
+        <!-- Nội dung chi tiết chuyên ngành -->
+        <div id="track-content-area" class="track-content-area"></div>
+      </section>
     </main>
   </div>
 
@@ -550,6 +585,7 @@
   <script src="dict_data.js"></script>
   <script src="practice_essays_data.js"></script>
   <script src="tcm_data.js"></script>
+  <script src="specialized_tracks_data.js"></script>
   <script src="srs_quiz_engine.js"></script>
   <script src="app.js"></script>
 </body>

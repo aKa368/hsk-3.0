@@ -1508,6 +1508,150 @@
     else if (activeTab === 'tab-curriculum') { initCurriculumTab(); renderDirectionalGallery(); renderGrammarTab(); }
     else if (activeTab === 'tab-exercise') renderExerciseTab();
     else if (activeTab === 'tab-dictionary') renderDictionaryTab();
+    else if (activeTab === 'tab-specialized') renderSpecializedTab();
+  }
+
+  // ==========================================================================
+  // TAB 7: KHÓA HỌC CHUYÊN NGÀNH (SPECIALIZED TRACKS)
+  // ==========================================================================
+  let currentTrackKey = 'tcm';
+  let currentTrackSub = 'vocab';
+
+  function initSpecializedTabListeners() {
+    const pillsBar = document.getElementById('track-pills-bar');
+    if (pillsBar && !pillsBar.dataset.bound) {
+      pillsBar.dataset.bound = 'true';
+      pillsBar.querySelectorAll('.track-pill').forEach(btn => {
+        btn.onclick = () => {
+          pillsBar.querySelectorAll('.track-pill').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentTrackKey = btn.dataset.track;
+          renderSpecializedTab();
+        };
+      });
+    }
+
+    const subtabsBar = document.querySelector('.track-subtabs-bar');
+    if (subtabsBar && !subtabsBar.dataset.bound) {
+      subtabsBar.dataset.bound = 'true';
+      subtabsBar.querySelectorAll('.track-subtab-btn').forEach(btn => {
+        btn.onclick = () => {
+          subtabsBar.querySelectorAll('.track-subtab-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentTrackSub = btn.dataset.sub;
+          renderSpecializedContent();
+        };
+      });
+    }
+  }
+
+  function renderSpecializedTab() {
+    initSpecializedTabListeners();
+    const tracks = window.SPECIALIZED_TRACKS || {};
+    const track = tracks[currentTrackKey] || tracks.tcm;
+    if (!track) return;
+
+    // Render Hero Card
+    const heroEl = document.getElementById('track-hero-card');
+    if (heroEl) {
+      heroEl.innerHTML = `
+        <div class="hero-title">${track.icon} ${track.title}</div>
+        <div class="hero-sub">${track.subtitle}</div>
+        <div class="hero-level">🎯 Mục tiêu: ${track.level}</div>
+      `;
+    }
+
+    renderSpecializedContent();
+  }
+
+  function renderSpecializedContent() {
+    const tracks = window.SPECIALIZED_TRACKS || {};
+    const track = tracks[currentTrackKey] || tracks.tcm;
+    const contentArea = document.getElementById('track-content-area');
+    if (!contentArea || !track) return;
+
+    if (currentTrackSub === 'vocab') {
+      let html = '<div class="track-vocab-grid">';
+      (track.vocab || []).forEach(item => {
+        html += `
+          <div class="track-vocab-card">
+            <div class="track-vocab-top">
+              <span class="track-vocab-zh">${item.zh}</span>
+              <span class="track-vocab-py">${item.py}</span>
+            </div>
+            <span class="track-vocab-hv">${item.hv}</span>
+            <div class="track-vocab-mean">${item.mean}</div>
+            ${item.ex_zh ? `
+              <div class="track-vocab-ex">
+                <div class="track-vocab-ex-zh">📌 ${item.ex_zh}</div>
+                <div class="track-vocab-ex-vi">${item.ex_vi || ''}</div>
+              </div>
+            ` : ''}
+            <div class="track-vocab-actions">
+              <button class="track-vocab-btn btn-speak" data-text="${item.zh}">🔊 Nghe đọc</button>
+              <button class="track-vocab-btn btn-write" data-char="${item.zh[0]}">✍️ Tập viết "${item.zh[0]}"</button>
+            </div>
+          </div>
+        `;
+      });
+      html += '</div>';
+      contentArea.innerHTML = html;
+
+      contentArea.querySelectorAll('.btn-speak').forEach(btn => {
+        btn.onclick = () => speakText(btn.dataset.text);
+      });
+      contentArea.querySelectorAll('.btn-write').forEach(btn => {
+        btn.onclick = () => {
+          const char = btn.dataset.char;
+          const customInput = document.getElementById('custom-char-input');
+          const customBtn = document.getElementById('btn-custom-char-lookup');
+          const writeTabBtn = document.querySelector('.tab-btn[data-tab="tab-writing"]');
+          if (customInput && customBtn && writeTabBtn) {
+            customInput.value = char;
+            writeTabBtn.click();
+            customBtn.click();
+          }
+        };
+      });
+    } else if (currentTrackSub === 'sentences') {
+      let html = '<div class="track-sentences-list">';
+      (track.sentences || []).forEach(item => {
+        html += `
+          <div class="track-sentence-card">
+            <div class="track-sentence-zh">🗣️ ${item.zh}</div>
+            <div class="track-sentence-py">${item.py}</div>
+            <div class="track-sentence-vi">💡 ${item.vi}</div>
+            <div class="track-vocab-actions" style="margin-top: 8px;">
+              <button class="track-vocab-btn btn-speak" data-text="${item.zh}">🔊 Nghe phát âm</button>
+            </div>
+          </div>
+        `;
+      });
+      html += '</div>';
+      contentArea.innerHTML = html;
+      contentArea.querySelectorAll('.btn-speak').forEach(btn => {
+        btn.onclick = () => speakText(btn.dataset.text);
+      });
+    } else if (currentTrackSub === 'case') {
+      const c = track.case_study;
+      if (!c) {
+        contentArea.innerHTML = '<p>Chưa có bài đọc tình huống.</p>';
+        return;
+      }
+      contentArea.innerHTML = `
+        <div class="track-case-card">
+          <div class="track-case-title">📑 ${c.title}</div>
+          <div class="track-case-zh">${c.zh}</div>
+          <div class="track-case-vi"><strong>Bản dịch đối chiếu:</strong><br>${c.vi}</div>
+          <div class="track-vocab-actions" style="margin-top: 14px;">
+            <button class="track-vocab-btn btn-speak" data-text="${c.zh}">🔊 Nghe toàn bài</button>
+          </div>
+        </div>
+      `;
+      contentArea.querySelector('.btn-speak')?.addEventListener('click', () => {
+        speakText(c.zh);
+      });
+    }
   }
 
 
@@ -1676,8 +1820,8 @@
   // ==========================================================================
   // HỆ THỐNG TỰ ĐỘNG CẬP NHẬT TRỰC TUYẾN (AUTO-UPDATE HOT RELOAD ENGINE)
   // ==========================================================================
-  window.APP_VERSION = '1.1.3';
-  window.APP_BUILD = 2026100601;
+  window.APP_VERSION = '1.2.0';
+  window.APP_BUILD = 2026101001;
 
   function initAutoUpdateChecker() {
     // 1. Đăng ký Service Worker
