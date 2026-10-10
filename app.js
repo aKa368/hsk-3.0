@@ -1849,24 +1849,38 @@
     window.addEventListener('online', () => setTimeout(checkRemoteVersion, 1000));
   }
 
-  function checkRemoteVersion() {
-    // 1. Kiểm tra thời gian hoãn nhắc nhở (Snooze 24h)
-    const snoozeUntil = parseInt(localStorage.getItem('hsk_snooze_update_until') || '0', 10);
-    if (Date.now() < snoozeUntil) return;
-
-    // 2. Kiểm tra bản build đã lưu trong máy
-    const savedBuild = parseInt(localStorage.getItem('hsk_acknowledged_build') || '0', 10);
-    const currentBuild = Math.max(window.APP_BUILD, savedBuild);
-
-    const updateUrl = 'https://raw.githubusercontent.com/aKa368/hsk-3.0/main/version.json?t=' + Date.now();
-    fetch(updateUrl, { cache: 'no-store' })
-      .then(res => res.json())
-      .then(remote => {
-        if (remote && remote.build && remote.build > currentBuild) {
-          showUpdateNotification(remote);
+  async function fetchRemoteVersionData() {
+    const endpoints = [
+      'https://aka368.github.io/hsk-3.0/version.json?t=' + Date.now(),
+      'https://cdn.jsdelivr.net/gh/aKa368/hsk-3.0@main/version.json?t=' + Date.now(),
+      'https://raw.githubusercontent.com/aKa368/hsk-3.0/main/version.json?t=' + Date.now()
+    ];
+    for (const url of endpoints) {
+      try {
+        const res = await fetch(url, { cache: 'no-store' });
+        if (res.ok) {
+          const data = await res.json();
+          if (data && data.build) return data;
         }
-      })
-      .catch(() => {});
+      } catch (e) {}
+    }
+    return null;
+  }
+
+  async function checkRemoteVersion(isManual = false) {
+    if (!isManual) {
+      const snoozeUntil = parseInt(localStorage.getItem('hsk_snooze_update_until') || '0', 10);
+      if (Date.now() < snoozeUntil) return;
+    }
+
+    const currentBuild = window.APP_BUILD || 2026100304;
+    const remote = await fetchRemoteVersionData();
+
+    if (remote && remote.build && remote.build > currentBuild) {
+      showUpdateNotification(remote);
+    } else if (isManual) {
+      alert(`✅ Ứng dụng đang ở phiên bản mới nhất: v${window.APP_VERSION || '1.2.0'} (Build ${currentBuild})`);
+    }
   }
 
   function showUpdateNotification(remote) {
@@ -1877,45 +1891,56 @@
       toast.className = 'app-update-toast';
       document.body.appendChild(toast);
     }
+
+    const isAndroidApp = !!window.AndroidTTS || location.host.includes('androidplatform');
+    const apkDownloadUrl = 'https://github.com/aKa368/hsk-3.0/raw/main/HSK_3.0.apk';
+
     toast.innerHTML = `
       <div class="update-toast-content">
         <span class="update-toast-icon">🚀</span>
         <div class="update-toast-body">
-          <div class="update-toast-title">HSK 3.0 v${remote.version} — Tự động cập nhật</div>
-          <div class="update-toast-msg">${remote.changelog || 'Cải tiến giao diện và sửa lỗi'}</div>
+          <div class="update-toast-title">HSK 3.0 v${remote.version} — Có bản cập nhật mới!</div>
+          <div class="update-toast-msg">${remote.changelog || 'Bổ sung Tab 7 Chuyên Ngành và sửa lỗi.'}</div>
         </div>
       </div>
       <div class="update-toast-actions">
-        <button id="btn-update-now" class="paper-btn primary-btn sm-btn">Cập nhật ngay</button>
+        ${isAndroidApp ? `
+          <a href="${apkDownloadUrl}" target="_blank" id="btn-download-apk" class="paper-btn primary-btn sm-btn" style="text-decoration:none; display:inline-flex; align-items:center; gap:4px;">📥 Cài đặt APK v${remote.version}</a>
+          <button id="btn-update-now" class="paper-btn sm-btn">🔄 Tải lại</button>
+        ` : `
+          <button id="btn-update-now" class="paper-btn primary-btn sm-btn">Cập nhật ngay</button>
+        `}
         <button id="btn-update-later" class="paper-btn sm-btn">Để sau</button>
       </div>
     `;
     toast.style.display = 'flex';
 
-    document.getElementById('btn-update-now').onclick = () => {
-      // Đánh dấu bản build đã được người dùng xác nhận
-      localStorage.setItem('hsk_acknowledged_build', remote.build);
-      toast.innerHTML = '<div style="text-align:center; padding:10px; width:100%;"><strong>🔄 Đang đồng bộ tài nguyên mới...</strong><div style="font-size:0.8rem; margin-top:4px;">Ứng dụng sẽ tự nạp lại trong giây lát.</div></div>';
+    const btnUpdate = document.getElementById('btn-update-now');
+    if (btnUpdate) {
+      btnUpdate.onclick = () => {
+        toast.innerHTML = '<div style="text-align:center; padding:10px; width:100%;"><strong>🔄 Đang đồng bộ tài nguyên mới...</strong><div style="font-size:0.8rem; margin-top:4px;">Ứng dụng sẽ tự nạp lại trong giây lát.</div></div>';
+        if ('caches' in window) {
+          caches.keys().then(keys => Promise.all(keys.map(k => caches.delete(k)))).then(() => {
+            if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+              navigator.serviceWorker.controller.postMessage({ type: 'SKIP_WAITING' });
+            }
+            setTimeout(() => window.location.reload(true), 600);
+          }).catch(() => {
+            setTimeout(() => window.location.reload(true), 600);
+          });
+        } else {
+          setTimeout(() => window.location.reload(true), 600);
+        }
+      };
+    }
 
-      if ('caches' in window) {
-        caches.keys().then(keys => Promise.all(keys.map(k => caches.delete(k)))).then(() => {
-          if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
-            navigator.serviceWorker.controller.postMessage({ type: 'SKIP_WAITING' });
-          }
-          setTimeout(() => window.location.reload(true), 800);
-        }).catch(() => {
-          setTimeout(() => window.location.reload(true), 800);
-        });
-      } else {
-        setTimeout(() => window.location.reload(true), 800);
-      }
-    };
-
-    document.getElementById('btn-update-later').onclick = () => {
-      // Tạm hoãn 24 tiếng không quấy rầy người dùng
-      localStorage.setItem('hsk_snooze_update_until', Date.now() + 24 * 60 * 60 * 1000);
-      toast.style.display = 'none';
-    };
+    const btnLater = document.getElementById('btn-update-later');
+    if (btnLater) {
+      btnLater.onclick = () => {
+        localStorage.setItem('hsk_snooze_update_until', Date.now() + 4 * 60 * 60 * 1000); // Tạm hoãn 4 tiếng thay vì 24 tiếng
+        toast.style.display = 'none';
+      };
+    }
   }
 
   window.checkAppUpdate = checkRemoteVersion;
@@ -2051,6 +2076,10 @@
     // 2. Mode toggle
     const btnStudy = document.getElementById('mode-study');
     const btnQuiz = document.getElementById('mode-quiz');
+    const btnCheckUpdate = document.getElementById('btn-manual-update-check');
+    if (btnCheckUpdate) {
+      btnCheckUpdate.onclick = () => checkRemoteVersion(true);
+    }
     if (btnStudy && btnQuiz) {
       btnStudy.onclick = () => {
         btnStudy.classList.add('active');
