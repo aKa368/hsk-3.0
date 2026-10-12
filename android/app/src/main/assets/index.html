@@ -61,7 +61,7 @@
           <div class="mode-toggle">
             <button id="mode-study" class="mode-btn active">📖 Học tập</button>
             <button id="mode-quiz" class="mode-btn">✍️ Thử thách</button>
-            <button id="btn-manual-update-check" class="mode-btn" title="Kiểm tra bản cập nhật mới">🚀 v1.2.0</button>
+            <button id="btn-manual-update-check" class="mode-btn" title="Kiểm tra bản cập nhật mới">🚀 v1.2.1</button>
           </div>
         </div>
       </div>
@@ -333,6 +333,15 @@
 
           <!-- 1. Phân mục Bài Đọc & Hội thoại -->
           <div id="subtab-texts" class="curr-content-pane active">
+            <div class="reading-focus-toolbar">
+              <span class="focus-toolbar-label">👁️ Chế độ luyện đọc:</span>
+              <button id="btn-toggle-pinyin" class="focus-toggle-btn" title="Bật/Tắt hiển thị Pinyin">
+                <span>🔤 Pinyin:</span> <strong id="lbl-toggle-pinyin">HIỆN</strong>
+              </button>
+              <button id="btn-toggle-meaning" class="focus-toggle-btn" title="Bật/Tắt hiển thị Dịch nghĩa">
+                <span>🇻🇳 Dịch nghĩa:</span> <strong id="lbl-toggle-meaning">HIỆN</strong>
+              </button>
+            </div>
             <div id="curr-texts-container" class="curr-text-container"></div>
           </div>
 
@@ -512,6 +521,7 @@
               <label for="dict-topic-select" class="dict-select-label" id="lbl-dict-topic">🏷️ Chủ đề từ vựng:</label>
               <select id="dict-topic-select" class="paper-select dict-dropdown-select">
                 <option value="all">🌟 Tất cả chủ đề</option>
+                <option value="favorite">⭐ Sổ tay từ vựng yêu thích đã lưu</option>
                 <option value="tcm">🌿 Y Học Cổ Truyền & Đông Y (433+ thuật ngữ)</option>
                 <option value="fruit">🍎 Hoa quả & Trái cây</option>
                 <option value="vegetable">🥦 Rau củ & Nông sản</option>
@@ -588,6 +598,7 @@
   <script src="tcm_data.js"></script>
   <script src="specialized_tracks_data.js"></script>
   <script src="srs_quiz_engine.js"></script>
+  <script src="stroke_cache_db.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

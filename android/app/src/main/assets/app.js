@@ -173,28 +173,10 @@
         outlineColor: outlineColor,
         drawingColor: drawingColor,
         charDataLoader: function(c, onComplete) {
-          if (window.HSK_STROKES && window.HSK_STROKES[c]) {
+          if (window.loadHanziStrokeData) {
+            window.loadHanziStrokeData(c, onComplete);
+          } else if (window.HSK_STROKES && window.HSK_STROKES[c]) {
             onComplete(window.HSK_STROKES[c]);
-          } else {
-            const u1 = 'https://cdn.jsdelivr.net/npm/hanzi-writer-data@2.0/' + encodeURIComponent(c) + '.json';
-            const u2 = 'https://unpkg.com/hanzi-writer-data@2.0/' + encodeURIComponent(c) + '.json';
-            fetch(u1)
-              .then(r => { if (!r.ok) throw new Error(); return r.json(); })
-              .then(data => {
-                window.HSK_STROKES = window.HSK_STROKES || {};
-                window.HSK_STROKES[c] = data;
-                onComplete(data);
-              })
-              .catch(() => {
-                fetch(u2)
-                  .then(r => r.json())
-                  .then(data => {
-                    window.HSK_STROKES = window.HSK_STROKES || {};
-                    window.HSK_STROKES[c] = data;
-                    onComplete(data);
-                  })
-                  .catch(() => {});
-              });
           }
         }
       });
@@ -269,28 +251,10 @@
           outlineColor: outlineColor,
           drawingColor: drawingColor,
           charDataLoader: function(char, onComplete) {
-            if (window.HSK_STROKES && window.HSK_STROKES[char]) {
+            if (window.loadHanziStrokeData) {
+              window.loadHanziStrokeData(char, onComplete);
+            } else if (window.HSK_STROKES && window.HSK_STROKES[char]) {
               onComplete(window.HSK_STROKES[char]);
-            } else {
-              const u1 = 'https://cdn.jsdelivr.net/npm/hanzi-writer-data@2.0/' + encodeURIComponent(char) + '.json';
-              const u2 = 'https://unpkg.com/hanzi-writer-data@2.0/' + encodeURIComponent(char) + '.json';
-              fetch(u1)
-                .then(r => { if (!r.ok) throw new Error(); return r.json(); })
-                .then(data => {
-                  window.HSK_STROKES = window.HSK_STROKES || {};
-                  window.HSK_STROKES[char] = data;
-                  onComplete(data);
-                })
-                .catch(() => {
-                  fetch(u2)
-                    .then(r => r.json())
-                    .then(data => {
-                      window.HSK_STROKES = window.HSK_STROKES || {};
-                      window.HSK_STROKES[char] = data;
-                      onComplete(data);
-                    })
-                    .catch(() => {});
-                });
             }
           },
           onComplete: () => {
@@ -916,9 +880,69 @@
     populateLessons(currSelectedLevel);
   }
 
+  let readingFocusListenersAttached = false;
+  function setupReadingFocusControls() {
+    if (readingFocusListenersAttached) return;
+    readingFocusListenersAttached = true;
+
+    const btnPinyin = document.getElementById('btn-toggle-pinyin');
+    const lblPinyin = document.getElementById('lbl-toggle-pinyin');
+    const btnMeaning = document.getElementById('btn-toggle-meaning');
+    const lblMeaning = document.getElementById('lbl-toggle-meaning');
+    const textsContainer = document.getElementById('curr-texts-container');
+
+    const savedHidePinyin = localStorage.getItem('hsk_reading_hide_pinyin') === 'true';
+    const savedHideMeaning = localStorage.getItem('hsk_reading_hide_meaning') === 'true';
+
+    function updatePinyinUI(hide) {
+      if (textsContainer) {
+        if (hide) textsContainer.classList.add('hide-pinyin');
+        else textsContainer.classList.remove('hide-pinyin');
+      }
+      if (btnPinyin) {
+        if (hide) btnPinyin.classList.add('off');
+        else btnPinyin.classList.remove('off');
+      }
+      if (lblPinyin) lblPinyin.textContent = hide ? 'ẨN' : 'HIỆN';
+      localStorage.setItem('hsk_reading_hide_pinyin', hide ? 'true' : 'false');
+    }
+
+    function updateMeaningUI(hide) {
+      if (textsContainer) {
+        if (hide) textsContainer.classList.add('hide-meaning');
+        else textsContainer.classList.remove('hide-meaning');
+      }
+      if (btnMeaning) {
+        if (hide) btnMeaning.classList.add('off');
+        else btnMeaning.classList.remove('off');
+      }
+      if (lblMeaning) lblMeaning.textContent = hide ? 'ẨN' : 'HIỆN';
+      localStorage.setItem('hsk_reading_hide_meaning', hide ? 'true' : 'false');
+    }
+
+    if (btnPinyin) {
+      btnPinyin.onclick = () => {
+        const isHidden = textsContainer && textsContainer.classList.contains('hide-pinyin');
+        updatePinyinUI(!isHidden);
+      };
+    }
+
+    if (btnMeaning) {
+      btnMeaning.onclick = () => {
+        const isHidden = textsContainer && textsContainer.classList.contains('hide-meaning');
+        updateMeaningUI(!isHidden);
+      };
+    }
+
+    updatePinyinUI(savedHidePinyin);
+    updateMeaningUI(savedHideMeaning);
+  }
+
   function setupCurriculumSubnav() {
     if (currSubnavListenersAttached) return;
     currSubnavListenersAttached = true;
+
+    setupReadingFocusControls();
 
     document.querySelectorAll('.curr-subtab-btn').forEach(btn => {
       btn.onclick = () => {
@@ -1198,7 +1222,7 @@
                     ${line.en ? `<div class="line-en"><span class="lang-tag en">🇬🇧 EN</span> ${line.en}</div>` : ''}
                     <div class="line-vi" data-zh="${encodeURIComponent(line.zh)}">
                       <span class="lang-tag vi">🇻🇳 VI</span>
-                      <span class="vi-text">${line.vi || 'Đang tải bản dịch...'}</span>
+                      <span class="vi-text">${line.vi || ''}</span>
                     </div>
                   </div>
                 </div>
@@ -1820,20 +1844,30 @@
   // ==========================================================================
   // HỆ THỐNG TỰ ĐỘNG CẬP NHẬT TRỰC TUYẾN (AUTO-UPDATE HOT RELOAD ENGINE)
   // ==========================================================================
-  window.APP_VERSION = '1.2.0';
-  window.APP_BUILD = 2026101001;
+  // Lấy thông tin phiên bản (Đồng bộ trực tiếp với Native Android nếu có)
+  window.APP_VERSION = '1.2.1';
+  window.APP_BUILD = 2026101201;
+
+  if (window.AndroidTTS && typeof window.AndroidTTS.getNativeVersionName === 'function') {
+    try {
+      window.APP_VERSION = window.AndroidTTS.getNativeVersionName() || window.APP_VERSION;
+      const nativeCode = window.AndroidTTS.getNativeVersionCode();
+      if (nativeCode) window.APP_BUILD = Number(nativeCode);
+    } catch (e) {}
+  }
 
   function initAutoUpdateChecker() {
-    // 1. Đăng ký Service Worker
-    if ('serviceWorker' in navigator) {
+    // 1. Đăng ký Service Worker trên môi trường Web / PWA
+    if ('serviceWorker' in navigator && !location.host.includes('androidplatform')) {
       navigator.serviceWorker.register('./sw.js').then(reg => {
         reg.onupdatefound = () => {
           const installingWorker = reg.installing;
           if (installingWorker) {
             installingWorker.onstatechange = () => {
               if (installingWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                showUpdateNotification('Đã có bản cập nhật mới từ hệ thống!', () => {
-                  window.location.reload();
+                showUpdateNotification({
+                  version: 'Mới',
+                  changelog: 'Đã có bản cập nhật mới từ hệ thống. Bấm để nạp lại ngay!'
                 });
               }
             };
@@ -1842,11 +1876,11 @@
       }).catch(() => {});
     }
 
-    // 2. Kiểm tra phiên bản từ xa qua GitHub Raw (khi có mạng)
+    // 2. Tự động kiểm tra bản cập nhật khi có mạng
     if (navigator.onLine) {
-      setTimeout(checkRemoteVersion, 3000);
+      setTimeout(() => checkRemoteVersion(false), 3000);
     }
-    window.addEventListener('online', () => setTimeout(checkRemoteVersion, 1000));
+    window.addEventListener('online', () => setTimeout(() => checkRemoteVersion(false), 1000));
   }
 
   async function fetchRemoteVersionData() {
@@ -1873,13 +1907,17 @@
       if (Date.now() < snoozeUntil) return;
     }
 
-    const currentBuild = window.APP_BUILD || 2026100304;
+    const currentBuild = window.APP_BUILD || 2026101001;
     const remote = await fetchRemoteVersionData();
 
     if (remote && remote.build && remote.build > currentBuild) {
       showUpdateNotification(remote);
     } else if (isManual) {
-      alert(`✅ Ứng dụng đang ở phiên bản mới nhất: v${window.APP_VERSION || '1.2.0'} (Build ${currentBuild})`);
+      if (!remote) {
+        alert('⚠️ Không thể kết nối đến máy chủ kiểm tra phiên bản. Vui lòng kiểm tra lại kết nối mạng!');
+      } else {
+        alert(`✅ Ứng dụng đang ở phiên bản mới nhất:\n- Phiên bản: v${window.APP_VERSION || '1.2.0'}\n- Build: ${currentBuild}\n- Cập nhật lần cuối: ${remote.releaseDate || 'Mới nhất'}`);
+      }
     }
   }
 
@@ -1900,44 +1938,75 @@
         <span class="update-toast-icon">🚀</span>
         <div class="update-toast-body">
           <div class="update-toast-title">HSK 3.0 v${remote.version} — Có bản cập nhật mới!</div>
-          <div class="update-toast-msg">${remote.changelog || 'Bổ sung Tab 7 Chuyên Ngành và sửa lỗi.'}</div>
+          <div class="update-toast-msg">${remote.changelog || 'Bổ sung tính năng mới và cải thiện hiệu năng học tập.'}</div>
         </div>
       </div>
       <div class="update-toast-actions">
         ${isAndroidApp ? `
-          <a href="${apkDownloadUrl}" target="_blank" id="btn-download-apk" class="paper-btn primary-btn sm-btn" style="text-decoration:none; display:inline-flex; align-items:center; gap:4px;">📥 Cài đặt APK v${remote.version}</a>
-          <button id="btn-update-now" class="paper-btn sm-btn">🔄 Tải lại</button>
+          <button id="btn-download-apk" class="paper-btn primary-btn sm-btn" style="display:inline-flex; align-items:center; gap:4px;">📥 Cài đặt APK v${remote.version}</button>
+          <button id="btn-open-browser-apk" class="paper-btn sm-btn">🌐 Mở trình duyệt</button>
         ` : `
-          <button id="btn-update-now" class="paper-btn primary-btn sm-btn">Cập nhật ngay</button>
+          <button id="btn-update-now" class="paper-btn primary-btn sm-btn">🔄 Cập nhật ngay</button>
         `}
         <button id="btn-update-later" class="paper-btn sm-btn">Để sau</button>
       </div>
     `;
     toast.style.display = 'flex';
 
-    const btnUpdate = document.getElementById('btn-update-now');
-    if (btnUpdate) {
-      btnUpdate.onclick = () => {
-        toast.innerHTML = '<div style="text-align:center; padding:10px; width:100%;"><strong>🔄 Đang đồng bộ tài nguyên mới...</strong><div style="font-size:0.8rem; margin-top:4px;">Ứng dụng sẽ tự nạp lại trong giây lát.</div></div>';
-        if ('caches' in window) {
-          caches.keys().then(keys => Promise.all(keys.map(k => caches.delete(k)))).then(() => {
-            if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
-              navigator.serviceWorker.controller.postMessage({ type: 'SKIP_WAITING' });
-            }
-            setTimeout(() => window.location.reload(true), 600);
-          }).catch(() => {
-            setTimeout(() => window.location.reload(true), 600);
-          });
-        } else {
-          setTimeout(() => window.location.reload(true), 600);
-        }
-      };
+    if (isAndroidApp) {
+      const btnDownloadApk = document.getElementById('btn-download-apk');
+      if (btnDownloadApk) {
+        btnDownloadApk.onclick = () => {
+          if (window.AndroidTTS && typeof window.AndroidTTS.downloadAndInstallApk === 'function') {
+            window.AndroidTTS.downloadAndInstallApk(apkDownloadUrl);
+          } else if (window.AndroidTTS && typeof window.AndroidTTS.openExternalUrl === 'function') {
+            window.AndroidTTS.openExternalUrl(apkDownloadUrl);
+          } else {
+            window.open(apkDownloadUrl, '_system') || (window.location.href = apkDownloadUrl);
+          }
+        };
+      }
+
+      const btnOpenBrowser = document.getElementById('btn-open-browser-apk');
+      if (btnOpenBrowser) {
+        btnOpenBrowser.onclick = () => {
+          if (window.AndroidTTS && typeof window.AndroidTTS.openExternalUrl === 'function') {
+            window.AndroidTTS.openExternalUrl(apkDownloadUrl);
+          } else {
+            window.open(apkDownloadUrl, '_system') || (window.location.href = apkDownloadUrl);
+          }
+        };
+      }
+    } else {
+      const btnUpdate = document.getElementById('btn-update-now');
+      if (btnUpdate) {
+        btnUpdate.onclick = () => {
+          toast.innerHTML = '<div style="text-align:center; padding:10px; width:100%;"><strong>🔄 Đang đồng bộ tài nguyên mới...</strong><div style="font-size:0.8rem; margin-top:4px;">Ứng dụng sẽ tự nạp lại trong giây lát.</div></div>';
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.getRegistration().then(reg => {
+              if (reg) {
+                reg.update().catch(() => {});
+                if (reg.waiting) reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+              }
+            }).catch(() => {});
+          }
+          if ('caches' in window) {
+            caches.keys().then(keys => Promise.all(keys.map(k => caches.delete(k)))).then(() => {
+              setTimeout(() => window.location.reload(true), 400);
+            }).catch(() => {
+              setTimeout(() => window.location.reload(true), 400);
+            });
+          } else {
+            setTimeout(() => window.location.reload(true), 400);
+          }
+        };
+      }
     }
 
     const btnLater = document.getElementById('btn-update-later');
     if (btnLater) {
       btnLater.onclick = () => {
-        localStorage.setItem('hsk_snooze_update_until', Date.now() + 4 * 60 * 60 * 1000); // Tạm hoãn 4 tiếng thay vì 24 tiếng
+        localStorage.setItem('hsk_snooze_update_until', Date.now() + 4 * 60 * 60 * 1000); // Tạm hoãn 4 tiếng
         toast.style.display = 'none';
       };
     }
@@ -2339,6 +2408,49 @@
     return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   }
 
+  // Quản lý Sổ tay Từ vựng Yêu thích (Bookmarks)
+  function getFavoriteWords() {
+    try {
+      return JSON.parse(localStorage.getItem('hsk_favorite_words') || '[]');
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function isWordFavorite(zh) {
+    if (!zh) return false;
+    const favs = getFavoriteWords();
+    return favs.some(f => f.zh === zh);
+  }
+
+  function toggleFavoriteWord(item) {
+    if (!item || !item.zh) return false;
+    let favs = getFavoriteWords();
+    const idx = favs.findIndex(f => f.zh === item.zh);
+    let isNowSaved = false;
+    if (idx >= 0) {
+      favs.splice(idx, 1);
+      isNowSaved = false;
+    } else {
+      favs.unshift({
+        zh: item.zh,
+        trad: item.trad || '',
+        py: item.py || '',
+        py_clean: item.py_clean || '',
+        hv: item.hv || '',
+        lvl: item.lvl || 'HSK',
+        lvl_num: item.lvl_num || 0,
+        vi: item.vi || '',
+        en: item.en || '',
+        pos: item.pos || '',
+        rad: item.rad || ''
+      });
+      isNowSaved = true;
+    }
+    localStorage.setItem('hsk_favorite_words', JSON.stringify(favs));
+    return isNowSaved;
+  }
+
   function getDictSource() {
     return window.HSK_DICTIONARY || [];
   }
@@ -2357,9 +2469,18 @@
       filtered = filtered.filter(item => item.lvl_num === targetLvl);
     }
 
-    // Filter by Real-world Topic/Category
+    // Filter by Real-world Topic/Category or Favorites
     if (dictCurrentTopic !== 'all') {
-      if (dictCurrentTopic === 'tcm') {
+      if (dictCurrentTopic === 'favorite') {
+        const favs = getFavoriteWords();
+        const favSet = new Set(favs.map(f => f.zh));
+        filtered = rawList.filter(item => favSet.has(item.zh));
+        favs.forEach(f => {
+          if (!filtered.some(item => item.zh === f.zh)) {
+            filtered.push(f);
+          }
+        });
+      } else if (dictCurrentTopic === 'tcm') {
         const tcmMapped = (window.TCM_DATA?.terms || []).map(t => ({
           zh: t.zh,
           py: t.pinyin || '',
@@ -2751,6 +2872,7 @@
             <button class="dict-mini-btn btn-act-write">✍️ Tập viết nét</button>
             <button class="dict-mini-btn btn-act-trace">📝 Tập tô ô Mễ</button>
             <button class="dict-mini-btn btn-act-copy">📋 Sao chép</button>
+            <button class="dict-mini-btn btn-act-fav ${isWordFavorite(item.zh) ? 'is-saved' : ''}">${isWordFavorite(item.zh) ? '⭐ Đã lưu' : '☆ Lưu từ'}</button>
           </div>
         `;
         // Clean event listeners without quote breaking
@@ -2760,6 +2882,22 @@
         if (btnTrace) btnTrace.onclick = () => window.practiceTracingDict(item.zh, item.py, item.vi || item.en || '');
         const btnCopy = card.querySelector('.btn-act-copy');
         if (btnCopy) btnCopy.onclick = () => window.copyDictWord(item.zh, item.py, item.vi || item.en || '');
+        const btnFav = card.querySelector('.btn-act-fav');
+        if (btnFav) {
+          btnFav.onclick = () => {
+            const saved = toggleFavoriteWord(item);
+            if (saved) {
+              btnFav.classList.add('is-saved');
+              btnFav.textContent = '⭐ Đã lưu';
+            } else {
+              btnFav.classList.remove('is-saved');
+              btnFav.textContent = '☆ Lưu từ';
+              if (dictCurrentTopic === 'favorite') {
+                renderDictionaryTab();
+              }
+            }
+          };
+        }
 
         container.appendChild(card);
       });
@@ -2932,17 +3070,10 @@
         outlineColor: outlineColor,
         drawingColor: drawingColor,
         charDataLoader: function(char, onComplete) {
-          if (window.HSK_STROKES && window.HSK_STROKES[char]) {
+          if (window.loadHanziStrokeData) {
+            window.loadHanziStrokeData(char, onComplete);
+          } else if (window.HSK_STROKES && window.HSK_STROKES[char]) {
             onComplete(window.HSK_STROKES[char]);
-          } else {
-            fetch(`https://cdn.jsdelivr.net/npm/hanzi-writer-data@2.0/${char}.json`)
-              .then(res => res.json())
-              .then(data => onComplete(data))
-              .catch(() => {
-                if (window.HSK_STROKES && window.HSK_STROKES['巴']) {
-                  onComplete(window.HSK_STROKES['巴']);
-                }
-              });
           }
         }
       });

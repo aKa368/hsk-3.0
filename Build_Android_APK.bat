@@ -27,7 +27,7 @@ if %errorlevel% equ 0 (
 where node >nul 2>nul
 if %errorlevel% equ 0 (
     echo [*] Kiem tra cu phap cac module JS chinh...
-    node -c strokes.js data.js curriculum_data.js dict_data.js visual_vocab_data.js
+    node -c strokes.js data.js curriculum_data.js dict_data.js visual_vocab_data.js stroke_cache_db.js app.js
 )
 
 echo [*] Dang sao chep toan bo tai nguyen web vao Android assets...
@@ -48,11 +48,9 @@ if exist "gradlew.bat" (
     call gradlew.bat assembleDebug
     if %errorlevel% equ 0 (
         copy /Y "app\build\outputs\apk\debug\app-debug.apk" "..\HSK_3.0.apk" >nul
-        copy /Y "app\build\outputs\apk\debug\app-debug.apk" "..\HSK30_ThuPhong.apk" >nul
         echo.
         echo [OK] DA BUILD THANH CONG FILE APK!
         echo      - D:\Build\hsk-write-grammar\HSK_3.0.apk
-        echo      - D:\Build\hsk-write-grammar\HSK30_ThuPhong.apk
         echo.
         if "%1"=="--non-interactive" exit /b 0
         pause
