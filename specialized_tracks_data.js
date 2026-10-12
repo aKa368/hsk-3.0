@@ -7180,6 +7180,612 @@
         "py": "zī chǎn fù zhài biǎo",
         "hv": "TƯ NGUYÊN PHỤ TRÁI BIỂU",
         "mean": "Bảng cân đối kế toán tài sản và công nợ"
+      },
+      {
+        "zh": "一般贸易",
+        "py": "yī bān mào yì",
+        "hv": "",
+        "mean": "thương mại thông thường (tức là xuất nhập khẩu không qua chế biến)"
+      },
+      {
+        "zh": "三联式发票",
+        "py": "sān lián shì fā piào",
+        "hv": "",
+        "mean": "(Đài Loan) hóa đơn thống nhất ba liên, một loại biên lai 統一發票|统一发票[tong3 yi1 fa1 piao4] được cấp cho doanh nghiệp hoặc tổ chức có mã số thuế giá trị gia tăng hoặc 統一編號|统一编号[tong3 yi1 bian1 hao4]"
+      },
+      {
+        "zh": "不变资本",
+        "py": "bù biàn zī běn",
+        "hv": "",
+        "mean": "tư bản bất biến"
+      },
+      {
+        "zh": "世界贸易",
+        "py": "shì jiè mào yì",
+        "hv": "",
+        "mean": "thương mại thế giới; thương mại toàn cầu"
+      },
+      {
+        "zh": "世界银行",
+        "py": "shì jiè yín háng",
+        "hv": "",
+        "mean": "Ngân hàng Thế giới"
+      },
+      {
+        "zh": "中信银行",
+        "py": "zhōng xìn yín háng",
+        "hv": "",
+        "mean": "Ngân hàng CITIC Trung Quốc"
+      },
+      {
+        "zh": "中国证券报",
+        "py": "zhōng guó zhèng quàn bào",
+        "hv": "",
+        "mean": "Nhật báo Chứng khoán Trung Quốc"
+      },
+      {
+        "zh": "中国银行",
+        "py": "zhōng guó yín háng",
+        "hv": "",
+        "mean": "Ngân hàng Trung Quốc (BoC)"
+      },
+      {
+        "zh": "中国青年报",
+        "py": "zhōng guó qīng nián bào",
+        "hv": "",
+        "mean": "Nhật báo Thanh Niên Trung Quốc, www.cyol.net"
+      },
+      {
+        "zh": "中央银行",
+        "py": "zhōng yāng yín háng",
+        "hv": "",
+        "mean": "Ngân hàng Trung ương Trung Hoa Dân Quốc (Đài Loan)"
+      },
+      {
+        "zh": "二联式发票",
+        "py": "èr lián shì fā piào",
+        "hv": "",
+        "mean": "(Đài Loan) hoá đơn liên hai, một loại biên lai 統一發票|统一发票[tong3 yi1 fa1 piao4] cấp cho cá nhân hoặc tổ chức không có mã số thuế VAT"
+      },
+      {
+        "zh": "交通银行",
+        "py": "jiāo tōng yín háng",
+        "hv": "",
+        "mean": "Ngân hàng Giao thông"
+      },
+      {
+        "zh": "人寿保险",
+        "py": "rén shòu bǎo xiǎn",
+        "hv": "",
+        "mean": "bảo hiểm nhân thọ"
+      },
+      {
+        "zh": "人民银行",
+        "py": "rén mín yín háng",
+        "hv": "",
+        "mean": "Ngân hàng Nhân dân Trung Quốc"
+      },
+      {
+        "zh": "估值",
+        "py": "gū zhí",
+        "hv": "",
+        "mean": "định giá; ước tính"
+      },
+      {
+        "zh": "并购",
+        "py": "bìng gòu",
+        "hv": "TỊNH CẤU",
+        "mean": "sáp nhập và mua lại (M&A); mua lại; thâu tóm"
+      },
+      {
+        "zh": "供应链",
+        "py": "gōng yìng liàn",
+        "hv": "",
+        "mean": "chuỗi cung ứng"
+      },
+      {
+        "zh": "保税",
+        "py": "bǎo shuì",
+        "hv": "",
+        "mean": "hàng hóa, nhà máy, v.v. thuộc diện bảo thuế"
+      },
+      {
+        "zh": "保税区",
+        "py": "bǎo shuì qū",
+        "hv": "",
+        "mean": "khu phi thuế quan; khu vực miễn thuế; khu bảo thuế"
+      },
+      {
+        "zh": "保险",
+        "py": "bǎo xiǎn",
+        "hv": "BẢO HIỂM",
+        "mean": "bảo hiểm; an toàn; bảo đảm; chắc chắn; nhất định phải; LT:份[fen4]"
+      },
+      {
+        "zh": "保险单",
+        "py": "bǎo xiǎn dān",
+        "hv": "",
+        "mean": "hợp đồng bảo hiểm (tài liệu)"
+      },
+      {
+        "zh": "保险套",
+        "py": "bǎo xiǎn tào",
+        "hv": "",
+        "mean": "bao cao su; LT:隻|只[zhi1]"
+      },
+      {
+        "zh": "保险杠",
+        "py": "bǎo xiǎn gàng",
+        "hv": "",
+        "mean": "cản xe ô tô"
+      },
+      {
+        "zh": "保险柜",
+        "py": "bǎo xiǎn guì",
+        "hv": "",
+        "mean": "két sắt; tủ sắt"
+      },
+      {
+        "zh": "保险灯",
+        "py": "bǎo xiǎn dēng",
+        "hv": "",
+        "mean": "đèn dầu hỏa"
+      },
+      {
+        "zh": "保险盒",
+        "py": "bǎo xiǎn hé",
+        "hv": "",
+        "mean": "hộp cầu chì"
+      },
+      {
+        "zh": "保险箱",
+        "py": "bǎo xiǎn xiāng",
+        "hv": "BẢO HIỂM TƯƠNG",
+        "mean": "hộp ký gửi an toàn; két sắt"
+      },
+      {
+        "zh": "保险丝",
+        "py": "bǎo xiǎn sī",
+        "hv": "",
+        "mean": "dây cầu chì; cầu chì (điện)"
+      },
+      {
+        "zh": "保险费",
+        "py": "bǎo xiǎn fèi",
+        "hv": "",
+        "mean": "phí bảo hiểm"
+      },
+      {
+        "zh": "信用评级",
+        "py": "xìn yòng píng jí",
+        "hv": "",
+        "mean": "xếp hạng tín dụng"
+      },
+      {
+        "zh": "信用证券",
+        "py": "xìn yòng zhèng quàn",
+        "hv": "",
+        "mean": "công cụ tín dụng; thư tín dụng; xem thêm 信用證|信用证[xin4 yong4 zheng4]; Lượng từ:張|张[zhang1]"
+      },
+      {
+        "zh": "信托",
+        "py": "xìn tuō",
+        "hv": "",
+        "mean": "ủy thác; trái phiếu tín thác (tài chính)"
+      },
+      {
+        "zh": "仓储",
+        "py": "cāng chǔ",
+        "hv": "",
+        "mean": "lưu trữ trong kho"
+      },
+      {
+        "zh": "借贷",
+        "py": "jiè dài",
+        "hv": "",
+        "mean": "vay hoặc cho vay tiền; khoản ghi nợ và có trên bảng cân đối kế toán"
+      },
+      {
+        "zh": "健康保险",
+        "py": "jiàn kāng bǎo xiǎn",
+        "hv": "",
+        "mean": "bảo hiểm sức khỏe"
+      },
+      {
+        "zh": "债务证券",
+        "py": "zhài wù zhèng quàn",
+        "hv": "",
+        "mean": "chứng khoán nợ; chứng khoán trái phiếu"
+      },
+      {
+        "zh": "儿童基金会",
+        "py": "ér tóng jī jīn huì",
+        "hv": "",
+        "mean": "UNICEF (Quỹ Nhi đồng Liên Hợp Quốc)"
+      },
+      {
+        "zh": "公司理财",
+        "py": "gōng sī lǐ cái",
+        "hv": "",
+        "mean": "tài chính công ty; tài chính doanh nghiệp"
+      },
+      {
+        "zh": "公平贸易",
+        "py": "gōng píng mào yì",
+        "hv": "",
+        "mean": "thương mại công bằng"
+      },
+      {
+        "zh": "共同基金",
+        "py": "gòng tóng jī jīn",
+        "hv": "",
+        "mean": "quỹ tương hỗ"
+      },
+      {
+        "zh": "再保险",
+        "py": "zài bǎo xiǎn",
+        "hv": "",
+        "mean": "tái bảo hiểm (biện pháp hợp đồng phân tán rủi ro giữa các công ty bảo hiểm)"
+      },
+      {
+        "zh": "再融资",
+        "py": "zài róng zī",
+        "hv": "",
+        "mean": "tái cấp vốn; tái cấu trúc (một khoản vay)"
+      },
+      {
+        "zh": "分红",
+        "py": "fēn hóng",
+        "hv": "PHÂN HỒNG",
+        "mean": "cổ tức; thưởng tiền"
+      },
+      {
+        "zh": "分销",
+        "py": "fēn xiāo",
+        "hv": "",
+        "mean": "phân phối; cửa hàng bán lẻ"
+      },
+      {
+        "zh": "分销商",
+        "py": "fēn xiāo shāng",
+        "hv": "",
+        "mean": "nhà phân phối"
+      },
+      {
+        "zh": "分销店",
+        "py": "fēn xiāo diàn",
+        "hv": "",
+        "mean": "cửa hàng bán lẻ"
+      },
+      {
+        "zh": "分销网络",
+        "py": "fēn xiāo wǎng luò",
+        "hv": "",
+        "mean": "mạng lưới phân phối"
+      },
+      {
+        "zh": "利息",
+        "py": "lì xī",
+        "hv": "LỢI TỨC",
+        "mean": "lãi (trên khoản vay); LT:筆|笔[bi3]"
+      },
+      {
+        "zh": "利息率",
+        "py": "lì xi lǜ",
+        "hv": "",
+        "mean": "lãi suất"
+      },
+      {
+        "zh": "创投基金",
+        "py": "chuàng tóu jī jīn",
+        "hv": "",
+        "mean": "quỹ vốn đầu tư mạo hiểm"
+      },
+      {
+        "zh": "创业投资",
+        "py": "chuàng yè tóu zī",
+        "hv": "",
+        "mean": "vốn đầu tư mạo hiểm"
+      },
+      {
+        "zh": "加工贸易",
+        "py": "jiā gōng mào yì",
+        "hv": "",
+        "mean": "thương mại gia công; thương mại liên quan đến lắp ráp"
+      },
+      {
+        "zh": "劳动保险",
+        "py": "láo dòng bǎo xiǎn",
+        "hv": "",
+        "mean": "bảo hiểm lao động"
+      },
+      {
+        "zh": "劳动合同",
+        "py": "láo dòng hé tong",
+        "hv": "LAO ĐỘNG HỢP ĐỒNG",
+        "mean": "hợp đồng lao động; hợp đồng giữa người sử dụng lao động và người lao động quy định tiền lương và điều kiện"
+      },
+      {
+        "zh": "劳务合同",
+        "py": "láo wù hé tong",
+        "hv": "",
+        "mean": "hợp đồng dịch vụ"
+      },
+      {
+        "zh": "北京青年报",
+        "py": "běi jīng qīng nián bào",
+        "hv": "",
+        "mean": "Báo Thanh niên Bắc Kinh, tờ báo thành lập năm 1949"
+      },
+      {
+        "zh": "汇业银行",
+        "py": "huì yè yín háng",
+        "hv": "",
+        "mean": "Banco Delta Asia S.A.R.L., Macau"
+      },
+      {
+        "zh": "汇率",
+        "py": "huì lǜ",
+        "hv": "HỐI SUẤT",
+        "mean": "tỷ giá hối đoái"
+      },
+      {
+        "zh": "汇票",
+        "py": "huì piào",
+        "hv": "",
+        "mean": "hối phiếu; ngân phiếu"
+      },
+      {
+        "zh": "汇丰银行",
+        "py": "huì fēng yín háng",
+        "hv": "",
+        "mean": "Ngân hàng Hong Kong và Thượng Hải (HSBC)"
+      },
+      {
+        "zh": "原产地",
+        "py": "yuán chǎn dì",
+        "hv": "",
+        "mean": "nguồn gốc ban đầu; nơi xuất xứ; nơi sản xuất"
+      },
+      {
+        "zh": "友邦保险",
+        "py": "yǒu bāng bǎo xiǎn",
+        "hv": "",
+        "mean": "Tập đoàn AIA, công ty bảo hiểm"
+      },
+      {
+        "zh": "反倾销",
+        "py": "fǎn qīng xiāo",
+        "hv": "",
+        "mean": "chống bán phá giá"
+      },
+      {
+        "zh": "反走私",
+        "py": "fǎn zǒu sī",
+        "hv": "",
+        "mean": "phản đối buôn lậu; chống buôn lậu (biện pháp, chính sách, v.v.)"
+      },
+      {
+        "zh": "可转让证券",
+        "py": "kě zhuǎn ràng zhèng quàn",
+        "hv": "",
+        "mean": "chứng khoán chuyển nhượng được"
+      },
+      {
+        "zh": "合同",
+        "py": "hé tong",
+        "hv": "HỢP ĐỒNG",
+        "mean": "(kinh doanh) hợp đồng; LT:個|个[ge4]"
+      },
+      {
+        "zh": "合同各方",
+        "py": "hé tong gè fāng",
+        "hv": "",
+        "mean": "các bên trong hợp đồng (pháp luật)"
+      },
+      {
+        "zh": "合同法",
+        "py": "hé tong fǎ",
+        "hv": "",
+        "mean": "luật hợp đồng"
+      },
+      {
+        "zh": "合众银行",
+        "py": "hé zhòng yín háng",
+        "hv": "",
+        "mean": "Bancorp, một ngân hàng Mỹ"
+      },
+      {
+        "zh": "商人银行",
+        "py": "shāng rén yín háng",
+        "hv": "",
+        "mean": "ngân hàng thương mại"
+      },
+      {
+        "zh": "商业银行",
+        "py": "shāng yè yín háng",
+        "hv": "",
+        "mean": "ngân hàng thương mại"
+      },
+      {
+        "zh": "商誉",
+        "py": "shāng yù",
+        "hv": "",
+        "mean": "(thương mại) uy tín; danh tiếng; (kế toán) thiện chí"
+      },
+      {
+        "zh": "单位信托",
+        "py": "dān wèi xìn tuō",
+        "hv": "",
+        "mean": "quỹ đầu tư đơn vị (tài chính)"
+      },
+      {
+        "zh": "单张汇票",
+        "py": "dān zhāng huì piào",
+        "hv": "",
+        "mean": "hối phiếu đơn (thương mại quốc tế)"
+      },
+      {
+        "zh": "基金",
+        "py": "jī jīn",
+        "hv": "CƠ KIM",
+        "mean": "quỹ"
+      },
+      {
+        "zh": "基金会",
+        "py": "jī jīn huì",
+        "hv": "",
+        "mean": "quỹ (tổ chức được hỗ trợ bởi một khoản tài trợ)"
+      },
+      {
+        "zh": "报关",
+        "py": "bào guān",
+        "hv": "",
+        "mean": "khai báo hải quan"
+      },
+      {
+        "zh": "坏账",
+        "py": "huài zhàng",
+        "hv": "",
+        "mean": "nợ xấu"
+      },
+      {
+        "zh": "寿保险公司",
+        "py": "shòu bǎo xiǎn gōng sī",
+        "hv": "",
+        "mean": "công ty bảo hiểm nhân thọ"
+      },
+      {
+        "zh": "外来投资",
+        "py": "wài lái tóu zī",
+        "hv": "",
+        "mean": "đầu tư nước ngoài"
+      },
+      {
+        "zh": "外汇",
+        "py": "wài huì",
+        "hv": "NGOẠI HỐI",
+        "mean": "trao đổi ngoại tệ"
+      },
+      {
+        "zh": "外汇储备",
+        "py": "wài huì chǔ bèi",
+        "hv": "",
+        "mean": "dự trữ ngoại hối"
+      },
+      {
+        "zh": "外汇存底",
+        "py": "wài huì cún dǐ",
+        "hv": "",
+        "mean": "dự trữ ngoại hối (Đài Loan)"
+      },
+      {
+        "zh": "外国投资者",
+        "py": "wài guó tóu zī zhě",
+        "hv": "",
+        "mean": "nhà đầu tư nước ngoài"
+      },
+      {
+        "zh": "外国资本",
+        "py": "wài guó zī běn",
+        "hv": "",
+        "mean": "vốn nước ngoài"
+      },
+      {
+        "zh": "外资",
+        "py": "wài zī",
+        "hv": "NGOẠI TƯ",
+        "mean": "đầu tư nước ngoài"
+      },
+      {
+        "zh": "外资企业",
+        "py": "wài zī qǐ yè",
+        "hv": "",
+        "mean": "viết tắt của 外商獨資企業|外商独资企业[wai4 shang1 du2 zi1 qi3 ye4]"
+      },
+      {
+        "zh": "大投资家",
+        "py": "dà tóu zī jiā",
+        "hv": "",
+        "mean": "nhà đầu tư lớn"
+      },
+      {
+        "zh": "宏观",
+        "py": "hóng guān",
+        "hv": "HOÀNH QUAN",
+        "mean": "vĩ mô; thuộc về vĩ mô; toàn diện"
+      },
+      {
+        "zh": "宏观世界",
+        "py": "hóng guān shì jiè",
+        "hv": "",
+        "mean": "vũ trụ; the giới ở tầm vĩ mô"
+      },
+      {
+        "zh": "宏观经济",
+        "py": "hóng guān jīng jì",
+        "hv": "",
+        "mean": "kinh tế vĩ mô"
+      },
+      {
+        "zh": "宏观调控",
+        "py": "hóng guān tiáo kòng",
+        "hv": "",
+        "mean": "điều tiết vĩ mô"
+      },
+      {
+        "zh": "宣布破产",
+        "py": "xuān bù pò chǎn",
+        "hv": "",
+        "mean": "tuyên bố phá sản"
+      },
+      {
+        "zh": "实受资本",
+        "py": "shí shou zī běn",
+        "hv": "",
+        "mean": "vốn đã góp"
+      },
+      {
+        "zh": "实收资本",
+        "py": "shí shōu zī běn",
+        "hv": "",
+        "mean": "vốn góp; vốn đã nộp (tài chính)"
+      },
+      {
+        "zh": "实缴资本",
+        "py": "shí jiǎo zī běn",
+        "hv": "",
+        "mean": "vốn đã góp; vốn đã nộp (tài chính)"
+      },
+      {
+        "zh": "审计",
+        "py": "shěn jì",
+        "hv": "",
+        "mean": "kiểm toán; kiểm tra tài chính"
+      },
+      {
+        "zh": "审计员",
+        "py": "shěn jì yuán",
+        "hv": "",
+        "mean": "kế toán; kiểm toán viên"
+      },
+      {
+        "zh": "审计署",
+        "py": "shěn jì shǔ",
+        "hv": "",
+        "mean": "văn phòng kiểm toán; ủy ban kiểm toán công"
+      },
+      {
+        "zh": "审计长",
+        "py": "shěn jì zhǎng",
+        "hv": "",
+        "mean": "kiểm toán trưởng"
+      },
+      {
+        "zh": "对外贸易",
+        "py": "duì wài mào yì",
+        "hv": "",
+        "mean": "thương mại nước ngoài"
       }
     ],
     "sentences": [
@@ -7732,6 +8338,852 @@
         "py": "diào yú yóu jiàn",
         "hv": "ĐIẾU NGƯ BƯU KIỆN",
         "mean": "Thư điện tử giả mạo lừa đảo đánh cắp mật khẩu (Phishing Email)"
+      },
+      {
+        "zh": "中间件",
+        "py": "zhōng jiān jiàn",
+        "hv": "",
+        "mean": "phần mềm trung gian"
+      },
+      {
+        "zh": "主板",
+        "py": "zhǔ bǎn",
+        "hv": "",
+        "mean": "(máy tính) bo mạch chủ; (thị trường chứng khoán) sàn chính"
+      },
+      {
+        "zh": "主法向量",
+        "py": "zhǔ fǎ xiàng liàng",
+        "hv": "",
+        "mean": "vector pháp chính (của một đường cong không gian)"
+      },
+      {
+        "zh": "亚符号模型",
+        "py": "yà fú hào mó xíng",
+        "hv": "",
+        "mean": "mô hình hạ ký hiệu"
+      },
+      {
+        "zh": "人工智能",
+        "py": "rén gōng zhì néng",
+        "hv": "NHÂN CÔNG TRÍ NĂNG",
+        "mean": "trí tuệ nhân tạo (AI)"
+      },
+      {
+        "zh": "代码",
+        "py": "dài mǎ",
+        "hv": "",
+        "mean": "mã; code"
+      },
+      {
+        "zh": "代码段",
+        "py": "dài mǎ duàn",
+        "hv": "",
+        "mean": "đoạn mã"
+      },
+      {
+        "zh": "代码页",
+        "py": "dài mǎ yè",
+        "hv": "",
+        "mean": "trang mã"
+      },
+      {
+        "zh": "仿真服务器",
+        "py": "fǎng zhēn fú wù qì",
+        "hv": "",
+        "mean": "máy chủ mô phỏng"
+      },
+      {
+        "zh": "保密协议",
+        "py": "bǎo mì xié yì",
+        "hv": "BẢO MẬT HIỆP NGHỊ",
+        "mean": "thỏa thuận không tiết lộ; thỏa thuận bảo mật"
+      },
+      {
+        "zh": "伪代码",
+        "py": "wěi dài mǎ",
+        "hv": "",
+        "mean": "mã giả"
+      },
+      {
+        "zh": "元数据",
+        "py": "yuán shù jù",
+        "hv": "",
+        "mean": "siêu dữ liệu"
+      },
+      {
+        "zh": "光纤接口",
+        "py": "guāng xiān jiē kǒu",
+        "hv": "",
+        "mean": "giao diện quang"
+      },
+      {
+        "zh": "内存",
+        "py": "nèi cún",
+        "hv": "NỘI TỒN",
+        "mean": "bộ nhớ trong; bộ nhớ máy tính; bộ nhớ truy cập ngẫu nhiên (RAM)"
+      },
+      {
+        "zh": "幂等",
+        "py": "mì děng",
+        "hv": "",
+        "mean": "bình phương bằng chính nó (toán)"
+      },
+      {
+        "zh": "分布式",
+        "py": "fēn bù shì",
+        "hv": "",
+        "mean": "phân bố"
+      },
+      {
+        "zh": "分布式环境",
+        "py": "fēn bù shì huán jìng",
+        "hv": "",
+        "mean": "môi trường phân tán (tin học)"
+      },
+      {
+        "zh": "分布式结构",
+        "py": "fēn bù shì jié gòu",
+        "hv": "",
+        "mean": "kiến trúc phân tán"
+      },
+      {
+        "zh": "分布式网络",
+        "py": "fēn bù shì wǎng luò",
+        "hv": "",
+        "mean": "mạng phân tán"
+      },
+      {
+        "zh": "切向量",
+        "py": "qiē xiàng liàng",
+        "hv": "",
+        "mean": "vector tiếp tuyến"
+      },
+      {
+        "zh": "前端",
+        "py": "qián duān",
+        "hv": "",
+        "mean": "phía trước; đầu trước; phần trước của cái gì đó"
+      },
+      {
+        "zh": "前端总线",
+        "py": "qián duān zǒng xiàn",
+        "hv": "",
+        "mean": "(máy tính) bus mặt trước (FSB)"
+      },
+      {
+        "zh": "副法向量",
+        "py": "fù fǎ xiàng liàng",
+        "hv": "",
+        "mean": "vector pháp tuyến phụ (đường cong không gian)"
+      },
+      {
+        "zh": "加密",
+        "py": "jiā mì",
+        "hv": "",
+        "mean": "mã hóa; việc mã hóa; bảo vệ bằng mật khẩu"
+      },
+      {
+        "zh": "加密货币",
+        "py": "jiā mì huò bì",
+        "hv": "",
+        "mean": "tiền mã hóa"
+      },
+      {
+        "zh": "区块链",
+        "py": "qū kuài liàn",
+        "hv": "",
+        "mean": "(tin học) chuỗi khối"
+      },
+      {
+        "zh": "协议",
+        "py": "xié yì",
+        "hv": "HIỆP NGHỊ",
+        "mean": "thỏa thuận; hiệp ước; giao thức; LT:項|项[xiang4]"
+      },
+      {
+        "zh": "协议书",
+        "py": "xié yì shū",
+        "hv": "HIỆP NGHỊ THƯ",
+        "mean": "hợp đồng; giao thức"
+      },
+      {
+        "zh": "反传算法",
+        "py": "fǎn chuán suàn fǎ",
+        "hv": "",
+        "mean": "thuật toán lan truyền ngược"
+      },
+      {
+        "zh": "反渗透",
+        "py": "fǎn shèn tòu",
+        "hv": "",
+        "mean": "chống thâm nhập (các biện pháp chống lại lực lượng ngoại bang lật đổ); (hóa học) thẩm thấu ngược"
+      },
+      {
+        "zh": "反渗透法",
+        "py": "fǎn shèn tòu fǎ",
+        "hv": "",
+        "mean": "(Đài Loan) Luật Chống Thâm Nhập (2020), quy định ảnh hưởng của các thực thể bị coi là lực lượng thù địch nước ngoài"
+      },
+      {
+        "zh": "向量",
+        "py": "xiàng liàng",
+        "hv": "",
+        "mean": "(toán) vector"
+      },
+      {
+        "zh": "向量代数",
+        "py": "xiàng liàng dài shù",
+        "hv": "",
+        "mean": "đại số vector"
+      },
+      {
+        "zh": "向量图形",
+        "py": "xiàng liàng tú xíng",
+        "hv": "",
+        "mean": "(tin học) đồ họa vector"
+      },
+      {
+        "zh": "向量积",
+        "py": "xiàng liàng jī",
+        "hv": "",
+        "mean": "tích vector (của các vector)"
+      },
+      {
+        "zh": "向量空间",
+        "py": "xiàng liàng kōng jiān",
+        "hv": "",
+        "mean": "(toán) không gian vector; không gian tuyến tính"
+      },
+      {
+        "zh": "单位切向量",
+        "py": "dān wèi qiē xiàng liàng",
+        "hv": "",
+        "mean": "(toán học) vector tiếp tuyến đơn vị"
+      },
+      {
+        "zh": "单位向量",
+        "py": "dān wèi xiàng liàng",
+        "hv": "",
+        "mean": "(toán học) vector đơn vị"
+      },
+      {
+        "zh": "固件",
+        "py": "gù jiàn",
+        "hv": "",
+        "mean": "phần mềm cố định"
+      },
+      {
+        "zh": "国家代码",
+        "py": "guó jiā dài mǎ",
+        "hv": "",
+        "mean": "mã quốc gia"
+      },
+      {
+        "zh": "域名服务器",
+        "py": "yù míng fú wù qì",
+        "hv": "",
+        "mean": "máy chủ tên miền"
+      },
+      {
+        "zh": "压力容器",
+        "py": "yā lì róng qì",
+        "hv": "",
+        "mean": "bình chịu áp lực; nồi hấp"
+      },
+      {
+        "zh": "子模型",
+        "py": "zǐ mó xíng",
+        "hv": "",
+        "mean": "mô hình phụ"
+      },
+      {
+        "zh": "容器",
+        "py": "róng qì",
+        "hv": "DUNG KHÍ",
+        "mean": "đồ chứa; bình chứa; (tin học) container"
+      },
+      {
+        "zh": "后端",
+        "py": "hòu duān",
+        "hv": "",
+        "mean": "backend (máy tính)"
+      },
+      {
+        "zh": "微调",
+        "py": "wēi tiáo",
+        "hv": "",
+        "mean": "điều chỉnh tinh vi; cắt tỉa"
+      },
+      {
+        "zh": "思维敏捷",
+        "py": "sī wéi mǐn jié",
+        "hv": "",
+        "mean": "nhanh trí; nhạy bén"
+      },
+      {
+        "zh": "思路敏捷",
+        "py": "sī lù mǐn jié",
+        "hv": "",
+        "mean": "nhanh trí"
+      },
+      {
+        "zh": "情境模型",
+        "py": "qíng jìng mó xíng",
+        "hv": "",
+        "mean": "mô hình tình huống"
+      },
+      {
+        "zh": "恶意代码",
+        "py": "è yì dài mǎ",
+        "hv": "",
+        "mean": "mã độc (ví dụ: virus); phần mềm độc hại"
+      },
+      {
+        "zh": "打印服务器",
+        "py": "dǎ yìn fú wù qì",
+        "hv": "",
+        "mean": "máy chủ in"
+      },
+      {
+        "zh": "批处理",
+        "py": "pī chǔ lǐ",
+        "hv": "",
+        "mean": "(tin học) xử lý hàng loạt"
+      },
+      {
+        "zh": "接口",
+        "py": "jiē kǒu",
+        "hv": "",
+        "mean": "giao diện; cổng; đầu nối"
+      },
+      {
+        "zh": "接口模块",
+        "py": "jiē kǒu mó kuài",
+        "hv": "",
+        "mean": "mô-đun giao diện"
+      },
+      {
+        "zh": "控辩协议",
+        "py": "kòng biàn xié yì",
+        "hv": "",
+        "mean": "thỏa thuận nhận tội (luật pháp)"
+      },
+      {
+        "zh": "搜索引擎",
+        "py": "sōu suǒ yǐn qíng",
+        "hv": "",
+        "mean": "công cụ tìm kiếm"
+      },
+      {
+        "zh": "敏捷",
+        "py": "mǐn jié",
+        "hv": "MẪN TIỆP",
+        "mean": "nhanh nhẹn; nhanh chóng; nhanh trí"
+      },
+      {
+        "zh": "数学模型",
+        "py": "shù xué mó xíng",
+        "hv": "",
+        "mean": "mô hình toán học"
+      },
+      {
+        "zh": "数据库",
+        "py": "shù jù kù",
+        "hv": "SỔ CƯ KHỐ",
+        "mean": "cơ sở dữ liệu"
+      },
+      {
+        "zh": "数据库软件",
+        "py": "shù jù kù ruǎn jiàn",
+        "hv": "",
+        "mean": "phần mềm cơ sở dữ liệu"
+      },
+      {
+        "zh": "数据接口",
+        "py": "shù jù jiē kǒu",
+        "hv": "",
+        "mean": "giao diện dữ liệu"
+      },
+      {
+        "zh": "文件服务器",
+        "py": "wén jiàn fú wù qì",
+        "hv": "",
+        "mean": "máy chủ tệp"
+      },
+      {
+        "zh": "曲率向量",
+        "py": "qū lǜ xiàng liàng",
+        "hv": "",
+        "mean": "vector độ cong"
+      },
+      {
+        "zh": "服务器",
+        "py": "fú wù qì",
+        "hv": "PHỤC VỤ KHÍ",
+        "mean": "máy chủ (máy tính); LT:臺|台[tai2]"
+      },
+      {
+        "zh": "本征向量",
+        "py": "běn zhēng xiàng liàng",
+        "hv": "",
+        "mean": "vector riêng (toán); cũng viết là 特徵向量|特征向量"
+      },
+      {
+        "zh": "架构",
+        "py": "jià gòu",
+        "hv": "",
+        "mean": "xây dựng; kiến trúc; cấu trúc; khung; kiến trúc"
+      },
+      {
+        "zh": "架构师",
+        "py": "jià gòu shī",
+        "hv": "",
+        "mean": "(máy tính) kiến trúc sư"
+      },
+      {
+        "zh": "核模型",
+        "py": "hé mó xíng",
+        "hv": "",
+        "mean": "mô hình hạt nhân"
+      },
+      {
+        "zh": "核证模型",
+        "py": "hé zhèng mó xíng",
+        "hv": "",
+        "mean": "mô hình xác minh"
+      },
+      {
+        "zh": "梯度",
+        "py": "tī dù",
+        "hv": "",
+        "mean": "gradient, độ dốc"
+      },
+      {
+        "zh": "梯度回波",
+        "py": "tī dù huí bō",
+        "hv": "",
+        "mean": "tiếng vọng gradient"
+      },
+      {
+        "zh": "标注",
+        "py": "biāo zhù",
+        "hv": "",
+        "mean": "đánh dấu; gắn thẻ; đặt ký hiệu lên cái gì để giải thích hoặc thu hút sự chú ý; chú thích (ví dụ: ký tự với bính âm)"
+      },
+      {
+        "zh": "标准模型",
+        "py": "biāo zhǔn mó xíng",
+        "hv": "",
+        "mean": "Mô hình Chuẩn (của vật lý hạt)"
+      },
+      {
+        "zh": "模型",
+        "py": "mó xíng",
+        "hv": "MÔ HÌNH",
+        "mean": "mô hình; khuôn; mẫu"
+      },
+      {
+        "zh": "法向量",
+        "py": "fǎ xiàng liàng",
+        "hv": "",
+        "mean": "vector pháp tuyến"
+      },
+      {
+        "zh": "混合模型",
+        "py": "hùn hé mó xíng",
+        "hv": "",
+        "mean": "mô hình lai"
+      },
+      {
+        "zh": "测试",
+        "py": "cè shì",
+        "hv": "TRẮC THÍ",
+        "mean": "kiểm tra (máy móc, v.v.); kiểm tra (kỹ năng của một người trong một lĩnh vực cụ thể); bài kiểm tra; (tin học) bản beta (phiên bản phần mềm)"
+      },
+      {
+        "zh": "测试器",
+        "py": "cè shì qì",
+        "hv": "",
+        "mean": "thiết bị kiểm tra; thiết bị giám sát; máy kiểm tra; dụng cụ đo"
+      },
+      {
+        "zh": "源代码",
+        "py": "yuán dài mǎ",
+        "hv": "",
+        "mean": "mã nguồn (tin học)"
+      },
+      {
+        "zh": "温度梯度",
+        "py": "wēn dù tī dù",
+        "hv": "",
+        "mean": "gradient nhiệt độ"
+      },
+      {
+        "zh": "渗透",
+        "py": "shèn tòu",
+        "hv": "SẤM THẤU",
+        "mean": "(nghĩa đen và bóng) thẩm thấu; thấm vào; (sản phẩm, ý tưởng, v.v.) xâm nhập (vào một cộng đồng); (lực lượng thù địch) xâm nhập; (hóa học) thẩm thấu"
+      },
+      {
+        "zh": "渗透压",
+        "py": "shèn tòu yā",
+        "hv": "",
+        "mean": "áp suất thẩm thấu"
+      },
+      {
+        "zh": "漏洞",
+        "py": "lòu dòng",
+        "hv": "LẬU ĐỘNG",
+        "mean": "rò rỉ; lỗ hổng; kẽ hở"
+      },
+      {
+        "zh": "漏洞百出",
+        "py": "lòu dòng bǎi chū",
+        "hv": "",
+        "mean": "(lập luận, lý thuyết, v.v.) đầy lỗ hổng (thành ngữ)"
+      },
+      {
+        "zh": "演算法",
+        "py": "yǎn suàn fǎ",
+        "hv": "",
+        "mean": "thuật toán (Đài Loan)"
+      },
+      {
+        "zh": "熔断",
+        "py": "róng duàn",
+        "hv": "",
+        "mean": "(dây cầu chì) nóng chảy; nổ; (ví von) tạm ngừng giao dịch chứng khoán; (ví von) đình chỉ hãng hàng không hoạt động trên tuyến nhất định (như một hình phạt, ví dụ: do chở quá số hành khách quy định có kết quả dương tính với COVID)"
+      },
+      {
+        "zh": "熔断机制",
+        "py": "róng duàn jī zhì",
+        "hv": "",
+        "mean": "(tài chính) biện pháp ngừng giao dịch; ngắt mạch"
+      },
+      {
+        "zh": "熔断丝",
+        "py": "róng duàn sī",
+        "hv": "",
+        "mean": "dây cầu chì"
+      },
+      {
+        "zh": "特征向量",
+        "py": "tè zhēng xiàng liàng",
+        "hv": "",
+        "mean": "véc-tơ riêng (toán)"
+      },
+      {
+        "zh": "独立显卡",
+        "py": "dú lì xiǎn kǎ",
+        "hv": "",
+        "mean": "(tin học) GPU rời; GPU chuyên dụng (viết tắt thành 獨顯|独显[du2 xian3])"
+      },
+      {
+        "zh": "产业集群",
+        "py": "chǎn yè jí qún",
+        "hv": "",
+        "mean": "cụm công nghiệp"
+      },
+      {
+        "zh": "示例代码",
+        "py": "shì lì dài mǎ",
+        "hv": "",
+        "mean": "mã mẫu (máy tính)"
+      },
+      {
+        "zh": "私人服务器",
+        "py": "sī rén fú wù qì",
+        "hv": "",
+        "mean": "(trò chơi) giả lập máy chủ; máy chủ riêng"
+      },
+      {
+        "zh": "算力",
+        "py": "suàn lì",
+        "hv": "",
+        "mean": "sức mạnh tính toán; tỷ lệ băm (khai thác tiền điện tử)"
+      },
+      {
+        "zh": "算子",
+        "py": "suàn zi",
+        "hv": "",
+        "mean": "toán tử (toán học)"
+      },
+      {
+        "zh": "算法",
+        "py": "suàn fǎ",
+        "hv": "",
+        "mean": "số học; thuật toán; phương pháp tính toán"
+      },
+      {
+        "zh": "管理接口",
+        "py": "guǎn lǐ jiē kǒu",
+        "hv": "",
+        "mean": "giao diện quản lý"
+      },
+      {
+        "zh": "索引",
+        "py": "suǒ yǐn",
+        "hv": "",
+        "mean": "chỉ mục"
+      },
+      {
+        "zh": "结合模型",
+        "py": "jié hé mó xíng",
+        "hv": "",
+        "mean": "mô hình kết hợp"
+      },
+      {
+        "zh": "网管接口",
+        "py": "wǎng guǎn jiē kǒu",
+        "hv": "",
+        "mean": "giao diện quản lý mạng"
+      },
+      {
+        "zh": "网络协议",
+        "py": "wǎng luò xié yì",
+        "hv": "",
+        "mean": "giao thức mạng"
+      },
+      {
+        "zh": "网络层协议",
+        "py": "wǎng luò céng xié yì",
+        "hv": "",
+        "mean": "giao thức tầng mạng"
+      },
+      {
+        "zh": "网路架构",
+        "py": "wǎng lù jià gòu",
+        "hv": "",
+        "mean": "cơ sở hạ tầng mạng"
+      },
+      {
+        "zh": "线性算子",
+        "py": "xiàn xìng suàn zi",
+        "hv": "",
+        "mean": "toán tử tuyến tính (toán)"
+      },
+      {
+        "zh": "线程",
+        "py": "xiàn chéng",
+        "hv": "",
+        "mean": "(máy tính) luồng"
+      },
+      {
+        "zh": "编译器",
+        "py": "biān yì qì",
+        "hv": "",
+        "mean": "trình biên dịch"
+      },
+      {
+        "zh": "缓存",
+        "py": "huǎn cún",
+        "hv": "",
+        "mean": "(tin học) bộ nhớ đệm; bộ nhớ tạm thời"
+      },
+      {
+        "zh": "缩小模型",
+        "py": "suō xiǎo mó xíng",
+        "hv": "",
+        "mean": "mô hình thu nhỏ"
+      },
+      {
+        "zh": "脑机接口",
+        "py": "nǎo jī jiē kǒu",
+        "hv": "",
+        "mean": "giao diện não-máy tính"
+      },
+      {
+        "zh": "芯片",
+        "py": "xīn piàn",
+        "hv": "TÂM PHIẾN",
+        "mean": "chip máy tính; vi mạch"
+      },
+      {
+        "zh": "芯片组",
+        "py": "xīn piàn zǔ",
+        "hv": "",
+        "mean": "bộ chip"
+      },
+      {
+        "zh": "许可协议",
+        "py": "xǔ kě xié yì",
+        "hv": "",
+        "mean": "thỏa thuận cấp phép (cho sở hữu trí tuệ)"
+      },
+      {
+        "zh": "词性标注",
+        "py": "cí xìng biāo zhù",
+        "hv": "",
+        "mean": "gắn thẻ từ loại"
+      },
+      {
+        "zh": "词通达模型",
+        "py": "cí tōng dá mó xíng",
+        "hv": "",
+        "mean": "mô hình truy cập từ"
+      },
+      {
+        "zh": "语义",
+        "py": "yǔ yì",
+        "hv": "",
+        "mean": "nghĩa của từ; ngữ nghĩa"
+      },
+      {
+        "zh": "语义分析",
+        "py": "yǔ yì fēn xī",
+        "hv": "",
+        "mean": "phân tích ngữ nghĩa"
+      },
+      {
+        "zh": "语义分类",
+        "py": "yǔ yì fēn lèi",
+        "hv": "",
+        "mean": "phân loại ngữ nghĩa"
+      },
+      {
+        "zh": "语义学",
+        "py": "yǔ yì xué",
+        "hv": "",
+        "mean": "ngữ nghĩa học"
+      },
+      {
+        "zh": "语义空间",
+        "py": "yǔ yì kōng jiān",
+        "hv": "",
+        "mean": "không gian ngữ nghĩa"
+      },
+      {
+        "zh": "路由协议",
+        "py": "lù yóu xié yì",
+        "hv": "",
+        "mean": "các giao thức định tuyến"
+      },
+      {
+        "zh": "身手敏捷",
+        "py": "shēn shǒu mǐn jié",
+        "hv": "",
+        "mean": "nhanh nhẹn; linh hoạt; khéo léo"
+      },
+      {
+        "zh": "逆渗透",
+        "py": "nì shèn tòu",
+        "hv": "",
+        "mean": "thẩm thấu ngược"
+      },
+      {
+        "zh": "达成协议",
+        "py": "dá chéng xié yì",
+        "hv": "",
+        "mean": "đạt được thỏa thuận"
+      },
+      {
+        "zh": "重构",
+        "py": "chóng gòu",
+        "hv": "",
+        "mean": "tái cấu trúc; tái thiết; (tin học) tái cấu trúc mã"
+      },
+      {
+        "zh": "量化",
+        "py": "liàng huà",
+        "hv": "",
+        "mean": "định lượng; lượng hóa; tính định lượng; lượng tử hóa"
+      },
+      {
+        "zh": "量化宽松",
+        "py": "liàng huà kuān sōng",
+        "hv": "",
+        "mean": "nới lỏng định lượng (tài chính)"
+      },
+      {
+        "zh": "量化逻辑",
+        "py": "liàng huà luó ji",
+        "hv": "",
+        "mean": "logic định lượng"
+      },
+      {
+        "zh": "开放源代码",
+        "py": "kāi fàng yuán dài mǎ",
+        "hv": "",
+        "mean": "xem 開放源碼|开放源码[kai1 fang4 yuan2 ma3]"
+      },
+      {
+        "zh": "开源",
+        "py": "kāi yuán",
+        "hv": "",
+        "mean": "mở rộng nguồn tài chính; viết tắt của 開放源碼|开放源码[kai1 fang4 yuan2 ma3]"
+      },
+      {
+        "zh": "开源节流",
+        "py": "kāi yuán jié liú",
+        "hv": "",
+        "mean": "nghĩa đen: mở nguồn nước và giảm dòng chảy (thành ngữ); tăng thu nhập và tiết kiệm chi tiêu; mở rộng nguồn thu và tiết kiệm chi tiêu"
+      },
+      {
+        "zh": "开源软件",
+        "py": "kāi yuán ruǎn jiàn",
+        "hv": "",
+        "mean": "phần mềm mã nguồn mở"
+      },
+      {
+        "zh": "降级",
+        "py": "jiàng jí",
+        "hv": "",
+        "mean": "giáng chức; xuống hạng; làm giảm"
+      },
+      {
+        "zh": "限流",
+        "py": "xiàn liú",
+        "hv": "",
+        "mean": "hạn chế lưu lượng hành khách, khách hàng hoặc xe cộ; hạn chế lan truyền nội dung nhạy cảm; (điện) giới hạn dòng điện; (mạng máy tính) giới hạn tốc độ"
+      },
+      {
+        "zh": "集成显卡",
+        "py": "jí chéng xiǎn kǎ",
+        "hv": "",
+        "mean": "GPU tích hợp (viết tắt của 集顯|集显[ji2 xian3])"
+      },
+      {
+        "zh": "集群",
+        "py": "jí qún",
+        "hv": "",
+        "mean": "bầy đàn; tập hợp thành bầy; tụ lại với nhau"
+      },
+      {
+        "zh": "雌性接口",
+        "py": "cí xìng jiē kǒu",
+        "hv": "",
+        "mean": "đầu nối cái"
+      },
+      {
+        "zh": "零日漏洞",
+        "py": "líng rì lòu dòng",
+        "hv": "",
+        "mean": "lỗ hổng zero-day (máy tính)"
+      },
+      {
+        "zh": "电容器",
+        "py": "diàn róng qì",
+        "hv": "",
+        "mean": "tụ điện"
+      },
+      {
+        "zh": "显卡",
+        "py": "xiǎn kǎ",
+        "hv": "",
+        "mean": "card đồ họa; card màn hình (máy tính)"
+      },
+      {
+        "zh": "高速缓存",
+        "py": "gāo sù huǎn cún",
+        "hv": "",
+        "mean": "(tin học) bộ nhớ đệm"
+      },
+      {
+        "zh": "点对点加密",
+        "py": "diǎn duì diǎn jiā mì",
+        "hv": "",
+        "mean": "(Đài Loan) mã hóa đầu cuối"
       }
     ],
     "sentences": [
@@ -8124,6 +9576,876 @@
         "py": "jì chéng fèn é",
         "hv": "KẾ THỪA PHẦN NGẠCH",
         "mean": "Phần di sản thừa kế phân chia cho từng người thừa kế hợp pháp"
+      },
+      {
+        "zh": "上诉",
+        "py": "shàng sù",
+        "hv": "THƯỢNG TỐ",
+        "mean": "kháng cáo (một vụ án tư pháp); kháng cáo"
+      },
+      {
+        "zh": "上诉法院",
+        "py": "shàng sù fǎ yuàn",
+        "hv": "",
+        "mean": "tòa án phúc thẩm"
+      },
+      {
+        "zh": "交保释放",
+        "py": "jiāo bǎo shì fàng",
+        "hv": "",
+        "mean": "thả tự do khi bảo lãnh"
+      },
+      {
+        "zh": "代理",
+        "py": "dài lǐ",
+        "hv": "ĐẠI LÍ",
+        "mean": "đại diện cho ai đó trong một vị trí trách nhiệm; làm đại diện hoặc ủy quyền; thay thế; (máy tính) proxy"
+      },
+      {
+        "zh": "代理人",
+        "py": "dài lǐ rén",
+        "hv": "ĐẠI LÍ NHÂN",
+        "mean": "đại diện"
+      },
+      {
+        "zh": "代理商",
+        "py": "dài lǐ shāng",
+        "hv": "",
+        "mean": "đại lý"
+      },
+      {
+        "zh": "代理孕母",
+        "py": "dài lǐ yùn mǔ",
+        "hv": "",
+        "mean": "(Đài Loan) mang thai hộ; mang thai thay; mẹ thay thế"
+      },
+      {
+        "zh": "仲裁",
+        "py": "zhòng cái",
+        "hv": "TRỌNG TÀI",
+        "mean": "trọng tài; giải quyết tranh chấp"
+      },
+      {
+        "zh": "侵权",
+        "py": "qīn quán",
+        "hv": "XÂM QUYỀN",
+        "mean": "xâm phạm quyền; làm trái; phạm"
+      },
+      {
+        "zh": "侵权行为",
+        "py": "qīn quán xíng wéi",
+        "hv": "",
+        "mean": "hành vi xâm phạm; xâm phạm (quyền của ai đó)"
+      },
+      {
+        "zh": "保全",
+        "py": "bǎo quán",
+        "hv": "",
+        "mean": "cứu khỏi tổn hại; bảo tồn; duy trì; giữ gìn sửa chữa; (Đài Loan) nhân viên bảo vệ"
+      },
+      {
+        "zh": "保全员",
+        "py": "bǎo quán yuán",
+        "hv": "",
+        "mean": "(Đài Loan) nhân viên bảo vệ"
+      },
+      {
+        "zh": "保释",
+        "py": "bǎo shì",
+        "hv": "",
+        "mean": "cho tại ngoại; bảo lãnh"
+      },
+      {
+        "zh": "假释",
+        "py": "jiǎ shì",
+        "hv": "",
+        "mean": "tù nhân được tha"
+      },
+      {
+        "zh": "传闻证据",
+        "py": "chuán wén zhèng jù",
+        "hv": "",
+        "mean": "chứng cứ gián tiếp (pháp luật)"
+      },
+      {
+        "zh": "债权",
+        "py": "zhài quán",
+        "hv": "",
+        "mean": "quyền của chủ nợ (luật)"
+      },
+      {
+        "zh": "债权人",
+        "py": "zhài quán rén",
+        "hv": "",
+        "mean": "chủ nợ"
+      },
+      {
+        "zh": "债权国",
+        "py": "zhài quán guó",
+        "hv": "",
+        "mean": "quốc gia chủ nợ"
+      },
+      {
+        "zh": "免责",
+        "py": "miǎn zé",
+        "hv": "",
+        "mean": "miễn trách nhiệm"
+      },
+      {
+        "zh": "免责条款",
+        "py": "miǎn zé tiáo kuǎn",
+        "hv": "",
+        "mean": "điều khoản miễn trách"
+      },
+      {
+        "zh": "免责声明",
+        "py": "miǎn zé shēng míng",
+        "hv": "",
+        "mean": "tuyên bố miễn trừ trách nhiệm"
+      },
+      {
+        "zh": "公平审判权",
+        "py": "gōng píng shěn pàn quán",
+        "hv": "",
+        "mean": "quyền được xét xử công bằng"
+      },
+      {
+        "zh": "公证",
+        "py": "gōng zhèng",
+        "hv": "CÔNG CHỨNG",
+        "mean": "công chứng; được công chứng; xác nhận"
+      },
+      {
+        "zh": "公证人",
+        "py": "gōng zhèng rén",
+        "hv": "",
+        "mean": "công chứng viên; nhân viên thẩm định"
+      },
+      {
+        "zh": "公证处",
+        "py": "gōng zhèng chù",
+        "hv": "",
+        "mean": "văn phòng công chứng"
+      },
+      {
+        "zh": "分手代理",
+        "py": "fēn shǒu dài lǐ",
+        "hv": "",
+        "mean": "\"người đại diện chia tay\", người làm thay cho ai đó muốn chấm dứt mối quan hệ nhưng không có can đảm tự làm"
+      },
+      {
+        "zh": "刑事审判庭",
+        "py": "xíng shì shěn pàn tíng",
+        "hv": "",
+        "mean": "tòa án hình sự"
+      },
+      {
+        "zh": "刑事拘留",
+        "py": "xíng shì jū liú",
+        "hv": "",
+        "mean": "tạm giam hình sự; giam giữ hình sự"
+      },
+      {
+        "zh": "刑事诉讼法",
+        "py": "xíng shì sù sòng fǎ",
+        "hv": "",
+        "mean": "tố tụng hình sự"
+      },
+      {
+        "zh": "刑罚",
+        "py": "xíng fá",
+        "hv": "",
+        "mean": "bản án; hình phạt; sự trừng phạt"
+      },
+      {
+        "zh": "判决",
+        "py": "pàn jué",
+        "hv": "PHÁN QUYẾT",
+        "mean": "phán quyết (của tòa án); tuyên án; kết án"
+      },
+      {
+        "zh": "原告",
+        "py": "yuán gào",
+        "hv": "NGUYÊN CÁO",
+        "mean": "nguyên đơn; người khiếu nại"
+      },
+      {
+        "zh": "原被告",
+        "py": "yuán bèi gào",
+        "hv": "",
+        "mean": "nguyên đơn và bị đơn; bên nguyên và bên bị (luật sư)"
+      },
+      {
+        "zh": "反垄断",
+        "py": "fǎn lǒng duàn",
+        "hv": "",
+        "mean": "chống độc quyền"
+      },
+      {
+        "zh": "取保释放",
+        "py": "qǔ bǎo shì fàng",
+        "hv": "",
+        "mean": "được tại ngoại (pháp luật)"
+      },
+      {
+        "zh": "可执行",
+        "py": "kě zhí xíng",
+        "hv": "",
+        "mean": "có thể thực thi (tin học)"
+      },
+      {
+        "zh": "司法人员",
+        "py": "sī fǎ rén yuán",
+        "hv": "",
+        "mean": "cán bộ tư pháp"
+      },
+      {
+        "zh": "合议庭",
+        "py": "hé yì tíng",
+        "hv": "",
+        "mean": "(luật) hội đồng xét xử; ban thẩm phán"
+      },
+      {
+        "zh": "商标",
+        "py": "shāng biāo",
+        "hv": "THƯƠNG TIÊU",
+        "mean": "nhãn hiệu; logo"
+      },
+      {
+        "zh": "在诉讼期间",
+        "py": "zài sù sòng qī jiān",
+        "hv": "",
+        "mean": "trong thời gian kiện tụng"
+      },
+      {
+        "zh": "执行",
+        "py": "zhí xíng",
+        "hv": "CHẤP HÀNH",
+        "mean": "thực hiện; tiến hành; thi hành; chạy"
+      },
+      {
+        "zh": "执行人",
+        "py": "zhí xíng rén",
+        "hv": "",
+        "mean": "đao phủ; người thực hiện kinh doanh"
+      },
+      {
+        "zh": "执行指挥官",
+        "py": "zhí xíng zhǐ huī guān",
+        "hv": "",
+        "mean": "chỉ huy thực hiện"
+      },
+      {
+        "zh": "执行绪",
+        "py": "zhí xíng xù",
+        "hv": "",
+        "mean": "(Đài Loan) (tin học) luồng"
+      },
+      {
+        "zh": "执行长",
+        "py": "zhí xíng zhǎng",
+        "hv": "",
+        "mean": "giám đốc điều hành"
+      },
+      {
+        "zh": "垄断",
+        "py": "lǒng duàn",
+        "hv": "LŨNG ĐOẠN",
+        "mean": "độc quyền"
+      },
+      {
+        "zh": "大陪审团",
+        "py": "dà péi shěn tuán",
+        "hv": "",
+        "mean": "bồi thẩm đoàn lớn"
+      },
+      {
+        "zh": "女继承人",
+        "py": "nǚ jì chéng rén",
+        "hv": "",
+        "mean": "nữ thừa kế"
+      },
+      {
+        "zh": "寡头垄断",
+        "py": "guǎ tóu lǒng duàn",
+        "hv": "",
+        "mean": "độc quyền nhóm"
+      },
+      {
+        "zh": "审判",
+        "py": "shěn pàn",
+        "hv": "THẨM PHÁN",
+        "mean": "phiên tòa; xét xử ai đó"
+      },
+      {
+        "zh": "审判员",
+        "py": "shěn pàn yuán",
+        "hv": "",
+        "mean": "thẩm phán (trong tòa)"
+      },
+      {
+        "zh": "审判官",
+        "py": "shěn pàn guān",
+        "hv": "",
+        "mean": "thẩm phán; thẩm tra viên"
+      },
+      {
+        "zh": "审判席",
+        "py": "shěn pàn xí",
+        "hv": "",
+        "mean": "ghế thẩm phán"
+      },
+      {
+        "zh": "审判庭",
+        "py": "shěn pàn tíng",
+        "hv": "",
+        "mean": "tòa án; phiên tòa; phòng xử án"
+      },
+      {
+        "zh": "审判栏",
+        "py": "shěn pàn lán",
+        "hv": "",
+        "mean": "vành móng ngựa"
+      },
+      {
+        "zh": "审判权",
+        "py": "shěn pàn quán",
+        "hv": "",
+        "mean": "quyền tài phán; quyền tư pháp"
+      },
+      {
+        "zh": "审判者",
+        "py": "shěn pàn zhě",
+        "hv": "",
+        "mean": "thẩm phán"
+      },
+      {
+        "zh": "审判长",
+        "py": "shěn pàn zhǎng",
+        "hv": "",
+        "mean": "thẩm phán chủ tọa"
+      },
+      {
+        "zh": "专利",
+        "py": "zhuān lì",
+        "hv": "CHUYÊN LỢI",
+        "mean": "bằng sáng chế; điều gì đó một nhóm người nhất định được hưởng (hoặc sở hữu, v.v.) một cách độc quyền; độc quyền"
+      },
+      {
+        "zh": "专利局",
+        "py": "zhuān lì jú",
+        "hv": "",
+        "mean": "văn phòng bằng sáng chế"
+      },
+      {
+        "zh": "专利权",
+        "py": "zhuān lì quán",
+        "hv": "",
+        "mean": "quyền bằng sáng chế"
+      },
+      {
+        "zh": "专利法",
+        "py": "zhuān lì fǎ",
+        "hv": "",
+        "mean": "luật bằng sáng chế"
+      },
+      {
+        "zh": "专利药品",
+        "py": "zhuān lì yào pǐn",
+        "hv": "",
+        "mean": "thuốc được cấp bằng sáng chế"
+      },
+      {
+        "zh": "工伤",
+        "py": "gōng shāng",
+        "hv": "",
+        "mean": "chấn thương lao động; chấn thương liên quan đến công việc"
+      },
+      {
+        "zh": "工伤假",
+        "py": "gōng shāng jià",
+        "hv": "",
+        "mean": "nghỉ phép do chấn thương"
+      },
+      {
+        "zh": "从轻",
+        "py": "cóng qīng",
+        "hv": "",
+        "mean": "khoan hồng (khi tuyên án)"
+      },
+      {
+        "zh": "性贿赂",
+        "py": "xìng huì lù",
+        "hv": "",
+        "mean": "hối lộ tình dục"
+      },
+      {
+        "zh": "承诺",
+        "py": "chéng nuò",
+        "hv": "THỪA NẶC",
+        "mean": "hứa; hứa làm gì đó; cam kết"
+      },
+      {
+        "zh": "抗辩",
+        "py": "kàng biàn",
+        "hv": "",
+        "mean": "phản biện; phản đối; lên tiếng phản đối; đáp trả; bào chữa; phản đối (trước tòa); lời bào chữa; phòng vệ (chống lại cáo buộc); trả lời cáo buộc (trong phiên tòa)"
+      },
+      {
+        "zh": "拘留",
+        "py": "jū liú",
+        "hv": "CÂU LƯU",
+        "mean": "tạm giam; giữ ai đó trong sự quản thúc"
+      },
+      {
+        "zh": "拘留所",
+        "py": "jū liú suǒ",
+        "hv": "",
+        "mean": "trung tâm giam giữ; nhà giam"
+      },
+      {
+        "zh": "提出抗辩",
+        "py": "tí chū kàng biàn",
+        "hv": "",
+        "mean": "biện hộ (không có tội); đưa ra lời biện hộ"
+      },
+      {
+        "zh": "撤销",
+        "py": "chè xiāo",
+        "hv": "TRIỆT TIÊU",
+        "mean": "huỷ bỏ; thu hồi; (tin học) hoàn tác"
+      },
+      {
+        "zh": "收购要约",
+        "py": "shōu gòu yāo yuē",
+        "hv": "",
+        "mean": "đấu thầu tiếp quản"
+      },
+      {
+        "zh": "时效",
+        "py": "shí xiào",
+        "hv": "",
+        "mean": "tính kịp thời; thời gian hiệu lực hoặc giá trị; (luật) thời hiệu; giới hạn; (luyện kim) sự lão hóa"
+      },
+      {
+        "zh": "时效性",
+        "py": "shí xiào xìng",
+        "hv": "",
+        "mean": "nhạy cảm với thời gian; nhạy cảm về thời gian; tính kịp thời"
+      },
+      {
+        "zh": "时效法",
+        "py": "shí xiào fǎ",
+        "hv": "",
+        "mean": "(luật) thời hiệu"
+      },
+      {
+        "zh": "档案执行",
+        "py": "dàng àn zhí xíng",
+        "hv": "",
+        "mean": "thực thi tệp; tệp thực thi"
+      },
+      {
+        "zh": "欺诈",
+        "py": "qī zhà",
+        "hv": "KHI TRÁ",
+        "mean": "gian lận"
+      },
+      {
+        "zh": "欺诈者",
+        "py": "qī zhà zhě",
+        "hv": "",
+        "mean": "kẻ lừa đảo"
+      },
+      {
+        "zh": "毫无效果",
+        "py": "háo wú xiào guǒ",
+        "hv": "",
+        "mean": "không có kết quả; không đạt được gì; hoàn toàn không hiệu quả; không có tác dụng; bị phớt lờ (đặc biệt là trò đùa hoặc bài nói hoàn toàn bị ngó lơ)"
+      },
+      {
+        "zh": "民事诉讼",
+        "py": "mín shì sù sòng",
+        "hv": "",
+        "mean": "vụ kiện dân sự; kháng cáo dân sự (trái với vụ án hình sự)"
+      },
+      {
+        "zh": "法人",
+        "py": "fǎ rén",
+        "hv": "PHÁP NHÂN",
+        "mean": "pháp nhân; tập đoàn; xem thêm 自然人[zi4 ran2 ren2]"
+      },
+      {
+        "zh": "法定代表人",
+        "py": "fǎ dìng dài biǎo rén",
+        "hv": "",
+        "mean": "(luật) người đại diện theo pháp luật của một tổ chức (ví dụ: chủ tịch hội đồng quản trị của một công ty, hiệu trưởng của một trường học, v.v.)"
+      },
+      {
+        "zh": "法院裁决",
+        "py": "fǎ yuàn cái jué",
+        "hv": "",
+        "mean": "phán quyết của tòa án"
+      },
+      {
+        "zh": "无效",
+        "py": "wú xiào",
+        "hv": "VÔ HIỆU",
+        "mean": "không hợp lệ; không hiệu quả; uổng công; Không hiệu quả"
+      },
+      {
+        "zh": "无效社交",
+        "py": "wú xiào shè jiāo",
+        "hv": "",
+        "mean": "tương tác xã hội không hiệu quả"
+      },
+      {
+        "zh": "无罪抗辩",
+        "py": "wú zuì kàng biàn",
+        "hv": "",
+        "mean": "lời biện hộ vô tội"
+      },
+      {
+        "zh": "争取时效",
+        "py": "zhēng qǔ shí xiào",
+        "hv": "",
+        "mean": "cố gắng làm việc gì đó khi thời cơ thích hợp"
+      },
+      {
+        "zh": "申诉",
+        "py": "shēn sù",
+        "hv": "",
+        "mean": "nộp đơn khiếu nại; kháng cáo (lên cơ quan có thẩm quyền, tòa án cấp trên, v.v.); khiếu nại; kháng cáo"
+      },
+      {
+        "zh": "申诉书",
+        "py": "shēn sù shū",
+        "hv": "",
+        "mean": "đơn kháng cáo"
+      },
+      {
+        "zh": "留置",
+        "py": "liú zhì",
+        "hv": "",
+        "mean": "để lại tại chỗ; để dành (để sử dụng sau); lưu giữ; tạm giam (nghi phạm hoặc người phạm tội); (y học) lưu dẫn"
+      },
+      {
+        "zh": "监外执行",
+        "py": "jiān wài zhí xíng",
+        "hv": "",
+        "mean": "thi hành án ngoài tù (luật)"
+      },
+      {
+        "zh": "立功",
+        "py": "lì gōng",
+        "hv": "LẬP CÔNG",
+        "mean": "lập công (một trong ba điều bất hủ 三不朽[san1 bu4 xiu3]); đóng góp xứng đáng; xuất sắc"
+      },
+      {
+        "zh": "立功赎罪",
+        "py": "lì gōng shú zuì",
+        "hv": "",
+        "mean": "chuộc tội; cải tạo"
+      },
+      {
+        "zh": "章程",
+        "py": "zhāng chéng",
+        "hv": "CHƯƠNG TRÌNH",
+        "mean": "quy tắc; quy định; hiến chương; điều lệ; điều lệ công ty; điều lệ thành lập; tuyên ngôn của tập đoàn; quy chế nội bộ"
+      },
+      {
+        "zh": "管辖",
+        "py": "guǎn xiá",
+        "hv": "QUẢN HẠT",
+        "mean": "quản lý; có thẩm quyền (đối với)"
+      },
+      {
+        "zh": "网络欺诈",
+        "py": "wǎng luò qī zhà",
+        "hv": "",
+        "mean": "lừa đảo trực tuyến"
+      },
+      {
+        "zh": "缔约",
+        "py": "dì yuē",
+        "hv": "",
+        "mean": "ký kết hiệp ước"
+      },
+      {
+        "zh": "缔约国",
+        "py": "dì yuē guó",
+        "hv": "",
+        "mean": "quốc gia ký kết; các nước tham gia hiệp ước"
+      },
+      {
+        "zh": "缔约方",
+        "py": "dì yuē fāng",
+        "hv": "",
+        "mean": "bên trong hợp đồng, hiệp ước, v.v."
+      },
+      {
+        "zh": "缓刑",
+        "py": "huǎn xíng",
+        "hv": "",
+        "mean": "án treo; quản chế"
+      },
+      {
+        "zh": "继承",
+        "py": "jì chéng",
+        "hv": "KẾ THỪA",
+        "mean": "thừa kế; kế thừa (ngai vàng, v.v.); tiếp tục (truyền thống, v.v.)"
+      },
+      {
+        "zh": "继承人",
+        "py": "jì chéng rén",
+        "hv": "",
+        "mean": "người thừa kế; người kế nhiệm"
+      },
+      {
+        "zh": "继承权",
+        "py": "jì chéng quán",
+        "hv": "",
+        "mean": "quyền thừa kế"
+      },
+      {
+        "zh": "继承者",
+        "py": "jì chéng zhě",
+        "hv": "",
+        "mean": "người kế nhiệm"
+      },
+      {
+        "zh": "继承衣钵",
+        "py": "jì chéng yī bō",
+        "hv": "",
+        "mean": "tiếp nhận di sản; theo bước ai đó"
+      },
+      {
+        "zh": "羁押",
+        "py": "jī yā",
+        "hv": "",
+        "mean": "giam giữ; tạm giam; giam cầm; bỏ tù"
+      },
+      {
+        "zh": "自首",
+        "py": "zì shǒu",
+        "hv": "",
+        "mean": "tự thú; tự trình diện (với cơ quan chức năng)"
+      },
+      {
+        "zh": "著作权",
+        "py": "zhù zuò quán",
+        "hv": "",
+        "mean": "bản quyền"
+      },
+      {
+        "zh": "董事会",
+        "py": "dǒng shì huì",
+        "hv": "ĐỔNG SỰ HỘI",
+        "mean": "hội đồng quản trị"
+      },
+      {
+        "zh": "行政拘留",
+        "py": "xíng zhèng jū liú",
+        "hv": "",
+        "mean": "giam giữ do vi phạm luật hành chính, thường là 10 ngày hoặc ít hơn; giam giữ hành chính"
+      },
+      {
+        "zh": "被上诉人",
+        "py": "bèi shàng sù rén",
+        "hv": "",
+        "mean": "bị đơn phúc thẩm (bên thắng ở tòa sơ thẩm, chiến thắng đang bị bên thua kháng cáo)"
+      },
+      {
+        "zh": "被告",
+        "py": "bèi gào",
+        "hv": "BỊ CÁO",
+        "mean": "bị cáo"
+      },
+      {
+        "zh": "被告人",
+        "py": "bèi gào rén",
+        "hv": "",
+        "mean": "bị cáo (trong vụ kiện)"
+      },
+      {
+        "zh": "被执行人",
+        "py": "bèi zhí xíng rén",
+        "hv": "",
+        "mean": "(pháp luật) người phải thực hiện nghĩa vụ theo phán quyết của tòa án (ví dụ: bồi thường cho ai đó)"
+      },
+      {
+        "zh": "裁决",
+        "py": "cái jué",
+        "hv": "TÀI QUYẾT",
+        "mean": "phán quyết; phân xử"
+      },
+      {
+        "zh": "要约",
+        "py": "yāo yuē",
+        "hv": "",
+        "mean": "hạn chế; đồng ý với một hợp đồng; đề nghị; đấu thầu"
+      },
+      {
+        "zh": "解释执行",
+        "py": "jiě shì zhí xíng",
+        "hv": "",
+        "mean": "thông dịch (máy tính)"
+      },
+      {
+        "zh": "解除",
+        "py": "jiě chú",
+        "hv": "GIẢI TRỪ",
+        "mean": "loại bỏ; cách chức; thoát khỏi; giải trừ (nhiệm vụ); tháo gỡ; dỡ bỏ (lệnh cấm); hủy bỏ (một thỏa thuận)"
+      },
+      {
+        "zh": "诉讼",
+        "py": "sù sòng",
+        "hv": "TỐ TỤNG",
+        "mean": "vụ kiện"
+      },
+      {
+        "zh": "诉讼中",
+        "py": "sù sòng zhōng",
+        "hv": "",
+        "mean": "đang kiện tụng; trong quá trình tố tụng"
+      },
+      {
+        "zh": "诉讼法",
+        "py": "sù sòng fǎ",
+        "hv": "",
+        "mean": "luật tố tụng"
+      },
+      {
+        "zh": "注册商标",
+        "py": "zhù cè shāng biāo",
+        "hv": "",
+        "mean": "thương hiệu đã đăng ký"
+      },
+      {
+        "zh": "证据",
+        "py": "zhèng jù",
+        "hv": "CHỨNG CƯ",
+        "mean": "bằng chứng; chứng cứ; lời khai"
+      },
+      {
+        "zh": "财产公证",
+        "py": "cái chǎn gōng zhèng",
+        "hv": "",
+        "mean": "công chứng tài sản"
+      },
+      {
+        "zh": "贿赂",
+        "py": "huì lù",
+        "hv": "HỐI LỘ",
+        "mean": "hối lộ; một khoản hối lộ"
+      },
+      {
+        "zh": "赔偿",
+        "py": "péi cháng",
+        "hv": "BỒI THƯỜNG",
+        "mean": "bồi thường"
+      },
+      {
+        "zh": "赔偿金",
+        "py": "péi cháng jīn",
+        "hv": "",
+        "mean": "tiền bồi thường"
+      },
+      {
+        "zh": "质证",
+        "py": "zhì zhèng",
+        "hv": "",
+        "mean": "đối chứng bằng chứng của bên đối lập trong phiên tòa"
+      },
+      {
+        "zh": "辩护",
+        "py": "biàn hù",
+        "hv": "BIỆN HỘ",
+        "mean": "nói để bảo vệ; tranh luận ủng hộ; bảo vệ; biện hộ"
+      },
+      {
+        "zh": "辩护人",
+        "py": "biàn hù rén",
+        "hv": "",
+        "mean": "người bào chữa; luật sư bào chữa"
+      },
+      {
+        "zh": "辩护士",
+        "py": "biàn hù shì",
+        "hv": "",
+        "mean": "người bào chữa; người biện hộ"
+      },
+      {
+        "zh": "追诉时效",
+        "py": "zhuī sù shí xiào",
+        "hv": "",
+        "mean": "(pháp luật) thời hạn có thể khởi tố hoặc kiện ai đó (theo quy định của thời hiệu)"
+      },
+      {
+        "zh": "连带",
+        "py": "lián dài",
+        "hv": "",
+        "mean": "có liên quan; dẫn đến; liên lụy; chung (trách nhiệm pháp lý, v.v.)"
+      },
+      {
+        "zh": "违约",
+        "py": "wéi yuē",
+        "hv": "VI ƯỚC",
+        "mean": "vi phạm lời hứa; vi phạm thỏa thuận; vỡ nợ (khoản vay hoặc hợp đồng)"
+      },
+      {
+        "zh": "违约金",
+        "py": "wéi yuē jīn",
+        "hv": "VI ƯỚC KIM",
+        "mean": "phí phạt"
+      },
+      {
+        "zh": "遗嘱",
+        "py": "yí zhǔ",
+        "hv": "DI CHÚC",
+        "mean": "di chúc; chúc thư"
+      },
+      {
+        "zh": "间接证据",
+        "py": "jiàn jiē zhèng jù",
+        "hv": "",
+        "mean": "lời khai gián tiếp; bằng chứng gián tiếp"
+      },
+      {
+        "zh": "陪审员",
+        "py": "péi shěn yuán",
+        "hv": "",
+        "mean": "thành viên bồi thẩm đoàn"
+      },
+      {
+        "zh": "陪审团",
+        "py": "péi shěn tuán",
+        "hv": "",
+        "mean": "bồi thẩm đoàn"
+      },
+      {
+        "zh": "集体诉讼",
+        "py": "jí tǐ sù sòng",
+        "hv": "",
+        "mean": "(law) kiện tập thể"
+      },
+      {
+        "zh": "非羁押性",
+        "py": "fēi jī yā xìng",
+        "hv": "",
+        "mean": "không giam giữ (bản án)"
+      },
+      {
+        "zh": "首席执行官",
+        "py": "shǒu xí zhí xíng guān",
+        "hv": "",
+        "mean": "giám đốc điều hành (CEO)"
+      },
+      {
+        "zh": "高层执行员",
+        "py": "gāo céng zhí xíng yuán",
+        "hv": "",
+        "mean": "giám đốc điều hành cấp cao"
       }
     ],
     "sentences": [
@@ -8509,6 +10831,984 @@
         "py": "tè sè jì niàn pǐn",
         "hv": "ĐẶC SẮC KÝ NIỆM PHẨM",
         "mean": "Đồ lưu niệm mang đậm dấu ấn đặc trưng của điểm du lịch"
+      },
+      {
+        "zh": "中转",
+        "py": "zhōng zhuǎn",
+        "hv": "",
+        "mean": "đổi (tàu hoặc máy bay); chuyển tiếp; quá cảnh"
+      },
+      {
+        "zh": "中转柜台",
+        "py": "zhōng zhuǎn guì tái",
+        "hv": "",
+        "mean": "quầy chuyển tiếp; quầy quá cảnh"
+      },
+      {
+        "zh": "中转站",
+        "py": "zhōng zhuǎn zhàn",
+        "hv": "",
+        "mean": "trung tâm trung chuyển; trung tâm vận tải; điểm đổi tuyến"
+      },
+      {
+        "zh": "事过境迁",
+        "py": "shì guò jìng qiān",
+        "hv": "",
+        "mean": "Vấn đề đã qua, tình hình đã thay đổi (thành ngữ).; Chuyện đã qua rồi."
+      },
+      {
+        "zh": "伴手礼",
+        "py": "bàn shǒu lǐ",
+        "hv": "",
+        "mean": "quà tặng khi thăm ai đó (đặc biệt là đặc sản địa phương mang về từ chuyến du lịch, hoặc sản phẩm đặc biệt của quốc gia mình mang ra nước ngoài) (Đài Loan)"
+      },
+      {
+        "zh": "值机",
+        "py": "zhí jī",
+        "hv": "",
+        "mean": "(hàng không) làm thủ tục lên máy bay; làm thủ tục"
+      },
+      {
+        "zh": "免税",
+        "py": "miǎn shuì",
+        "hv": "",
+        "mean": "không chịu thuế (của chùa, hoàng gia, v.v.); miễn thuế; cửa hàng miễn thuế"
+      },
+      {
+        "zh": "入住",
+        "py": "rù zhù",
+        "hv": "",
+        "mean": "nhận phòng (ở khách sạn, v.v.)"
+      },
+      {
+        "zh": "入境签证",
+        "py": "rù jìng qiān zhèng",
+        "hv": "",
+        "mean": "thị thực nhập cảnh"
+      },
+      {
+        "zh": "出租车",
+        "py": "chū zū chē",
+        "hv": "XUẤT TÔ XA",
+        "mean": "taxi; xe thuê (Đài Loan)"
+      },
+      {
+        "zh": "前台",
+        "py": "qián tái",
+        "hv": "TIỀN THAI",
+        "mean": "sân khấu; khu vực trước sân khấu; bối cảnh chính trị, v.v. (đôi khi chê bai); quầy lễ tân; quầy tiếp tân; (tin học) front-end; tiền cảnh"
+      },
+      {
+        "zh": "包车",
+        "py": "bāo chē",
+        "hv": "",
+        "mean": "xe thuê; xe bao"
+      },
+      {
+        "zh": "升舱",
+        "py": "shēng cāng",
+        "hv": "",
+        "mean": "được nâng hạng chỗ ngồi trên chuyến bay"
+      },
+      {
+        "zh": "协和式客机",
+        "py": "xié hé shì kè jī",
+        "hv": "",
+        "mean": "Concorde, máy bay chở khách siêu thanh"
+      },
+      {
+        "zh": "博物馆",
+        "py": "bó wù guǎn",
+        "hv": "BÁC VẬT QUÁN",
+        "mean": "bảo tàng"
+      },
+      {
+        "zh": "古迹",
+        "py": "gǔ jì",
+        "hv": "CỔ TÍCH",
+        "mean": "di tích lịch sử; địa điểm lịch sử; LT:個|个[ge4]"
+      },
+      {
+        "zh": "名胜",
+        "py": "míng shèng",
+        "hv": "DANH THẮNG",
+        "mean": "nơi nổi tiếng về cảnh đẹp hoặc di tích lịch sử; danh lam thắng cảnh; LT:處|处[chu4]"
+      },
+      {
+        "zh": "启德机场",
+        "py": "qǐ dé jī chǎng",
+        "hv": "",
+        "mean": "Sân bay Kai Tak, sân bay quốc tế của Hong Kong từ năm 1925 đến 1998"
+      },
+      {
+        "zh": "唤醒",
+        "py": "huàn xǐng",
+        "hv": "",
+        "mean": "đánh thức ai đó; khuấy động"
+      },
+      {
+        "zh": "单板滑雪",
+        "py": "dān bǎn huá xuě",
+        "hv": "",
+        "mean": "trượt ván tuyết"
+      },
+      {
+        "zh": "国家公园",
+        "py": "guó jiā gōng yuán",
+        "hv": "",
+        "mean": "công viên quốc gia"
+      },
+      {
+        "zh": "国宾馆",
+        "py": "guó bīn guǎn",
+        "hv": "",
+        "mean": "nhà khách quốc gia"
+      },
+      {
+        "zh": "国际机场",
+        "py": "guó jì jī chǎng",
+        "hv": "",
+        "mean": "sân bay quốc tế"
+      },
+      {
+        "zh": "土特产",
+        "py": "tǔ tè chǎn",
+        "hv": "",
+        "mean": "đặc sản địa phương"
+      },
+      {
+        "zh": "地接",
+        "py": "dì jiē",
+        "hv": "",
+        "mean": "hướng dẫn viên địa phương; điều hành tour"
+      },
+      {
+        "zh": "大兴机场",
+        "py": "dà xīng jī chǎng",
+        "hv": "",
+        "mean": "Sân bay Quốc tế Đại Hưng Bắc Kinh (PKX), có biệt danh 海星機場|海星机场[hai3 xing1 ji1 chang3] vì nhà ga trông như sao biển khổng lồ"
+      },
+      {
+        "zh": "大英博物馆",
+        "py": "dà yīng bó wù guǎn",
+        "hv": "",
+        "mean": "Bảo tàng Anh"
+      },
+      {
+        "zh": "套房",
+        "py": "tào fáng",
+        "hv": "",
+        "mean": "phòng suite; căn hộ; chung cư"
+      },
+      {
+        "zh": "安检",
+        "py": "ān jiǎn",
+        "hv": "AN KIỂM",
+        "mean": "kiểm tra an ninh (viết tắt của 安全檢查|安全检查[an1 quan2 jian3 cha2]); tiến hành kiểm tra an ninh"
+      },
+      {
+        "zh": "客房",
+        "py": "kè fáng",
+        "hv": "KHÁCH PHÒNG",
+        "mean": "phòng khách; phòng (trong khách sạn)"
+      },
+      {
+        "zh": "客房服务",
+        "py": "kè fáng fú wù",
+        "hv": "",
+        "mean": "dịch vụ phòng"
+      },
+      {
+        "zh": "客机",
+        "py": "kè jī",
+        "hv": "KHÁCH KY",
+        "mean": "máy bay chở khách"
+      },
+      {
+        "zh": "导游",
+        "py": "dǎo yóu",
+        "hv": "ĐẠO DU",
+        "mean": "hướng dẫn viên du lịch; sách hướng dẫn; dẫn tour"
+      },
+      {
+        "zh": "小吃",
+        "py": "xiǎo chī",
+        "hv": "TIỂU CẬT",
+        "mean": "đồ ăn vặt; điểm tâm; Lượng từ: 家[jia1]"
+      },
+      {
+        "zh": "小吃店",
+        "py": "xiǎo chī diàn",
+        "hv": "",
+        "mean": "quán ăn vặt; phòng ăn; Lượng từ: 家[jia1]"
+      },
+      {
+        "zh": "屈原纪念馆",
+        "py": "qū yuán jì niàn guǎn",
+        "hv": "",
+        "mean": "Khu tưởng niệm Khuất Nguyên ở huyện Tư Quế 秭歸縣|秭归县[Zi3 gui1 Xian4], Hồ Bắc, xây dựng năm 1982 và từ đó là điểm thu hút khách du lịch chính"
+      },
+      {
+        "zh": "山海关",
+        "py": "shān hǎi guān",
+        "hv": "",
+        "mean": "Sơn Hải Quan ở Hà Bắc, điểm tận cùng phía đông của Vạn Lý Trường Thành thời Minh; quận Sơn Hải Quan của thành phố Tần Hoàng Đảo 秦皇島市|秦皇岛市[Qin2 huang2 dao3 shi4], Hà Bắc"
+      },
+      {
+        "zh": "山海关区",
+        "py": "shān hǎi guān qū",
+        "hv": "",
+        "mean": "quận Shanhaiguan của thành phố Tần Hoàng Đảo 秦皇島市|秦皇岛市[Qin2 huang2 dao3 shi4], Hà Bắc"
+      },
+      {
+        "zh": "希斯罗机场",
+        "py": "xī sī luó jī chǎng",
+        "hv": "",
+        "mean": "Sân bay Heathrow (sân bay quốc tế gần London)"
+      },
+      {
+        "zh": "延误",
+        "py": "yán wu",
+        "hv": "DUYÊN NGỘ",
+        "mean": "hoãn lại (gây hậu quả đáng tiếc); làm mất quá nhiều thời gian (để làm gì đó); bỏ lỡ (hạn chót hoặc cơ hội)"
+      },
+      {
+        "zh": "延误费",
+        "py": "yán wu fèi",
+        "hv": "",
+        "mean": "phí lưu tàu (vận chuyển)"
+      },
+      {
+        "zh": "徒步",
+        "py": "tú bù",
+        "hv": "ĐỒ BỘ",
+        "mean": "đi bộ"
+      },
+      {
+        "zh": "徒步区",
+        "py": "tú bù qū",
+        "hv": "",
+        "mean": "(Đài Loan) khu không có xe; khu vực đi bộ"
+      },
+      {
+        "zh": "徒步旅行",
+        "py": "tú bù lǚ xíng",
+        "hv": "",
+        "mean": "đi bộ đường dài"
+      },
+      {
+        "zh": "徒步路径",
+        "py": "tú bù lù jìng",
+        "hv": "",
+        "mean": "đường mòn đi bộ"
+      },
+      {
+        "zh": "情侣酒店",
+        "py": "qíng lǚ jiǔ diàn",
+        "hv": "",
+        "mean": "khách sạn tình nhân"
+      },
+      {
+        "zh": "成田机场",
+        "py": "chéng tián jī chǎng",
+        "hv": "",
+        "mean": "Sân bay Narita (Tokyo)"
+      },
+      {
+        "zh": "托运",
+        "py": "tuō yùn",
+        "hv": "THÁC VẬN",
+        "mean": "gửi hàng hoá; ký gửi hành lý"
+      },
+      {
+        "zh": "押金",
+        "py": "yā jīn",
+        "hv": "ÁP KIM",
+        "mean": "tiền đặt cọc; thanh toán trước"
+      },
+      {
+        "zh": "拖牵索道",
+        "py": "tuō qiān suǒ dào",
+        "hv": "",
+        "mean": "thang kéo (thang trượt tuyết)"
+      },
+      {
+        "zh": "接送",
+        "py": "jiē sòng",
+        "hv": "TIẾP TỐNG",
+        "mean": "đưa đón; chở đi chở về"
+      },
+      {
+        "zh": "换乘",
+        "py": "huàn chéng",
+        "hv": "",
+        "mean": "đổi tàu (máy bay, xe buýt, v.v.); chuyển đổi giữa các phương tiện giao thông"
+      },
+      {
+        "zh": "摆渡车",
+        "py": "bǎi dù chē",
+        "hv": "",
+        "mean": "xe buýt trung chuyển; xe buýt kết nối"
+      },
+      {
+        "zh": "改签",
+        "py": "gǎi qiān",
+        "hv": "",
+        "mean": "thay đổi đặt chỗ; chuyển sang chuyến bay, hãng, xe buýt hoặc tàu khác"
+      },
+      {
+        "zh": "文化遗产",
+        "py": "wén huà yí chǎn",
+        "hv": "",
+        "mean": "di sản văn hóa"
+      },
+      {
+        "zh": "旅行社",
+        "py": "lǚ xíng shè",
+        "hv": "LỮ HÀNH XÃ",
+        "mean": "công ty du lịch"
+      },
+      {
+        "zh": "旅游景点",
+        "py": "lǚ yóu jǐng diǎn",
+        "hv": "",
+        "mean": "điểm hấp dẫn du lịch; danh lam thắng cảnh"
+      },
+      {
+        "zh": "时过境迁",
+        "py": "shí guò jìng qiān",
+        "hv": "",
+        "mean": "vạn vật đổi thay theo thời gian (thành ngữ)"
+      },
+      {
+        "zh": "景区",
+        "py": "jǐng qū",
+        "hv": "CẢNH KHU",
+        "mean": "khu danh lam thắng cảnh"
+      },
+      {
+        "zh": "景点",
+        "py": "jǐng diǎn",
+        "hv": "CẢNH ĐIỂM",
+        "mean": "điểm du lịch; danh lam thắng cảnh"
+      },
+      {
+        "zh": "架空索道",
+        "py": "jià kōng suǒ dào",
+        "hv": "",
+        "mean": "đường cáp trên không; cáp treo"
+      },
+      {
+        "zh": "机场",
+        "py": "jī chǎng",
+        "hv": "KY TRƯỜNG",
+        "mean": "sân bay; phi trường; (tiếng lóng) nhà cung cấp dịch vụ cho Shadowsocks hoặc phần mềm tương tự để vượt kiểm duyệt Internet; Lượng từ: 家[jia1],處|处[chu4]"
+      },
+      {
+        "zh": "机场大厦",
+        "py": "jī chǎng dà shà",
+        "hv": "",
+        "mean": "nhà ga sân bay"
+      },
+      {
+        "zh": "历史博物馆",
+        "py": "lì shǐ bó wù guǎn",
+        "hv": "",
+        "mean": "bảo tàng lịch sử"
+      },
+      {
+        "zh": "历史遗产",
+        "py": "lì shǐ yí chǎn",
+        "hv": "",
+        "mean": "di sản; di sản lịch sử"
+      },
+      {
+        "zh": "民航班机",
+        "py": "mín háng bān jī",
+        "hv": "",
+        "mean": "máy bay dân dụng; chuyến bay thương mại"
+      },
+      {
+        "zh": "泡温泉",
+        "py": "pào wēn quán",
+        "hv": "",
+        "mean": "ngâm suối nước nóng"
+      },
+      {
+        "zh": "浦东机场",
+        "py": "pǔ dōng jī chǎng",
+        "hv": "",
+        "mean": "Sân bay Phố Đông (Thượng Hải)"
+      },
+      {
+        "zh": "海星机场",
+        "py": "hǎi xīng jī chǎng",
+        "hv": "",
+        "mean": "biệt danh của Sân bay Quốc tế Đại Hưng Bắc Kinh 北京大興國際機場|北京大兴国际机场[Bei3 jing1 Da4 xing1 Guo2 ji4 Ji1 chang3], có tòa nhà ga trông như sao biển khổng lồ ngoài hành tinh"
+      },
+      {
+        "zh": "海关",
+        "py": "hǎi guān",
+        "hv": "HẢI QUAN",
+        "mean": "hải quan (tức kiểm tra cửa khẩu); LT:個|个[ge4]"
+      },
+      {
+        "zh": "海关官员",
+        "py": "hǎi guān guān yuán",
+        "hv": "",
+        "mean": "nhân viên hải quan"
+      },
+      {
+        "zh": "海关总署",
+        "py": "hǎi guān zǒng shǔ",
+        "hv": "",
+        "mean": "Tổng cục Hải quan (GAC)"
+      },
+      {
+        "zh": "海关部门",
+        "py": "hǎi guān bù mén",
+        "hv": "",
+        "mean": "bộ phận hải quan"
+      },
+      {
+        "zh": "温泉",
+        "py": "Wēn quán",
+        "hv": "ÔN TUYỀN",
+        "mean": "huyện Arishang hoặc huyện Ôn Tuyền trong châu tự trị Mông Cổ Bác Nhĩ Tháp Lạp 博爾塔拉蒙古自治州|博尔塔拉蒙古自治州, Tân Cương"
+      },
+      {
+        "zh": "温泉城",
+        "py": "wēn quán chéng",
+        "hv": "",
+        "mean": "suối nước nóng"
+      },
+      {
+        "zh": "温泉县",
+        "py": "wēn quán xiàn",
+        "hv": "",
+        "mean": "Arishang Nahiyisi hoặc huyện Wenquan ở châu tự trị Mông Cổ Börtala 博爾塔拉蒙古自治州|博尔塔拉蒙古自治州, Tân Cương"
+      },
+      {
+        "zh": "滑雪",
+        "py": "huá xuě",
+        "hv": "HOẠT TUYẾT",
+        "mean": "trượt tuyết; môn trượt tuyết"
+      },
+      {
+        "zh": "滑雪场",
+        "py": "huá xuě chǎng",
+        "hv": "",
+        "mean": "dốc trượt tuyết; khu nghỉ dưỡng trượt tuyết"
+      },
+      {
+        "zh": "滑雪板",
+        "py": "huá xuě bǎn",
+        "hv": "",
+        "mean": "ván trượt tuyết; LT:副[fu4]; ván trượt snowboard"
+      },
+      {
+        "zh": "滑雪索道",
+        "py": "huá xuě suǒ dào",
+        "hv": "",
+        "mean": "cáp treo trượt tuyết"
+      },
+      {
+        "zh": "滑雪术",
+        "py": "huá xuě shù",
+        "hv": "",
+        "mean": "trượt tuyết"
+      },
+      {
+        "zh": "滑雪运动",
+        "py": "huá xuě yùn dòng",
+        "hv": "",
+        "mean": "trượt tuyết"
+      },
+      {
+        "zh": "漂流",
+        "py": "piāo liú",
+        "hv": "",
+        "mean": "trôi theo dòng; chèo dạt; thả trôi"
+      },
+      {
+        "zh": "漂流瓶",
+        "py": "piāo liú píng",
+        "hv": "",
+        "mean": "tin nhắn trong chai"
+      },
+      {
+        "zh": "漂流者",
+        "py": "piāo liú zhě",
+        "hv": "",
+        "mean": "người chèo thuyền vượt thác; người chèo thuyền; người chèo xuôi dòng"
+      },
+      {
+        "zh": "无烟",
+        "py": "wú yān",
+        "hv": "",
+        "mean": "không khói (ví dụ: môi trường)"
+      },
+      {
+        "zh": "无烟炭",
+        "py": "wú yān tàn",
+        "hv": "",
+        "mean": "than không khói"
+      },
+      {
+        "zh": "无烟煤",
+        "py": "wú yān méi",
+        "hv": "",
+        "mean": "than Antraxit"
+      },
+      {
+        "zh": "特产",
+        "py": "tè chǎn",
+        "hv": "ĐẶC SẢN",
+        "mean": "sản phẩm địa phương đặc biệt; đặc sản (theo vùng)"
+      },
+      {
+        "zh": "登机",
+        "py": "dēng jī",
+        "hv": "ĐĂNG KY",
+        "mean": "lên máy bay"
+      },
+      {
+        "zh": "登机入口",
+        "py": "dēng jī rù kǒu",
+        "hv": "",
+        "mean": "cổng lên máy bay"
+      },
+      {
+        "zh": "登机廊桥",
+        "py": "dēng jī láng qiáo",
+        "hv": "",
+        "mean": "cầu nối lên máy bay; cầu hành khách lên máy bay"
+      },
+      {
+        "zh": "登机楼",
+        "py": "dēng jī lóu",
+        "hv": "",
+        "mean": "nhà ga sân bay"
+      },
+      {
+        "zh": "登机桥",
+        "py": "dēng jī qiáo",
+        "hv": "",
+        "mean": "cổng lên máy bay (tại sân bay); cầu lên máy bay"
+      },
+      {
+        "zh": "登机证",
+        "py": "dēng jī zhèng",
+        "hv": "",
+        "mean": "thẻ lên máy bay"
+      },
+      {
+        "zh": "登机门",
+        "py": "dēng jī mén",
+        "hv": "",
+        "mean": "cổng lên máy bay"
+      },
+      {
+        "zh": "白云机场",
+        "py": "bái yún jī chǎng",
+        "hv": "",
+        "mean": "Sân bay Bạch Vân (Quảng Châu)"
+      },
+      {
+        "zh": "直达航班",
+        "py": "zhí dá háng bān",
+        "hv": "",
+        "mean": "chuyến bay thẳng"
+      },
+      {
+        "zh": "石林风景区",
+        "py": "shí lín fēng jǐng qū",
+        "hv": "",
+        "mean": "Khu thắng cảnh rừng đá trong huyện tự trị dân tộc Di Thạch Lâm 石林彞族自治縣|石林彝族自治县[Shi2 lin2 Yi2 zu2 Zi4 zhi4 xian4] ở Côn Minh 昆明[Kun1 ming2], Vân Nam"
+      },
+      {
+        "zh": "礼宾",
+        "py": "lǐ bīn",
+        "hv": "",
+        "mean": "nghi thức; nghi lễ chính thức"
+      },
+      {
+        "zh": "礼宾员",
+        "py": "lǐ bīn yuán",
+        "hv": "",
+        "mean": "nhân viên lễ tân"
+      },
+      {
+        "zh": "礼宾部",
+        "py": "lǐ bīn bù",
+        "hv": "",
+        "mean": "bộ phận hướng dẫn khách của khách sạn hoặc khu nghỉ dưỡng"
+      },
+      {
+        "zh": "签证",
+        "py": "qiān zhèng",
+        "hv": "THIÊM CHỨNG",
+        "mean": "thị thực; cấp thị thực"
+      },
+      {
+        "zh": "精致露营",
+        "py": "jīng zhì lù yíng",
+        "hv": "",
+        "mean": "cắm trại sang trọng (từ mới khoảng năm 2019)"
+      },
+      {
+        "zh": "纪念品",
+        "py": "jì niàn pǐn",
+        "hv": "",
+        "mean": "quà lưu niệm"
+      },
+      {
+        "zh": "纪念馆",
+        "py": "jì niàn guǎn",
+        "hv": "KỈ NIỆM QUÁN",
+        "mean": "hội trường tưởng niệm; bảo tàng kỷ niệm"
+      },
+      {
+        "zh": "索道",
+        "py": "suǒ dào",
+        "hv": "",
+        "mean": "đường cáp"
+      },
+      {
+        "zh": "经济舱",
+        "py": "jīng jì cāng",
+        "hv": "",
+        "mean": "hạng phổ thông"
+      },
+      {
+        "zh": "缆车",
+        "py": "lǎn chē",
+        "hv": "LÃM XA",
+        "mean": "cáp treo"
+      },
+      {
+        "zh": "胶囊酒店",
+        "py": "jiāo náng jiǔ diàn",
+        "hv": "",
+        "mean": "khách sạn con nhộng"
+      },
+      {
+        "zh": "自助餐",
+        "py": "zì zhù cān",
+        "hv": "",
+        "mean": "buffet; bữa ăn tự phục vụ"
+      },
+      {
+        "zh": "自然保护区",
+        "py": "zì rán bǎo hù qū",
+        "hv": "",
+        "mean": "khu bảo tồn thiên nhiên"
+      },
+      {
+        "zh": "自费",
+        "py": "zì fèi",
+        "hv": "TỰ PHÍ",
+        "mean": "tự trả chi phí; tự túc; Tự túc"
+      },
+      {
+        "zh": "航班",
+        "py": "háng bān",
+        "hv": "HÀNG BAN",
+        "mean": "chuyến bay (theo lịch trình); chuyến tàu (theo lịch trình)"
+      },
+      {
+        "zh": "航班表",
+        "py": "háng bān biǎo",
+        "hv": "",
+        "mean": "lịch bay"
+      },
+      {
+        "zh": "航站楼",
+        "py": "háng zhàn lóu",
+        "hv": "",
+        "mean": "nhà ga sân bay"
+      },
+      {
+        "zh": "英迪格酒店",
+        "py": "yīng dí gé jiǔ diàn",
+        "hv": "",
+        "mean": "khách sạn Indigo (thương hiệu)"
+      },
+      {
+        "zh": "落地签",
+        "py": "luò dì qiān",
+        "hv": "",
+        "mean": "thị thực tại chỗ; thị thực khi đến"
+      },
+      {
+        "zh": "虹桥机场",
+        "py": "hóng qiáo jī chǎng",
+        "hv": "",
+        "mean": "Sân bay Hongqiao (Thượng Hải)"
+      },
+      {
+        "zh": "行李",
+        "py": "xíng li",
+        "hv": "HÀNH LÍ",
+        "mean": "hành lý; LT:件[jian4]"
+      },
+      {
+        "zh": "行李传送带",
+        "py": "xíng li chuán sòng dài",
+        "hv": "",
+        "mean": "băng chuyền hành lý; băng chuyền nhận hành lý"
+      },
+      {
+        "zh": "行李员",
+        "py": "xíng li yuán",
+        "hv": "",
+        "mean": "nhân viên khuân vác; nhân viên hành lý"
+      },
+      {
+        "zh": "行李房",
+        "py": "xíng li fáng",
+        "hv": "",
+        "mean": "phòng hành lý"
+      },
+      {
+        "zh": "行李搬运工",
+        "py": "xíng lǐ bān yùn gōng",
+        "hv": "",
+        "mean": "nhân viên bốc xếp hành lý"
+      },
+      {
+        "zh": "行李架",
+        "py": "xíng li jià",
+        "hv": "",
+        "mean": "giá để hành lý"
+      },
+      {
+        "zh": "行李票",
+        "py": "xíng li piào",
+        "hv": "",
+        "mean": "thẻ hành lý"
+      },
+      {
+        "zh": "行李箱",
+        "py": "xíng li xiāng",
+        "hv": "HÀNH LÍ TƯƠNG",
+        "mean": "vali; ngăn hành lý; hộc để hành lý; trố̂ng xe; cốp xe"
+      },
+      {
+        "zh": "行李袋",
+        "py": "xíng li dài",
+        "hv": "",
+        "mean": "túi du lịch"
+      },
+      {
+        "zh": "补登机",
+        "py": "bǔ dēng jī",
+        "hv": "",
+        "mean": "máy ghi sổ tiết kiệm"
+      },
+      {
+        "zh": "观景台",
+        "py": "guān jǐng tái",
+        "hv": "",
+        "mean": "đài quan sát; sàn ngắm cảnh; sân thượng quan sát"
+      },
+      {
+        "zh": "护照",
+        "py": "hù zhào",
+        "hv": "HỘ CHIẾU",
+        "mean": "hộ chiếu; LT:本[ben3],個|个[ge4]"
+      },
+      {
+        "zh": "宾馆",
+        "py": "bīn guǎn",
+        "hv": "TÂN QUÁN",
+        "mean": "nhà khách; nhà nghỉ; khách sạn; LT:個|个[ge4],家[jia1]"
+      },
+      {
+        "zh": "超重",
+        "py": "chāo zhòng",
+        "hv": "",
+        "mean": "quá cân (hành lý, hàng hóa)"
+      },
+      {
+        "zh": "超重氢",
+        "py": "chāo zhòng qīng",
+        "hv": "",
+        "mean": "(hóa học) triti"
+      },
+      {
+        "zh": "跳台滑雪",
+        "py": "tiào tái huá xuě",
+        "hv": "",
+        "mean": "nhảy trượt tuyết"
+      },
+      {
+        "zh": "退房",
+        "py": "tuì fáng",
+        "hv": "",
+        "mean": "trả phòng khách sạn"
+      },
+      {
+        "zh": "退税",
+        "py": "tuì shuì",
+        "hv": "",
+        "mean": "hoàn thuế"
+      },
+      {
+        "zh": "游览",
+        "py": "yóu lǎn",
+        "hv": "DU LÃM",
+        "mean": "đi tham quan; đi du lịch; tham quan; LT:次[ci4]"
+      },
+      {
+        "zh": "游览区",
+        "py": "yóu lǎn qū",
+        "hv": "",
+        "mean": "khu du lịch; khu tham quan"
+      },
+      {
+        "zh": "游轮",
+        "py": "yóu lún",
+        "hv": "",
+        "mean": "tàu du lịch"
+      },
+      {
+        "zh": "过境",
+        "py": "guò jìng",
+        "hv": "QUÁ CẢNH",
+        "mean": "đi qua lãnh thổ của một quốc gia; quá cảnh"
+      },
+      {
+        "zh": "过境签证",
+        "py": "guò jìng qiān zhèng",
+        "hv": "",
+        "mean": "thị thực quá cảnh"
+      },
+      {
+        "zh": "遗产",
+        "py": "yí chǎn",
+        "hv": "DI SẢN",
+        "mean": "di sản; dấu ấn; thừa kế; di vật; LT:筆|笔[bi3]"
+      },
+      {
+        "zh": "遗产税",
+        "py": "yí chǎn shuì",
+        "hv": "",
+        "mean": "thuế thừa kế; thuế di sản"
+      },
+      {
+        "zh": "酒店",
+        "py": "jiǔ diàn",
+        "hv": "TỬU ĐIẾM",
+        "mean": "quán rượu; quán bar; khách sạn; nhà hàng; (Đài Loan) hostess club"
+      },
+      {
+        "zh": "酒店业",
+        "py": "jiǔ diàn yè",
+        "hv": "",
+        "mean": "ngành dịch vụ ăn uống; ngành kinh doanh khách sạn và nhà hàng"
+      },
+      {
+        "zh": "门卡",
+        "py": "mén kǎ",
+        "hv": "",
+        "mean": "thẻ khóa"
+      },
+      {
+        "zh": "门票",
+        "py": "mén piào",
+        "hv": "MÔN PHIẾU",
+        "mean": "vé (xem kịch, rạp chiếu phim, v.v.)"
+      },
+      {
+        "zh": "障碍滑雪",
+        "py": "zhàng ài huá xuě",
+        "hv": "",
+        "mean": "(trượt tuyết) slalom"
+      },
+      {
+        "zh": "随身",
+        "py": "suí shēn",
+        "hv": "TÙY THÂN",
+        "mean": "(mang) trên người; (mang) theo bên mình"
+      },
+      {
+        "zh": "随身碟",
+        "py": "suí shēn dié",
+        "hv": "",
+        "mean": "(Đài Loan) ổ USB; USB flash"
+      },
+      {
+        "zh": "随身听",
+        "py": "suí shēn tīng",
+        "hv": "",
+        "mean": "máy Walkman (nhãn hiệu); máy nghe nhạc xách tay"
+      },
+      {
+        "zh": "随身道具",
+        "py": "suí shēn dào jù",
+        "hv": "",
+        "mean": "(sân khấu) đạo cụ cá nhân (kính, quạt, v.v.)"
+      },
+      {
+        "zh": "集中托运",
+        "py": "jí zhōng tuō yùn",
+        "hv": "",
+        "mean": "hàng hóa gom chung (vận chuyển)"
+      },
+      {
+        "zh": "露营",
+        "py": "lù yíng",
+        "hv": "",
+        "mean": "cắm trại; hoạt động cắm trại"
+      },
+      {
+        "zh": "预订",
+        "py": "yù dìng",
+        "hv": "DỰ ĐÍNH",
+        "mean": "đặt hàng; đặt trước"
+      },
+      {
+        "zh": "头等舱",
+        "py": "tóu děng cāng",
+        "hv": "",
+        "mean": "khoang hạng nhất"
+      },
+      {
+        "zh": "风味",
+        "py": "fēng wèi",
+        "hv": "PHONG VỊ",
+        "mean": "hương vị đặc trưng; phong cách đặc biệt"
+      },
+      {
+        "zh": "飞机场",
+        "py": "fēi jī chǎng",
+        "hv": "",
+        "mean": "sân bay; (tiếng lóng) ngực phẳng; LT:處|处[chu4]"
+      },
+      {
+        "zh": "首都机场",
+        "py": "shǒu dū jī chǎng",
+        "hv": "",
+        "mean": "Sân bay Quốc tế Thủ đô Bắc Kinh (PEK)"
+      },
+      {
+        "zh": "面包车",
+        "py": "miàn bāo chē",
+        "hv": "",
+        "mean": "xe van chở người; xe buýt nhỏ"
+      },
+      {
+        "zh": "黄包车",
+        "py": "huáng bāo chē",
+        "hv": "",
+        "mean": "xe kéo"
+      },
+      {
+        "zh": "护照号码",
+        "py": "",
+        "hv": "",
+        "mean": "Số hộ chiếu (Thống kê Y học)"
       }
     ],
     "sentences": [
