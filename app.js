@@ -1845,8 +1845,8 @@
   // HỆ THỐNG TỰ ĐỘNG CẬP NHẬT TRỰC TUYẾN (AUTO-UPDATE HOT RELOAD ENGINE)
   // ==========================================================================
   // Lấy thông tin phiên bản (Đồng bộ trực tiếp với Native Android nếu có)
-  window.APP_VERSION = '1.2.1';
-  window.APP_BUILD = 2026101201;
+  window.APP_VERSION = '1.2.2';
+  window.APP_BUILD = 2026101202;
 
   if (window.AndroidTTS && typeof window.AndroidTTS.getNativeVersionName === 'function') {
     try {
@@ -2452,6 +2452,28 @@
   }
 
   function getDictSource() {
+    if (dictCurrentLevel === 'full' && (window.CVDICT_FULL || fullCvdictCache)) {
+      if (!fullCvdictCache) {
+        const source = window.CVDICT_FULL || {};
+        fullCvdictCache = Object.keys(source).map(zh => {
+          const item = source[zh];
+          const cleanPy = (item[1] || '').toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
+          return {
+            zh,
+            trad: item[0] || '',
+            py: item[1] || '',
+            py_clean: cleanPy,
+            hv: '',
+            lvl: 'Toàn diện 125k',
+            lvl_num: 10,
+            pos: 'Mở rộng Toàn diện',
+            vi: item[2] || '',
+            en: ''
+          };
+        });
+      }
+      return fullCvdictCache;
+    }
     return window.HSK_DICTIONARY || [];
   }
 
@@ -2546,6 +2568,65 @@
         scored.push({ item, score });
       }
     });
+
+    // Tra cứu mở rộng liền mạch trong toàn bộ cơ sở dữ liệu 125.000 từ (CVDICT + Chuyên ngành)
+    const fullSource = window.CVDICT_FULL || (typeof fullCvdictCache === 'object' && !Array.isArray(fullCvdictCache) ? fullCvdictCache : null);
+    if (fullSource && q) {
+      const existingZhs = new Set(scored.map(s => s.item.zh));
+      // Khớp chính xác từ Hán tự
+      if (fullSource[q] && !existingZhs.has(q)) {
+        const item = fullSource[q];
+        const cleanPy = (item[1] || '').toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
+        scored.push({
+          item: {
+            zh: q,
+            trad: item[0] || '',
+            py: item[1] || '',
+            py_clean: cleanPy,
+            hv: '',
+            lvl: 'Toàn diện 125k',
+            lvl_num: 10,
+            pos: 'Mở rộng CC-CEDICT',
+            vi: item[2] || '',
+            en: ''
+          },
+          score: 110
+        });
+        existingZhs.add(q);
+      }
+      // Tìm kiếm tiền tố / chứa cụm từ nếu kết quả hiện tại còn ít
+      if (scored.length < 30 && q.length >= 1) {
+        let addedFromFull = 0;
+        const qLen = q.length;
+        const keys = Object.keys(fullSource);
+        for (let i = 0; i < keys.length; i++) {
+          const k = keys[i];
+          if (existingZhs.has(k)) continue;
+          if (k.startsWith(q) || (qLen >= 2 && k.includes(q))) {
+            const item = fullSource[k];
+            const cleanPy = (item[1] || '').toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
+            scored.push({
+              item: {
+                zh: k,
+                trad: item[0] || '',
+                py: item[1] || '',
+                py_clean: cleanPy,
+                hv: '',
+                lvl: 'Toàn diện 125k',
+                lvl_num: 10,
+                pos: 'Mở rộng CC-CEDICT',
+                vi: item[2] || '',
+                en: ''
+              },
+              score: k.startsWith(q) ? 55 : 35
+            });
+            existingZhs.add(k);
+            addedFromFull++;
+            if (addedFromFull >= 40) break;
+          }
+        }
+      }
+    }
 
     // Sort by relevance score, then level
     scored.sort((a, b) => b.score - a.score || a.item.lvl_num - b.item.lvl_num);
