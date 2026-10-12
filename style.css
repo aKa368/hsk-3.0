@@ -4124,6 +4124,48 @@ select.paper-select option {
   border-bottom: 3px solid #9e2a2b;
   background: #fff9f5;
 }
+
+.track-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+  background: #fbf9f6;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #e8e2d9;
+}
+.track-search-input {
+  flex: 1;
+  max-width: 480px;
+  padding: 8px 12px;
+  border: 1px solid #d4c8ba;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+.track-vocab-count {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #7c6246;
+  white-space: nowrap;
+}
+.btn-load-all-vocab {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 24px;
+  background: #9e2a2b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-load-all-vocab:hover {
+  background: #7a1f20;
+}
 .track-vocab-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

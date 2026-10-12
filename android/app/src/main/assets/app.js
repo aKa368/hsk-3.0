@@ -1538,8 +1538,12 @@
   // ==========================================================================
   // TAB 7: KHÓA HỌC CHUYÊN NGÀNH (SPECIALIZED TRACKS)
   // ==========================================================================
+  // TAB 7: KHÓA HỌC & ÔN LUYỆN THEO CHUYÊN NGÀNH (SPECIALIZED TRACKS)
+  // ==========================================================================
   let currentTrackKey = 'tcm';
   let currentTrackSub = 'vocab';
+  let trackVocabSearchQuery = '';
+  let trackVocabShowAll = false;
 
   function initSpecializedTabListeners() {
     const pillsBar = document.getElementById('track-pills-bar');
@@ -1550,6 +1554,7 @@
           pillsBar.querySelectorAll('.track-pill').forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
           currentTrackKey = btn.dataset.track;
+          trackVocabShowAll = false;
           renderSpecializedTab();
         };
       });
@@ -1567,6 +1572,15 @@
         };
       });
     }
+
+    const searchInput = document.getElementById('track-search-input');
+    if (searchInput && !searchInput.dataset.bound) {
+      searchInput.dataset.bound = 'true';
+      searchInput.addEventListener('input', (e) => {
+        trackVocabSearchQuery = e.target.value.trim().toLowerCase();
+        renderSpecializedContent();
+      });
+    }
   }
 
   function renderSpecializedTab() {
@@ -1581,7 +1595,7 @@
       heroEl.innerHTML = `
         <div class="hero-title">${track.icon} ${track.title}</div>
         <div class="hero-sub">${track.subtitle}</div>
-        <div class="hero-level">🎯 Mục tiêu: ${track.level}</div>
+        <div class="hero-level">🎯 Mục tiêu: ${track.level} (${track.vocab ? track.vocab.length : 0} thuật ngữ cốt lõi)</div>
       `;
     }
 
@@ -1594,17 +1608,44 @@
     const contentArea = document.getElementById('track-content-area');
     if (!contentArea || !track) return;
 
+    const filterBar = document.getElementById('track-filter-bar');
+
     if (currentTrackSub === 'vocab') {
+      if (filterBar) filterBar.style.display = 'flex';
+      const allVocab = track.vocab || [];
+
+      let filtered = allVocab;
+      if (trackVocabSearchQuery) {
+        const q = trackVocabSearchQuery;
+        const qClean = stripAccents(q).replace(/\s+/g, '');
+        filtered = allVocab.filter(item => {
+          const zh = item.zh || '';
+          const py = (item.py || '').toLowerCase();
+          const hv = (item.hv || '').toLowerCase();
+          const mean = (item.mean || '').toLowerCase();
+          const meanClean = stripAccents(mean);
+          return zh.includes(q) || py.includes(q) || hv.includes(q) || mean.includes(q) || meanClean.includes(qClean);
+        });
+      }
+
+      const countEl = document.getElementById('track-vocab-count');
+      if (countEl) {
+        countEl.textContent = `Hiển thị ${filtered.length} / ${allVocab.length} thuật ngữ`;
+      }
+
+      const maxDisplay = (trackVocabSearchQuery || trackVocabShowAll) ? filtered.length : 48;
+      const displayList = filtered.slice(0, maxDisplay);
+
       let html = '<div class="track-vocab-grid">';
-      (track.vocab || []).forEach(item => {
+      displayList.forEach(item => {
         html += `
           <div class="track-vocab-card">
             <div class="track-vocab-top">
               <span class="track-vocab-zh">${item.zh}</span>
-              <span class="track-vocab-py">${item.py}</span>
+              <span class="track-vocab-py">${item.py || ''}</span>
             </div>
-            <span class="track-vocab-hv">${item.hv}</span>
-            <div class="track-vocab-mean">${item.mean}</div>
+            <span class="track-vocab-hv">${item.hv || ''}</span>
+            <div class="track-vocab-mean">${item.mean || ''}</div>
             ${item.ex_zh ? `
               <div class="track-vocab-ex">
                 <div class="track-vocab-ex-zh">📌 ${item.ex_zh}</div>
@@ -1619,7 +1660,20 @@
         `;
       });
       html += '</div>';
+
+      if (!trackVocabSearchQuery && !trackVocabShowAll && filtered.length > 48) {
+        html += `<button id="btn-load-more-track-vocab" class="btn-load-all-vocab">📖 Hiển thị toàn bộ ${filtered.length} thuật ngữ (Hiện đang xem 48)</button>`;
+      }
+
       contentArea.innerHTML = html;
+
+      const loadMoreBtn = document.getElementById('btn-load-more-track-vocab');
+      if (loadMoreBtn) {
+        loadMoreBtn.onclick = () => {
+          trackVocabShowAll = true;
+          renderSpecializedContent();
+        };
+      }
 
       contentArea.querySelectorAll('.btn-speak').forEach(btn => {
         btn.onclick = () => speakText(btn.dataset.text);
@@ -1638,6 +1692,7 @@
         };
       });
     } else if (currentTrackSub === 'sentences') {
+      if (filterBar) filterBar.style.display = 'none';
       let html = '<div class="track-sentences-list">';
       (track.sentences || []).forEach(item => {
         html += `
@@ -1657,6 +1712,7 @@
         btn.onclick = () => speakText(btn.dataset.text);
       });
     } else if (currentTrackSub === 'case') {
+      if (filterBar) filterBar.style.display = 'none';
       const c = track.case_study;
       if (!c) {
         contentArea.innerHTML = '<p>Chưa có bài đọc tình huống.</p>';
@@ -1845,8 +1901,8 @@
   // HỆ THỐNG TỰ ĐỘNG CẬP NHẬT TRỰC TUYẾN (AUTO-UPDATE HOT RELOAD ENGINE)
   // ==========================================================================
   // Lấy thông tin phiên bản (Đồng bộ trực tiếp với Native Android nếu có)
-  window.APP_VERSION = '1.2.2';
-  window.APP_BUILD = 2026101202;
+  window.APP_VERSION = '1.2.3';
+  window.APP_BUILD = 2026101203;
 
   if (window.AndroidTTS && typeof window.AndroidTTS.getNativeVersionName === 'function') {
     try {
