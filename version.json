@@ -1,9 +1,9 @@
 {
-  "version": "1.2.3",
-  "build": 2026101203,
+  "version": "1.2.4",
+  "build": 2026101204,
   "appName": "HSK 3.0",
   "releaseDate": "2026-10-12",
-  "changelog": "Đại tu toàn diện Module Chuyên ngành: nạp gần 1.000 thuật ngữ chuyên sâu cho cả 5 lĩnh vực (Đông Y/Lâm sàng 636 từ, Thương mại 149 từ, Công nghệ/AI 85 từ, Pháp luật 59 từ, Du lịch 59 từ); tích hợp tìm kiếm nhanh và hiển thị đầy đủ không giới hạn.",
+  "changelog": "Bổ sung trọn vẹn 14 đường kinh lạc (12 Chính Kinh + Nhâm Mạch + Đốc Mạch) và 413 huyệt đạo chuẩn quốc gia GB/T 12346-2021 & WHO; khắc phục triệt để lỗi thiếu thanh điệu Pinyin trong bài thi thử trắc nghiệm.",
   "minAppVersion": "1.0.0",
   "updateUrl": "https://raw.githubusercontent.com/aKa368/hsk-3.0/main/version.json"
 }

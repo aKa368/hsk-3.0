@@ -220,15 +220,17 @@
             var type = Math.floor(Math.random() * 3);
             var question, options, correctIdx;
             if (type === 0) {
-                // Pinyin quiz: show zh, choose correct py
+                // Pinyin quiz: show zh, choose correct py (WITH PROPER TONE MARKS)
                 question = word.zh;
                 correctIdx = 0; // we will place correct at random later
-                options = [word.py_clean || word.py]; // use py_clean if available else py
-                // Add 3 distractors from other words' py_clean/py
+                var targetPy = word.py || word.py_clean || '';
+                options = [targetPy];
+                // Add 3 distractors from other words' py
                 var distractors = [];
-                for (var j = 0; j < getDict().length && distractors.length < 3; j++) {
-                    if (HSK_DICTIONARY[j].zh === word.zh) continue;
-                    var py = HSK_DICTIONARY[j].py_clean || HSK_DICTIONARY[j].py;
+                var allWords = getDict();
+                for (var j = 0; j < allWords.length && distractors.length < 3; j++) {
+                    if (allWords[j].zh === word.zh) continue;
+                    var py = allWords[j].py || allWords[j].py_clean;
                     if (py && options.indexOf(py) === -1 && distractors.indexOf(py) === -1) {
                         distractors.push(py);
                     }
@@ -240,21 +242,23 @@
                     var tmp = options[k];
                     options[k] = options[r];
                     options[r] = tmp;
-                    if (options[k] === word.py_clean || options[k] === word.py) correctIdx = k;
-                    if (options[r] === word.py_clean || options[r] === word.py) correctIdx = r;
+                    if (options[k] === targetPy) correctIdx = k;
+                    if (options[r] === targetPy) correctIdx = r;
                 }
             } else if (type === 1) {
-                // Meaning quiz: show zh, choose correct English meaning
+                // Meaning quiz: show zh, choose correct Vietnamese meaning
                 question = word.zh;
                 correctIdx = 0;
-                options = [word.en];
-                // Add 3 distractors from other words' en
+                var targetMeaning = word.vi || word.en || '';
+                options = [targetMeaning];
+                // Add 3 distractors from other words' vi/en
                 var distractors = [];
-                for (var j = 0; j < getDict().length && distractors.length < 3; j++) {
-                    if (HSK_DICTIONARY[j].zh === word.zh) continue;
-                    var en = HSK_DICTIONARY[j].en;
-                    if (en && options.indexOf(en) === -1 && distractors.indexOf(en) === -1) {
-                        distractors.push(en);
+                var allWords = getDict();
+                for (var j = 0; j < allWords.length && distractors.length < 3; j++) {
+                    if (allWords[j].zh === word.zh) continue;
+                    var mean = allWords[j].vi || allWords[j].en;
+                    if (mean && options.indexOf(mean) === -1 && distractors.indexOf(mean) === -1) {
+                        distractors.push(mean);
                     }
                 }
                 options = options.concat(distractors);
@@ -264,19 +268,20 @@
                     var tmp = options[k];
                     options[k] = options[r];
                     options[r] = tmp;
-                    if (options[k] === word.en) correctIdx = k;
-                    if (options[r] === word.en) correctIdx = r;
+                    if (options[k] === targetMeaning) correctIdx = k;
+                    if (options[r] === targetMeaning) correctIdx = r;
                 }
             } else {
-                // Audio quiz: simulate by using pinyin as "audio" (play sound not implemented)
-                // We'll treat as pinyin quiz but with a different label
-                question = '[Audio] ' + word.zh; // placeholder
+                // Audio quiz: show pinyin prompt, choose correct zh
+                question = word.zh;
                 correctIdx = 0;
-                options = [word.py_clean || word.py];
+                var targetPy = word.py || word.py_clean || '';
+                options = [targetPy];
                 var distractors = [];
-                for (var j = 0; j < getDict().length && distractors.length < 3; j++) {
-                    if (HSK_DICTIONARY[j].zh === word.zh) continue;
-                    var py = HSK_DICTIONARY[j].py_clean || HSK_DICTIONARY[j].py;
+                var allWords = getDict();
+                for (var j = 0; j < allWords.length && distractors.length < 3; j++) {
+                    if (allWords[j].zh === word.zh) continue;
+                    var py = allWords[j].py || allWords[j].py_clean;
                     if (py && options.indexOf(py) === -1 && distractors.indexOf(py) === -1) {
                         distractors.push(py);
                     }
@@ -288,8 +293,8 @@
                     var tmp = options[k];
                     options[k] = options[r];
                     options[r] = tmp;
-                    if (options[k] === word.py_clean || options[k] === word.py) correctIdx = k;
-                    if (options[r] === word.py_clean || options[r] === word.py) correctIdx = r;
+                    if (options[k] === targetPy) correctIdx = k;
+                    if (options[r] === targetPy) correctIdx = r;
                 }
             }
             quizItems.push({

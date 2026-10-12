@@ -53,9 +53,9 @@
       },
       {
         "zh": "足三里",
-        "py": "zú sān lǐ",
+        "py": "Zúsānlǐ",
         "hv": "TÚC TAM LÝ",
-        "mean": "Huyệt đạo bổ tỳ vị trường thọ trên đường kinh Vị",
+        "mean": "Huyệt Túc Tam Lý (ST36) thuộc Túc Dương Minh Vị Kinh. Vị trí: 小腿. Chủ trị: 胃痛、呕吐、呃逆、腹胀、肠鸣、泄泻。",
         "ex_zh": "常灸足三里，能健脾胃、增强机体免疫力。",
         "ex_vi": "Thường xuyên cứu huyệt Túc Tam Lý có thể kiện tỳ vị, tăng cường miễn dịch cơ thể."
       },
@@ -595,9 +595,9 @@
       },
       {
         "zh": "命门",
-        "py": "mìng mén",
+        "py": "Mìngmén",
         "hv": "MỆNH MÔN",
-        "mean": "mệnh môn (cửa mệnh, nơi chứa nguyên hỏa)"
+        "mean": "Huyệt Mệnh Môn (GV4) thuộc Đốc Mạch. Vị trí: 腰部. Chủ trị: 拘急强直、阳痿、遗精、月经不调、泄泻、消化不良。"
       },
       {
         "zh": "命门之火",
@@ -991,9 +991,9 @@
       },
       {
         "zh": "带脉",
-        "py": "dài mài",
+        "py": "Dàimài",
         "hv": "ĐỚI MẠCH",
-        "mean": "kinh Đới (vòng quanh eo)"
+        "mean": "Huyệt Đới Mạch (GB26) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 腹部. Chủ trị: 月经不调、闭经、带下病、腹痛、疝气、腰痛。"
       },
       {
         "zh": "阴阳跷脉",
@@ -2743,69 +2743,69 @@
       },
       {
         "zh": "合谷",
-        "py": "hé gǔ",
+        "py": "Hégǔ",
         "hv": "HỢP CỐC",
-        "mean": "Huyệt Hợp Cốc: Huyệt nguyên của Đại Trường kinh; chủ trị đau đầu, đau răng, liệt mặt, cảm mạo, thanh nhiệt sơ phong."
+        "mean": "Huyệt Hợp Cốc (LI4) thuộc Thủ Dương Minh Đại Trường Kinh. Vị trí: 手部. Chủ trị: 头痛、颈痛、目肿痛、眼痛、鼻衄、鼻塞。"
       },
       {
         "zh": "内关",
-        "py": "nèi guān",
+        "py": "Nèiguān",
         "hv": "NỘI QUAN",
-        "mean": "Huyệt Nội Quan: Huyệt lạc của Tâm Bào kinh, bát mạch giao hội; an thần, định tâm, thư hung lý khí, trị nôn ói, đau tức ngực, hồi hộp."
+        "mean": "Huyệt Nội Quan (PC6) thuộc Thủ Quyết Âm Tâm Bào Kinh. Vị trí: 前臂. Chủ trị: 心痛、心悸、胁痛、胃痛、恶心、呕吐。"
       },
       {
         "zh": "太冲",
-        "py": "tài chōng",
+        "py": "Tàichōng",
         "hv": "THÁI XUNG",
-        "mean": "Huyệt Thái Xung: Huyệt nguyên của Can kinh; bình can tức phong, sơ can giải uất, thanh nhiệt chỉ thống, trị đau đầu hoa mắt, cáu gắt."
+        "mean": "Huyệt Thái Xung (LR3) thuộc Túc Quyết Âm Can Kinh. Vị trí: 足部. Chủ trị: 头痛、头晕、眩晕、失眠、目肿痛、眼痛。"
       },
       {
         "zh": "三阴交",
-        "py": "sān yīn jiāo",
+        "py": "Sānyīnjiāo",
         "hv": "TAM ÂM GIAO",
-        "mean": "Huyệt Tam Âm Giao: Nơi giao hội của 3 kinh âm túc (Tỳ - Can - Thận); kiện tỳ hóa thấp, điều kinh bổ can thận, trị mất ngủ, thống kinh."
+        "mean": "Huyệt Tam Âm Giao (SP6) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 小腿. Chủ trị: 腹痛、肠鸣、腹胀、泄泻、痛经、月经不调。"
       },
       {
         "zh": "百会",
-        "py": "bǎi huì",
+        "py": "Bǎihuì",
         "hv": "BÁCH HỘI",
-        "mean": "Huyệt Bách Hội: Huyệt hội của các kinh dương; thăng dương ích khí, tỉnh thần khai khiếu, trị sa trực tràng, sa tử cung, hoa mắt chóng mặt."
+        "mean": "Huyệt Bách Hội (GV20) thuộc Đốc Mạch. Vị trí: 头部. Chủ trị: 头痛、眩晕、耳鸣、鼻塞、失语、中风。"
       },
       {
         "zh": "涌泉",
-        "py": "yǒng quán",
+        "py": "Yǒngquán",
         "hv": "DŨNG TUYỀN",
-        "mean": "Huyệt Dũng Tuyền: Huyệt tỉnh của Thận kinh; giáng hỏa dẫn hỏa quy nguyên, định thần, tư âm ích thận, hạ huyết áp, trị mất ngủ."
+        "mean": "Huyệt Dũng Tuyền (KI1) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 足底. Chủ trị: 头痛、视物模糊、头晕、咽喉痛、干燥相关症状、失音。"
       },
       {
         "zh": "神阙",
-        "py": "shén què",
+        "py": "Shénquè",
         "hv": "THẦN KHUYẾT",
-        "mean": "Huyệt Thần Khuyết: Huyệt tại chính giữa rốn; ôn dương cứu nghịch, kiện tỳ chỉ tả, hòa vị lý khí, cấm châm (chỉ cứu ngải hoặc đắp thuốc)."
+        "mean": "Huyệt Thần Khuyết (CV8) thuộc Nhâm Mạch. Vị trí: 腹部. Chủ trị: 腹痛、肠鸣、中风、脱肛、泄泻。"
       },
       {
         "zh": "关元",
-        "py": "guān yuán",
+        "py": "Guānyuán",
         "hv": "QUAN NGUYÊN",
-        "mean": "Huyệt Quan Nguyên: Huyệt mộ của Tiểu Trường; đại bổ nguyên khí, hồi dương cứu nghịch, ôn bổ hạ tiêu, ích thận bổ hư."
+        "mean": "Huyệt Quan Nguyên (CV4) thuộc Nhâm Mạch. Vị trí: 腹部. Chủ trị: 遗尿、遗精、尿潴留、疝气、月经不调、带下病。"
       },
       {
         "zh": "气海",
-        "py": "qì hǎi",
+        "py": "Qìhǎi",
         "hv": "KHÍ HẢI",
-        "mean": "Huyệt Khí Hải: Biển của sinh khí hạ tiêu; sinh phát nguyên khí, ôn sưởi hạ tiêu, trị khí hư, tiêu chảy mạn tính, đái dầm."
+        "mean": "Huyệt Khí Hải (CV6) thuộc Nhâm Mạch. Vị trí: 腹部. Chủ trị: 腹痛、遗尿、遗精、阳痿、疝气、水肿。"
       },
       {
         "zh": "风池",
-        "py": "fēng chí",
+        "py": "Fēngchí",
         "hv": "PHONG TRÌ",
-        "mean": "Huyệt Phong Trì: Huyệt trị phong kinh điển; sơ phong tán tà, thanh đầu minh mục, trị cảm cúm, đau đầu vùng chẩm, cứng cổ, tăng nhãn áp."
+        "mean": "Huyệt Phong Trì (GB20) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 颈部. Chủ trị: 头痛、眩晕、失眠、拘急强直、视物模糊、耳鸣。"
       },
       {
         "zh": "大椎",
-        "py": "dà zhuī",
+        "py": "Dàzhuī",
         "hv": "ĐẠI CHÙY",
-        "mean": "Huyệt Đại Chùy: Hội của Đốc mạch với 6 kinh dương; giải biểu thanh nhiệt, tuyên dương tán hàn, trị sốt cao, cảm mạo hàn nhiệt, suyễn tức."
+        "mean": "Huyệt Đại Chùy (GV14) thuộc Đốc Mạch. Vị trí: 颈部. Chủ trị: 疟疾、热病、癫痫、发热、咳嗽、哮喘。"
       },
       {
         "zh": "符号秩和检验",
@@ -3850,6 +3850,2400 @@
         "py": "",
         "hv": "",
         "mean": " (Thuật ngữ Thống kê Y học Lâm sàng)"
+      },
+      {
+        "zh": "中府",
+        "py": "Zhōngfǔ",
+        "hv": "TRUNG PHỦ",
+        "mean": "Huyệt Trung Phủ (LU1) thuộc Thủ Thái Âm Phế Kinh. Vị trí: 胸前部. Chủ trị: 咳嗽、哮喘、胸痛、胸满。"
+      },
+      {
+        "zh": "云门",
+        "py": "Yúnmén",
+        "hv": "VÂN MÔN",
+        "mean": "Huyệt Vân Môn (LU2) thuộc Thủ Thái Âm Phế Kinh. Vị trí: 胸前部. Chủ trị: 咳嗽、哮喘、胸痛、胸满。"
+      },
+      {
+        "zh": "天府",
+        "py": "Tiānfǔ",
+        "hv": "THIÊN PHỦ",
+        "mean": "Huyệt Thiên Phủ (LU3) thuộc Thủ Thái Âm Phế Kinh. Vị trí: 上臂. Chủ trị: 哮喘、鼻衄、上臂内侧痛。"
+      },
+      {
+        "zh": "侠白",
+        "py": "Xiábái",
+        "hv": "HIỆP BẠCH",
+        "mean": "Huyệt Hiệp Bạch (LU4) thuộc Thủ Thái Âm Phế Kinh. Vị trí: 上臂. Chủ trị: 咳嗽、胸满、上臂内侧痛。"
+      },
+      {
+        "zh": "尺泽",
+        "py": "Chǐzé",
+        "hv": "XÍCH TRẠCH",
+        "mean": "Huyệt Xích Trạch (LU5) thuộc Thủ Thái Âm Phế Kinh. Vị trí: 肘部. Chủ trị: 咳嗽、咯血、发热、哮喘、咽喉痛、胸满。"
+      },
+      {
+        "zh": "孔最",
+        "py": "Kǒngzuì",
+        "hv": "KHỔNG TỐI",
+        "mean": "Huyệt Khổng Tối (LU6) thuộc Thủ Thái Âm Phế Kinh. Vị trí: 前臂. Chủ trị: 咳嗽、胸痛、哮喘、咯血、咽喉痛、肘臂挛痛。"
+      },
+      {
+        "zh": "列缺",
+        "py": "Lièquē",
+        "hv": "LIỆT KHUYẾT",
+        "mean": "Huyệt Liệt Khuyết (LU7) thuộc Thủ Thái Âm Phế Kinh. Vị trí: 前臂. Chủ trị: 头痛、偏头痛、项强、咳嗽、哮喘、咽喉痛。"
+      },
+      {
+        "zh": "经渠",
+        "py": "Jīngqú",
+        "hv": "KINH CỪ",
+        "mean": "Huyệt Kinh Cừ (LU8) thuộc Thủ Thái Âm Phế Kinh. Vị trí: 前臂. Chủ trị: 咳嗽、哮喘、发热、胸痛、咽喉痛、腕痛。"
+      },
+      {
+        "zh": "太渊",
+        "py": "Tàiyuān",
+        "hv": "THÁI UYÊN",
+        "mean": "Huyệt Thái Uyên (LU9) thuộc Thủ Thái Âm Phế Kinh. Vị trí: 腕部. Chủ trị: 咳嗽、哮喘、咯血、咽喉痛、心悸、胸痛。"
+      },
+      {
+        "zh": "鱼际",
+        "py": "Yújì",
+        "hv": "NGƯ TẾ",
+        "mean": "Huyệt Ngư Tế (LU10) thuộc Thủ Thái Âm Phế Kinh. Vị trí: 手掌. Chủ trị: 咳嗽、咯血、咽喉痛、失音、发热、掌心热。"
+      },
+      {
+        "zh": "少商",
+        "py": "Shàoshāng",
+        "hv": "THIẾU THƯƠNG",
+        "mean": "Huyệt Thiếu Thương (LU11) thuộc Thủ Thái Âm Phế Kinh. Vị trí: 拇指. Chủ trị: 咽喉痛、咳嗽、哮喘、鼻衄、发热、昏厥。"
+      },
+      {
+        "zh": "商阳",
+        "py": "Shāngyáng",
+        "hv": "THƯƠNG DƯƠNG",
+        "mean": "Huyệt Thương Dương (LI1) thuộc Thủ Dương Minh Đại Trường Kinh. Vị trí: 手指. Chủ trị: 牙痛、咽喉痛、麻木、热病、昏厥。"
+      },
+      {
+        "zh": "二间",
+        "py": "Èrjiān",
+        "hv": "NHỊ GIAN",
+        "mean": "Huyệt Nhị Gian (LI2) thuộc Thủ Dương Minh Đại Trường Kinh. Vị trí: 手指. Chủ trị: 视物模糊、鼻衄、牙痛、咽喉痛、热病。"
+      },
+      {
+        "zh": "三间",
+        "py": "Sānjiān",
+        "hv": "TAM GIAN",
+        "mean": "Huyệt Tam Gian (LI3) thuộc Thủ Dương Minh Đại Trường Kinh. Vị trí: 手部. Chủ trị: 牙痛、眼痛、咽喉痛。"
+      },
+      {
+        "zh": "阳溪",
+        "py": "Yángxī",
+        "hv": "DƯƠNG KHÊ",
+        "mean": "Huyệt Dương Khê (LI5) thuộc Thủ Dương Minh Đại Trường Kinh. Vị trí: 腕部. Chủ trị: 头痛、目肿痛、牙痛、咽喉痛、腕痛。"
+      },
+      {
+        "zh": "偏历",
+        "py": "Piānlì",
+        "hv": "THIÊN LỊCH",
+        "mean": "Huyệt Thiên Lịch (LI6) thuộc Thủ Dương Minh Đại Trường Kinh. Vị trí: 前臂. Chủ trị: 目赤、耳鸣、耳聋、鼻衄、咽喉痛、水肿。"
+      },
+      {
+        "zh": "温溜",
+        "py": "Wēnliū",
+        "hv": "ÔN LƯU",
+        "mean": "Huyệt Ôn Lưu (LI7) thuộc Thủ Dương Minh Đại Trường Kinh. Vị trí: 前臂. Chủ trị: 头痛、咽喉痛、肠鸣、腹痛。"
+      },
+      {
+        "zh": "下廉",
+        "py": "Xiàlián",
+        "hv": "HẠ LIÊM",
+        "mean": "Huyệt Hạ Liêm (LI8) thuộc Thủ Dương Minh Đại Trường Kinh. Vị trí: 前臂. Chủ trị: 腹痛、肠鸣、肘痛、活动不利。"
+      },
+      {
+        "zh": "上廉",
+        "py": "Shànglián",
+        "hv": "THƯỢNG LIÊM",
+        "mean": "Huyệt Thượng Liêm (LI9) thuộc Thủ Dương Minh Đại Trường Kinh. Vị trí: 前臂. Chủ trị: 活动不利、麻木、肠鸣、腹痛。"
+      },
+      {
+        "zh": "手三里",
+        "py": "Shǒusānlǐ",
+        "hv": "THỦ TAM LÝ",
+        "mean": "Huyệt Thủ Tam Lý (LI10) thuộc Thủ Dương Minh Đại Trường Kinh. Vị trí: 前臂. Chủ trị: 腹痛、泄泻、牙痛、颊肿、活动不利、肩痛。"
+      },
+      {
+        "zh": "曲池",
+        "py": "Qūchí",
+        "hv": "KHÚC TRÌ",
+        "mean": "Huyệt Khúc Trì (LI11) thuộc Thủ Dương Minh Đại Trường Kinh. Vị trí: 肘部. Chủ trị: 咽喉痛、牙痛、眼痛、瘰疬、荨麻疹、活动不利。"
+      },
+      {
+        "zh": "肘髎",
+        "py": "Zhǒuliáo",
+        "hv": "TRỤ LIÊU",
+        "mean": "Huyệt Trụ Liêu (LI12) thuộc Thủ Dương Minh Đại Trường Kinh. Vị trí: 肘部. Chủ trị: 麻木。"
+      },
+      {
+        "zh": "手五里",
+        "py": "Shǒuwǔlǐ",
+        "hv": "THỦ NGŨ LÝ",
+        "mean": "Huyệt Thủ Ngũ Lý (LI13) thuộc Thủ Dương Minh Đại Trường Kinh. Vị trí: 上臂. Chủ trị: 瘰疬。"
+      },
+      {
+        "zh": "臂臑",
+        "py": "Bìnào",
+        "hv": "TÝ NHU",
+        "mean": "Huyệt Tý Nhu (LI14) thuộc Thủ Dương Minh Đại Trường Kinh. Vị trí: 上臂. Chủ trị: 肩痛、瘰疬。"
+      },
+      {
+        "zh": "肩髃",
+        "py": "Jiānyú",
+        "hv": "KIÊN NGUNG",
+        "mean": "Huyệt Kiên Ngung (LI15) thuộc Thủ Dương Minh Đại Trường Kinh. Vị trí: 肩部. Chủ trị: 肩痛、活动不利、瘰疬。"
+      },
+      {
+        "zh": "巨骨",
+        "py": "Jùgǔ",
+        "hv": "CỰ CỐT",
+        "mean": "Huyệt Cự Cốt (LI16) thuộc Thủ Dương Minh Đại Trường Kinh. Vị trí: 肩部. Chủ trị: 活动不利、肩痛。"
+      },
+      {
+        "zh": "天鼎",
+        "py": "Tiāndǐng",
+        "hv": "THIÊN ĐỈNH",
+        "mean": "Huyệt Thiên Đỉnh (LI17) thuộc Thủ Dương Minh Đại Trường Kinh. Vị trí: 颈部. Chủ trị: 暴喑、失音、咽喉痛、瘰疬、瘿气。"
+      },
+      {
+        "zh": "扶突",
+        "py": "Fútū",
+        "hv": "PHÙ ĐỘT",
+        "mean": "Huyệt Phù Đột (LI18) thuộc Thủ Dương Minh Đại Trường Kinh. Vị trí: 颈部. Chủ trị: 咳嗽、哮喘、咽喉痛、暴喑、失音、瘰疬。"
+      },
+      {
+        "zh": "口禾髎",
+        "py": "Kǒuhéliáo",
+        "hv": "KHẨU HÒA LIÊU",
+        "mean": "Huyệt Khẩu Hòa Liêu (LI19) thuộc Thủ Dương Minh Đại Trường Kinh. Vị trí: 面部. Chủ trị: 鼻塞、鼻衄、口歪。"
+      },
+      {
+        "zh": "迎香",
+        "py": "Yíngxiāng",
+        "hv": "NGHINH HƯƠNG",
+        "mean": "Huyệt Nghinh Hương (LI20) thuộc Thủ Dương Minh Đại Trường Kinh. Vị trí: 面部. Chủ trị: 鼻塞、鼻衄、流涕、口歪。"
+      },
+      {
+        "zh": "承泣",
+        "py": "Chéngqì",
+        "hv": "THỪA KHẤP",
+        "mean": "Huyệt Thừa Khấp (ST1) thuộc Túc Dương Minh Vị Kinh. Vị trí: 面部. Chủ trị: 目肿痛、眼痛、流泪、眼睑瞤动、面瘫。"
+      },
+      {
+        "zh": "四白",
+        "py": "Sìbái",
+        "hv": "TỨ BẠCH",
+        "mean": "Huyệt Tứ Bạch (ST2) thuộc Túc Dương Minh Vị Kinh. Vị trí: 面部. Chủ trị: 面瘫、眼睑瞤动。"
+      },
+      {
+        "zh": "巨髎",
+        "py": "Jùliáo",
+        "hv": "CỰ LIÊU",
+        "mean": "Huyệt Cự Liêu (ST3) thuộc Túc Dương Minh Vị Kinh. Vị trí: 面部. Chủ trị: 面瘫、眼睑瞤动、鼻衄、牙痛。"
+      },
+      {
+        "zh": "地仓",
+        "py": "Dìcāng",
+        "hv": "ĐỊA THƯƠNG",
+        "mean": "Huyệt Địa Thương (ST4) thuộc Túc Dương Minh Vị Kinh. Vị trí: 面部. Chủ trị: 口歪、眼睑瞤动。"
+      },
+      {
+        "zh": "大迎",
+        "py": "Dàyíng",
+        "hv": "ĐẠI NGHINH",
+        "mean": "Huyệt Đại Nghinh (ST5) thuộc Túc Dương Minh Vị Kinh. Vị trí: 面部. Chủ trị: 面瘫、牙关紧闭、颊肿、面痛、牙痛。"
+      },
+      {
+        "zh": "颊车",
+        "py": "Jiáchē",
+        "hv": "GIÁP XA",
+        "mean": "Huyệt Giáp Xa (ST6) thuộc Túc Dương Minh Vị Kinh. Vị trí: 面部. Chủ trị: 面瘫、牙痛、颊肿、牙关紧闭。"
+      },
+      {
+        "zh": "下关",
+        "py": "Xiàguān",
+        "hv": "HẠ QUAN",
+        "mean": "Huyệt Hạ Quan (ST7) thuộc Túc Dương Minh Vị Kinh. Vị trí: 面部. Chủ trị: 耳聋、耳鸣、牙痛、面瘫、活动不利。"
+      },
+      {
+        "zh": "头维",
+        "py": "Tóuwéi",
+        "hv": "ĐẦU DUY",
+        "mean": "Huyệt Đầu Duy (ST8) thuộc Túc Dương Minh Vị Kinh. Vị trí: 头部. Chủ trị: 头痛、视物模糊、眼痛、流泪。"
+      },
+      {
+        "zh": "人迎",
+        "py": "Rényíng",
+        "hv": "NHÂN NGHINH",
+        "mean": "Huyệt Nhân Nghinh (ST9) thuộc Túc Dương Minh Vị Kinh. Vị trí: 颈部. Chủ trị: 咽喉痛、哮喘、瘿气、头晕。"
+      },
+      {
+        "zh": "水突",
+        "py": "Shuǐtū",
+        "hv": "THỦY ĐỘT",
+        "mean": "Huyệt Thủy Đột (ST10) thuộc Túc Dương Minh Vị Kinh. Vị trí: 颈部. Chủ trị: 咽喉痛、哮喘、咳嗽。"
+      },
+      {
+        "zh": "气舍",
+        "py": "Qìshè",
+        "hv": "KHÍ XÁ",
+        "mean": "Huyệt Khí Xá (ST11) thuộc Túc Dương Minh Vị Kinh. Vị trí: 颈部. Chủ trị: 咽喉痛、哮喘、呃逆、瘿气。"
+      },
+      {
+        "zh": "缺盆",
+        "py": "Quēpén",
+        "hv": "KHUYẾT BỒN",
+        "mean": "Huyệt Khuyết Bồn (ST12) thuộc Túc Dương Minh Vị Kinh. Vị trí: 颈部. Chủ trị: 咳嗽、哮喘、咽喉痛。"
+      },
+      {
+        "zh": "气户",
+        "py": "Qìhù",
+        "hv": "KHÍ HỘ",
+        "mean": "Huyệt Khí Hộ (ST13) thuộc Túc Dương Minh Vị Kinh. Vị trí: 胸前部. Chủ trị: 胸满、哮喘、咳嗽、呃逆、胸痛。"
+      },
+      {
+        "zh": "库房",
+        "py": "Kùfáng",
+        "hv": "KHỐ PHÒNG",
+        "mean": "Huyệt Khố Phòng (ST14) thuộc Túc Dương Minh Vị Kinh. Vị trí: 胸前部. Chủ trị: 胸满、胸痛、咳嗽。"
+      },
+      {
+        "zh": "屋翳",
+        "py": "Wūyì",
+        "hv": "ỐC Ế",
+        "mean": "Huyệt Ốc Ế (ST15) thuộc Túc Dương Minh Vị Kinh. Vị trí: 胸前部. Chủ trị: 胸痛、咳嗽、哮喘、乳痈。"
+      },
+      {
+        "zh": "膺窗",
+        "py": "Yīngchuāng",
+        "hv": "ƯNG SONG",
+        "mean": "Huyệt Ưng Song (ST16) thuộc Túc Dương Minh Vị Kinh. Vị trí: 胸前部. Chủ trị: 胸痛、咳嗽、哮喘、乳痈。"
+      },
+      {
+        "zh": "乳中",
+        "py": "Rǔzhōng",
+        "hv": "NHŨ TRUNG",
+        "mean": "Huyệt Nhũ Trung (ST17) thuộc Túc Dương Minh Vị Kinh. Vị trí: 胸前部. Chủ trị: 乳中用作定位标志；现代针灸标准通常禁针禁灸，不作为操作穴。"
+      },
+      {
+        "zh": "乳根",
+        "py": "Rǔgēn",
+        "hv": "NHŨ CĂN",
+        "mean": "Huyệt Nhũ Căn (ST18) thuộc Túc Dương Minh Vị Kinh. Vị trí: 胸前部. Chủ trị: 胸痛、咳嗽、哮喘、乳痈、乳少。"
+      },
+      {
+        "zh": "不容",
+        "py": "Bùróng",
+        "hv": "BẤT DUNG",
+        "mean": "Huyệt Bất Dung (ST19) thuộc Túc Dương Minh Vị Kinh. Vị trí: 腹部. Chủ trị: 腹胀、呕吐、胃痛、食欲不振。"
+      },
+      {
+        "zh": "承满",
+        "py": "Chéngmǎn",
+        "hv": "THỪA MÃN",
+        "mean": "Huyệt Thừa Mãn (ST20) thuộc Túc Dương Minh Vị Kinh. Vị trí: 腹部. Chủ trị: 胃痛、腹胀、呕吐、食欲不振。"
+      },
+      {
+        "zh": "梁门",
+        "py": "Liángmén",
+        "hv": "LƯƠNG MÔN",
+        "mean": "Huyệt Lương Môn (ST21) thuộc Túc Dương Minh Vị Kinh. Vị trí: 腹部. Chủ trị: 胃痛、呕吐、食欲不振、腹胀、泄泻。"
+      },
+      {
+        "zh": "关门",
+        "py": "Guānmén",
+        "hv": "QUAN MÔN",
+        "mean": "Huyệt Quan Môn (ST22) thuộc Túc Dương Minh Vị Kinh. Vị trí: 腹部. Chủ trị: 腹胀、食欲不振、肠鸣、泄泻、水肿。"
+      },
+      {
+        "zh": "太乙",
+        "py": "Tàiyǐ",
+        "hv": "THÁI ẤT",
+        "mean": "Huyệt Thái Ất (ST23) thuộc Túc Dương Minh Vị Kinh. Vị trí: 腹部. Chủ trị: 胃痛、烦躁、癫狂、消化不良。"
+      },
+      {
+        "zh": "滑肉门",
+        "py": "Huáròumén",
+        "hv": "HOẠT NHỤC MÔN",
+        "mean": "Huyệt Hoạt Nhục Môn (ST24) thuộc Túc Dương Minh Vị Kinh. Vị trí: 腹部. Chủ trị: 胃痛、呕吐、癫狂。"
+      },
+      {
+        "zh": "天枢",
+        "py": "Tiānshū",
+        "hv": "THIÊN XU",
+        "mean": "Huyệt Thiên Xu (ST25) thuộc Túc Dương Minh Vị Kinh. Vị trí: 腹部. Chủ trị: 腹痛、肠鸣、便秘、泄泻、痢疾、月经不调。"
+      },
+      {
+        "zh": "外陵",
+        "py": "Wàilíng",
+        "hv": "NGOẠI LĂNG",
+        "mean": "Huyệt Ngoại Lăng (ST26) thuộc Túc Dương Minh Vị Kinh. Vị trí: 腹部. Chủ trị: 腹痛、疝气、痛经。"
+      },
+      {
+        "zh": "大巨",
+        "py": "Dàjù",
+        "hv": "ĐẠI CỰ",
+        "mean": "Huyệt Đại Cự (ST27) thuộc Túc Dương Minh Vị Kinh. Vị trí: 腹部. Chủ trị: 腹胀、小便不利、疝气。"
+      },
+      {
+        "zh": "水道",
+        "py": "Shuǐdào",
+        "hv": "THỦY ĐẠO",
+        "mean": "Huyệt Thủy Đạo (ST28) thuộc Túc Dương Minh Vị Kinh. Vị trí: 腹部. Chủ trị: 腹胀、尿潴留、水肿、疝气、痛经。"
+      },
+      {
+        "zh": "归来",
+        "py": "Guīlái",
+        "hv": "QUY LAI",
+        "mean": "Huyệt Quy Lai (ST29) thuộc Túc Dương Minh Vị Kinh. Vị trí: 腹部. Chủ trị: 腹痛、疝气、痛经、月经不调、闭经、带下病。"
+      },
+      {
+        "zh": "气冲",
+        "py": "Qìchōng",
+        "hv": "KHÍ XUNG",
+        "mean": "Huyệt Khí Xung (ST30) thuộc Túc Dương Minh Vị Kinh. Vị trí: 体表相关区域. Chủ trị: 腹痛、肠鸣、疝气、阳痿、痛经、月经不调。"
+      },
+      {
+        "zh": "髀关",
+        "py": "Bìguān",
+        "hv": "BỄ QUAN",
+        "mean": "Huyệt Bễ Quan (ST31) thuộc Túc Dương Minh Vị Kinh. Vị trí: 大腿. Chủ trị: 肌肉萎缩、活动不利、麻木。"
+      },
+      {
+        "zh": "伏兔",
+        "py": "Fútù",
+        "hv": "PHỤC THỐ",
+        "mean": "Huyệt Phục Thố (ST32) thuộc Túc Dương Minh Vị Kinh. Vị trí: 大腿. Chủ trị: 腰痛、活动不利、脚气。"
+      },
+      {
+        "zh": "阴市",
+        "py": "Yīnshì",
+        "hv": "ÂM THỊ",
+        "mean": "Huyệt Âm Thị (ST33) thuộc Túc Dương Minh Vị Kinh. Vị trí: 大腿. Chủ trị: 麻木、活动不利。"
+      },
+      {
+        "zh": "梁丘",
+        "py": "Liángqiū",
+        "hv": "LƯƠNG KHÂU",
+        "mean": "Huyệt Lương Khâu (ST34) thuộc Túc Dương Minh Vị Kinh. Vị trí: 大腿. Chủ trị: 麻木、胃痛、乳痈、活动不利。"
+      },
+      {
+        "zh": "犊鼻",
+        "py": "Dúbí",
+        "hv": "ĐỘC TỴ",
+        "mean": "Huyệt Độc Tỵ (ST35) thuộc Túc Dương Minh Vị Kinh. Vị trí: 膝部. Chủ trị: 麻木、活动不利、脚气。"
+      },
+      {
+        "zh": "上巨虚",
+        "py": "Shàngjùxū",
+        "hv": "THƯỢNG CỰ HƯ",
+        "mean": "Huyệt Thượng Cự Hư (ST37) thuộc Túc Dương Minh Vị Kinh. Vị trí: 小腿. Chủ trị: 腹痛、肠鸣、泄泻、痢疾、便秘、脚气。"
+      },
+      {
+        "zh": "条口",
+        "py": "Tiáokǒu",
+        "hv": "ĐIỀU KHẨU",
+        "mean": "Huyệt Điều Khẩu (ST38) thuộc Túc Dương Minh Vị Kinh. Vị trí: 小腿. Chủ trị: 麻木、活动不利、腹痛。"
+      },
+      {
+        "zh": "下巨虚",
+        "py": "Xiàjùxū",
+        "hv": "HẠ CỰ HƯ",
+        "mean": "Huyệt Hạ Cự Hư (ST39) thuộc Túc Dương Minh Vị Kinh. Vị trí: 小腿. Chủ trị: 小腹痛、腹痛、背痛、乳痈、麻木。"
+      },
+      {
+        "zh": "丰隆",
+        "py": "Fēnglóng",
+        "hv": "PHONG LONG",
+        "mean": "Huyệt Phong Long (ST40) thuộc Túc Dương Minh Vị Kinh. Vị trí: 小腿. Chủ trị: 头痛、头晕、眩晕、咳嗽、哮喘、胸痛。"
+      },
+      {
+        "zh": "解溪",
+        "py": "Jiěxī",
+        "hv": "GIẢI KHÊ",
+        "mean": "Huyệt Giải Khê (ST41) thuộc Túc Dương Minh Vị Kinh. Vị trí: 踝部. Chủ trị: 踝部症状、肌肉萎缩、活动不利、癫痫、头痛、头晕。"
+      },
+      {
+        "zh": "冲阳",
+        "py": "Chōngyáng",
+        "hv": "XUNG DƯƠNG",
+        "mean": "Huyệt Xung Dương (ST42) thuộc Túc Dương Minh Vị Kinh. Vị trí: 足部. Chủ trị: 面瘫、肌肉萎缩、活动不利。"
+      },
+      {
+        "zh": "陷谷",
+        "py": "Xiàngǔ",
+        "hv": "HÃM CỐC",
+        "mean": "Huyệt Hãm Cốc (ST43) thuộc Túc Dương Minh Vị Kinh. Vị trí: 足部. Chủ trị: 水肿、腹痛、肠鸣。"
+      },
+      {
+        "zh": "内庭",
+        "py": "Nèitíng",
+        "hv": "NỘI ĐÌNH",
+        "mean": "Huyệt Nội Đình (ST44) thuộc Túc Dương Minh Vị Kinh. Vị trí: 足部. Chủ trị: 牙痛、口歪、咽喉痛、鼻衄、胃痛、反酸。"
+      },
+      {
+        "zh": "厉兑",
+        "py": "Lìduì",
+        "hv": "LỆ ĐOÁI",
+        "mean": "Huyệt Lệ Đoái (ST45) thuộc Túc Dương Minh Vị Kinh. Vị trí: 足趾. Chủ trị: 面肿、口歪、鼻衄、牙痛、咽喉痛、腹胀。"
+      },
+      {
+        "zh": "隐白",
+        "py": "Yǐnbái",
+        "hv": "ẨN BẠCH",
+        "mean": "Huyệt Ẩn Bạch (SP1) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 足趾. Chủ trị: 腹胀、崩漏、神志病、抽搐。"
+      },
+      {
+        "zh": "大都",
+        "py": "Dàdū",
+        "hv": "ĐẠI ĐÔ",
+        "mean": "Huyệt Đại Đô (SP2) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 足趾. Chủ trị: 腹胀、胃痛、便秘、热病。"
+      },
+      {
+        "zh": "太白",
+        "py": "Tàibái",
+        "hv": "THÁI BẠCH",
+        "mean": "Huyệt Thái Bạch (SP3) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 足部. Chủ trị: 胃痛、腹胀、便秘、痢疾、呕吐、泄泻。"
+      },
+      {
+        "zh": "公孙",
+        "py": "Gōngsūn",
+        "hv": "CÔNG TÔN",
+        "mean": "Huyệt Công Tôn (SP4) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 足部. Chủ trị: 胃痛、呕吐、腹痛、泄泻、痢疾、肠鸣。"
+      },
+      {
+        "zh": "商丘",
+        "py": "Shāngqiū",
+        "hv": "THƯƠNG KHÂU",
+        "mean": "Huyệt Thương Khâu (SP5) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 足部. Chủ trị: 腹胀、便秘、泄泻、肠鸣、踝部症状、痔疮。"
+      },
+      {
+        "zh": "漏谷",
+        "py": "Lòugǔ",
+        "hv": "LẬU CỐC",
+        "mean": "Huyệt Lậu Cốc (SP7) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 小腿. Chủ trị: 腹胀、肠鸣、麻木。"
+      },
+      {
+        "zh": "地机",
+        "py": "Dìjī",
+        "hv": "ĐỊA 机",
+        "mean": "Huyệt Địa 机 (SP8) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 小腿. Chủ trị: 腹痛、泄泻、水肿、小便不利、遗精、月经不调。"
+      },
+      {
+        "zh": "阴陵泉",
+        "py": "Yīnlíngquán",
+        "hv": "ÂM LĂNG TUYỀN",
+        "mean": "Huyệt Âm Lăng Tuyền (SP9) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 小腿. Chủ trị: 腹痛、泄泻、痢疾、水肿、黄疸、小便不利。"
+      },
+      {
+        "zh": "血海",
+        "py": "Xuèhǎi",
+        "hv": "HUYẾT HẢI",
+        "mean": "Huyệt Huyết Hải (SP10) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 大腿. Chủ trị: 月经不调、痛经、崩漏、闭经、荨麻疹、湿疹。"
+      },
+      {
+        "zh": "箕门",
+        "py": "Jīmén",
+        "hv": "CƠ MÔN",
+        "mean": "Huyệt Cơ Môn (SP11) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 大腿. Chủ trị: 小便不利、遗尿、肌肉萎缩、活动不利。"
+      },
+      {
+        "zh": "冲门",
+        "py": "Chōngmén",
+        "hv": "XUNG MÔN",
+        "mean": "Huyệt Xung Môn (SP12) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 体表相关区域. Chủ trị: 腹痛、疝气、小便不利。"
+      },
+      {
+        "zh": "府舍",
+        "py": "Fǔshè",
+        "hv": "PHỦ XÁ",
+        "mean": "Huyệt Phủ Xá (SP13) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 腹部. Chủ trị: 小腹痛、腹痛、疝气。"
+      },
+      {
+        "zh": "腹结",
+        "py": "Fùjié",
+        "hv": "腹 KẾT",
+        "mean": "Huyệt 腹 Kết (SP14) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 腹部. Chủ trị: 腹胀、疝气、泄泻、便秘。"
+      },
+      {
+        "zh": "大横",
+        "py": "Dàhéng",
+        "hv": "ĐẠI HOÀNH",
+        "mean": "Huyệt Đại Hoành (SP15) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 腹部. Chủ trị: 腹痛、泄泻、痢疾、便秘。"
+      },
+      {
+        "zh": "腹哀",
+        "py": "Fù’āi",
+        "hv": "腹 AI",
+        "mean": "Huyệt 腹 Ai (SP16) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 腹部. Chủ trị: 腹痛、消化不良、便秘、痢疾。"
+      },
+      {
+        "zh": "食窦",
+        "py": "Shídòu",
+        "hv": "THỰC ĐẬU",
+        "mean": "Huyệt Thực Đậu (SP17) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 胸前部. Chủ trị: 胸痛。"
+      },
+      {
+        "zh": "天溪",
+        "py": "Tiānxī",
+        "hv": "THIÊN KHÊ",
+        "mean": "Huyệt Thiên Khê (SP18) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 胸前部. Chủ trị: 胸痛、咳嗽、呃逆、乳痈、乳少。"
+      },
+      {
+        "zh": "胸乡",
+        "py": "Xiōngxiāng",
+        "hv": "HUNG HƯƠNG",
+        "mean": "Huyệt Hung Hương (SP19) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 胸前部. Chủ trị: 胸痛。"
+      },
+      {
+        "zh": "周荣",
+        "py": "Zhōuróng",
+        "hv": "CHU 荣",
+        "mean": "Huyệt Chu 荣 (SP20) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 胸前部. Chủ trị: 胸满、咳嗽、呃逆。"
+      },
+      {
+        "zh": "大包",
+        "py": "Dàbāo",
+        "hv": "ĐẠI BAO",
+        "mean": "Huyệt Đại Bao (SP21) thuộc Túc Thái Âm Tỳ Kinh. Vị trí: 胸侧部. Chủ trị: 胸痛、哮喘。"
+      },
+      {
+        "zh": "极泉",
+        "py": "Jíquán",
+        "hv": "CỰC TUYỀN",
+        "mean": "Huyệt Cực Tuyền (HT1) thuộc Thủ Thiếu Âm Tâm Kinh. Vị trí: 腋部. Chủ trị: 瘰疬、干燥相关症状。"
+      },
+      {
+        "zh": "青灵",
+        "py": "Qīnglíng",
+        "hv": "THANH LINH",
+        "mean": "Huyệt Thanh Linh (HT2) thuộc Thủ Thiếu Âm Tâm Kinh. Vị trí: 上臂. Chủ trị: 心痛、胁痛、肩臂痛。"
+      },
+      {
+        "zh": "少海",
+        "py": "Shàohǎi",
+        "hv": "THIẾU HẢI",
+        "mean": "Huyệt Thiếu Hải (HT3) thuộc Thủ Thiếu Âm Tâm Kinh. Vị trí: 肘部. Chủ trị: 心痛、麻木、瘰疬。"
+      },
+      {
+        "zh": "灵道",
+        "py": "Língdào",
+        "hv": "LINH ĐẠO",
+        "mean": "Huyệt Linh Đạo (HT4) thuộc Thủ Thiếu Âm Tâm Kinh. Vị trí: 前臂. Chủ trị: 心痛、肘臂挛痛、暴喑、失音。"
+      },
+      {
+        "zh": "通里",
+        "py": "Tōnglǐ",
+        "hv": "THÔNG LÝ",
+        "mean": "Huyệt Thông Lý (HT5) thuộc Thủ Thiếu Âm Tâm Kinh. Vị trí: 前臂. Chủ trị: 心悸、头晕、视物模糊、咽喉痛、暴喑、失音。"
+      },
+      {
+        "zh": "阴郄",
+        "py": "Yīnxì",
+        "hv": "ÂM 郄",
+        "mean": "Huyệt Âm 郄 (HT6) thuộc Thủ Thiếu Âm Tâm Kinh. Vị trí: 前臂. Chủ trị: 心痛、盗汗、咯血、鼻衄、暴喑、失音。"
+      },
+      {
+        "zh": "神门",
+        "py": "Shénmén",
+        "hv": "THẦN MÔN",
+        "mean": "Huyệt Thần Môn (HT7) thuộc Thủ Thiếu Âm Tâm Kinh. Vị trí: 腕部. Chủ trị: 心痛、烦躁、心悸、失眠、癫狂、癫痫。"
+      },
+      {
+        "zh": "少府",
+        "py": "Shàofǔ",
+        "hv": "THIẾU PHỦ",
+        "mean": "Huyệt Thiếu Phủ (HT8) thuộc Thủ Thiếu Âm Tâm Kinh. Vị trí: 手掌. Chủ trị: 心悸、胸痛、掌心热、遗尿、小便不利、瘙痒。"
+      },
+      {
+        "zh": "少冲",
+        "py": "Shàochōng",
+        "hv": "THIẾU XUNG",
+        "mean": "Huyệt Thiếu Xung (HT9) thuộc Thủ Thiếu Âm Tâm Kinh. Vị trí: 手指. Chủ trị: 心悸、心痛、胸痛、癫狂、热病、昏厥。"
+      },
+      {
+        "zh": "少泽",
+        "py": "Shàozé",
+        "hv": "THIẾU TRẠCH",
+        "mean": "Huyệt Thiếu Trạch (SI1) thuộc Thủ Thái Dương Tiểu Trường Kinh. Vị trí: 手指. Chủ trị: 头痛、热病、昏厥、乳少、咽喉痛、目赤。"
+      },
+      {
+        "zh": "前谷",
+        "py": "Qiángǔ",
+        "hv": "TIỀN CỐC",
+        "mean": "Huyệt Tiền Cốc (SI2) thuộc Thủ Thái Dương Tiểu Trường Kinh. Vị trí: 手指. Chủ trị: 麻木、热病、耳鸣、头痛。"
+      },
+      {
+        "zh": "后溪",
+        "py": "Hòuxī",
+        "hv": "HẬU KHÊ",
+        "mean": "Huyệt Hậu Khê (SI3) thuộc Thủ Thái Dương Tiểu Trường Kinh. Vị trí: 手指. Chủ trị: 耳鸣、耳聋、咽喉痛、癫狂、疟疾、盗汗。"
+      },
+      {
+        "zh": "腕骨",
+        "py": "Wàngǔ",
+        "hv": "UYỂN CỐT",
+        "mean": "Huyệt Uyển Cốt (SI4) thuộc Thủ Thái Dương Tiểu Trường Kinh. Vị trí: 腕部. Chủ trị: 热病、头痛、腕痛、黄疸。"
+      },
+      {
+        "zh": "阳谷",
+        "py": "Yánggǔ",
+        "hv": "DƯƠNG CỐC",
+        "mean": "Huyệt Dương Cốc (SI5) thuộc Thủ Thái Dương Tiểu Trường Kinh. Vị trí: 腕部. Chủ trị: 热病。"
+      },
+      {
+        "zh": "养老",
+        "py": "Yǎnglǎo",
+        "hv": "DƯỠNG LÃO",
+        "mean": "Huyệt Dưỡng Lão (SI6) thuộc Thủ Thái Dương Tiểu Trường Kinh. Vị trí: 前臂. Chủ trị: 视物模糊、肩痛。"
+      },
+      {
+        "zh": "支正",
+        "py": "Zhīzhèng",
+        "hv": "CHI CHÁNH",
+        "mean": "Huyệt Chi Chánh (SI7) thuộc Thủ Thái Dương Tiểu Trường Kinh. Vị trí: 前臂. Chủ trị: 项强、头痛、头晕、肘痛、热病、癫狂。"
+      },
+      {
+        "zh": "小海",
+        "py": "Xiǎohǎi",
+        "hv": "TIỂU HẢI",
+        "mean": "Huyệt Tiểu Hải (SI8) thuộc Thủ Thái Dương Tiểu Trường Kinh. Vị trí: 肘部. Chủ trị: 头痛、颊肿、癫痫。"
+      },
+      {
+        "zh": "肩贞",
+        "py": "Jiānzhēn",
+        "hv": "KIÊN TRINH",
+        "mean": "Huyệt Kiên Trinh (SI9) thuộc Thủ Thái Dương Tiểu Trường Kinh. Vị trí: 肩部. Chủ trị: 活动不利。"
+      },
+      {
+        "zh": "臑俞",
+        "py": "Nàoshū",
+        "hv": "NHU DU",
+        "mean": "Huyệt Nhu Du (SI10) thuộc Thủ Thái Dương Tiểu Trường Kinh. Vị trí: 肩部. Chủ trị: 肩部肿痛、肩臂酸痛无力。"
+      },
+      {
+        "zh": "天宗",
+        "py": "Tiānzōng",
+        "hv": "THIÊN TÔNG",
+        "mean": "Huyệt Thiên Tông (SI11) thuộc Thủ Thái Dương Tiểu Trường Kinh. Vị trí: 体表相关区域. Chủ trị: 哮喘。"
+      },
+      {
+        "zh": "秉风",
+        "py": "Bǐngfēng",
+        "hv": "BỈNH PHONG",
+        "mean": "Huyệt Bỉnh Phong (SI12) thuộc Thủ Thái Dương Tiểu Trường Kinh. Vị trí: 体表相关区域. Chủ trị: 麻木、活动不利。"
+      },
+      {
+        "zh": "曲垣",
+        "py": "Qūyuán",
+        "hv": "KHÚC 垣",
+        "mean": "Huyệt Khúc 垣 (SI13) thuộc Thủ Thái Dương Tiểu Trường Kinh. Vị trí: 体表相关区域. Chủ trị: 拘急强直。"
+      },
+      {
+        "zh": "肩外俞",
+        "py": "Jiānwàishū",
+        "hv": "KIÊN NGOẠI DU",
+        "mean": "Huyệt Kiên Ngoại Du (SI14) thuộc Thủ Thái Dương Tiểu Trường Kinh. Vị trí: 背部. Chủ trị: 肩背酸痛、颈项拘急疼痛。"
+      },
+      {
+        "zh": "肩中俞",
+        "py": "Jiānzhōngshū",
+        "hv": "KIÊN TRUNG DU",
+        "mean": "Huyệt Kiên Trung Du (SI15) thuộc Thủ Thái Dương Tiểu Trường Kinh. Vị trí: 背部. Chủ trị: 咳嗽、气喘、肩背痛。"
+      },
+      {
+        "zh": "天窗",
+        "py": "Tiānchuāng",
+        "hv": "THIÊN SONG",
+        "mean": "Huyệt Thiên Song (SI16) thuộc Thủ Thái Dương Tiểu Trường Kinh. Vị trí: 颈部. Chủ trị: 咽喉痛、暴喑、失音、耳聋、耳鸣、拘急强直。"
+      },
+      {
+        "zh": "天容",
+        "py": "Tiānróng",
+        "hv": "THIÊN DUNG",
+        "mean": "Huyệt Thiên Dung (SI17) thuộc Thủ Thái Dương Tiểu Trường Kinh. Vị trí: 颈部. Chủ trị: 耳聋、耳鸣、咽喉痛、颊肿、瘿气。"
+      },
+      {
+        "zh": "颧髎",
+        "py": "Quánliáo",
+        "hv": "颧 LIÊU",
+        "mean": "Huyệt 颧 Liêu (SI18) thuộc Thủ Thái Dương Tiểu Trường Kinh. Vị trí: 面部. Chủ trị: 面瘫、眼睑瞤动、牙痛、颊肿。"
+      },
+      {
+        "zh": "听宫",
+        "py": "Tīnggōng",
+        "hv": "THÍNH CUNG",
+        "mean": "Huyệt Thính Cung (SI19) thuộc Thủ Thái Dương Tiểu Trường Kinh. Vị trí: 面部. Chủ trị: 耳聋、耳鸣、活动不利、牙痛。"
+      },
+      {
+        "zh": "睛明",
+        "py": "Jīngmíng",
+        "hv": "TÌNH MINH",
+        "mean": "Huyệt Tình Minh (BL1) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 面部. Chủ trị: 目肿痛、眼痛、流泪、视物模糊。"
+      },
+      {
+        "zh": "攒竹",
+        "py": "Cuánzhú",
+        "hv": "TOẢN TRÚC",
+        "mean": "Huyệt Toản Trúc (BL2) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 头部. Chủ trị: 头痛、流泪、目肿痛、眼痛、眼睑瞤动。"
+      },
+      {
+        "zh": "眉冲",
+        "py": "Méichōng",
+        "hv": "MI XUNG",
+        "mean": "Huyệt Mi Xung (BL3) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 头部. Chủ trị: 头痛、癫痫、鼻塞。"
+      },
+      {
+        "zh": "曲差",
+        "py": "Qūchā",
+        "hv": "KHÚC SAI",
+        "mean": "Huyệt Khúc Sai (BL4) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 头部. Chủ trị: 头痛、鼻塞、鼻衄。"
+      },
+      {
+        "zh": "五处",
+        "py": "Wǔchù",
+        "hv": "NGŨ XỬ",
+        "mean": "Huyệt Ngũ Xử (BL5) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 头部. Chủ trị: 头痛、视物模糊、癫痫、抽搐。"
+      },
+      {
+        "zh": "承光",
+        "py": "Chéngguāng",
+        "hv": "THỪA QUANG",
+        "mean": "Huyệt Thừa Quang (BL6) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 头部. Chủ trị: 头痛、视物模糊、鼻塞。"
+      },
+      {
+        "zh": "通天",
+        "py": "Tōngtiān",
+        "hv": "THÔNG THIÊN",
+        "mean": "Huyệt Thông Thiên (BL7) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 头部. Chủ trị: 头痛、鼻塞、鼻衄、流涕。"
+      },
+      {
+        "zh": "络却",
+        "py": "Luòquè",
+        "hv": "LẠC KHƯỚC",
+        "mean": "Huyệt Lạc Khước (BL8) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 头部. Chủ trị: 头晕、视物模糊、耳鸣、癫狂。"
+      },
+      {
+        "zh": "玉枕",
+        "py": "Yùzhěn",
+        "hv": "NGỌC CHẨM",
+        "mean": "Huyệt Ngọc Chẩm (BL9) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 头部. Chủ trị: 头痛、头晕、眼痛、鼻塞。"
+      },
+      {
+        "zh": "天柱",
+        "py": "Tiānzhù",
+        "hv": "THIÊN TRỤ",
+        "mean": "Huyệt Thiên Trụ (BL10) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 颈部. Chủ trị: 头痛、鼻塞、咽喉痛、项强、肩痛。"
+      },
+      {
+        "zh": "大杼",
+        "py": "Dàzhù",
+        "hv": "ĐẠI TRỮ",
+        "mean": "Huyệt Đại Trữ (BL11) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 头痛、颈痛、咳嗽、发热、项强。"
+      },
+      {
+        "zh": "风门",
+        "py": "Fēngmén",
+        "hv": "PHONG MÔN",
+        "mean": "Huyệt Phong Môn (BL12) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 咳嗽、发热、头痛、项强、背痛。"
+      },
+      {
+        "zh": "肺俞",
+        "py": "Fèishū",
+        "hv": "PHẾ DU",
+        "mean": "Huyệt Phế Du (BL13) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 咳嗽、哮喘、胸痛、唾血、发热、盗汗。"
+      },
+      {
+        "zh": "厥阴俞",
+        "py": "Juéyīnshū",
+        "hv": "厥 ÂM DU",
+        "mean": "Huyệt 厥 Âm Du (BL14) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 咳嗽、心痛、心悸、呕吐。"
+      },
+      {
+        "zh": "心俞",
+        "py": "Xīnshū",
+        "hv": "TÂM DU",
+        "mean": "Huyệt Tâm Du (BL15) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 心痛、心悸、咳嗽、唾血、遗精、盗汗。"
+      },
+      {
+        "zh": "督俞",
+        "py": "Dūshū",
+        "hv": "ĐỐC DU",
+        "mean": "Huyệt Đốc Du (BL16) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 心痛、胸腹痛、寒热。"
+      },
+      {
+        "zh": "膈俞",
+        "py": "Géshū",
+        "hv": "CÁCH DU",
+        "mean": "Huyệt Cách Du (BL17) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 呕吐、呃逆、吞咽困难、哮喘、咳嗽、唾血。"
+      },
+      {
+        "zh": "肝俞",
+        "py": "Gānshū",
+        "hv": "CAN DU",
+        "mean": "Huyệt Can Du (BL18) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 黄疸、胁痛、目赤、视物模糊、神志病、癫痫。"
+      },
+      {
+        "zh": "胆俞",
+        "py": "Dǎnshū",
+        "hv": "ĐỞM DU",
+        "mean": "Huyệt Đởm Du (BL19) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 黄疸、胸痛、发热。"
+      },
+      {
+        "zh": "脾俞",
+        "py": "Píshū",
+        "hv": "TỲ DU",
+        "mean": "Huyệt Tỳ Du (BL20) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 腹胀、黄疸、呕吐、泄泻、痢疾、水肿。"
+      },
+      {
+        "zh": "胃俞",
+        "py": "Wèishū",
+        "hv": "VỊ DU",
+        "mean": "Huyệt Vị Du (BL21) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 胸痛、食欲不振、腹胀、肠鸣、泄泻、恶心。"
+      },
+      {
+        "zh": "三焦俞",
+        "py": "Sānjiāoshū",
+        "hv": "TAM TIÊU DU",
+        "mean": "Huyệt Tam Tiêu Du (BL22) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 腰部. Chủ trị: 肠鸣、腹胀、消化不良、呕吐、泄泻、痢疾。"
+      },
+      {
+        "zh": "肾俞",
+        "py": "Shènshū",
+        "hv": "THẬN DU",
+        "mean": "Huyệt Thận Du (BL23) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 腰部. Chủ trị: 遗精、阳痿、遗尿、月经不调、带下病、腰痛。"
+      },
+      {
+        "zh": "气海俞",
+        "py": "Qìhǎishū",
+        "hv": "KHÍ HẢI DU",
+        "mean": "Huyệt Khí Hải Du (BL24) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 腰部. Chủ trị: 腰痛、月经不调、痛经、哮喘。"
+      },
+      {
+        "zh": "大肠俞",
+        "py": "Dàchángshū",
+        "hv": "ĐẠI TRƯỜNG DU",
+        "mean": "Huyệt Đại Trường Du (BL25) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 腰部. Chủ trị: 腰痛、肠鸣、腹胀、泄泻、便秘、肌肉萎缩。"
+      },
+      {
+        "zh": "关元俞",
+        "py": "Guānyuánshū",
+        "hv": "QUAN NGUYÊN DU",
+        "mean": "Huyệt Quan Nguyên Du (BL26) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 腰部. Chủ trị: 腰骶痛、腹胀、泄泻。"
+      },
+      {
+        "zh": "小肠俞",
+        "py": "Xiǎochángshū",
+        "hv": "TIỂU TRƯỜNG DU",
+        "mean": "Huyệt Tiểu Trường Du (BL27) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 骶部. Chủ trị: 小腹胀痛、遗精、遗尿、腰骶痛。"
+      },
+      {
+        "zh": "膀胱俞",
+        "py": "Pángguāngshū",
+        "hv": "BÀNG QUANG DU",
+        "mean": "Huyệt Bàng Quang Du (BL28) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 骶部. Chủ trị: 小便不利、遗尿、腰骶痛。"
+      },
+      {
+        "zh": "中膂俞",
+        "py": "Zhōnglǚshū",
+        "hv": "TRUNG 膂 DU",
+        "mean": "Huyệt Trung 膂 Du (BL29) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 骶部. Chủ trị: 痢疾、疝气、拘急强直。"
+      },
+      {
+        "zh": "白环俞",
+        "py": "Báihuánshū",
+        "hv": "BẠCH HOÀN DU",
+        "mean": "Huyệt Bạch Hoàn Du (BL30) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 骶部. Chủ trị: 遗尿、疝气、带下病、月经不调、小便不利、便秘。"
+      },
+      {
+        "zh": "上髎",
+        "py": "Shàngliáo",
+        "hv": "THƯỢNG LIÊU",
+        "mean": "Huyệt Thượng Liêu (BL31) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 骶部. Chủ trị: 腰痛、小便不利、便秘、月经不调、带下病、子宫脱垂。"
+      },
+      {
+        "zh": "次髎",
+        "py": "Cìliáo",
+        "hv": "THỨ LIÊU",
+        "mean": "Huyệt Thứ Liêu (BL32) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 骶部. Chủ trị: 腰痛、疝气、月经不调、带下病、痛经、遗精。"
+      },
+      {
+        "zh": "中髎",
+        "py": "Zhōngliáo",
+        "hv": "TRUNG LIÊU",
+        "mean": "Huyệt Trung Liêu (BL33) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 骶部. Chủ trị: 腰痛、便秘、泄泻、小便不利、月经不调、带下病。"
+      },
+      {
+        "zh": "下髎",
+        "py": "Xiàliáo",
+        "hv": "HẠ LIÊU",
+        "mean": "Huyệt Hạ Liêu (BL34) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 骶部. Chủ trị: 腰痛、小腹痛、腹痛、小便不利、便秘、带下病。"
+      },
+      {
+        "zh": "会阳",
+        "py": "Huìyáng",
+        "hv": "HỘI DƯƠNG",
+        "mean": "Huyệt Hội Dương (BL35) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 臀部. Chủ trị: 痢疾、泄泻、痔疮、阳痿、带下病。"
+      },
+      {
+        "zh": "承扶",
+        "py": "Chéngfú",
+        "hv": "THỪA PHÙ",
+        "mean": "Huyệt Thừa Phù (BL36) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 臀部. Chủ trị: 便秘、肌肉萎缩、麻木、活动不利。"
+      },
+      {
+        "zh": "殷门",
+        "py": "Yīnmén",
+        "hv": "殷 MÔN",
+        "mean": "Huyệt 殷 Môn (BL37) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 大腿. Chủ trị: 肌肉萎缩、麻木、活动不利、半身不遂。"
+      },
+      {
+        "zh": "浮郄",
+        "py": "Fúxì",
+        "hv": "PHÙ 郄",
+        "mean": "Huyệt Phù 郄 (BL38) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 膝部. Chủ trị: 麻木。"
+      },
+      {
+        "zh": "委阳",
+        "py": "Wěiyáng",
+        "hv": "委 DƯƠNG",
+        "mean": "Huyệt 委 Dương (BL39) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 膝部. Chủ trị: 拘急强直、水肿、小便不利。"
+      },
+      {
+        "zh": "委中",
+        "py": "Wěizhōng",
+        "hv": "委 TRUNG",
+        "mean": "Huyệt 委 Trung (BL40) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 膝部. Chủ trị: 腰痛、活动不利、髋部症状、肌肉萎缩、麻木、半身不遂。"
+      },
+      {
+        "zh": "附分",
+        "py": "Fùfēn",
+        "hv": "PHỤ PHÂN",
+        "mean": "Huyệt Phụ Phân (BL41) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 拘急强直、肩痛、麻木。"
+      },
+      {
+        "zh": "魄户",
+        "py": "Pòhù",
+        "hv": "魄 HỘ",
+        "mean": "Huyệt 魄 Hộ (BL42) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 咯血、咳嗽、哮喘、项强、肩痛。"
+      },
+      {
+        "zh": "膏肓",
+        "py": "Gāohuāng",
+        "hv": "膏 肓",
+        "mean": "Huyệt 膏 肓 (BL43) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 咳嗽、哮喘、唾血、盗汗、遗精。"
+      },
+      {
+        "zh": "神堂",
+        "py": "Shéntáng",
+        "hv": "THẦN ĐƯỜNG",
+        "mean": "Huyệt Thần Đường (BL44) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 哮喘、心痛、心悸、咳嗽、拘急强直。"
+      },
+      {
+        "zh": "譩譆",
+        "py": "Yìxǐ",
+        "hv": "譩 譆",
+        "mean": "Huyệt 譩 譆 (BL45) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 咳嗽、哮喘、肩痛。"
+      },
+      {
+        "zh": "膈关",
+        "py": "Géguān",
+        "hv": "CÁCH QUAN",
+        "mean": "Huyệt Cách Quan (BL46) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 吞咽困难、呃逆、呕吐、拘急强直。"
+      },
+      {
+        "zh": "魂门",
+        "py": "Húnmén",
+        "hv": "HỒN MÔN",
+        "mean": "Huyệt Hồn Môn (BL47) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 胸痛、呕吐、泄泻。"
+      },
+      {
+        "zh": "阳纲",
+        "py": "Yánggāng",
+        "hv": "DƯƠNG 纲",
+        "mean": "Huyệt Dương 纲 (BL48) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 肠鸣、腹痛、泄泻、胁痛、黄疸。"
+      },
+      {
+        "zh": "意舍",
+        "py": "Yìshè",
+        "hv": "意 XÁ",
+        "mean": "Huyệt 意 Xá (BL49) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 腹胀、肠鸣、呕吐、泄泻、吞咽困难。"
+      },
+      {
+        "zh": "胃仓",
+        "py": "Wèicāng",
+        "hv": "VỊ THƯƠNG",
+        "mean": "Huyệt Vị Thương (BL50) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 背部. Chủ trị: 腹胀、消化不良。"
+      },
+      {
+        "zh": "肓门",
+        "py": "Huāngmén",
+        "hv": "肓 MÔN",
+        "mean": "Huyệt 肓 Môn (BL51) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 腰部. Chủ trị: 腹痛、便秘。"
+      },
+      {
+        "zh": "志室",
+        "py": "Zhìshì",
+        "hv": "CHÍ THẤT",
+        "mean": "Huyệt Chí Thất (BL52) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 腰部. Chủ trị: 遗精、阳痿、遗尿、小便不利、月经不调、水肿。"
+      },
+      {
+        "zh": "胞肓",
+        "py": "Bāohuāng",
+        "hv": "BÀO 肓",
+        "mean": "Huyệt Bào 肓 (BL53) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 臀部. Chủ trị: 肠鸣、腹胀。"
+      },
+      {
+        "zh": "秩边",
+        "py": "Zhìbiān",
+        "hv": "TRẬT BIÊN",
+        "mean": "Huyệt Trật Biên (BL54) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 臀部. Chủ trị: 肌肉萎缩、活动不利、小便不利、痔疮、便秘。"
+      },
+      {
+        "zh": "合阳",
+        "py": "Héyáng",
+        "hv": "HỢP DƯƠNG",
+        "mean": "Huyệt Hợp Dương (BL55) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 小腿. Chủ trị: 腰痛。"
+      },
+      {
+        "zh": "承筋",
+        "py": "Chéngjīn",
+        "hv": "THỪA CÂN",
+        "mean": "Huyệt Thừa Cân (BL56) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 小腿. Chủ trị: 痔疮。"
+      },
+      {
+        "zh": "承山",
+        "py": "Chéngshān",
+        "hv": "THỪA SƠN",
+        "mean": "Huyệt Thừa Sơn (BL57) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 小腿. Chủ trị: 腰痛、痔疮、便秘、脚气。"
+      },
+      {
+        "zh": "飞扬",
+        "py": "Fēiyáng",
+        "hv": "PHI DƯƠNG",
+        "mean": "Huyệt Phi Dương (BL58) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 小腿. Chủ trị: 头痛、视物模糊、鼻塞、鼻衄、痔疮。"
+      },
+      {
+        "zh": "跗阳",
+        "py": "Fūyáng",
+        "hv": "跗 DƯƠNG",
+        "mean": "Huyệt 跗 Dương (BL59) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 小腿. Chủ trị: 头痛、腰痛。"
+      },
+      {
+        "zh": "昆仑",
+        "py": "Kūnlún",
+        "hv": "CÔN LÔN",
+        "mean": "Huyệt Côn Lôn (BL60) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 踝部. Chủ trị: 头痛、视物模糊、项强、鼻衄、肩痛、癫痫。"
+      },
+      {
+        "zh": "仆参",
+        "py": "Púcān",
+        "hv": "BỘC THAM",
+        "mean": "Huyệt Bộc Tham (BL61) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 足部. Chủ trị: 肌肉萎缩、足跟痛。"
+      },
+      {
+        "zh": "申脉",
+        "py": "Shēnmài",
+        "hv": "THÂN MẠCH",
+        "mean": "Huyệt Thân Mạch (BL62) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 足部. Chủ trị: 癫痫、癫狂、头痛、头晕、失眠、背痛。"
+      },
+      {
+        "zh": "金门",
+        "py": "Jīnmén",
+        "hv": "KIM MÔN",
+        "mean": "Huyệt Kim Môn (BL63) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 足部. Chủ trị: 癫狂、癫痫、小儿惊风、抽搐、背痛、活动不利。"
+      },
+      {
+        "zh": "京骨",
+        "py": "Jīnggǔ",
+        "hv": "京 CỐT",
+        "mean": "Huyệt 京 Cốt (BL64) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 足部. Chủ trị: 头痛、项强、癫痫。"
+      },
+      {
+        "zh": "束骨",
+        "py": "Shùgǔ",
+        "hv": "THÚC CỐT",
+        "mean": "Huyệt Thúc Cốt (BL65) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 足部. Chủ trị: 癫狂、头痛、项强、视物模糊、背痛。"
+      },
+      {
+        "zh": "足通谷",
+        "py": "Zútōnggǔ",
+        "hv": "TÚC THÔNG CỐC",
+        "mean": "Huyệt Túc Thông Cốc (BL66) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 足趾. Chủ trị: 头痛、项强、视物模糊、鼻衄、癫狂。"
+      },
+      {
+        "zh": "至阴",
+        "py": "Zhìyīn",
+        "hv": "CHÍ ÂM",
+        "mean": "Huyệt Chí Âm (BL67) thuộc Túc Thái Dương Bàng Quang Kinh. Vị trí: 足趾. Chủ trị: 头痛、鼻塞、鼻衄、眼痛。"
+      },
+      {
+        "zh": "然谷",
+        "py": "Rángǔ",
+        "hv": "NHIÊN CỐC",
+        "mean": "Huyệt Nhiên Cốc (KI2) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 足部. Chủ trị: 瘙痒、子宫脱垂、月经不调、遗精、咯血、口渴。"
+      },
+      {
+        "zh": "太溪",
+        "py": "Tàixī",
+        "hv": "THÁI KHÊ",
+        "mean": "Huyệt Thái Khê (KI3) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 踝部. Chủ trị: 咽喉痛、牙痛、耳聋、耳鸣、头晕、唾血。"
+      },
+      {
+        "zh": "大钟",
+        "py": "Dàzhōng",
+        "hv": "ĐẠI CHUNG",
+        "mean": "Huyệt Đại Chung (KI4) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 足部. Chủ trị: 唾血、哮喘、拘急强直、小便不利、便秘、足跟痛。"
+      },
+      {
+        "zh": "水泉",
+        "py": "Shuǐquán",
+        "hv": "THỦY TUYỀN",
+        "mean": "Huyệt Thủy Tuyền (KI5) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 足部. Chủ trị: 闭经、月经不调、痛经、子宫脱垂、小便不利、视物模糊。"
+      },
+      {
+        "zh": "照海",
+        "py": "Zhàohǎi",
+        "hv": "CHIẾU HẢI",
+        "mean": "Huyệt Chiếu Hải (KI6) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 足部. Chủ trị: 月经不调、带下病、子宫脱垂、瘙痒、尿潴留、便秘。"
+      },
+      {
+        "zh": "复溜",
+        "py": "Fùliū",
+        "hv": "PHỤC LƯU",
+        "mean": "Huyệt Phục Lưu (KI7) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 小腿. Chủ trị: 水肿、腹胀、泄泻、肠鸣、肌肉萎缩、盗汗。"
+      },
+      {
+        "zh": "交信",
+        "py": "Jiāoxìn",
+        "hv": "GIAO TÍN",
+        "mean": "Huyệt Giao Tín (KI8) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 小腿. Chủ trị: 月经不调、痛经、崩漏、子宫脱垂、泄泻、便秘。"
+      },
+      {
+        "zh": "筑宾",
+        "py": "Zhùbīn",
+        "hv": "TRÚC TÂN",
+        "mean": "Huyệt Trúc Tân (KI9) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 小腿. Chủ trị: 神志病、疝气。"
+      },
+      {
+        "zh": "阴谷",
+        "py": "Yīngǔ",
+        "hv": "ÂM CỐC",
+        "mean": "Huyệt Âm Cốc (KI10) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 膝部. Chủ trị: 阳痿、疝气、崩漏、小便不利、膝痛、神志病。"
+      },
+      {
+        "zh": "横骨",
+        "py": "Hénggǔ",
+        "hv": "HOÀNH CỐT",
+        "mean": "Huyệt Hoành Cốt (KI11) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 腹部. Chủ trị: 小便不利、遗尿、遗精、阳痿。"
+      },
+      {
+        "zh": "大赫",
+        "py": "Dàhè",
+        "hv": "ĐẠI 赫",
+        "mean": "Huyệt Đại 赫 (KI12) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 腹部. Chủ trị: 遗精、阳痿、带下病、外阴痛、子宫脱垂。"
+      },
+      {
+        "zh": "气穴",
+        "py": "Qìxué",
+        "hv": "KHÍ 穴",
+        "mean": "Huyệt Khí 穴 (KI13) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 腹部. Chủ trị: 月经不调、痛经、小便不利、腹痛、泄泻。"
+      },
+      {
+        "zh": "四满",
+        "py": "Sìmǎn",
+        "hv": "TỨ MÃN",
+        "mean": "Huyệt Tứ Mãn (KI14) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 腹部. Chủ trị: 腹痛、泄泻、遗精、月经不调、痛经。"
+      },
+      {
+        "zh": "中注",
+        "py": "Zhōngzhù",
+        "hv": "TRUNG CHÚ",
+        "mean": "Huyệt Trung Chú (KI15) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 腹部. Chủ trị: 月经不调、腹痛、便秘。"
+      },
+      {
+        "zh": "肓俞",
+        "py": "Huāngshū",
+        "hv": "肓 DU",
+        "mean": "Huyệt 肓 Du (KI16) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 腹部. Chủ trị: 腹痛、呕吐、便秘、泄泻。"
+      },
+      {
+        "zh": "商曲",
+        "py": "Shāngqū",
+        "hv": "THƯƠNG KHÚC",
+        "mean": "Huyệt Thương Khúc (KI17) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 腹部. Chủ trị: 腹痛、泄泻、便秘。"
+      },
+      {
+        "zh": "石关",
+        "py": "Shíguān",
+        "hv": "石 QUAN",
+        "mean": "Huyệt 石 Quan (KI18) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 腹部. Chủ trị: 呕吐、腹痛、便秘。"
+      },
+      {
+        "zh": "阴都",
+        "py": "Yīndū",
+        "hv": "ÂM ĐÔ",
+        "mean": "Huyệt Âm Đô (KI19) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 腹部. Chủ trị: 肠鸣、腹痛、便秘、呕吐。"
+      },
+      {
+        "zh": "腹通谷",
+        "py": "Fùtōnggǔ",
+        "hv": "腹 THÔNG CỐC",
+        "mean": "Huyệt 腹 Thông Cốc (KI20) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 腹部. Chủ trị: 腹痛、呕吐、消化不良。"
+      },
+      {
+        "zh": "幽门",
+        "py": "Yōumén",
+        "hv": "幽 MÔN",
+        "mean": "Huyệt 幽 Môn (KI21) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 腹部. Chủ trị: 腹痛、消化不良、呕吐、泄泻、恶心。"
+      },
+      {
+        "zh": "步廊",
+        "py": "Bùláng",
+        "hv": "BỘ 廊",
+        "mean": "Huyệt Bộ 廊 (KI22) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 胸前部. Chủ trị: 咳嗽、哮喘、胸满、呕吐、食欲不振。"
+      },
+      {
+        "zh": "神封",
+        "py": "Shénfēng",
+        "hv": "THẦN PHONG",
+        "mean": "Huyệt Thần Phong (KI23) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 胸前部. Chủ trị: 咳嗽、哮喘、胸满、乳痈。"
+      },
+      {
+        "zh": "灵墟",
+        "py": "Língxū",
+        "hv": "LINH 墟",
+        "mean": "Huyệt Linh 墟 (KI24) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 胸前部. Chủ trị: 咳嗽、哮喘、胸满、乳痈。"
+      },
+      {
+        "zh": "神藏",
+        "py": "Shéncáng",
+        "hv": "THẦN TÀNG",
+        "mean": "Huyệt Thần Tàng (KI25) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 胸前部. Chủ trị: 咳嗽、哮喘、胸痛。"
+      },
+      {
+        "zh": "彧中",
+        "py": "Yùzhōng",
+        "hv": "彧 TRUNG",
+        "mean": "Huyệt 彧 Trung (KI26) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 胸前部. Chủ trị: 咳嗽、哮喘、胸满。"
+      },
+      {
+        "zh": "俞府",
+        "py": "Shūfǔ",
+        "hv": "DU PHỦ",
+        "mean": "Huyệt Du Phủ (KI27) thuộc Túc Thiếu Âm Thận Kinh. Vị trí: 胸前部. Chủ trị: 咳嗽、哮喘、胸痛。"
+      },
+      {
+        "zh": "天池",
+        "py": "Tiānchí",
+        "hv": "THIÊN TRÌ",
+        "mean": "Huyệt Thiên Trì (PC1) thuộc Thủ Quyết Âm Tâm Bào Kinh. Vị trí: 胸前部. Chủ trị: 胁痛。"
+      },
+      {
+        "zh": "天泉",
+        "py": "Tiānquán",
+        "hv": "THIÊN TUYỀN",
+        "mean": "Huyệt Thiên Tuyền (PC2) thuộc Thủ Quyết Âm Tâm Bào Kinh. Vị trí: 上臂. Chủ trị: 心痛、咳嗽、胸痛。"
+      },
+      {
+        "zh": "曲泽",
+        "py": "Qūzé",
+        "hv": "KHÚC TRẠCH",
+        "mean": "Huyệt Khúc Trạch (PC3) thuộc Thủ Quyết Âm Tâm Bào Kinh. Vị trí: 肘部. Chủ trị: 心痛、心悸、热病、烦躁、胃痛、呕吐。"
+      },
+      {
+        "zh": "郄门",
+        "py": "Xìmén",
+        "hv": "郄 MÔN",
+        "mean": "Huyệt 郄 Môn (PC4) thuộc Thủ Quyết Âm Tâm Bào Kinh. Vị trí: 前臂. Chủ trị: 心痛、心悸、鼻衄、咯血、胸痛、癫痫。"
+      },
+      {
+        "zh": "间使",
+        "py": "Jiānshǐ",
+        "hv": "GIAN SỬ",
+        "mean": "Huyệt Gian Sử (PC5) thuộc Thủ Quyết Âm Tâm Bào Kinh. Vị trí: 前臂. Chủ trị: 心痛、心悸、胃痛、呕吐、热病、烦躁。"
+      },
+      {
+        "zh": "大陵",
+        "py": "Dàlíng",
+        "hv": "ĐẠI LĂNG",
+        "mean": "Huyệt Đại Lăng (PC7) thuộc Thủ Quyết Âm Tâm Bào Kinh. Vị trí: 腕部. Chủ trị: 心痛、心悸、胃痛、呕吐、神志病、癫痫。"
+      },
+      {
+        "zh": "劳宫",
+        "py": "Láogōng",
+        "hv": "LAO CUNG",
+        "mean": "Huyệt Lao Cung (PC8) thuộc Thủ Quyết Âm Tâm Bào Kinh. Vị trí: 手掌. Chủ trị: 心痛、神志病、癫痫、呕吐、恶心。"
+      },
+      {
+        "zh": "中冲",
+        "py": "Zhōngchōng",
+        "hv": "TRUNG XUNG",
+        "mean": "Huyệt Trung Xung (PC9) thuộc Thủ Quyết Âm Tâm Bào Kinh. Vị trí: 手指. Chủ trị: 心痛、心悸、昏厥、失语、拘急强直、热病。"
+      },
+      {
+        "zh": "关冲",
+        "py": "Guānchōng",
+        "hv": "QUAN XUNG",
+        "mean": "Huyệt Quan Xung (TE1) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 手指. Chủ trị: 头痛、目赤、咽喉痛、拘急强直、热病、烦躁。"
+      },
+      {
+        "zh": "液门",
+        "py": "Yèmén",
+        "hv": "DỊCH MÔN",
+        "mean": "Huyệt Dịch Môn (TE2) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 手部. Chủ trị: 头痛、目赤、耳聋、咽喉痛、疟疾、臂痛。"
+      },
+      {
+        "zh": "中渚",
+        "py": "Zhōngzhǔ",
+        "hv": "TRUNG CHỮ",
+        "mean": "Huyệt Trung Chữ (TE3) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 手部. Chủ trị: 头痛、目赤、耳聋、耳鸣、咽喉痛、热病。"
+      },
+      {
+        "zh": "阳池",
+        "py": "Yángchí",
+        "hv": "DƯƠNG TRÌ",
+        "mean": "Huyệt Dương Trì (TE4) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 腕部. Chủ trị: 臂痛、疟疾、耳聋、口渴。"
+      },
+      {
+        "zh": "外关",
+        "py": "Wàiguān",
+        "hv": "NGOẠI QUAN",
+        "mean": "Huyệt Ngoại Quan (TE5) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 前臂. Chủ trị: 热病、头痛、耳聋、耳鸣、胁痛、活动不利。"
+      },
+      {
+        "zh": "支沟",
+        "py": "Zhīgōu",
+        "hv": "CHI CÂU",
+        "mean": "Huyệt Chi Câu (TE6) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 前臂. Chủ trị: 耳鸣、耳聋、胁痛、呕吐、便秘、热病。"
+      },
+      {
+        "zh": "会宗",
+        "py": "Huìzōng",
+        "hv": "HỘI TÔNG",
+        "mean": "Huyệt Hội Tông (TE7) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 前臂. Chủ trị: 耳聋、癫痫。"
+      },
+      {
+        "zh": "三阳络",
+        "py": "Sānyángluò",
+        "hv": "TAM DƯƠNG LẠC",
+        "mean": "Huyệt Tam Dương Lạc (TE8) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 前臂. Chủ trị: 耳聋、声音嘶哑、胸痛、牙痛。"
+      },
+      {
+        "zh": "四渎",
+        "py": "Sìdú",
+        "hv": "TỨ 渎",
+        "mean": "Huyệt Tứ 渎 (TE9) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 前臂. Chủ trị: 耳聋、牙痛、偏头痛、声音嘶哑。"
+      },
+      {
+        "zh": "天井",
+        "py": "Tiānjǐng",
+        "hv": "THIÊN TỈNH",
+        "mean": "Huyệt Thiên Tỉnh (TE10) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 肘部. Chủ trị: 偏头痛、颈痛、癫痫、瘰疬、瘿气。"
+      },
+      {
+        "zh": "清泠渊",
+        "py": "Qīnglíngyuān",
+        "hv": "THANH 泠 UYÊN",
+        "mean": "Huyệt Thanh 泠 Uyên (TE11) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 上臂. Chủ trị: 头痛、目痛、肩臂痛。"
+      },
+      {
+        "zh": "消泺",
+        "py": "Xiāoluò",
+        "hv": "TIÊU 泺",
+        "mean": "Huyệt Tiêu 泺 (TE12) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 上臂. Chủ trị: 头痛、项强、活动不利。"
+      },
+      {
+        "zh": "臑会",
+        "py": "Nàohuì",
+        "hv": "NHU HỘI",
+        "mean": "Huyệt Nhu Hội (TE13) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 上臂. Chủ trị: 瘿气、肩痛。"
+      },
+      {
+        "zh": "肩髎",
+        "py": "Jiānliáo",
+        "hv": "KIÊN LIÊU",
+        "mean": "Huyệt Kiên Liêu (TE14) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 肩部. Chủ trị: 活动不利。"
+      },
+      {
+        "zh": "天髎",
+        "py": "Tiānliáo",
+        "hv": "THIÊN LIÊU",
+        "mean": "Huyệt Thiên Liêu (TE15) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 体表相关区域. Chủ trị: 肩痛、拘急强直。"
+      },
+      {
+        "zh": "天牖",
+        "py": "Tiānyǒu",
+        "hv": "THIÊN 牖",
+        "mean": "Huyệt Thiên 牖 (TE16) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 颈部. Chủ trị: 头痛、项强、面肿、视物模糊、耳聋。"
+      },
+      {
+        "zh": "翳风",
+        "py": "Yìfēng",
+        "hv": "Ế PHONG",
+        "mean": "Huyệt Ế Phong (TE17) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 颈部. Chủ trị: 耳鸣、耳聋、面瘫、牙痛、颊肿、瘰疬。"
+      },
+      {
+        "zh": "瘈脉",
+        "py": "Chìmài",
+        "hv": "瘈 MẠCH",
+        "mean": "Huyệt 瘈 Mạch (TE18) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 头部. Chủ trị: 头痛、耳鸣、耳聋、小儿惊风、抽搐。"
+      },
+      {
+        "zh": "颅息",
+        "py": "Lúxī",
+        "hv": "颅 TỨC",
+        "mean": "Huyệt 颅 Tức (TE19) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 头部. Chủ trị: 头痛、耳鸣、耳聋、小儿惊风、抽搐。"
+      },
+      {
+        "zh": "角孙",
+        "py": "Jiǎosūn",
+        "hv": "GIÁC TÔN",
+        "mean": "Huyệt Giác Tôn (TE20) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 头部. Chủ trị: 耳鸣、目肿痛、牙痛。"
+      },
+      {
+        "zh": "耳门",
+        "py": "Ěrmén",
+        "hv": "耳 MÔN",
+        "mean": "Huyệt 耳 Môn (TE21) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 面部. Chủ trị: 耳鸣、耳聋、牙痛、拘急强直。"
+      },
+      {
+        "zh": "耳和髎",
+        "py": "Ěrhéliáo",
+        "hv": "耳 HÒA LIÊU",
+        "mean": "Huyệt 耳 Hòa Liêu (TE22) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 头部. Chủ trị: 偏头痛、耳鸣。"
+      },
+      {
+        "zh": "丝竹空",
+        "py": "Sīzhúkōng",
+        "hv": "TY TRÚC KHÔNG",
+        "mean": "Huyệt Ty Trúc Không (TE23) thuộc Thủ Thiếu Dương Tam Tiêu Kinh. Vị trí: 头部. Chủ trị: 头痛、眼痛、视物模糊、眼睑瞤动、牙痛、面瘫。"
+      },
+      {
+        "zh": "瞳子髎",
+        "py": "Tóngzǐliáo",
+        "hv": "瞳 TỬ LIÊU",
+        "mean": "Huyệt 瞳 Tử Liêu (GB1) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 头部. Chủ trị: 头痛、眼痛、流泪。"
+      },
+      {
+        "zh": "听会",
+        "py": "Tīnghuì",
+        "hv": "THÍNH HỘI",
+        "mean": "Huyệt Thính Hội (GB2) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 面部. Chủ trị: 耳聋、耳鸣、牙痛、活动不利。"
+      },
+      {
+        "zh": "上关",
+        "py": "Shàngguān",
+        "hv": "THƯỢNG QUAN",
+        "mean": "Huyệt Thượng Quan (GB3) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 头部. Chủ trị: 头痛、耳聋、耳鸣、牙痛。"
+      },
+      {
+        "zh": "颔厌",
+        "py": "Hànyàn",
+        "hv": "颔 厌",
+        "mean": "Huyệt 颔 厌 (GB4) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 头部. Chủ trị: 偏头痛、眩晕、耳鸣、牙痛、抽搐、癫痫。"
+      },
+      {
+        "zh": "悬颅",
+        "py": "Xuánlú",
+        "hv": "HUYỀN 颅",
+        "mean": "Huyệt Huyền 颅 (GB5) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 头部. Chủ trị: 偏头痛、面肿。"
+      },
+      {
+        "zh": "悬厘",
+        "py": "Xuánlí",
+        "hv": "HUYỀN LY",
+        "mean": "Huyệt Huyền Ly (GB6) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 头部. Chủ trị: 偏头痛、耳鸣。"
+      },
+      {
+        "zh": "曲鬓",
+        "py": "Qūbìn",
+        "hv": "KHÚC 鬓",
+        "mean": "Huyệt Khúc 鬓 (GB7) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 头部. Chủ trị: 头痛、颊肿、牙关紧闭、小儿惊风、抽搐。"
+      },
+      {
+        "zh": "率谷",
+        "py": "Shuàigǔ",
+        "hv": "SUẤT CỐC",
+        "mean": "Huyệt Suất Cốc (GB8) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 头部. Chủ trị: 偏头痛、眩晕、呕吐、小儿惊风、抽搐。"
+      },
+      {
+        "zh": "天冲",
+        "py": "Tiānchōng",
+        "hv": "THIÊN XUNG",
+        "mean": "Huyệt Thiên Xung (GB9) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 头部. Chủ trị: 头痛、癫痫、抽搐。"
+      },
+      {
+        "zh": "浮白",
+        "py": "Fúbái",
+        "hv": "PHÙ BẠCH",
+        "mean": "Huyệt Phù Bạch (GB10) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 头部. Chủ trị: 头痛、耳鸣、耳聋。"
+      },
+      {
+        "zh": "头窍阴",
+        "py": "Tóuqiàoyīn",
+        "hv": "ĐẦU KHIẾU ÂM",
+        "mean": "Huyệt Đầu Khiếu Âm (GB11) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 头部. Chủ trị: 耳鸣、耳聋。"
+      },
+      {
+        "zh": "完骨",
+        "py": "Wángǔ",
+        "hv": "HOÀN CỐT",
+        "mean": "Huyệt Hoàn Cốt (GB12) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 颈部. Chủ trị: 头痛、失眠、颊肿、牙痛。"
+      },
+      {
+        "zh": "本神",
+        "py": "Běnshén",
+        "hv": "BẢN THẦN",
+        "mean": "Huyệt Bản Thần (GB13) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 头部. Chủ trị: 头痛、失眠、眩晕、癫痫。"
+      },
+      {
+        "zh": "阳白",
+        "py": "Yángbái",
+        "hv": "DƯƠNG BẠCH",
+        "mean": "Huyệt Dương Bạch (GB14) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 头部. Chủ trị: 头痛、眩晕、眼睑瞤动、流泪。"
+      },
+      {
+        "zh": "头临泣",
+        "py": "Tóulínqì",
+        "hv": "ĐẦU LÂM KHẤP",
+        "mean": "Huyệt Đầu Lâm Khấp (GB15) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 头部. Chủ trị: 头痛、眩晕、流泪、流涕、鼻塞。"
+      },
+      {
+        "zh": "目窗",
+        "py": "Mùchuāng",
+        "hv": "目 SONG",
+        "mean": "Huyệt 目 Song (GB16) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 头部. Chủ trị: 头痛、眩晕、鼻塞。"
+      },
+      {
+        "zh": "正营",
+        "py": "Zhèngyíng",
+        "hv": "CHÁNH 营",
+        "mean": "Huyệt Chánh 营 (GB17) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 头部. Chủ trị: 偏头痛、眩晕。"
+      },
+      {
+        "zh": "承灵",
+        "py": "Chénglíng",
+        "hv": "THỪA LINH",
+        "mean": "Huyệt Thừa Linh (GB18) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 头部. Chủ trị: 头痛、眩晕、鼻塞。"
+      },
+      {
+        "zh": "脑空",
+        "py": "Nǎokōng",
+        "hv": "脑 KHÔNG",
+        "mean": "Huyệt 脑 Không (GB19) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 头部. Chủ trị: 头痛、拘急强直、眩晕、耳鸣、癫痫。"
+      },
+      {
+        "zh": "肩井",
+        "py": "Jiānjǐng",
+        "hv": "KIÊN TỈNH",
+        "mean": "Huyệt Kiên Tỉnh (GB21) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 颈部. Chủ trị: 肩痛、活动不利、乳少、乳痈、瘰疬、中风。"
+      },
+      {
+        "zh": "渊腋",
+        "py": "Yuānyè",
+        "hv": "UYÊN 腋",
+        "mean": "Huyệt Uyên 腋 (GB22) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 胸侧部. Chủ trị: 胸满、胁痛、活动不利。"
+      },
+      {
+        "zh": "辄筋",
+        "py": "Zhéjīn",
+        "hv": "辄 CÂN",
+        "mean": "Huyệt 辄 Cân (GB23) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 胸侧部. Chủ trị: 胸满、胁痛、哮喘。"
+      },
+      {
+        "zh": "日月",
+        "py": "Rìyuè",
+        "hv": "NHẬT NGUYỆT",
+        "mean": "Huyệt Nhật Nguyệt (GB24) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 胸前部. Chủ trị: 胁痛、呕吐、反酸、呃逆、黄疸、乳痈。"
+      },
+      {
+        "zh": "京门",
+        "py": "Jīngmén",
+        "hv": "京 MÔN",
+        "mean": "Huyệt 京 Môn (GB25) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 腹部. Chủ trị: 腹胀、肠鸣、泄泻、腰痛。"
+      },
+      {
+        "zh": "五枢",
+        "py": "Wǔshū",
+        "hv": "NGŨ XU",
+        "mean": "Huyệt Ngũ Xu (GB27) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 腹部. Chủ trị: 带下病、小腹痛、腹痛、疝气、便秘。"
+      },
+      {
+        "zh": "维道",
+        "py": "Wéidào",
+        "hv": "DUY ĐẠO",
+        "mean": "Huyệt Duy Đạo (GB28) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 腹部. Chủ trị: 带下病、小腹痛、腹痛、疝气、子宫脱垂。"
+      },
+      {
+        "zh": "居髎",
+        "py": "Jūliáo",
+        "hv": "居 LIÊU",
+        "mean": "Huyệt 居 Liêu (GB29) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 臀部. Chủ trị: 麻木、肌肉萎缩。"
+      },
+      {
+        "zh": "环跳",
+        "py": "Huántiào",
+        "hv": "HOÀN KHIÊU",
+        "mean": "Huyệt Hoàn Khiêu (GB30) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 臀部. Chủ trị: 肌肉萎缩、半身不遂。"
+      },
+      {
+        "zh": "风市",
+        "py": "Fēngshì",
+        "hv": "PHONG THỊ",
+        "mean": "Huyệt Phong Thị (GB31) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 大腿. Chủ trị: 脚气、瘙痒。"
+      },
+      {
+        "zh": "中渎",
+        "py": "Zhōngdú",
+        "hv": "TRUNG 渎",
+        "mean": "Huyệt Trung 渎 (GB32) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 大腿. Chủ trị: 麻木、半身不遂。"
+      },
+      {
+        "zh": "膝阳关",
+        "py": "Xīyángguān",
+        "hv": "膝 DƯƠNG QUAN",
+        "mean": "Huyệt 膝 Dương Quan (GB33) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 膝部. Chủ trị: 麻木。"
+      },
+      {
+        "zh": "阳陵泉",
+        "py": "Yánglíngquán",
+        "hv": "DƯƠNG LĂNG TUYỀN",
+        "mean": "Huyệt Dương Lăng Tuyền (GB34) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 小腿. Chủ trị: 胁痛、黄疸、膝痛、下肢痿痹。"
+      },
+      {
+        "zh": "阳交",
+        "py": "Yángjiāo",
+        "hv": "DƯƠNG GIAO",
+        "mean": "Huyệt Dương Giao (GB35) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 小腿. Chủ trị: 胸满、肌肉萎缩。"
+      },
+      {
+        "zh": "外丘",
+        "py": "Wàiqiū",
+        "hv": "NGOẠI KHÂU",
+        "mean": "Huyệt Ngoại Khâu (GB36) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 小腿. Chủ trị: 颈痛。"
+      },
+      {
+        "zh": "光明",
+        "py": "Guāngmíng",
+        "hv": "QUANG MINH",
+        "mean": "Huyệt Quang Minh (GB37) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 小腿. Chủ trị: 膝痛、肌肉萎缩、活动不利、视物模糊、眼痛。"
+      },
+      {
+        "zh": "阳辅",
+        "py": "Yángfǔ",
+        "hv": "DƯƠNG 辅",
+        "mean": "Huyệt Dương 辅 (GB38) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 小腿. Chủ trị: 偏头痛、瘰疬、胸痛、疟疾。"
+      },
+      {
+        "zh": "悬钟",
+        "py": "Xuánzhōng",
+        "hv": "HUYỀN CHUNG",
+        "mean": "Huyệt Huyền Chung (GB39) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 小腿. Chủ trị: 中风、半身不遂、腹胀、胁痛、肌肉萎缩、脚气。"
+      },
+      {
+        "zh": "丘墟",
+        "py": "Qiūxū",
+        "hv": "KHÂU 墟",
+        "mean": "Huyệt Khâu 墟 (GB40) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 踝部. Chủ trị: 颈痛、胁痛、呕吐、反酸、肌肉萎缩、疟疾。"
+      },
+      {
+        "zh": "足临泣",
+        "py": "Zúlínqì",
+        "hv": "TÚC LÂM KHẤP",
+        "mean": "Huyệt Túc Lâm Khấp (GB41) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 足部. Chủ trị: 头痛、眩晕、瘰疬、胁痛、月经不调。"
+      },
+      {
+        "zh": "地五会",
+        "py": "Dìwǔhuì",
+        "hv": "ĐỊA NGŨ HỘI",
+        "mean": "Huyệt Địa Ngũ Hội (GB42) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 足部. Chủ trị: 耳鸣。"
+      },
+      {
+        "zh": "侠溪",
+        "py": "Xiáxī",
+        "hv": "HIỆP KHÊ",
+        "mean": "Huyệt Hiệp Khê (GB43) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 足部. Chủ trị: 头痛、头晕、眩晕、耳鸣、耳聋、颊肿。"
+      },
+      {
+        "zh": "足窍阴",
+        "py": "Zúqiàoyīn",
+        "hv": "TÚC KHIẾU ÂM",
+        "mean": "Huyệt Túc Khiếu Âm (GB44) thuộc Túc Thiếu Dương Đởm Kinh. Vị trí: 足趾. Chủ trị: 偏头痛、耳聋、耳鸣、眼痛、热病。"
+      },
+      {
+        "zh": "大敦",
+        "py": "Dàdūn",
+        "hv": "ĐẠI 敦",
+        "mean": "Huyệt Đại 敦 (LR1) thuộc Túc Quyết Âm Can Kinh. Vị trí: 足趾. Chủ trị: 疝气、遗尿、崩漏、子宫脱垂、癫痫。"
+      },
+      {
+        "zh": "行间",
+        "py": "Xíngjiān",
+        "hv": "HÀNH GIAN",
+        "mean": "Huyệt Hành Gian (LR2) thuộc Túc Quyết Âm Can Kinh. Vị trí: 足部. Chủ trị: 胁痛、腹胀、头痛、头晕、眩晕、目肿痛。"
+      },
+      {
+        "zh": "中封",
+        "py": "Zhōngfēng",
+        "hv": "TRUNG PHONG",
+        "mean": "Huyệt Trung Phong (LR4) thuộc Túc Quyết Âm Can Kinh. Vị trí: 踝部. Chủ trị: 疝气、外阴痛、遗精、尿潴留、胁痛。"
+      },
+      {
+        "zh": "蠡沟",
+        "py": "Lígōu",
+        "hv": "LÃI CÂU",
+        "mean": "Huyệt Lãi Câu (LR5) thuộc Túc Quyết Âm Can Kinh. Vị trí: 小腿. Chủ trị: 尿潴留、遗尿、疝气、月经不调、带下病、瘙痒。"
+      },
+      {
+        "zh": "中都",
+        "py": "Zhōngdū",
+        "hv": "TRUNG ĐÔ",
+        "mean": "Huyệt Trung Đô (LR6) thuộc Túc Quyết Âm Can Kinh. Vị trí: 小腿. Chủ trị: 腹痛、泄泻、疝气、崩漏。"
+      },
+      {
+        "zh": "膝关",
+        "py": "Xīguān",
+        "hv": "膝 QUAN",
+        "mean": "Huyệt 膝 Quan (LR7) thuộc Túc Quyết Âm Can Kinh. Vị trí: 小腿. Chủ trị: 膝部肿痛、下肢内侧疼痛。"
+      },
+      {
+        "zh": "曲泉",
+        "py": "Qūquán",
+        "hv": "KHÚC TUYỀN",
+        "mean": "Huyệt Khúc Tuyền (LR8) thuộc Túc Quyết Âm Can Kinh. Vị trí: 膝部. Chủ trị: 子宫脱垂、小腹痛、腹痛、尿潴留、遗精、外阴痛。"
+      },
+      {
+        "zh": "阴包",
+        "py": "Yīnbāo",
+        "hv": "ÂM BAO",
+        "mean": "Huyệt Âm Bao (LR9) thuộc Túc Quyết Âm Can Kinh. Vị trí: 大腿. Chủ trị: 小腹痛、腹痛、遗尿、尿潴留、月经不调。"
+      },
+      {
+        "zh": "足五里",
+        "py": "Zúwǔlǐ",
+        "hv": "TÚC NGŨ LÝ",
+        "mean": "Huyệt Túc Ngũ Lý (LR10) thuộc Túc Quyết Âm Can Kinh. Vị trí: 大腿. Chủ trị: 腹胀、尿潴留。"
+      },
+      {
+        "zh": "阴廉",
+        "py": "Yīnlián",
+        "hv": "ÂM LIÊM",
+        "mean": "Huyệt Âm Liêm (LR11) thuộc Túc Quyết Âm Can Kinh. Vị trí: 大腿. Chủ trị: 月经不调、带下病、小腹痛、腹痛。"
+      },
+      {
+        "zh": "急脉",
+        "py": "Jímài",
+        "hv": "CẤP MẠCH",
+        "mean": "Huyệt Cấp Mạch (LR12) thuộc Túc Quyết Âm Can Kinh. Vị trí: 体表相关区域. Chủ trị: 小腹痛、腹痛、疝气、外阴痛。"
+      },
+      {
+        "zh": "章门",
+        "py": "Zhāngmén",
+        "hv": "CHƯƠNG MÔN",
+        "mean": "Huyệt Chương Môn (LR13) thuộc Túc Quyết Âm Can Kinh. Vị trí: 腹部. Chủ trị: 腹胀、肠鸣、胁痛、呕吐、泄泻、消化不良。"
+      },
+      {
+        "zh": "期门",
+        "py": "Qīmén",
+        "hv": "KỲ MÔN",
+        "mean": "Huyệt Kỳ Môn (LR14) thuộc Túc Quyết Âm Can Kinh. Vị trí: 胸前部. Chủ trị: 腹胀、呃逆、反酸、乳痈、情志抑郁、热病。"
+      },
+      {
+        "zh": "长强",
+        "py": "Chángqiáng",
+        "hv": "TRƯỜNG CƯỜNG",
+        "mean": "Huyệt Trường Cường (GV1) thuộc Đốc Mạch. Vị trí: 会阴部. Chủ trị: 泄泻、痔疮、脱肛、便秘、癫痫。"
+      },
+      {
+        "zh": "腰俞",
+        "py": "Yāoshū",
+        "hv": "YÊU DU",
+        "mean": "Huyệt Yêu Du (GV2) thuộc Đốc Mạch. Vị trí: 骶部. Chủ trị: 月经不调、拘急强直、痔疮、肌肉萎缩、癫痫。"
+      },
+      {
+        "zh": "腰阳关",
+        "py": "Yāoyángguān",
+        "hv": "YÊU DƯƠNG QUAN",
+        "mean": "Huyệt Yêu Dương Quan (GV3) thuộc Đốc Mạch. Vị trí: 腰部. Chủ trị: 腰骶痛、下肢痿痹、月经不调。"
+      },
+      {
+        "zh": "悬枢",
+        "py": "Xuánshū",
+        "hv": "HUYỀN XU",
+        "mean": "Huyệt Huyền Xu (GV5) thuộc Đốc Mạch. Vị trí: 腰部. Chủ trị: 拘急强直、泄泻、消化不良。"
+      },
+      {
+        "zh": "脊中",
+        "py": "Jǐzhōng",
+        "hv": "TÍCH TRUNG",
+        "mean": "Huyệt Tích Trung (GV6) thuộc Đốc Mạch. Vị trí: 背部. Chủ trị: 泄泻、黄疸、癫痫、拘急强直。"
+      },
+      {
+        "zh": "中枢",
+        "py": "Zhōngshū",
+        "hv": "TRUNG XU",
+        "mean": "Huyệt Trung Xu (GV7) thuộc Đốc Mạch. Vị trí: 背部. Chủ trị: 腰痛、拘急强直。"
+      },
+      {
+        "zh": "筋缩",
+        "py": "Jīnsuō",
+        "hv": "CÂN SÚC",
+        "mean": "Huyệt Cân Súc (GV8) thuộc Đốc Mạch. Vị trí: 背部. Chủ trị: 癫痫、拘急强直、胃痛。"
+      },
+      {
+        "zh": "至阳",
+        "py": "Zhìyáng",
+        "hv": "CHÍ DƯƠNG",
+        "mean": "Huyệt Chí Dương (GV9) thuộc Đốc Mạch. Vị trí: 背部. Chủ trị: 黄疸、咳嗽、哮喘、拘急强直、胸痛。"
+      },
+      {
+        "zh": "灵台",
+        "py": "Língtái",
+        "hv": "LINH THAI",
+        "mean": "Huyệt Linh Thai (GV10) thuộc Đốc Mạch. Vị trí: 背部. Chủ trị: 咳嗽、哮喘、项强。"
+      },
+      {
+        "zh": "神道",
+        "py": "Shéndào",
+        "hv": "THẦN ĐẠO",
+        "mean": "Huyệt Thần Đạo (GV11) thuộc Đốc Mạch. Vị trí: 背部. Chủ trị: 心悸、拘急强直、咳嗽、心痛。"
+      },
+      {
+        "zh": "身柱",
+        "py": "Shēnzhù",
+        "hv": "身 TRỤ",
+        "mean": "Huyệt 身 Trụ (GV12) thuộc Đốc Mạch. Vị trí: 背部. Chủ trị: 咳嗽、哮喘、癫痫、拘急强直。"
+      },
+      {
+        "zh": "陶道",
+        "py": "Táodào",
+        "hv": "陶 ĐẠO",
+        "mean": "Huyệt 陶 Đạo (GV13) thuộc Đốc Mạch. Vị trí: 背部. Chủ trị: 拘急强直、头痛、疟疾、热病。"
+      },
+      {
+        "zh": "哑门",
+        "py": "Yǎmén",
+        "hv": "Á MÔN",
+        "mean": "Huyệt Á Môn (GV15) thuộc Đốc Mạch. Vị trí: 颈部. Chủ trị: 神志病、癫痫、耳聋、声音嘶哑、中风、拘急强直。"
+      },
+      {
+        "zh": "风府",
+        "py": "Fēngfǔ",
+        "hv": "PHONG PHỦ",
+        "mean": "Huyệt Phong Phủ (GV16) thuộc Đốc Mạch. Vị trí: 颈部. Chủ trị: 头痛、项强、视物模糊、鼻衄、咽喉痛、中风。"
+      },
+      {
+        "zh": "脑户",
+        "py": "Nǎohù",
+        "hv": "脑 HỘ",
+        "mean": "Huyệt 脑 Hộ (GV17) thuộc Đốc Mạch. Vị trí: 头部. Chủ trị: 癫痫、头晕、拘急强直。"
+      },
+      {
+        "zh": "强间",
+        "py": "Qiángjiān",
+        "hv": "CƯỜNG GIAN",
+        "mean": "Huyệt Cường Gian (GV18) thuộc Đốc Mạch. Vị trí: 头部. Chủ trị: 头痛、项强、视物模糊、癫狂。"
+      },
+      {
+        "zh": "后顶",
+        "py": "Hòudǐng",
+        "hv": "HẬU ĐÍNH",
+        "mean": "Huyệt Hậu Đính (GV19) thuộc Đốc Mạch. Vị trí: 头部. Chủ trị: 头痛、眩晕、癫狂、癫痫。"
+      },
+      {
+        "zh": "前顶",
+        "py": "Qiándǐng",
+        "hv": "TIỀN ĐÍNH",
+        "mean": "Huyệt Tiền Đính (GV21) thuộc Đốc Mạch. Vị trí: 头部. Chủ trị: 癫痫、头晕、视物模糊、头痛、流涕。"
+      },
+      {
+        "zh": "囟会",
+        "py": "Xìnhuì",
+        "hv": "囟 HỘI",
+        "mean": "Huyệt 囟 Hội (GV22) thuộc Đốc Mạch. Vị trí: 头部. Chủ trị: 头痛、视物模糊、流涕、小儿惊风、抽搐。"
+      },
+      {
+        "zh": "上星",
+        "py": "Shàngxīng",
+        "hv": "THƯỢNG 星",
+        "mean": "Huyệt Thượng 星 (GV23) thuộc Đốc Mạch. Vị trí: 头部. Chủ trị: 头痛、眼痛、鼻衄、流涕、神志病。"
+      },
+      {
+        "zh": "神庭",
+        "py": "Shéntíng",
+        "hv": "THẦN ĐÌNH",
+        "mean": "Huyệt Thần Đình (GV24) thuộc Đốc Mạch. Vị trí: 头部. Chủ trị: 癫痫、心悸、失眠、头痛、眩晕、流涕。"
+      },
+      {
+        "zh": "印堂",
+        "py": "Yìntáng",
+        "hv": "ẤN ĐƯỜNG",
+        "mean": "Huyệt Ấn Đường (GV24+) thuộc Đốc Mạch. Vùng: 头部."
+      },
+      {
+        "zh": "素髎",
+        "py": "Sùliáo",
+        "hv": "TỐ LIÊU",
+        "mean": "Huyệt Tố Liêu (GV25) thuộc Đốc Mạch. Vị trí: 面部. Chủ trị: 昏厥、鼻塞、鼻衄、流涕。"
+      },
+      {
+        "zh": "水沟",
+        "py": "Shuǐgōu",
+        "hv": "THỦY CÂU",
+        "mean": "Huyệt Thủy Câu (GV26) thuộc Đốc Mạch. Vị trí: 面部. Chủ trị: 昏厥、口眼歪斜、腰脊痛。"
+      },
+      {
+        "zh": "兑端",
+        "py": "Duìduān",
+        "hv": "ĐOÁI ĐOAN",
+        "mean": "Huyệt Đoái Đoan (GV27) thuộc Đốc Mạch. Vị trí: 面部. Chủ trị: 神志病、拘急强直。"
+      },
+      {
+        "zh": "龈交",
+        "py": "Yínjiāo",
+        "hv": "NGÂN GIAO",
+        "mean": "Huyệt Ngân Giao (GV28) thuộc Đốc Mạch. Vị trí: 面部. Chủ trị: 神志病、流涕。"
+      },
+      {
+        "zh": "会阴",
+        "py": "Huìyīn",
+        "hv": "HỘI ÂM",
+        "mean": "Huyệt Hội Âm (CV1) thuộc Nhâm Mạch. Vị trí: 会阴部. Chủ trị: 尿潴留、痔疮、遗精、遗尿、月经不调、神志病。"
+      },
+      {
+        "zh": "曲骨",
+        "py": "Qūgǔ",
+        "hv": "KHÚC CỐT",
+        "mean": "Huyệt Khúc Cốt (CV2) thuộc Nhâm Mạch. Vị trí: 腹部. Chủ trị: 遗尿、遗精、阳痿、带下病、月经不调、痛经。"
+      },
+      {
+        "zh": "中极",
+        "py": "Zhōngjí",
+        "hv": "TRUNG CỰC",
+        "mean": "Huyệt Trung Cực (CV3) thuộc Nhâm Mạch. Vị trí: 腹部. Chủ trị: 遗尿、遗精、阳痿、疝气、崩漏、月经不调。"
+      },
+      {
+        "zh": "石门",
+        "py": "Shímén",
+        "hv": "石 MÔN",
+        "mean": "Huyệt 石 Môn (CV5) thuộc Nhâm Mạch. Vị trí: 腹部. Chủ trị: 腹痛、泄泻、水肿、疝气、遗尿、闭经。"
+      },
+      {
+        "zh": "阴交",
+        "py": "Yīnjiāo",
+        "hv": "ÂM GIAO",
+        "mean": "Huyệt Âm Giao (CV7) thuộc Nhâm Mạch. Vị trí: 腹部. Chủ trị: 腹胀、水肿、疝气、月经不调。"
+      },
+      {
+        "zh": "水分",
+        "py": "Shuǐfēn",
+        "hv": "THỦY PHÂN",
+        "mean": "Huyệt Thủy Phân (CV9) thuộc Nhâm Mạch. Vị trí: 腹部. Chủ trị: 腹痛、肠鸣、水肿、尿潴留、泄泻。"
+      },
+      {
+        "zh": "下脘",
+        "py": "Xiàwǎn",
+        "hv": "HẠ 脘",
+        "mean": "Huyệt Hạ 脘 (CV10) thuộc Nhâm Mạch. Vị trí: 腹部. Chủ trị: 腹痛、肠鸣、消化不良、呕吐、泄泻。"
+      },
+      {
+        "zh": "建里",
+        "py": "Jiànlǐ",
+        "hv": "KIẾN LÝ",
+        "mean": "Huyệt Kiến Lý (CV11) thuộc Nhâm Mạch. Vị trí: 腹部. Chủ trị: 胃痛、呕吐、腹胀、肠鸣、水肿、食欲不振。"
+      },
+      {
+        "zh": "中脘",
+        "py": "Zhōngwǎn",
+        "hv": "TRUNG 脘",
+        "mean": "Huyệt Trung 脘 (CV12) thuộc Nhâm Mạch. Vị trí: 腹部. Chủ trị: 胃痛、腹胀、肠鸣、恶心、呕吐、反酸。"
+      },
+      {
+        "zh": "上脘",
+        "py": "Shàngwǎn",
+        "hv": "THƯỢNG 脘",
+        "mean": "Huyệt Thượng 脘 (CV13) thuộc Nhâm Mạch. Vị trí: 腹部. Chủ trị: 胃痛、腹胀、恶心、呕吐、癫痫、失眠。"
+      },
+      {
+        "zh": "巨阙",
+        "py": "Jùquè",
+        "hv": "CỰ 阙",
+        "mean": "Huyệt Cự 阙 (CV14) thuộc Nhâm Mạch. Vị trí: 腹部. Chủ trị: 恶心、反酸、吞咽困难、呕吐、神志病、癫痫。"
+      },
+      {
+        "zh": "鸠尾",
+        "py": "Jiūwěi",
+        "hv": "鸠 尾",
+        "mean": "Huyệt 鸠 尾 (CV15) thuộc Nhâm Mạch. Vị trí: 腹部. Chủ trị: 恶心、神志病、癫痫。"
+      },
+      {
+        "zh": "中庭",
+        "py": "Zhōngtíng",
+        "hv": "TRUNG ĐÌNH",
+        "mean": "Huyệt Trung Đình (CV16) thuộc Nhâm Mạch. Vị trí: 胸前部. Chủ trị: 胸满、呃逆、恶心、食欲不振。"
+      },
+      {
+        "zh": "膻中",
+        "py": "Dànzhōng",
+        "hv": "膻 TRUNG",
+        "mean": "Huyệt 膻 Trung (CV17) thuộc Nhâm Mạch. Vị trí: 胸前部. Chủ trị: 哮喘、胸痛、胸满、心悸、乳少、呃逆。"
+      },
+      {
+        "zh": "玉堂",
+        "py": "Yùtáng",
+        "hv": "NGỌC ĐƯỜNG",
+        "mean": "Huyệt Ngọc Đường (CV18) thuộc Nhâm Mạch. Vị trí: 胸前部. Chủ trị: 胸痛、咳嗽、哮喘、呕吐。"
+      },
+      {
+        "zh": "紫宫",
+        "py": "Zǐgōng",
+        "hv": "TỬ CUNG",
+        "mean": "Huyệt Tử Cung (CV19) thuộc Nhâm Mạch. Vị trí: 胸前部. Chủ trị: 胸痛、哮喘、咳嗽。"
+      },
+      {
+        "zh": "华盖",
+        "py": "Huágài",
+        "hv": "华 CÁI",
+        "mean": "Huyệt 华 Cái (CV20) thuộc Nhâm Mạch. Vị trí: 胸前部. Chủ trị: 胸满、哮喘、咳嗽。"
+      },
+      {
+        "zh": "璇玑",
+        "py": "Xuánjī",
+        "hv": "璇 玑",
+        "mean": "Huyệt 璇 玑 (CV21) thuộc Nhâm Mạch. Vị trí: 胸前部. Chủ trị: 胸痛、咳嗽、哮喘。"
+      },
+      {
+        "zh": "天突",
+        "py": "Tiāntū",
+        "hv": "THIÊN ĐỘT",
+        "mean": "Huyệt Thiên Đột (CV22) thuộc Nhâm Mạch. Vị trí: 颈部. Chủ trị: 哮喘、咳嗽、咽喉痛、呃逆、声音嘶哑、吞咽困难。"
+      },
+      {
+        "zh": "廉泉",
+        "py": "Liánquán",
+        "hv": "LIÊM TUYỀN",
+        "mean": "Huyệt Liêm Tuyền (CV23) thuộc Nhâm Mạch. Vị trí: 颈部. Chủ trị: 失语、拘急强直、中风、声音嘶哑、吞咽困难。"
+      },
+      {
+        "zh": "承浆",
+        "py": "Chéngjiāng",
+        "hv": "THỪA 浆",
+        "mean": "Huyệt Thừa 浆 (CV24) thuộc Nhâm Mạch. Vị trí: 面部. Chủ trị: 牙痛、神志病。"
+      },
+      {
+        "zh": "四神聪",
+        "py": "Sìshéncōng",
+        "hv": "TỨ THẦN 聪",
+        "mean": "Huyệt Tứ Thần 聪 (EX-HN1) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "当阳",
+        "py": "Dāngyáng",
+        "hv": "ĐƯƠNG DƯƠNG",
+        "mean": "Huyệt Đương Dương (EX-HN2) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "鱼腰",
+        "py": "Yúyāo",
+        "hv": "NGƯ YÊU",
+        "mean": "Huyệt Ngư Yêu (EX-HN4) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "太阳",
+        "py": "Tàiyáng",
+        "hv": "THÁI DƯƠNG",
+        "mean": "Huyệt Thái Dương (EX-HN5) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "耳尖",
+        "py": "Ěrjiān",
+        "hv": "耳 TIÊM",
+        "mean": "Huyệt 耳 Tiêm (EX-HN6) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "球后",
+        "py": "Qiúhòu",
+        "hv": "CẦU HẬU",
+        "mean": "Huyệt Cầu Hậu (EX-HN7) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "上迎香",
+        "py": "Shàngyíngxiāng",
+        "hv": "THƯỢNG NGHINH HƯƠNG",
+        "mean": "Huyệt Thượng Nghinh Hương (EX-HN8) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "内迎香",
+        "py": "Nèiyíngxiāng",
+        "hv": "NỘI NGHINH HƯƠNG",
+        "mean": "Huyệt Nội Nghinh Hương (EX-HN9) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "聚泉",
+        "py": "Jùquán",
+        "hv": "TỤ TUYỀN",
+        "mean": "Huyệt Tụ Tuyền (EX-HN10) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "海泉",
+        "py": "Hǎiquán",
+        "hv": "HẢI TUYỀN",
+        "mean": "Huyệt Hải Tuyền (EX-HN11) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "金津玉液",
+        "py": "JīnjīnYùyè",
+        "hv": "KIM 津 NGỌC DỊCH",
+        "mean": "Huyệt Kim 津 Ngọc Dịch (EX-HN12) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "翳明",
+        "py": "Yìmíng",
+        "hv": "Ế MINH",
+        "mean": "Huyệt Ế Minh (EX-HN14) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "安眠",
+        "py": "Ānmián",
+        "hv": "AN 眠",
+        "mean": "Huyệt An 眠 (N-HN54) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "牵正",
+        "py": "Qiānzhènɡ",
+        "hv": "KHIÊN CHÁNH",
+        "mean": "Huyệt Khiên Chánh (N-HN20) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "新设",
+        "py": "Xīnshè",
+        "hv": "TÂN THIẾT",
+        "mean": "Huyệt Tân Thiết (EXTRA-XINSHE) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "颈百劳",
+        "py": "Jìngbǎiláo",
+        "hv": "颈 BÁCH LAO",
+        "mean": "Huyệt 颈 Bách Lao (EX-HN15) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "血压点",
+        "py": "Xuèyādiǎn",
+        "hv": "HUYẾT ÁP ĐIỂM",
+        "mean": "Huyệt Huyết Áp Điểm (EXTRA-XUEYADIAN) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "提托",
+        "py": "Títuō",
+        "hv": "ĐỀ THÁC",
+        "mean": "Huyệt Đề Thác (EXTRA-TITUO) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "子宫",
+        "py": "Zǐgōng",
+        "hv": "TỬ CUNG",
+        "mean": "Huyệt Tử Cung (EX-CA1) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "定喘",
+        "py": "Dìngchuǎn",
+        "hv": "ĐỊNH SUYỄN",
+        "mean": "Huyệt Định Suyễn (EX-B1) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "夹脊",
+        "py": "Jiájǐ",
+        "hv": "GIÁP TÍCH",
+        "mean": "Huyệt Giáp Tích (EX-B2) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "胃脘下俞",
+        "py": "Wèiwǎnxiàshū",
+        "hv": "VỊ 脘 HẠ DU",
+        "mean": "Huyệt Vị 脘 Hạ Du (EX-B3) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "接脊",
+        "py": "Jiējǐ",
+        "hv": "TIẾP TÍCH",
+        "mean": "Huyệt Tiếp Tích (EXTRA-JIEJI) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "痞根",
+        "py": "Pǐgēn",
+        "hv": "痞 CĂN",
+        "mean": "Huyệt 痞 Căn (EX-B4) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "腰宜",
+        "py": "Yāoyí",
+        "hv": "YÊU 宜",
+        "mean": "Huyệt Yêu 宜 (EX-B6) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "腰眼",
+        "py": "Yāoyǎn",
+        "hv": "YÊU NHÃN",
+        "mean": "Huyệt Yêu Nhãn (EX-B7) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "十七椎",
+        "py": "Shíqīzhuī",
+        "hv": "THẬP THẤT CHÙY",
+        "mean": "Huyệt Thập Thất Chùy (EX-B8) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "肩前",
+        "py": "Jiānqián",
+        "hv": "KIÊN TIỀN",
+        "mean": "Huyệt Kiên Tiền (M-UE48) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "肘尖",
+        "py": "Zhǒujiān",
+        "hv": "TRỤ TIÊM",
+        "mean": "Huyệt Trụ Tiêm (EX-UE1) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "二白",
+        "py": "Èrbái",
+        "hv": "NHỊ BẠCH",
+        "mean": "Huyệt Nhị Bạch (EX-UE2) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "中泉",
+        "py": "Zhōngquán",
+        "hv": "TRUNG TUYỀN",
+        "mean": "Huyệt Trung Tuyền (EX-UE3) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "中魁",
+        "py": "Zhōngkuí",
+        "hv": "TRUNG 魁",
+        "mean": "Huyệt Trung 魁 (EX-UE4) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "大骨空",
+        "py": "Dàgǔkōng",
+        "hv": "ĐẠI CỐT KHÔNG",
+        "mean": "Huyệt Đại Cốt Không (EX-UE5) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "小骨空",
+        "py": "Xiǎogǔkōng",
+        "hv": "TIỂU CỐT KHÔNG",
+        "mean": "Huyệt Tiểu Cốt Không (EX-UE6) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "腰痛点",
+        "py": "Yāotòngdiǎn",
+        "hv": "YÊU THỐNG ĐIỂM",
+        "mean": "Huyệt Yêu Thống Điểm (EX-UE7) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "外劳宫",
+        "py": "Wàiláogōng",
+        "hv": "NGOẠI LAO CUNG",
+        "mean": "Huyệt Ngoại Lao Cung (EX-UE8) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "八邪",
+        "py": "Bāxié",
+        "hv": "BÁT TÀ",
+        "mean": "Huyệt Bát Tà (EX-UE9) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "四缝",
+        "py": "Sìfèng",
+        "hv": "TỨ PHÙNG",
+        "mean": "Huyệt Tứ Phùng (EX-UE10) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "十宣",
+        "py": "Shíxuān",
+        "hv": "THẬP 宣",
+        "mean": "Huyệt Thập 宣 (EX-UE11) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "髋骨",
+        "py": "Kuāngǔ",
+        "hv": "髋 CỐT",
+        "mean": "Huyệt 髋 Cốt (EX-LE1) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "鹤顶",
+        "py": "Hèdǐng",
+        "hv": "鹤 ĐÍNH",
+        "mean": "Huyệt 鹤 Đính (EX-LE2) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "百虫窝",
+        "py": "Bǎichóngwō",
+        "hv": "BÁCH 虫 OA",
+        "mean": "Huyệt Bách 虫 Oa (EX-LE3) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "内膝眼",
+        "py": "Nèixīyǎn",
+        "hv": "NỘI 膝 NHÃN",
+        "mean": "Huyệt Nội 膝 Nhãn (EX-LE4) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "胆囊",
+        "py": "Dǎnnáng",
+        "hv": "ĐỞM 囊",
+        "mean": "Huyệt Đởm 囊 (EX-LE6) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "阑尾",
+        "py": "Lánwěi",
+        "hv": "阑 尾",
+        "mean": "Huyệt 阑 尾 (EX-LE7) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "内踝尖",
+        "py": "Nèihuáijiān",
+        "hv": "NỘI 踝 TIÊM",
+        "mean": "Huyệt Nội 踝 Tiêm (EX-LE8) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "外踝尖",
+        "py": "Wàihuáijiān",
+        "hv": "NGOẠI 踝 TIÊM",
+        "mean": "Huyệt Ngoại 踝 Tiêm (EX-LE9) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "八风",
+        "py": "Bāfēng",
+        "hv": "BÁT PHONG",
+        "mean": "Huyệt Bát Phong (EX-LE10) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "里内庭",
+        "py": "Lǐnèitínɡ",
+        "hv": "LÝ NỘI ĐÌNH",
+        "mean": "Huyệt Lý Nội Đình (EXTRA-LINEITING) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "独阴",
+        "py": "Dúyīn",
+        "hv": "ĐỘC ÂM",
+        "mean": "Huyệt Độc Âm (EX-LE11) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
+      },
+      {
+        "zh": "气端",
+        "py": "Qìduān",
+        "hv": "KHÍ ĐOAN",
+        "mean": "Huyệt Khí Đoan (EX-LE12) thuộc Kinh Ngoại Kỳ Huyệt. Vùng: ."
       }
     ],
     "sentences": [

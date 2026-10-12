@@ -1901,8 +1901,8 @@
   // HỆ THỐNG TỰ ĐỘNG CẬP NHẬT TRỰC TUYẾN (AUTO-UPDATE HOT RELOAD ENGINE)
   // ==========================================================================
   // Lấy thông tin phiên bản (Đồng bộ trực tiếp với Native Android nếu có)
-  window.APP_VERSION = '1.2.3';
-  window.APP_BUILD = 2026101203;
+  window.APP_VERSION = '1.2.4';
+  window.APP_BUILD = 2026101204;
 
   if (window.AndroidTTS && typeof window.AndroidTTS.getNativeVersionName === 'function') {
     try {
