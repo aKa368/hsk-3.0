@@ -2,8 +2,10 @@ package com.hsk.studyroom;
 
 import android.annotation.SuppressLint;
 import android.app.DownloadManager;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -90,15 +92,45 @@ public class MainActivity extends AppCompatActivity {
                     Uri uri = Uri.parse(apkUrl);
                     DownloadManager.Request request = new DownloadManager.Request(uri);
                     request.setTitle("HSK 3.0 Cập Nhật");
-                    request.setDescription("Đang tải file APK cập nhật HSK 3.0...");
+                    request.setDescription("Đang tải bản cập nhật mới nhất HSK 3.0...");
                     request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-                    request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "HSK_3.0_Update.apk");
+                    
+                    String fileName = "HSK_3.0_v" + System.currentTimeMillis() + ".apk";
+                    request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, fileName);
+                    request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI | DownloadManager.Request.NETWORK_MOBILE);
+                    request.setAllowedOverRoaming(true);
                     request.setMimeType("application/vnd.android.package-archive");
 
                     DownloadManager dm = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
                     if (dm != null) {
-                        dm.enqueue(request);
-                        Toast.makeText(MainActivity.this, "🚀 Đang tải bản cập nhật HSK 3.0 về máy...", Toast.LENGTH_LONG).show();
+                        final long downloadId = dm.enqueue(request);
+                        Toast.makeText(MainActivity.this, "🚀 Đang tải bản cập nhật HSK 3.0 về máy qua CDN tốc độ cao...", Toast.LENGTH_LONG).show();
+
+                        // Tự động mở trình cài đặt khi tải xong
+                        BroadcastReceiver onComplete = new BroadcastReceiver() {
+                            @Override
+                            public void onReceive(Context ctxt, Intent intent) {
+                                long id = intent.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID, -1);
+                                if (id == downloadId) {
+                                    try {
+                                        Uri fileUri = dm.getUriForDownloadedFile(downloadId);
+                                        if (fileUri != null) {
+                                            Intent install = new Intent(Intent.ACTION_VIEW);
+                                            install.setDataAndType(fileUri, "application/vnd.android.package-archive");
+                                            install.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                            install.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                                            startActivity(install);
+                                        }
+                                    } catch (Exception e) {
+                                        Toast.makeText(MainActivity.this, "Vui lòng mở mục Tải về (Downloads) để cài đặt APK", Toast.LENGTH_LONG).show();
+                                    }
+                                    try {
+                                        unregisterReceiver(this);
+                                    } catch (Exception ignored) {}
+                                }
+                            }
+                        };
+                        registerReceiver(onComplete, new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE));
                     } else {
                         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

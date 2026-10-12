@@ -1901,8 +1901,8 @@
   // HỆ THỐNG TỰ ĐỘNG CẬP NHẬT TRỰC TUYẾN (AUTO-UPDATE HOT RELOAD ENGINE)
   // ==========================================================================
   // Lấy thông tin phiên bản (Đồng bộ trực tiếp với Native Android nếu có)
-  window.APP_VERSION = '1.2.5';
-  window.APP_BUILD = 2026101205;
+  window.APP_VERSION = '1.2.6';
+  window.APP_BUILD = 2026101206;
 
   if (window.AndroidTTS && typeof window.AndroidTTS.getNativeVersionName === 'function') {
     try {
@@ -1977,6 +1977,96 @@
     }
   }
 
+  async function performOTADataUpdate(remote) {
+    const toast = document.getElementById('app-update-toast');
+    if (toast) {
+      toast.innerHTML = `
+        <div style="text-align:center; padding:18px 12px; width:100%;">
+          <div style="font-size:2.2rem; margin-bottom:8px;">🔄</div>
+          <strong style="font-size:1.05rem;">Đang đồng bộ dữ liệu HSK 3.0 v${remote.version}...</strong>
+          <div id="ota-update-status" style="font-size:0.85rem; color:#7c6246; margin-top:6px;">Đang kết nối CDN tốc độ cao...</div>
+          <div style="width:100%; height:8px; background:#eee; border-radius:4px; margin-top:12px; overflow:hidden;">
+            <div id="ota-update-bar" style="width:10%; height:100%; background:#9e2a2b; transition:width 0.3s;"></div>
+          </div>
+        </div>
+      `;
+    }
+
+    const setStatus = (text, percent) => {
+      const s = document.getElementById('ota-update-status');
+      const b = document.getElementById('ota-update-bar');
+      if (s) s.textContent = text;
+      if (b) b.style.width = percent + '%';
+    };
+
+    const filesToSync = [
+      'version.json',
+      'specialized_tracks_data.js',
+      'tcm_data.js',
+      'dict_data.js'
+    ];
+
+    const cdnBases = [
+      'https://aka368.github.io/hsk-3.0/',
+      'https://cdn.jsdelivr.net/gh/aKa368/hsk-3.0@main/',
+      'https://raw.githubusercontent.com/aKa368/hsk-3.0/main/'
+    ];
+
+    try {
+      let completed = 0;
+      for (const fname of filesToSync) {
+        setStatus(`Đang tải ${fname}...`, Math.round((completed / filesToSync.length) * 75) + 15);
+        let fetchedCode = null;
+
+        for (const base of cdnBases) {
+          try {
+            const res = await fetch(`${base}${fname}?t=${Date.now()}`, { cache: 'no-store' });
+            if (res.ok) {
+              fetchedCode = await res.text();
+              if (fetchedCode && fetchedCode.length > 20) break;
+            }
+          } catch (e) {}
+        }
+
+        if (fetchedCode) {
+          try {
+            localStorage.setItem(`hsk_ota_${fname}`, fetchedCode);
+          } catch (e) {
+            console.warn('Quota exceeded for ' + fname);
+          }
+        }
+        completed++;
+      }
+
+      setStatus('Đang kích hoạt tài nguyên mới...', 95);
+
+      if ('serviceWorker' in navigator) {
+        try {
+          const reg = await navigator.serviceWorker.getRegistration();
+          if (reg) {
+            reg.update().catch(() => {});
+            if (reg.waiting) reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+          }
+        } catch (e) {}
+      }
+
+      if ('caches' in window) {
+        try {
+          const keys = await caches.keys();
+          await Promise.all(keys.map(k => caches.delete(k)));
+        } catch (e) {}
+      }
+
+      setStatus('Hoàn tất! Đang khởi động lại ứng dụng...', 100);
+      setTimeout(() => {
+        window.location.reload(true);
+      }, 500);
+    } catch (err) {
+      alert('Không thể cập nhật OTA: ' + err.message + '. Vui lòng tải file APK mới!');
+      if (toast) toast.style.display = 'none';
+    }
+  }
+
   function showUpdateNotification(remote) {
     let toast = document.getElementById('app-update-toast');
     if (!toast) {
@@ -1987,7 +2077,9 @@
     }
 
     const isAndroidApp = !!window.AndroidTTS || location.host.includes('androidplatform');
-    const apkDownloadUrl = 'https://github.com/aKa368/hsk-3.0/raw/main/HSK_3.0.apk';
+    // Multi-CDN Fallback URLs for fast APK download
+    const apkDownloadUrl = 'https://cdn.jsdelivr.net/gh/aKa368/hsk-3.0@main/HSK_3.0.apk';
+    const apkPagesUrl = 'https://aka368.github.io/hsk-3.0/HSK_3.0.apk';
 
     toast.innerHTML = `
       <div class="update-toast-content">
@@ -1998,65 +2090,48 @@
         </div>
       </div>
       <div class="update-toast-actions">
+        <button id="btn-ota-update" class="paper-btn primary-btn sm-btn" style="display:inline-flex; align-items:center; gap:4px;">⚡ Cập nhật dữ liệu ngay</button>
         ${isAndroidApp ? `
-          <button id="btn-download-apk" class="paper-btn primary-btn sm-btn" style="display:inline-flex; align-items:center; gap:4px;">📥 Cài đặt APK v${remote.version}</button>
-          <button id="btn-open-browser-apk" class="paper-btn sm-btn">🌐 Mở trình duyệt</button>
+          <button id="btn-download-apk" class="paper-btn sm-btn" style="display:inline-flex; align-items:center; gap:4px;">📥 Cài đặt APK mới</button>
+          <button id="btn-open-browser-apk" class="paper-btn sm-btn">🌐 Mở trình duyệt tải</button>
         ` : `
-          <button id="btn-update-now" class="paper-btn primary-btn sm-btn">🔄 Cập nhật ngay</button>
+          <button id="btn-download-apk" class="paper-btn sm-btn">📥 Tải APK Android</button>
         `}
         <button id="btn-update-later" class="paper-btn sm-btn">Để sau</button>
       </div>
     `;
     toast.style.display = 'flex';
 
-    if (isAndroidApp) {
-      const btnDownloadApk = document.getElementById('btn-download-apk');
-      if (btnDownloadApk) {
-        btnDownloadApk.onclick = () => {
-          if (window.AndroidTTS && typeof window.AndroidTTS.downloadAndInstallApk === 'function') {
-            window.AndroidTTS.downloadAndInstallApk(apkDownloadUrl);
-          } else if (window.AndroidTTS && typeof window.AndroidTTS.openExternalUrl === 'function') {
-            window.AndroidTTS.openExternalUrl(apkDownloadUrl);
-          } else {
-            window.open(apkDownloadUrl, '_system') || (window.location.href = apkDownloadUrl);
-          }
-        };
-      }
+    // 1. Nút Cập nhật dữ liệu OTA trực tiếp (Không cần cài APK)
+    const btnOtaUpdate = document.getElementById('btn-ota-update');
+    if (btnOtaUpdate) {
+      btnOtaUpdate.onclick = () => performOTADataUpdate(remote);
+    }
 
-      const btnOpenBrowser = document.getElementById('btn-open-browser-apk');
-      if (btnOpenBrowser) {
-        btnOpenBrowser.onclick = () => {
-          if (window.AndroidTTS && typeof window.AndroidTTS.openExternalUrl === 'function') {
-            window.AndroidTTS.openExternalUrl(apkDownloadUrl);
-          } else {
-            window.open(apkDownloadUrl, '_system') || (window.location.href = apkDownloadUrl);
-          }
-        };
-      }
-    } else {
-      const btnUpdate = document.getElementById('btn-update-now');
-      if (btnUpdate) {
-        btnUpdate.onclick = () => {
-          toast.innerHTML = '<div style="text-align:center; padding:10px; width:100%;"><strong>🔄 Đang đồng bộ tài nguyên mới...</strong><div style="font-size:0.8rem; margin-top:4px;">Ứng dụng sẽ tự nạp lại trong giây lát.</div></div>';
-          if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.getRegistration().then(reg => {
-              if (reg) {
-                reg.update().catch(() => {});
-                if (reg.waiting) reg.waiting.postMessage({ type: 'SKIP_WAITING' });
-              }
-            }).catch(() => {});
-          }
-          if ('caches' in window) {
-            caches.keys().then(keys => Promise.all(keys.map(k => caches.delete(k)))).then(() => {
-              setTimeout(() => window.location.reload(true), 400);
-            }).catch(() => {
-              setTimeout(() => window.location.reload(true), 400);
-            });
-          } else {
-            setTimeout(() => window.location.reload(true), 400);
-          }
-        };
-      }
+    // 2. Nút Cài đặt APK
+    const btnDownloadApk = document.getElementById('btn-download-apk');
+    if (btnDownloadApk) {
+      btnDownloadApk.onclick = () => {
+        if (window.AndroidTTS && typeof window.AndroidTTS.downloadAndInstallApk === 'function') {
+          window.AndroidTTS.downloadAndInstallApk(apkDownloadUrl);
+        } else if (window.AndroidTTS && typeof window.AndroidTTS.openExternalUrl === 'function') {
+          window.AndroidTTS.openExternalUrl(apkDownloadUrl);
+        } else {
+          window.open(apkDownloadUrl, '_system') || (window.location.href = apkDownloadUrl);
+        }
+      };
+    }
+
+    // 3. Nút Mở trình duyệt ngoài tải APK
+    const btnOpenBrowser = document.getElementById('btn-open-browser-apk');
+    if (btnOpenBrowser) {
+      btnOpenBrowser.onclick = () => {
+        if (window.AndroidTTS && typeof window.AndroidTTS.openExternalUrl === 'function') {
+          window.AndroidTTS.openExternalUrl(apkPagesUrl);
+        } else {
+          window.open(apkPagesUrl, '_system') || (window.location.href = apkPagesUrl);
+        }
+      };
     }
 
     const btnLater = document.getElementById('btn-update-later');

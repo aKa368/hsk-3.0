@@ -1,10 +1,12 @@
-const CACHE_NAME = 'hsk3-cache-v45';
+const CACHE_NAME = 'hsk3-cache-v47';
 const ASSETS = [
   './',
   './index.html',
   './style.css',
   './icon.png',
   './favicon.png',
+  './js/hanzi-writer.min.js',
+  './visual_entity_library.js',
   './practice_essays_data.js',
   './specialized_tracks_data.js',
   './stroke_cache_db.js',

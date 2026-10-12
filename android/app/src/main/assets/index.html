@@ -604,6 +604,24 @@
   <script src="practice_essays_data.js"></script>
   <script src="tcm_data.js"></script>
   <script src="specialized_tracks_data.js"></script>
+  <script>
+    // OTA Dynamic Data Loader: Nạp đè bản dữ liệu mới nhất từ bộ nhớ nếu có bản cập nhật OTA
+    (function() {
+      ['specialized_tracks_data.js', 'tcm_data.js', 'dict_data.js'].forEach(function(file) {
+        var otaCode = localStorage.getItem('hsk_ota_' + file);
+        if (otaCode) {
+          try {
+            var s = document.createElement('script');
+            s.text = otaCode;
+            document.body.appendChild(s);
+            console.log('⚡ Loaded OTA hot-update for ' + file);
+          } catch(e) {
+            console.warn('OTA load failed for ' + file, e);
+          }
+        }
+      });
+    })();
+  </script>
   <script src="srs_quiz_engine.js"></script>
   <script src="stroke_cache_db.js"></script>
   <script src="app.js"></script>
