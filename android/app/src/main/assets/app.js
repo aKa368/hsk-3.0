@@ -1901,14 +1901,19 @@
   // HỆ THỐNG TỰ ĐỘNG CẬP NHẬT TRỰC TUYẾN (AUTO-UPDATE HOT RELOAD ENGINE)
   // ==========================================================================
   // Lấy thông tin phiên bản (Đồng bộ trực tiếp với Native Android nếu có)
-  window.APP_VERSION = '1.2.6';
-  window.APP_BUILD = 2026101206;
+  window.APP_VERSION = '1.2.7';
+  window.APP_BUILD = 2026101207;
 
   if (window.AndroidTTS && typeof window.AndroidTTS.getNativeVersionName === 'function') {
     try {
-      window.APP_VERSION = window.AndroidTTS.getNativeVersionName() || window.APP_VERSION;
       const nativeCode = window.AndroidTTS.getNativeVersionCode();
-      if (nativeCode) window.APP_BUILD = Number(nativeCode);
+      if (nativeCode) {
+        window.APP_BUILD = Math.max(window.APP_BUILD || 0, Number(nativeCode));
+      }
+      const nativeName = window.AndroidTTS.getNativeVersionName();
+      if (nativeName) {
+        window.APP_VERSION = nativeName;
+      }
     } catch (e) {}
   }
 
