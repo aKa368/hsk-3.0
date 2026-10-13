@@ -1900,8 +1900,8 @@
   // HỆ THỐNG TỰ ĐỘNG CẬP NHẬT TRỰC TUYẾN (AUTO-UPDATE HOT RELOAD ENGINE)
   // ==========================================================================
   // Lấy thông tin phiên bản (Đồng bộ trực tiếp với Native Android nếu có)
-  window.APP_VERSION = '1.2.7';
-  window.APP_BUILD = 2026101207;
+  window.APP_VERSION = '1.2.8';
+  window.APP_BUILD = 2026101301;
 
   if (window.AndroidTTS && typeof window.AndroidTTS.getNativeVersionName === 'function') {
     try {
@@ -1922,17 +1922,16 @@
 
   function initAutoUpdateChecker() {
     // 1. Đăng ký Service Worker trên môi trường Web / PWA
-    if ('serviceWorker' in navigator && !location.host.includes('androidplatform')) {
+    if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('./sw.js').then(reg => {
         reg.onupdatefound = () => {
           const installingWorker = reg.installing;
           if (installingWorker) {
             installingWorker.onstatechange = () => {
               if (installingWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                showUpdateNotification({
-                  version: 'Mới',
-                  changelog: 'Đã có bản cập nhật mới từ hệ thống. Bấm để nạp lại ngay!'
-                });
+                if (installingWorker.postMessage) {
+                  installingWorker.postMessage({ type: 'SKIP_WAITING' });
+                }
               }
             };
           }
@@ -1942,7 +1941,7 @@
 
     // 2. Tự động kiểm tra bản cập nhật khi có mạng
     if (navigator.onLine) {
-      setTimeout(() => checkRemoteVersion(false), 3000);
+      setTimeout(() => checkRemoteVersion(false), 2000);
     }
     window.addEventListener('online', () => setTimeout(() => checkRemoteVersion(false), 1000));
   }
@@ -1966,21 +1965,16 @@
   }
 
   async function checkRemoteVersion(isManual = false) {
-    if (!isManual) {
-      const snoozeUntil = parseInt(localStorage.getItem('hsk_snooze_update_until') || '0', 10);
-      if (Date.now() < snoozeUntil) return;
-    }
-
-    const currentBuild = window.APP_BUILD || 2026101001;
+    const currentBuild = window.APP_BUILD || 2026101207;
     const remote = await fetchRemoteVersionData();
 
-    if (remote && remote.build && remote.build > currentBuild) {
+    if (remote && remote.build && Number(remote.build) > Number(currentBuild)) {
       showUpdateNotification(remote);
     } else if (isManual) {
       if (!remote) {
         alert('⚠️ Không thể kết nối đến máy chủ kiểm tra phiên bản. Vui lòng kiểm tra lại kết nối mạng!');
       } else {
-        alert(`✅ Ứng dụng đang ở phiên bản mới nhất:\n- Phiên bản: v${window.APP_VERSION || '1.2.0'}\n- Build: ${currentBuild}\n- Cập nhật lần cuối: ${remote.releaseDate || 'Mới nhất'}`);
+        alert(`✅ Ứng dụng đang ở phiên bản mới nhất:\n- Phiên bản: v${window.APP_VERSION || '1.2.7'}\n- Build: ${currentBuild}\n- Cập nhật lần cuối: ${remote.releaseDate || 'Mới nhất'}`);
       }
     }
   }
