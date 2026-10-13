@@ -1084,6 +1084,7 @@ body {
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--ink-secondary);
+  white-space: nowrap;
 }
 
 .paper-select {
@@ -3328,6 +3329,24 @@ select.paper-select option {
   .tab-btn.active .tab-num {
     background: rgba(255,255,255,0.25);
     color: #ffffff;
+  }
+
+  /* 4.5 Thanh Công Cụ Tập Tô Tracing Toolbar trên di động */
+  .tracing-toolbar {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+    padding: 10px 12px !important;
+  }
+  .tracing-toolbar .toolbar-group {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    width: 100% !important;
+  }
+  .tracing-toolbar .toolbar-group #tracing-select {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
   }
 
   /* 5. Thẻ Tra Cứu Từ Điển & Tiêu Đề */
