@@ -10,8 +10,8 @@ android {
         applicationId "com.hsk.studyroom"
         minSdk 24
         targetSdk 34
-        versionCode 2026101301
-        versionName "1.2.8"
+        versionCode 2026101302
+        versionName "1.2.9"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

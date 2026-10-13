@@ -1900,8 +1900,8 @@
   // HỆ THỐNG TỰ ĐỘNG CẬP NHẬT TRỰC TUYẾN (AUTO-UPDATE HOT RELOAD ENGINE)
   // ==========================================================================
   // Lấy thông tin phiên bản (Đồng bộ trực tiếp với Native Android nếu có)
-  window.APP_VERSION = '1.2.8';
-  window.APP_BUILD = 2026101301;
+  window.APP_VERSION = '1.2.9';
+  window.APP_BUILD = 2026101302;
 
   if (window.AndroidTTS && typeof window.AndroidTTS.getNativeVersionName === 'function') {
     try {
@@ -2205,7 +2205,14 @@
     }
   }
 
-  document.addEventListener('DOMContentLoaded', () => {
+  function initMainApp() {
+    // Xóa bộ nhớ OTA cũ nếu có để tránh tràn dung lượng
+    try {
+      ['specialized_tracks_data.js', 'tcm_data.js', 'dict_data.js', 'version.json'].forEach(f => {
+        localStorage.removeItem('hsk_ota_' + f);
+      });
+    } catch (e) {}
+
     initExerciseSubtabs();
     initAutoUpdateChecker();
 
@@ -2522,7 +2529,14 @@
 
     // Initial render
     renderCurrentTab();
-  });
+  }
+
+  // Chạy khởi tạo ứng dụng bất kể DOMContentLoaded đã kích hoạt hay chưa (bảo đảm tab luôn bấm được 100%)
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMainApp);
+  } else {
+    initMainApp();
+  }
 
   // ==========================================================================
   // VI. TỪ ĐIỂN HSK 3.0 & TRUNG - VIỆT TOÀN DIỆN (11.470+ HSK & 122.000+ TỪ ĐIỂN)
