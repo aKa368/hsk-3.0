@@ -1917,6 +1917,10 @@
     } catch (e) {}
   }
 
+  // Cập nhật nhãn phiên bản hiển thị trên thanh điều khiển
+  const updateBtnEl = document.getElementById('btn-manual-update-check');
+  if (updateBtnEl) updateBtnEl.textContent = `🚀 v${window.APP_VERSION}`;
+
   function initAutoUpdateChecker() {
     // 1. Đăng ký Service Worker trên môi trường Web / PWA
     if ('serviceWorker' in navigator && !location.host.includes('androidplatform')) {
