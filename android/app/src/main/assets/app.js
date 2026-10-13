@@ -1595,7 +1595,6 @@
       heroEl.innerHTML = `
         <div class="hero-title">${track.icon} ${track.title}</div>
         <div class="hero-sub">${track.subtitle}</div>
-        <div class="hero-level">🎯 Mục tiêu: ${track.level} (${track.vocab ? track.vocab.length : 0} thuật ngữ cốt lõi)</div>
       `;
     }
 
