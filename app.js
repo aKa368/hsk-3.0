@@ -782,22 +782,30 @@
     if (!listEl) return;
     listEl.innerHTML = '';
 
-    const lvlNum = parseInt(currentLevel.replace('HSK', ''));
-    let filtered = (data.grammar || []).filter(g => g.level === lvlNum);
+    const selLvlStr = (typeof currSelectedLevel !== 'undefined' && currSelectedLevel) ? currSelectedLevel : currentLevel;
+    const lvlNum = parseInt((selLvlStr || 'HSK 4').replace('HSK', '').trim()) || 4;
+    
+    // Nếu cấp độ là 1, 2, 3 thì fallback hiển thị HSK 4 (thư viện ngữ pháp chuyên sâu HSK 4-6)
+    const targetLvl = (lvlNum >= 4 && lvlNum <= 6) ? lvlNum : 4;
+    let filtered = (data.grammar || []);
 
-    if (searchQuery.trim()) {
+    if (!searchQuery.trim()) {
+      filtered = filtered.filter(g => g.level === targetLvl);
+    } else {
       const q = searchQuery.toLowerCase();
       filtered = filtered.filter(g => {
         return (g.label && g.label.toLowerCase().includes(q)) ||
-               (g.label_pinyin && g.label_pinyin.toLowerCase().includes(q)) ||
-               (g.label_hanviet && g.label_hanviet.toLowerCase().includes(q)) ||
+               (g.label_full && g.label_full.toLowerCase().includes(q)) ||
                (g.cat_vn && g.cat_vn.toLowerCase().includes(q)) ||
                (g.sub_vn && g.sub_vn.toLowerCase().includes(q)) ||
-               (g.examples && g.examples.some(ex => ex.zh.includes(q) || ex.pinyin.includes(q) || ex.hanviet.includes(q)));
+               (g.examples && g.examples.some(ex => {
+                 if (typeof ex === 'string') return ex.toLowerCase().includes(q);
+                 return (ex.zh && ex.zh.toLowerCase().includes(q)) || (ex.pinyin && ex.pinyin.toLowerCase().includes(q));
+               }));
       });
     }
 
-    if (countEl) countEl.textContent = `${filtered.length} điểm ngữ pháp`;
+    if (countEl) countEl.textContent = `${filtered.length} điểm ngữ pháp (HSK ${targetLvl})`;
 
     if (filtered.length === 0) {
       listEl.innerHTML = '<p style="color:var(--ink-muted); text-align:center; padding:20px;">Không tìm thấy điểm ngữ pháp phù hợp.</p>';
@@ -808,22 +816,31 @@
       const card = document.createElement('div');
       card.className = 'grammar-entry-card';
       
-      const exHtml = (g.examples || []).slice(0, 2).map(ex => `
-        <div class="ex-block">
-          <div class="ex-zh">• ${ex.zh}</div>
-          <div class="ex-py">  ${ex.pinyin}</div>
-          <div class="ex-hv">  Hán-Việt: ${ex.hanviet}</div>
-        </div>
-      `).join('');
+      const exHtml = (g.examples || []).slice(0, 3).map(ex => {
+        if (typeof ex === 'string') {
+          return `
+            <div class="ex-block">
+              <div class="ex-zh">• ${ex} <button class="line-audio-btn" title="Phát âm" onclick="event.stopPropagation(); speakTTS('${ex.replace(/'/g, "\\'")}')">🔊</button></div>
+            </div>
+          `;
+        }
+        return `
+          <div class="ex-block">
+            <div class="ex-zh">• ${ex.zh || ''} <button class="line-audio-btn" title="Phát âm" onclick="event.stopPropagation(); speakTTS('${(ex.zh || '').replace(/'/g, "\\'")}')">🔊</button></div>
+            ${ex.pinyin ? `<div class="ex-py">  ${ex.pinyin}</div>` : ''}
+            ${ex.hanviet ? `<div class="ex-hv">  Hán-Việt: ${ex.hanviet}</div>` : ''}
+          </div>
+        `;
+      }).join('');
       
       card.innerHTML = `
         <div class="grammar-header-row">
           <span class="grammar-point-title">${g.label || 'Ngữ pháp'}</span>
-          <span class="grammar-category-badge">${g.cat_vn || ''} ➔ ${g.sub_vn || ''}</span>
+          <span class="grammar-category-badge">HSK ${g.level || targetLvl} | ${g.cat_vn || ''} ➔ ${g.sub_vn || ''}</span>
         </div>
         <div class="grammar-full-label">
-          <em>Pinyin:</em> ${g.label_pinyin || ''} | <em>Hán-Việt:</em> ${g.label_hanviet || ''}<br>
-          <small style="color:var(--ink-muted)">${g.label_full || ''}</small>
+          ${g.label_full ? `<div style="font-weight:600; color:var(--ink-primary); margin-bottom:4px;">${g.label_full}</div>` : ''}
+          ${g.pattern ? `<div style="color:var(--vermilion); font-size:0.85rem; margin-top:2px;">Cấu trúc: <code>${g.pattern}</code></div>` : ''}
         </div>
         ${exHtml ? `<div class="grammar-examples-box">${exHtml}</div>` : ''}
       `;
@@ -951,7 +968,12 @@
         btn.classList.add('active');
         const targetId = btn.dataset.subtab;
         const targetPane = document.getElementById(targetId);
-        if (targetPane) targetPane.classList.add('active');
+        if (targetPane) {
+          targetPane.classList.add('active');
+          if (targetId === 'subtab-library-grammar') {
+            renderGrammarTab();
+          }
+        }
       };
     });
   }
@@ -1900,8 +1922,8 @@
   // HỆ THỐNG TỰ ĐỘNG CẬP NHẬT TRỰC TUYẾN (AUTO-UPDATE HOT RELOAD ENGINE)
   // ==========================================================================
   // Lấy thông tin phiên bản (Đồng bộ trực tiếp với Native Android nếu có)
-  window.APP_VERSION = '1.2.10';
-  window.APP_BUILD = 2026101901;
+  window.APP_VERSION = '1.2.11';
+  window.APP_BUILD = 2026101902;
 
   if (window.AndroidTTS && typeof window.AndroidTTS.getNativeVersionName === 'function') {
     try {

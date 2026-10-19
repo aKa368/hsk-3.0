@@ -3861,9 +3861,31 @@ select.paper-select option {
     gap: 6px !important;
     padding: 6px 8px !important;
   }
-  .track-search-input {
-    max-width: 100% !important;
-    width: 100% !important;
+  /* Thư viện ngữ pháp 212 điểm trên mobile */
+  .grammar-search-bar {
+    flex-direction: row !important;
+    gap: 6px !important;
+    margin-bottom: 10px !important;
+  }
+  .grammar-search-bar .paper-search-input {
+    font-size: 0.8rem !important;
+    padding: 6px 8px !important;
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+  }
+  .grammar-search-bar .badge-total {
+    font-size: 0.75rem !important;
+    padding: 6px 8px !important;
+    white-space: nowrap !important;
+    flex: 0 0 auto !important;
+  }
+  .grammar-cards-scroll {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+    max-height: none !important;
+  }
+  .grammar-entry-card {
+    padding: 8px 10px !important;
   }
 }
 

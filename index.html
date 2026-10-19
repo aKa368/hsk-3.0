@@ -61,7 +61,7 @@
           <div class="mode-toggle">
             <button id="mode-study" class="mode-btn active">📖 Học tập</button>
             <button id="mode-quiz" class="mode-btn">✍️ Thử thách</button>
-            <button id="btn-manual-update-check" class="mode-btn" title="Kiểm tra bản cập nhật mới">🚀 v1.2.10</button>
+            <button id="btn-manual-update-check" class="mode-btn" title="Kiểm tra bản cập nhật mới">🚀 v1.2.11</button>
           </div>
         </div>
       </div>
@@ -322,6 +322,7 @@
             <button class="curr-subtab-btn" data-subtab="subtab-grammar">💡 Ngữ Pháp Bài Học (语法)</button>
             <button class="curr-subtab-btn" data-subtab="subtab-vocab">📝 Từ Mới Bài Học (生词)</button>
             <button class="curr-subtab-btn" data-subtab="subtab-official-grammar">📊 Đề Cương HSK 3.0 (593 điểm)</button>
+            <button class="curr-subtab-btn" data-subtab="subtab-library-grammar">📐 Thư Viện 212 Ngữ Pháp HSK 4–6</button>
           </div>
 
           <!-- 1. Phân mục Bài Đọc & Hội thoại -->
@@ -355,20 +356,15 @@
             </div>
             <div id="curr-official-grammar-container" class="official-grammar-grid"></div>
           </div>
-        </div>
 
-
-
-        <!-- 3. Thư Viện 212 Điểm Ngữ Pháp -->
-        <div class="paper-card grammar-library-card">
-          <div class="card-header-bar">
-            <h3 class="gallery-title">📐 Thư Viện 212 Điểm Ngữ Pháp HSK 4–6</h3>
+          <!-- 5. Phân mục Thư Viện 212 Điểm Ngữ Pháp HSK 4-6 -->
+          <div id="subtab-library-grammar" class="curr-content-pane">
+            <div class="grammar-search-bar">
+              <input type="text" id="grammar-search-input" class="paper-search-input" placeholder="Tìm kiếm điểm ngữ pháp (ví dụ: 把, 被, 比, liên từ, bổ ngữ...)">
+              <span id="grammar-total-count" class="badge-total">212 điểm</span>
+            </div>
+            <div id="grammar-items-list" class="grammar-cards-scroll"></div>
           </div>
-          <div class="grammar-search-bar">
-            <input type="text" id="grammar-search-input" class="paper-search-input" placeholder="Tìm kiếm điểm ngữ pháp (ví dụ: 把, 被, 比, liên từ, bổ ngữ...)">
-            <span id="grammar-total-count" class="badge-total">212 điểm</span>
-          </div>
-          <div id="grammar-items-list" class="grammar-cards-scroll"></div>
         </div>
       </section>
 
