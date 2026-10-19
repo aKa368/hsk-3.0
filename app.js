@@ -1219,7 +1219,7 @@
                       <button class="line-audio-btn" title="Phát âm" onclick="speakTTS('${line.zh.replace(/'/g, "\'")}')">🔊</button>
                     </div>
                     <div class="line-py">${line.py || ''}</div>
-                    ${line.en ? `<div class="line-en"><span class="lang-tag en">🇬🇧 EN</span> ${line.en}</div>` : ''}
+                    ${(currentLang === 'en' || (!line.vi && line.en)) && line.en ? `<div class="line-en"><span class="lang-tag en">🇬🇧 EN</span> ${line.en}</div>` : ''}
                     <div class="line-vi" data-zh="${encodeURIComponent(line.zh)}">
                       <span class="lang-tag vi">🇻🇳 VI</span>
                       <span class="vi-text">${line.vi || ''}</span>
@@ -1900,8 +1900,8 @@
   // HỆ THỐNG TỰ ĐỘNG CẬP NHẬT TRỰC TUYẾN (AUTO-UPDATE HOT RELOAD ENGINE)
   // ==========================================================================
   // Lấy thông tin phiên bản (Đồng bộ trực tiếp với Native Android nếu có)
-  window.APP_VERSION = '1.2.9';
-  window.APP_BUILD = 2026101302;
+  window.APP_VERSION = '1.2.10';
+  window.APP_BUILD = 2026101901;
 
   if (window.AndroidTTS && typeof window.AndroidTTS.getNativeVersionName === 'function') {
     try {

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'hsk3-cache-v53';
+const CACHE_NAME = 'hsk3-cache-v54';
 const ASSETS = [
   './',
   './index.html',
