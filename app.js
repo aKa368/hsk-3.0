@@ -1922,8 +1922,8 @@
   // HỆ THỐNG TỰ ĐỘNG CẬP NHẬT TRỰC TUYẾN (AUTO-UPDATE HOT RELOAD ENGINE)
   // ==========================================================================
   // Lấy thông tin phiên bản (Đồng bộ trực tiếp với Native Android nếu có)
-  window.APP_VERSION = '1.2.11';
-  window.APP_BUILD = 2026101902;
+  window.APP_VERSION = '1.2.12';
+  window.APP_BUILD = 2026102501;
 
   if (window.AndroidTTS && typeof window.AndroidTTS.getNativeVersionName === 'function') {
     try {
@@ -1940,7 +1940,7 @@
 
   // Cập nhật nhãn phiên bản hiển thị trên thanh điều khiển
   const updateBtnEl = document.getElementById('btn-manual-update-check');
-  if (updateBtnEl) updateBtnEl.textContent = `🚀 v${window.APP_VERSION}`;
+  if (updateBtnEl) updateBtnEl.textContent = `v${window.APP_VERSION}`;
 
   function initAutoUpdateChecker() {
     // 1. Đăng ký Service Worker trên môi trường Web / PWA

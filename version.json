@@ -1,9 +1,9 @@
 {
-  "version": "1.2.11",
-  "build": 2026101902,
+  "version": "1.2.12",
+  "build": 2026102501,
   "appName": "HSK 3.0",
-  "releaseDate": "2026-10-19",
-  "changelog": "Tách Thư Viện 212 Điểm Ngữ Pháp thành Tab con riêng biệt, dọn sạch đáy màn hình bài đọc; sửa triệt để lỗi hiển thị undefined và bổ sung phát âm TTS.",
+  "releaseDate": "2026-10-25",
+  "changelog": "Tái thiết kế toàn diện giao diện theo chuẩn Hallmark Vellum/Ink: thư phòng kinh điển, chuẩn hóa hệ thống token màu xuyến chỉ & mực tàu, phẳng hóa cấu trúc card, tối ưu chuyển động và khả năng tiếp cận WCAG.",
   "minAppVersion": "1.0.0",
   "updateUrl": "https://raw.githubusercontent.com/aKa368/hsk-3.0/main/version.json"
 }
