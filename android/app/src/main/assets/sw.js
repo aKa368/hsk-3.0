@@ -1,4 +1,4 @@
-const CACHE_NAME = 'hsk3-cache-v55';
+const CACHE_NAME = 'hsk3-cache-v56';
 const ASSETS = [
   './',
   './index.html',
@@ -20,6 +20,7 @@ const ASSETS = [
   './visual_vocab_data.js',
   './curriculum_data.js',
   './strokes.js',
+  './traditional_map.js',
   './manifest.json',
   './version.json'
 ];

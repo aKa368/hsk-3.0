@@ -62,7 +62,9 @@
           <div class="mode-toggle">
             <button id="mode-study" class="mode-btn active">Học tập</button>
             <button id="mode-quiz" class="mode-btn">Thử thách</button>
-            <button id="btn-manual-update-check" class="mode-btn" title="Kiểm tra bản cập nhật mới">v1.2.12</button>
+            <button id="btn-toggle-variant" class="mode-btn" title="Chuyển đổi Giản thể / Phồn thể">Phồn thể</button>
+            <button id="btn-open-sync" class="mode-btn" title="Sao lưu & Chuyển máy">Sao lưu</button>
+            <button id="btn-manual-update-check" class="mode-btn" title="Kiểm tra bản cập nhật mới">v1.3.0</button>
           </div>
         </div>
       </div>
@@ -336,6 +338,9 @@
               <button id="btn-toggle-meaning" class="focus-toggle-btn" title="Bật/Tắt hiển thị Dịch nghĩa">
                 <span>Dịch nghĩa:</span> <strong id="lbl-toggle-meaning">HIỆN</strong>
               </button>
+              <button id="btn-toggle-autoread" class="focus-toggle-btn" title="Chế độ rảnh tay: Tự động đọc tuần tự">
+                <span>Tự đọc:</span> <strong id="lbl-toggle-autoread">TẮT</strong>
+              </button>
             </div>
             <div id="curr-texts-container" class="curr-text-container"></div>
           </div>
@@ -376,6 +381,8 @@
           <button class="subnav-btn active" data-subtab="sub-quiz">Thi Thử Trắc Nghiệm</button>
           <button class="subnav-btn" data-subtab="sub-srs">Thẻ Nhớ SRS Flashcard</button>
           <button class="subnav-btn" data-subtab="sub-sentence">Ghép Câu Ngữ Pháp</button>
+          <button class="subnav-btn" data-subtab="sub-match">Nối Từ Nhanh</button>
+          <button class="subnav-btn" data-subtab="sub-sync">Sao Lưu Tiến Độ</button>
         </div>
 
         <!-- SUBTAB 1: THI THỬ TRẮC NGHIỆM -->
@@ -466,6 +473,62 @@
             </div>
 
             <div id="bingju-feedback" class="feedback-paper-card"></div>
+          </div>
+        </div>
+        </div>
+
+        <!-- SUBTAB 4: NỐI TỪ NHANH (FAST WORD MATCH) -->
+        <div id="subtab-match" class="subtab-pane">
+          <div class="match-game-card">
+            <div class="match-stats-row">
+              <div class="match-timer-box">
+                <span class="control-label">Thời gian:</span>
+                <span id="match-timer" class="match-num">60</span>s
+              </div>
+              <div class="match-score-box">
+                <span class="control-label">Điểm số:</span>
+                <span id="match-score" class="match-num">0</span>
+              </div>
+              <div style="display:flex; align-items:center; gap:8px;">
+                <select id="match-level-select" class="paper-select sm-select">
+                  <option value="HSK 1">HSK 1</option>
+                  <option value="HSK 2">HSK 2</option>
+                  <option value="HSK 3">HSK 3</option>
+                  <option value="HSK 4" selected>HSK 4</option>
+                  <option value="HSK 5">HSK 5</option>
+                  <option value="HSK 6">HSK 6</option>
+                </select>
+                <button id="btn-start-match" class="paper-btn primary-btn sm-btn">Bắt đầu chơi</button>
+              </div>
+            </div>
+            <div id="match-grid" class="match-grid"></div>
+            <p id="match-msg" class="exercise-inst" style="text-align:center; margin-top:10px;">Chạm vào 1 ô Chữ Hán và 1 ô Nghĩa/Pinyin tương ứng để ghép đôi.</p>
+          </div>
+        </div>
+
+        <!-- SUBTAB 5: SAO LƯU TIẾN ĐỘ (STATE SYNC) -->
+        <div id="subtab-sync" class="subtab-pane">
+          <div class="sync-panel-card">
+            <h3 class="gallery-title" style="margin-bottom:12px;">Sao Lưu & Chuyển Đổi Tiến Độ Học Tập</h3>
+            <p class="exercise-inst" style="margin-bottom:14px;">Chuyển đổi dữ liệu học tập (từ đã thuộc, từ cần ôn SRS, từ yêu thích) giữa các điện thoại mà không cần tài khoản.</p>
+            
+            <div style="margin-bottom:18px;">
+              <label class="control-label" style="display:block; margin-bottom:6px;">Mã xuất dữ liệu máy này:</label>
+              <textarea id="sync-export-text" class="sync-code-area" readonly placeholder="Bấm nút 'Tạo mã xuất' bên dưới..."></textarea>
+              <div style="margin-top:8px; display:flex; gap:8px;">
+                <button id="btn-gen-export" class="paper-btn primary-btn sm-btn">Tạo mã xuất</button>
+                <button id="btn-copy-sync" class="paper-btn sm-btn">Sao chép mã</button>
+              </div>
+            </div>
+
+            <div style="border-top:1px solid var(--border-paper); padding-top:16px;">
+              <label class="control-label" style="display:block; margin-bottom:6px;">Nhập mã từ máy khác vào đây:</label>
+              <textarea id="sync-import-text" class="sync-code-area" placeholder="Dán mã sao lưu vào đây rồi bấm 'Khôi phục'..."></textarea>
+              <div style="margin-top:8px;">
+                <button id="btn-apply-sync" class="paper-btn primary-btn sm-btn">Khôi phục tiến độ</button>
+              </div>
+            </div>
+            <div id="sync-feedback" class="sync-feedback-msg" style="margin-top:12px; display:none;"></div>
           </div>
         </div>
       </section>
@@ -596,6 +659,7 @@
   <script src="specialized_tracks_data.js"></script>
   <script src="srs_quiz_engine.js"></script>
   <script src="stroke_cache_db.js"></script>
+  <script src="traditional_map.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

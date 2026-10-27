@@ -57,6 +57,227 @@
             </svg>`;
   }
 
+  // ==========================================================================
+  // BỘ CHUYỂN ĐỔI CHỮ HÁN GIẢN THỂ ↔ PHỒN THỂ (SIMPLIFIED / TRADITIONAL)
+  // ==========================================================================
+  let currentVariant = localStorage.getItem('hsk_char_variant') || 'simp';
+  window.CURRENT_CHAR_VARIANT = currentVariant;
+
+  function toTraditional(text) {
+    if (!text || !window.SIMP_TO_TRAD) return text;
+    let out = '';
+    for (let i = 0; i < text.length; i++) {
+      const ch = text[i];
+      out += window.SIMP_TO_TRAD[ch] || ch;
+    }
+    return out;
+  }
+  window.toTraditional = toTraditional;
+
+  function formatZh(text) {
+    if (!text) return '';
+    return currentVariant === 'trad' ? toTraditional(text) : text;
+  }
+  window.formatZh = formatZh;
+
+  function updateCharVariantUI() {
+    const btn = document.getElementById('btn-toggle-variant');
+    if (btn) {
+      btn.textContent = currentVariant === 'trad' ? 'Giản thể' : 'Phồn thể';
+      btn.classList.toggle('active', currentVariant === 'trad');
+      btn.title = currentVariant === 'trad' ? 'Đang bật Phồn thể (Bấm để đổi Giản thể)' : 'Đang bật Giản thể (Bấm để đổi Phồn thể)';
+    }
+  }
+
+  function toggleCharVariant() {
+    currentVariant = (currentVariant === 'trad') ? 'simp' : 'trad';
+    window.CURRENT_CHAR_VARIANT = currentVariant;
+    localStorage.setItem('hsk_char_variant', currentVariant);
+    updateCharVariantUI();
+
+    // Re-render current active tab smoothly
+    renderCurrentTab();
+  }
+  window.toggleCharVariant = toggleCharVariant;
+
+  // ==========================================================================
+  // ÂM THANH PHẢN HỒI WEB AUDIO (TING SOUND SYNTHESIZER)
+  // ==========================================================================
+  function playTingSound(isSuccess) {
+    try {
+      const AudioCtx = window.AudioContext || window.webkitAudioContext;
+      if (!AudioCtx) return;
+      const ctx = new AudioCtx();
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      if (isSuccess) {
+        osc.frequency.setValueAtTime(587.33, ctx.currentTime);
+        osc.frequency.setValueAtTime(880, ctx.currentTime + 0.08);
+        gain.gain.setValueAtTime(0.12, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.32);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.32);
+      } else {
+        osc.frequency.setValueAtTime(220, ctx.currentTime);
+        gain.gain.setValueAtTime(0.12, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.22);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.22);
+      }
+    } catch (_) {}
+  }
+
+  // ==========================================================================
+  // CHẤM ĐIỂM PHÁT ÂM QUA MICRO (WEB SPEECH RECOGNITION API)
+  // ==========================================================================
+  let currentRecognition = null;
+
+  function startSpeechEval(targetZh, btnElement) {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      alert('Thiết bị hoặc trình duyệt của bạn chưa hỗ trợ nhận diện giọng nói Web Speech API (khuyên dùng Chrome, Edge hoặc app Android).');
+      return;
+    }
+
+    if (currentRecognition) {
+      try { currentRecognition.abort(); } catch (_) {}
+      currentRecognition = null;
+    }
+
+    const row = btnElement.closest('.line-zh-row, .dialogue-item, .vcard-header-row') || btnElement.parentElement;
+    let verdictEl = row.querySelector('.speech-verdict');
+    if (!verdictEl) {
+      verdictEl = document.createElement('span');
+      verdictEl.className = 'speech-verdict';
+      btnElement.insertAdjacentElement('afterend', verdictEl);
+    }
+
+    const cleanTarget = targetZh.replace(/[^\u4e00-\u9fa5a-zA-Z0-9]/g, '');
+
+    const recognition = new SpeechRecognition();
+    recognition.lang = 'zh-CN';
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 3;
+
+    btnElement.classList.add('mic-recording');
+    verdictEl.className = 'speech-verdict listening';
+    verdictEl.textContent = 'Đang nghe...';
+
+    recognition.onresult = (event) => {
+      btnElement.classList.remove('mic-recording');
+      const spokenList = Array.from(event.results[0]).map(r => r.transcript.trim());
+      const bestSpoken = spokenList[0] || '';
+      const cleanSpoken = bestSpoken.replace(/[^\u4e00-\u9fa5a-zA-Z0-9]/g, '');
+
+      const isExact = spokenList.some(s => s.replace(/[^\u4e00-\u9fa5a-zA-Z0-9]/g, '') === cleanTarget);
+
+      if (isExact || cleanSpoken === cleanTarget) {
+        verdictEl.className = 'speech-verdict match-perfect';
+        verdictEl.textContent = '✓ Chuẩn 100%';
+        playTingSound(true);
+      } else if (cleanTarget.includes(cleanSpoken) || cleanSpoken.includes(cleanTarget)) {
+        verdictEl.className = 'speech-verdict match-partial';
+        verdictEl.textContent = `~ Gần đúng (${bestSpoken})`;
+        playTingSound(true);
+      } else {
+        verdictEl.className = 'speech-verdict match-fail';
+        verdictEl.textContent = `✕ Nghe: ${bestSpoken}`;
+        playTingSound(false);
+      }
+    };
+
+    recognition.onerror = (event) => {
+      btnElement.classList.remove('mic-recording');
+      verdictEl.className = 'speech-verdict match-fail';
+      verdictEl.textContent = event.error === 'no-speech' ? 'Chưa nghe thấy' : 'Lỗi mic';
+    };
+
+    recognition.onend = () => {
+      btnElement.classList.remove('mic-recording');
+      currentRecognition = null;
+    };
+
+    currentRecognition = recognition;
+    try {
+      recognition.start();
+    } catch (err) {
+      btnElement.classList.remove('mic-recording');
+      verdictEl.textContent = 'Không bật được mic';
+    }
+  }
+  window.startSpeechEval = startSpeechEval;
+
+  // ==========================================================================
+  // CHẾ ĐỘ RẢNH TAY ĐỌC TỰ ĐỘNG (HANDS-FREE AUDIO LOOPER)
+  // ==========================================================================
+  let isAutoReading = false;
+  let autoReadIndex = 0;
+  let autoReadTimer = null;
+
+  function toggleAutoReading() {
+    const btn = document.getElementById('btn-toggle-autoread');
+    const lbl = document.getElementById('lbl-toggle-autoread');
+    isAutoReading = !isAutoReading;
+
+    if (btn) btn.classList.toggle('off', !isAutoReading);
+    if (lbl) lbl.textContent = isAutoReading ? 'BẬT' : 'TẮT';
+
+    if (isAutoReading) {
+      startAutoReadingLoop();
+    } else {
+      stopAutoReadingLoop();
+    }
+  }
+  window.toggleAutoReading = toggleAutoReading;
+
+  function stopAutoReadingLoop() {
+    if (autoReadTimer) clearTimeout(autoReadTimer);
+    autoReadTimer = null;
+    document.querySelectorAll('.auto-reading-active').forEach(el => el.classList.remove('auto-reading-active'));
+  }
+
+  function startAutoReadingLoop() {
+    stopAutoReadingLoop();
+    const items = Array.from(document.querySelectorAll('#curr-texts-container .dialogue-item, #curr-words-container .vocab-visual-card'));
+    if (items.length === 0) {
+      isAutoReading = false;
+      const lbl = document.getElementById('lbl-toggle-autoread');
+      if (lbl) lbl.textContent = 'TẮT';
+      return;
+    }
+
+    autoReadIndex = 0;
+
+    function runStep() {
+      if (!isAutoReading) return;
+      if (autoReadIndex >= items.length) {
+        autoReadIndex = 0;
+      }
+
+      document.querySelectorAll('.auto-reading-active').forEach(el => el.classList.remove('auto-reading-active'));
+      const activeItem = items[autoReadIndex];
+      if (!activeItem) return;
+
+      activeItem.classList.add('auto-reading-active');
+      activeItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      const zhEl = activeItem.querySelector('.line-zh, .vcard-zh');
+      const zhText = zhEl ? (zhEl.dataset.rawZh ? decodeURIComponent(zhEl.dataset.rawZh) : zhEl.textContent) : '';
+
+      if (zhText) {
+        speakTTS(zhText);
+      }
+
+      const delay = Math.max(2500, (zhText.length || 5) * 320 + 1500);
+      autoReadIndex++;
+      autoReadTimer = setTimeout(runStep, delay);
+    }
+
+    runStep();
+  }
+
   // TTS Audio Player
   function playAudio(text, audioUrl) {
     if (audioUrl) {
@@ -951,6 +1172,13 @@
       };
     }
 
+    const btnAutoRead = document.getElementById('btn-toggle-autoread');
+    if (btnAutoRead) {
+      btnAutoRead.onclick = () => {
+        toggleAutoReading();
+      };
+    }
+
     updatePinyinUI(savedHidePinyin);
     updateMeaningUI(savedHideMeaning);
   }
@@ -1237,8 +1465,9 @@
                   ${line.speaker ? `<span class="speaker-badge">${line.speaker}</span>` : ''}
                   <div class="line-content-wrap">
                     <div class="line-zh-row">
-                      <span class="line-zh">${highlightedZh}</span>
-                      <button class="line-audio-btn" title="Phát âm" onclick="speakTTS('${line.zh.replace(/'/g, "\'")}')">🔊</button>
+                      <span class="line-zh" data-raw-zh="${encodeURIComponent(line.zh)}">${highlightLessonKeywords(formatZh(line.zh), lesson.vocab, lesson.grammar)}</span>
+                      <button class="line-audio-btn" title="Phát âm" onclick="speakTTS('${line.zh.replace(/'/g, "\\'")}')">🔊</button>
+                      <button class="line-mic-btn" title="Luyện đọc & Chấm điểm giọng nói" onclick="event.stopPropagation(); startSpeechEval('${line.zh.replace(/'/g, "\\'")}', this)">🎤</button>
                     </div>
                     <div class="line-py">${line.py || ''}</div>
                     ${(currentLang === 'en' || (!line.vi && line.en)) && line.en ? `<div class="line-en"><span class="lang-tag en">🇬🇧 EN</span> ${line.en}</div>` : ''}
@@ -1331,10 +1560,11 @@
         card.innerHTML = `
           <div class="vcard-svg-hero">${svgMarkup}</div>
           <div class="vcard-header-row">
-            <span class="vcard-zh">${w.hanzi}</span>
+            <span class="vcard-zh" data-raw-zh="${encodeURIComponent(w.hanzi)}">${formatZh(w.hanzi)}</span>
             <div style="display:flex; align-items:center; gap:6px;">
               <span class="vcard-pos-badge">${w.pos || 'từ'}</span>
               <button class="vcard-audio-btn" title="Phát âm" onclick="event.stopPropagation(); speakTTS('${w.hanzi.replace(/'/g, "\\'")}')">🔊</button>
+              <button class="line-mic-btn" title="Luyện đọc & Chấm điểm giọng nói" onclick="event.stopPropagation(); startSpeechEval('${w.hanzi.replace(/'/g, "\\'")}', this)">🎤</button>
             </div>
           </div>
           <div class="vcard-sub-row">
@@ -1922,8 +2152,8 @@
   // HỆ THỐNG TỰ ĐỘNG CẬP NHẬT TRỰC TUYẾN (AUTO-UPDATE HOT RELOAD ENGINE)
   // ==========================================================================
   // Lấy thông tin phiên bản (Đồng bộ trực tiếp với Native Android nếu có)
-  window.APP_VERSION = '1.2.12';
-  window.APP_BUILD = 2026102501;
+  window.APP_VERSION = '1.3.0';
+  window.APP_BUILD = 2026102701;
 
   if (window.AndroidTTS && typeof window.AndroidTTS.getNativeVersionName === 'function') {
     try {
@@ -2190,6 +2420,10 @@
           triggerQuizStart();
         } else if (subId === 'sub-srs') {
           triggerSRSStart();
+        } else if (subId === 'sub-match') {
+          initMatchGame();
+        } else if (subId === 'sub-sync') {
+          initSyncPanel();
         }
       });
     });
@@ -2210,7 +2444,261 @@
         }
       });
     }
+
+    // 4. Kích hoạt nút bắt đầu Nối từ nhanh
+    const btnStartMatch = document.getElementById('btn-start-match');
+    if (btnStartMatch) {
+      btnStartMatch.addEventListener('click', initMatchGame);
+    }
+
+    // 5. Kích hoạt sao lưu & khôi phục tiến độ
+    const btnGenExport = document.getElementById('btn-gen-export');
+    if (btnGenExport) {
+      btnGenExport.addEventListener('click', exportSyncPayload);
+    }
+    const btnCopySync = document.getElementById('btn-copy-sync');
+    if (btnCopySync) {
+      btnCopySync.addEventListener('click', copySyncPayload);
+    }
+    const btnApplySync = document.getElementById('btn-apply-sync');
+    if (btnApplySync) {
+      btnApplySync.addEventListener('click', importSyncPayload);
+    }
   }
+
+  // ==========================================================================
+  // MINI-GAME: NỐI TỪ NHANH (FAST WORD MATCH ENGINE)
+  // ==========================================================================
+  let matchTimerInterval = null;
+  let matchSelectedTile = null;
+  let matchRemainingPairs = 0;
+  let matchScore = 0;
+
+  function initMatchGame() {
+    if (matchTimerInterval) clearInterval(matchTimerInterval);
+
+    const levelSelect = document.getElementById('match-level-select');
+    const selectedLevel = levelSelect ? levelSelect.value : 'HSK 4';
+    const grid = document.getElementById('match-grid');
+    const timerEl = document.getElementById('match-timer');
+    const scoreEl = document.getElementById('match-score');
+    const msgEl = document.getElementById('match-msg');
+
+    if (!grid) return;
+    grid.innerHTML = '';
+    matchSelectedTile = null;
+    matchScore = 0;
+    if (scoreEl) scoreEl.textContent = '0';
+    if (msgEl) msgEl.textContent = 'Chạm vào 1 ô Chữ Hán và 1 ô Nghĩa tương ứng để ghép đôi.';
+
+    let pool = [];
+    if (window.HSK_DICTIONARY && Array.isArray(window.HSK_DICTIONARY)) {
+      pool = window.HSK_DICTIONARY.filter(w => w.level === selectedLevel || (selectedLevel === 'HSK 4' && !w.level));
+    }
+    if (pool.length < 8 && window.HSK_DICTIONARY) {
+      pool = window.HSK_DICTIONARY;
+    }
+    if (!pool || pool.length === 0) {
+      grid.innerHTML = '<p style="text-align:center; color:var(--ink-muted);">Chưa tải xong dữ liệu từ vựng.</p>';
+      return;
+    }
+
+    // Chọn ngẫu nhiên 6 cặp từ vựng
+    const shuffled = [...pool].sort(() => 0.5 - Math.random());
+    const picked = shuffled.slice(0, 6);
+    matchRemainingPairs = picked.length;
+
+    let tiles = [];
+    picked.forEach((w, idx) => {
+      tiles.push({
+        pairId: idx,
+        type: 'zh',
+        html: `<div class="match-tile-zh">${formatZh(w.zh || w.hanzi)}</div>`,
+        speech: w.zh || w.hanzi
+      });
+      tiles.push({
+        pairId: idx,
+        type: 'meaning',
+        html: `<div class="match-tile-desc"><strong>${w.pinyin || ''}</strong><br>${(w.vi || w.meaning || '').slice(0, 30)}</div>`,
+        speech: w.zh || w.hanzi
+      });
+    });
+
+    tiles.sort(() => 0.5 - Math.random());
+
+    tiles.forEach(tileData => {
+      const tile = document.createElement('div');
+      tile.className = 'match-tile';
+      tile.dataset.pairId = tileData.pairId;
+      tile.dataset.type = tileData.type;
+      tile.dataset.speech = tileData.speech;
+      tile.innerHTML = tileData.html;
+
+      tile.addEventListener('click', () => handleMatchTileClick(tile));
+      grid.appendChild(tile);
+    });
+
+    let timeLeft = 60;
+    if (timerEl) timerEl.textContent = timeLeft;
+    matchTimerInterval = setInterval(() => {
+      timeLeft--;
+      if (timerEl) timerEl.textContent = timeLeft;
+      if (timeLeft <= 0) {
+        clearInterval(matchTimerInterval);
+        matchTimerInterval = null;
+        if (msgEl) msgEl.innerHTML = `<span style="color:var(--vermilion); font-weight:700;">Hết giờ! Bạn đạt ${matchScore} điểm. Bấm "Bắt đầu chơi" để thử lại.</span>`;
+        document.querySelectorAll('.match-tile:not(.matched)').forEach(t => t.style.pointerEvents = 'none');
+      }
+    }, 1000);
+  }
+  window.initMatchGame = initMatchGame;
+
+  function handleMatchTileClick(tile) {
+    if (tile.classList.contains('matched') || tile.classList.contains('selected')) return;
+
+    if (tile.dataset.speech) {
+      speakTTS(tile.dataset.speech);
+    }
+
+    if (!matchSelectedTile) {
+      matchSelectedTile = tile;
+      tile.classList.add('selected');
+      return;
+    }
+
+    const firstTile = matchSelectedTile;
+
+    // Không chọn 2 ô cùng 1 bên (zh với zh, hoặc meaning với meaning)
+    if (firstTile.dataset.type === tile.dataset.type) {
+      firstTile.classList.remove('selected');
+      matchSelectedTile = tile;
+      tile.classList.add('selected');
+      return;
+    }
+
+    // Kiểm tra khớp cặp
+    if (firstTile.dataset.pairId === tile.dataset.pairId) {
+      firstTile.classList.remove('selected');
+      firstTile.classList.add('matched');
+      tile.classList.add('matched');
+      matchSelectedTile = null;
+
+      matchScore += 10;
+      const scoreEl = document.getElementById('match-score');
+      if (scoreEl) scoreEl.textContent = matchScore;
+      playTingSound(true);
+
+      matchRemainingPairs--;
+      if (matchRemainingPairs <= 0) {
+        if (matchTimerInterval) clearInterval(matchTimerInterval);
+        const msgEl = document.getElementById('match-msg');
+        if (msgEl) msgEl.innerHTML = `<span style="color:var(--bamboo-green-deep); font-weight:700;">🎉 Xuất sắc! Hoàn thành nối từ tuyệt đối. Điểm số: ${matchScore}</span>`;
+      }
+    } else {
+      tile.classList.add('shake-wrong');
+      firstTile.classList.add('shake-wrong');
+      playTingSound(false);
+
+      setTimeout(() => {
+        firstTile.classList.remove('selected', 'shake-wrong');
+        tile.classList.remove('shake-wrong');
+        matchSelectedTile = null;
+      }, 400);
+    }
+  }
+
+  // ==========================================================================
+  // HỆ THỐNG SAO LƯU & KHÔI PHỤC TIẾN ĐỘ HỌC (STATE SYNC ENGINE)
+  // ==========================================================================
+  function initSyncPanel() {
+    exportSyncPayload();
+  }
+  window.initSyncPanel = initSyncPanel;
+
+  function exportSyncPayload() {
+    const exportArea = document.getElementById('sync-export-text');
+    const feedback = document.getElementById('sync-feedback');
+    const syncData = {
+      timestamp: Date.now(),
+      version: '1.3.0',
+      theme: localStorage.getItem('hsk_app_theme') || 'paper',
+      char_variant: localStorage.getItem('hsk_char_variant') || 'simp',
+      srs_state: localStorage.getItem('hsk_srs_storage_v1') || null,
+      favorites: localStorage.getItem('hsk_fav_words') || '[]',
+      reading_pinyin: localStorage.getItem('hsk_reading_hide_pinyin') || 'false',
+      reading_meaning: localStorage.getItem('hsk_reading_hide_meaning') || 'false'
+    };
+
+    try {
+      const jsonStr = JSON.stringify(syncData);
+      const encoded = btoa(unescape(encodeURIComponent(jsonStr)));
+      if (exportArea) exportArea.value = encoded;
+      if (feedback) {
+        feedback.style.display = 'block';
+        feedback.innerHTML = `<span style="color:var(--bamboo-green-deep);">✓ Đã tạo mã sao lưu tiến độ thành công (${encoded.length} ký tự).</span>`;
+      }
+    } catch (err) {
+      if (exportArea) exportArea.value = 'Lỗi tạo mã: ' + err.message;
+    }
+  }
+  window.exportSyncPayload = exportSyncPayload;
+
+  function copySyncPayload() {
+    const exportArea = document.getElementById('sync-export-text');
+    const feedback = document.getElementById('sync-feedback');
+    if (!exportArea || !exportArea.value) return;
+
+    navigator.clipboard.writeText(exportArea.value).then(() => {
+      if (feedback) {
+        feedback.style.display = 'block';
+        feedback.innerHTML = `<span style="color:var(--bamboo-green-deep);">✓ Đã sao chép mã sao lưu vào bộ nhớ tạm! Gửi mã này sang máy khác để khôi phục.</span>`;
+      }
+    }).catch(() => {
+      exportArea.select();
+      document.execCommand('copy');
+      if (feedback) {
+        feedback.style.display = 'block';
+        feedback.innerHTML = `<span style="color:var(--bamboo-green-deep);">✓ Đã copy mã sao lưu!</span>`;
+      }
+    });
+  }
+  window.copySyncPayload = copySyncPayload;
+
+  function importSyncPayload() {
+    const importArea = document.getElementById('sync-import-text');
+    const feedback = document.getElementById('sync-feedback');
+    if (!importArea || !importArea.value.trim()) {
+      alert('Vui lòng dán mã sao lưu vào khung trước khi khôi phục.');
+      return;
+    }
+
+    try {
+      const code = importArea.value.trim();
+      const decoded = decodeURIComponent(escape(atob(code)));
+      const data = JSON.parse(decoded);
+
+      if (data.theme) localStorage.setItem('hsk_app_theme', data.theme);
+      if (data.char_variant) localStorage.setItem('hsk_char_variant', data.char_variant);
+      if (data.srs_state) localStorage.setItem('hsk_srs_storage_v1', data.srs_state);
+      if (data.favorites) localStorage.setItem('hsk_fav_words', data.favorites);
+      if (data.reading_pinyin) localStorage.setItem('hsk_reading_hide_pinyin', data.reading_pinyin);
+      if (data.reading_meaning) localStorage.setItem('hsk_reading_hide_meaning', data.reading_meaning);
+
+      if (feedback) {
+        feedback.style.display = 'block';
+        feedback.innerHTML = `<span style="color:var(--bamboo-green-deep); font-weight:700;">✓ Khôi phục thành công! Trang sẽ tự làm mới để áp dụng...</span>`;
+      }
+      setTimeout(() => {
+        window.location.reload();
+      }, 1200);
+    } catch (e) {
+      if (feedback) {
+        feedback.style.display = 'block';
+        feedback.innerHTML = `<span style="color:var(--vermilion); font-weight:700;">✕ Mã sao lưu không hợp lệ hoặc bị lỗi ký tự: ${e.message}</span>`;
+      }
+    }
+  }
+  window.importSyncPayload = importSyncPayload;
 
   function triggerQuizStart() {
     if (window.SRSQuizEngine) {
@@ -2304,12 +2792,27 @@
       });
     }
 
-    // 2. Mode toggle
+    // 2. Mode toggle & Variant / Sync buttons
     const btnStudy = document.getElementById('mode-study');
     const btnQuiz = document.getElementById('mode-quiz');
     const btnCheckUpdate = document.getElementById('btn-manual-update-check');
     if (btnCheckUpdate) {
       btnCheckUpdate.onclick = () => checkRemoteVersion(true);
+    }
+    const btnToggleVar = document.getElementById('btn-toggle-variant');
+    if (btnToggleVar) {
+      updateCharVariantUI();
+      btnToggleVar.onclick = toggleCharVariant;
+    }
+    const btnOpenSync = document.getElementById('btn-open-sync');
+    if (btnOpenSync) {
+      btnOpenSync.onclick = () => {
+        // Chuyển sang Tab Thử thách & mở Subtab Sao lưu
+        const quizTabBtn = document.querySelector('.tab-btn[data-tab="tab-exercise"]');
+        if (quizTabBtn) quizTabBtn.click();
+        const syncSubnavBtn = document.querySelector('.exercise-subnav-bar button[data-subtab="sub-sync"]');
+        if (syncSubnavBtn) syncSubnavBtn.click();
+      };
     }
     if (btnStudy && btnQuiz) {
       btnStudy.onclick = () => {
