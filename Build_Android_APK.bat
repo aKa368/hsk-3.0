@@ -27,7 +27,7 @@ if %errorlevel% equ 0 (
 where node >nul 2>nul
 if %errorlevel% equ 0 (
     echo [*] Kiem tra cu phap cac module JS chinh...
-    node -c strokes.js data.js curriculum_data.js dict_data.js visual_vocab_data.js stroke_cache_db.js app.js
+    node -c strokes.js data.js curriculum_data.js dict_data.js visual_vocab_data.js stroke_cache_db.js pinyin-pro.min.js chaizi_data.js app.js test_stroke_engine.js test_hsk_upgrade.js
 )
 
 echo [*] Dang sao chep toan bo tai nguyen web vao Android assets...

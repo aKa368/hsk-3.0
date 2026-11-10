@@ -374,7 +374,7 @@
     }
 
     const target = document.getElementById('hanzi-target');
-    if (target && typeof HanziWriter !== 'undefined') {
+    if (target) {
       target.innerHTML = '';
       const style = getComputedStyle(document.documentElement);
       const strokeColor = style.getPropertyValue('--hanzi-stroke').trim() || '#2d2621';
@@ -382,29 +382,39 @@
       const drawingColor = style.getPropertyValue('--hanzi-drawing').trim() || '#b93829';
 
       const writerSize = getResponsiveWriterSize();
-      hanziWriter = HanziWriter.create('hanzi-target', ch, {
-        width: writerSize,
-        height: writerSize,
-        padding: 20,
-        showOutline: outlineVisible,
-        showCharacter: true,
-        strokeAnimationSpeed: 1.4,
-        delayBetweenStrokes: 150,
-        strokeColor: strokeColor,
-        outlineColor: outlineColor,
-        drawingColor: drawingColor,
-        charDataLoader: function(c, onComplete) {
-          if (window.loadHanziStrokeData) {
-            window.loadHanziStrokeData(c, onComplete);
-          } else if (window.HSK_STROKES && window.HSK_STROKES[c]) {
-            onComplete(window.HSK_STROKES[c]);
-          }
-        }
-      });
+      const writerFactory = (typeof HanziWriter !== 'undefined')
+        ? HanziWriter
+        : (window.SvgStrokeEngine || null);
 
-      setTimeout(() => {
-        if (hanziWriter) hanziWriter.animateCharacter();
-      }, 250);
+      if (writerFactory) {
+        hanziWriter = writerFactory.create('hanzi-target', ch, {
+          width: writerSize,
+          height: writerSize,
+          padding: 20,
+          showOutline: outlineVisible,
+          showCharacter: true,
+          strokeAnimationSpeed: 1.4,
+          delayBetweenStrokes: 150,
+          strokeColor: strokeColor,
+          outlineColor: outlineColor,
+          drawingColor: drawingColor,
+          charDataLoader: function(c, onComplete) {
+            if (window.loadHanziStrokeData) {
+              window.loadHanziStrokeData(c, onComplete);
+            } else if (window.HSK_STROKES && window.HSK_STROKES[c]) {
+              onComplete(window.HSK_STROKES[c]);
+            } else if (window.StrokeCacheDB && window.StrokeCacheDB.loadCharData) {
+              window.StrokeCacheDB.loadCharData(c, onComplete);
+            }
+          }
+        });
+
+        setTimeout(() => {
+          if (hanziWriter && typeof hanziWriter.animateCharacter === 'function') {
+            hanziWriter.animateCharacter();
+          }
+        }, 250);
+      }
     }
   }
 
@@ -450,17 +460,18 @@
     const target = document.getElementById('hanzi-target');
     if (target) {
       target.innerHTML = '';
-      if (typeof HanziWriter !== 'undefined') {
-        const targetEl = document.getElementById('hanzi-target');
-        if (targetEl) targetEl.innerHTML = '';
+      const style = getComputedStyle(document.documentElement);
+      const strokeColor = style.getPropertyValue('--hanzi-stroke').trim() || '#2d2621';
+      const outlineColor = style.getPropertyValue('--hanzi-outline').trim() || '#9e8a75';
+      const drawingColor = style.getPropertyValue('--hanzi-drawing').trim() || '#b93829';
 
-        const style = getComputedStyle(document.documentElement);
-        const strokeColor = style.getPropertyValue('--hanzi-stroke').trim() || '#2d2621';
-        const outlineColor = style.getPropertyValue('--hanzi-outline').trim() || '#9e8a75';
-        const drawingColor = style.getPropertyValue('--hanzi-drawing').trim() || '#b93829';
+      const writerSize = getResponsiveWriterSize();
+      const writerFactory = (typeof HanziWriter !== 'undefined')
+        ? HanziWriter
+        : (window.SvgStrokeEngine || null);
 
-        const writerSize = getResponsiveWriterSize();
-        hanziWriter = HanziWriter.create('hanzi-target', item.char, {
+      if (writerFactory) {
+        hanziWriter = writerFactory.create('hanzi-target', item.char, {
           width: writerSize,
           height: writerSize,
           padding: 20,
@@ -476,6 +487,8 @@
               window.loadHanziStrokeData(char, onComplete);
             } else if (window.HSK_STROKES && window.HSK_STROKES[char]) {
               onComplete(window.HSK_STROKES[char]);
+            } else if (window.StrokeCacheDB && window.StrokeCacheDB.loadCharData) {
+              window.StrokeCacheDB.loadCharData(char, onComplete);
             }
           },
           onComplete: () => {
@@ -3220,6 +3233,22 @@
       else if (pyClean.startsWith(qClean)) score += 30;
       else if (pyClean.includes(qClean)) score += 15;
 
+      // 2b. Smart / Abbreviated Pinyin matching via pinyin-pro (e.g. 'nh' -> 你好, 'bj' -> 北京)
+      if (window.pinyinPro && typeof window.pinyinPro.match === 'function') {
+        try {
+          const pMatch = window.pinyinPro.match(zh, qClean) || (qLower !== qClean ? window.pinyinPro.match(zh, qLower) : null);
+          if (pMatch && pMatch.length > 0) {
+            if (pMatch.length === zh.length) {
+              score += 65;
+            } else {
+              score += 35;
+            }
+          }
+        } catch (e) {
+          // Fallback gracefully
+        }
+      }
+
       // 3. Sino-Vietnamese (Hán-Việt) match
       const hvNorm = hvClean;
       if (hvNorm === qClean) score += 55;
@@ -3572,13 +3601,26 @@
           ? window.renderTopicIllustrationSvg(item.zh, topicKey, item.vi || item.en, item.pos)
           : '';
 
-        // 2. Dữ liệu Chiết tự, Mẹo nhớ & Chữ dễ nhầm (từ HSK 3.0 Etymology Knowledge Base)
+        // 2. Dữ liệu Chiết tự, Mẹo nhớ & Chữ dễ nhầm (từ HSK 3.0 Etymology Knowledge Base & Chaizi-JT)
+        let chaiziBadge = '';
+        if (item.zh && item.zh.length === 1 && window.CHAIZI_DATA && window.CHAIZI_DATA[item.zh]) {
+          const czVal = window.CHAIZI_DATA[item.zh];
+          const czParts = Array.isArray(czVal) ? czVal : czVal.split(' ');
+          chaiziBadge = `<span class="dict-chaizi" title="Chiết tự Hán tự">Chiết tự: ${czParts.join(' + ')}</span>`;
+        }
+
         const etymology = (window.HSK_ETYMOLOGY_ENTRIES && window.HSK_ETYMOLOGY_ENTRIES[item.zh]) || null;
         let etymologyHtml = '';
         if (etymology) {
           const lzItems = [];
           if (etymology.mnemonic) lzItems.push(`<div class="dict-etymology-item"><strong>💡 Mẹo nhớ:</strong> ${etymology.mnemonic}</div>`);
-          if (etymology.etymology) lzItems.push(`<div class="dict-etymology-item"><strong>📜 Chiết tự:</strong> ${etymology.etymology}</div>`);
+          if (etymology.etymology) {
+            lzItems.push(`<div class="dict-etymology-item"><strong>📜 Chiết tự:</strong> ${etymology.etymology}</div>`);
+          } else if (chaiziBadge) {
+            const czVal = window.CHAIZI_DATA[item.zh];
+            const czParts = Array.isArray(czVal) ? czVal : czVal.split(' ');
+            lzItems.push(`<div class="dict-etymology-item"><strong>📜 Chiết tự:</strong> ${czParts.join(' + ')}</div>`);
+          }
           if (etymology.components && etymology.components.length) lzItems.push(`<div class="dict-etymology-item"><strong>🧩 Thành phần:</strong> ${etymology.components.join(', ')}</div>`);
           if (etymology.lookalikes && etymology.lookalikes.length) {
             const lkStr = etymology.lookalikes.map(l => `${l.char} (${l.distinguish || l.gloss})`).join('; ');
@@ -3587,6 +3629,10 @@
           if (lzItems.length) {
             etymologyHtml = `<div class="dict-etymology-box">${lzItems.join('')}</div>`;
           }
+        } else if (chaiziBadge) {
+          const czVal = window.CHAIZI_DATA[item.zh];
+          const czParts = Array.isArray(czVal) ? czVal : czVal.split(' ');
+          etymologyHtml = `<div class="dict-etymology-box"><div class="dict-etymology-item"><strong>📜 Chiết tự:</strong> ${czParts.join(' + ')}</div></div>`;
         }
 
         card.innerHTML = `
@@ -3608,6 +3654,7 @@
             ${item.hv ? `<span class="dict-hv">[${item.hv}]</span>` : ''}
             ${item.pos ? `<span class="dict-pos">${item.pos}</span>` : ''}
             ${item.rad ? `<span class="dict-rad">Bộ: ${item.rad}</span>` : ''}
+            ${chaiziBadge}
           </div>
 
           <div class="dict-vi">
@@ -3812,24 +3859,32 @@
       const drawingColor = style.getPropertyValue('--hanzi-drawing').trim() || '#b93829';
 
       const writerSize = getResponsiveWriterSize();
-      hanziWriter = HanziWriter.create('hanzi-target', ch, {
-        width: writerSize,
-        height: writerSize,
-        padding: 20,
-        showOutline: true,
-        strokeAnimationSpeed: 1.2,
-        delayBetweenStrokes: 150,
-        strokeColor: strokeColor,
-        outlineColor: outlineColor,
-        drawingColor: drawingColor,
-        charDataLoader: function(char, onComplete) {
-          if (window.loadHanziStrokeData) {
-            window.loadHanziStrokeData(char, onComplete);
-          } else if (window.HSK_STROKES && window.HSK_STROKES[char]) {
-            onComplete(window.HSK_STROKES[char]);
+      const writerFactory = (typeof HanziWriter !== 'undefined')
+        ? HanziWriter
+        : (window.SvgStrokeEngine || null);
+
+      if (writerFactory) {
+        hanziWriter = writerFactory.create('hanzi-target', ch, {
+          width: writerSize,
+          height: writerSize,
+          padding: 20,
+          showOutline: true,
+          strokeAnimationSpeed: 1.2,
+          delayBetweenStrokes: 150,
+          strokeColor: strokeColor,
+          outlineColor: outlineColor,
+          drawingColor: drawingColor,
+          charDataLoader: function(char, onComplete) {
+            if (window.loadHanziStrokeData) {
+              window.loadHanziStrokeData(char, onComplete);
+            } else if (window.HSK_STROKES && window.HSK_STROKES[char]) {
+              onComplete(window.HSK_STROKES[char]);
+            } else if (window.StrokeCacheDB && window.StrokeCacheDB.loadCharData) {
+              window.StrokeCacheDB.loadCharData(char, onComplete);
+            }
           }
-        }
-      });
+        });
+      }
 
       // Update meta text
       const pyEl = document.getElementById('char-pinyin');

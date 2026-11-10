@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans:wght@400;500;600&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="heti.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="icon.png">
   <link rel="apple-touch-icon" href="icon.png">
@@ -64,7 +65,7 @@
             <button id="mode-quiz" class="mode-btn">Thử thách</button>
             <button id="btn-toggle-variant" class="mode-btn" title="Chuyển đổi Giản thể / Phồn thể">Phồn thể</button>
             <button id="btn-open-sync" class="mode-btn" title="Sao lưu & Chuyển máy">Sao lưu</button>
-            <button id="btn-manual-update-check" class="mode-btn" title="Kiểm tra bản cập nhật mới">v1.3.0</button>
+            <button id="btn-manual-update-check" class="mode-btn" title="Kiểm tra bản cập nhật mới">v1.3.1</button>
           </div>
         </div>
       </div>
@@ -209,7 +210,7 @@
           </div>
 
           <!-- Khung hiển thị trọn vẹn 4 tầng đoạn văn tổng thể phía trên -->
-          <div class="tracing-summary-box">
+          <div class="tracing-summary-box heti">
             <div id="tracing-meaning-text">Đang tải đoạn văn mẫu…</div>
           </div>
 
@@ -342,12 +343,12 @@
                 <span>Tự đọc:</span> <strong id="lbl-toggle-autoread">TẮT</strong>
               </button>
             </div>
-            <div id="curr-texts-container" class="curr-text-container"></div>
+            <div id="curr-texts-container" class="curr-text-container heti"></div>
           </div>
 
           <!-- 2. Phân mục Ngữ pháp bài học -->
           <div id="subtab-grammar" class="curr-content-pane">
-            <div id="curr-grammar-container" class="curr-grammar-container"></div>
+            <div id="curr-grammar-container" class="curr-grammar-container heti"></div>
           </div>
 
           <!-- 3. Phân mục Từ mới -->
@@ -639,7 +640,7 @@
         </div>
 
         <!-- Nội dung chi tiết chuyên ngành -->
-        <div id="track-content-area" class="track-content-area"></div>
+        <div id="track-content-area" class="track-content-area heti"></div>
       </section>
     </main>
   </div>
@@ -647,6 +648,8 @@
   <script src="strokes.js"></script>
   <script src="data.js"></script>
   <script src="js/hanzi-writer.min.js"></script>
+  <script src="pinyin-pro.min.js"></script>
+  <script src="chaizi_data.js"></script>
   <script src="hsk_visual_media.js"></script>
   <script src="visual_entity_library.js"></script>
   <script src="visual_vocab_data.js"></script>

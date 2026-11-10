@@ -5105,3 +5105,39 @@ select.paper-select option {
   outline: 2px solid var(--vermilion);
   outline-offset: -1px;
 }
+
+/* ==========================================================================
+   HETI CJK TYPOGRAPHY & CHAIZI ENHANCEMENT (v1.3.1)
+   ========================================================================== */
+.tracing-summary-box.heti,
+.curr-text-container.heti,
+.curr-grammar-container.heti,
+.track-content-area.heti,
+.reading-focus-mode .heti {
+  text-align: justify;
+  text-justify: inter-ideograph;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Badge chiết tự trong thẻ từ điển Tab 6 và popup chi tiết từ */
+.dict-chaizi {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--paper-card-sub, #f1f5f9);
+  color: var(--vermilion, #b22222);
+  border: 1px solid var(--border-paper, rgba(178, 34, 34, 0.25));
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 4px;
+  margin-right: 6px;
+  letter-spacing: 0.5px;
+}
+[data-theme="dark"] .dict-chaizi {
+  background: rgba(224, 159, 88, 0.12);
+  color: var(--amber-gold, #e09f58);
+  border-color: rgba(224, 159, 88, 0.35);
+}
