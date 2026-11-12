@@ -2164,9 +2164,16 @@
   // ==========================================================================
   // HỆ THỐNG TỰ ĐỘNG CẬP NHẬT TRỰC TUYẾN (AUTO-UPDATE HOT RELOAD ENGINE)
   // ==========================================================================
-  // Lấy thông tin phiên bản (Đồng bộ trực tiếp với Native Android nếu có)
-  window.APP_VERSION = '1.3.0';
-  window.APP_BUILD = 2026102701;
+  // Lấy thông tin phiên bản (Đồng bộ v1.3.2 build 2026111201)
+  const DEFAULT_APP_VERSION = '1.3.2';
+  const DEFAULT_APP_BUILD = 2026111201;
+
+  // Khôi phục build đã lưu trên Web nếu có, đảm bảo không thấp hơn DEFAULT_APP_BUILD
+  const savedWebBuild = (typeof localStorage !== 'undefined') ? Number(localStorage.getItem('hsk_app_build')) : 0;
+  window.APP_BUILD = Math.max(DEFAULT_APP_BUILD, savedWebBuild || 0);
+  window.APP_VERSION = (window.APP_BUILD > DEFAULT_APP_BUILD && typeof localStorage !== 'undefined' && localStorage.getItem('hsk_app_version'))
+    ? localStorage.getItem('hsk_app_version')
+    : DEFAULT_APP_VERSION;
 
   if (window.AndroidTTS && typeof window.AndroidTTS.getNativeVersionName === 'function') {
     try {
@@ -2230,18 +2237,109 @@
   }
 
   async function checkRemoteVersion(isManual = false) {
-    const currentBuild = window.APP_BUILD || 2026101207;
+    const currentBuild = window.APP_BUILD || DEFAULT_APP_BUILD;
     const remote = await fetchRemoteVersionData();
 
-    if (remote && remote.build && Number(remote.build) > Number(currentBuild)) {
-      showUpdateNotification(remote);
-    } else if (isManual) {
-      if (!remote) {
+    if (!remote || !remote.build) {
+      if (isManual) {
         alert('⚠️ Không thể kết nối đến máy chủ kiểm tra phiên bản. Vui lòng kiểm tra lại kết nối mạng!');
+      }
+      return;
+    }
+
+    const hasNewVersion = Number(remote.build) > Number(currentBuild);
+
+    if (hasNewVersion) {
+      const isAndroidApp = !!window.AndroidTTS || (typeof location !== 'undefined' && location.host.includes('androidplatform'));
+
+      if (!isAndroidApp) {
+        // Trên Web / PWA: TỰ ĐỘNG CẬP NHẬT NGẦM (Zero-Click Seamless Auto-Update)
+        await handleWebSeamlessAutoUpdate(remote, isManual);
       } else {
-        alert(`✅ Ứng dụng đang ở phiên bản mới nhất:\n- Phiên bản: v${window.APP_VERSION || '1.2.7'}\n- Build: ${currentBuild}\n- Cập nhật lần cuối: ${remote.releaseDate || 'Mới nhất'}`);
+        // Trên Native Android: Hiển thị dialog cập nhật
+        if (!isManual) {
+          const snoozeUntil = Number(localStorage.getItem('hsk_snooze_update_until') || 0);
+          if (Date.now() < snoozeUntil) return;
+        }
+        showUpdateNotification(remote);
+      }
+    } else if (isManual) {
+      alert(`✅ Ứng dụng đang ở phiên bản mới nhất:\n- Phiên bản: v${window.APP_VERSION || DEFAULT_APP_VERSION}\n- Build: ${currentBuild}\n- Cập nhật lần cuối: ${remote.releaseDate || 'Mới nhất'}`);
+    }
+  }
+
+  async function handleWebSeamlessAutoUpdate(remote, isManual = false) {
+    const AUTO_UPDATE_GUARD_KEY = 'hsk_last_web_auto_update';
+    let guardInfo = null;
+    try {
+      guardInfo = JSON.parse(sessionStorage.getItem(AUTO_UPDATE_GUARD_KEY) || 'null');
+    } catch (e) {}
+
+    const now = Date.now();
+    // Guard: Tránh reload loop nếu vừa tự reload cho cùng một build trong 30 giây gần nhất
+    if (!isManual && guardInfo && Number(guardInfo.build) === Number(remote.build) && (now - Number(guardInfo.time) < 30000)) {
+      console.warn(`[Auto-Update Guard] Đã cập nhật lên build ${remote.build} gần đây. Bỏ qua reload để chống loop.`);
+      return;
+    }
+
+    try {
+      sessionStorage.setItem(AUTO_UPDATE_GUARD_KEY, JSON.stringify({ build: remote.build, time: now }));
+      localStorage.setItem('hsk_app_build', String(remote.build));
+      localStorage.setItem('hsk_app_version', String(remote.version));
+      window.APP_BUILD = Number(remote.build);
+      window.APP_VERSION = String(remote.version);
+    } catch (e) {}
+
+    // Hiển thị toast thông báo cập nhật ngầm không chặn thao tác
+    let toast = document.getElementById('app-update-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'app-update-toast';
+      toast.className = 'app-update-toast';
+      document.body.appendChild(toast);
+    }
+
+    toast.innerHTML = `
+      <div class="update-toast-content">
+        <span class="update-toast-icon">⚡</span>
+        <div class="update-toast-body">
+          <div class="update-toast-title">HSK 3.0 v${remote.version} — Tự động cập nhật</div>
+          <div class="update-toast-msg">${remote.changelog || 'Đang đồng bộ phiên bản mới nhất và làm mới ứng dụng...'}</div>
+        </div>
+      </div>
+      <div style="width:100%; height:4px; background:rgba(0,0,0,0.06); border-radius:2px; margin-top:6px; overflow:hidden;">
+        <div style="width:100%; height:100%; background:var(--paper-accent, #9e2a2b); border-radius:2px;"></div>
+      </div>
+    `;
+    toast.style.display = 'flex';
+
+    // Dọn dẹp cache
+    if ('caches' in window) {
+      try {
+        const keys = await caches.keys();
+        await Promise.all(keys.map(k => caches.delete(k)));
+      } catch (e) {
+        console.warn('[Auto-Update] Clear cache warning:', e);
       }
     }
+
+    // Đánh thức Service Worker skipWaiting
+    if ('serviceWorker' in navigator) {
+      try {
+        const reg = await navigator.serviceWorker.getRegistration();
+        if (reg) {
+          await reg.update().catch(() => {});
+          if (reg.waiting) reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+        }
+      } catch (e) {
+        console.warn('[Auto-Update] SW update warning:', e);
+      }
+    }
+
+    // Làm mới trang tự động
+    setTimeout(() => {
+      window.location.reload();
+    }, 800);
   }
 
   async function performOTADataUpdate(remote) {
@@ -2324,9 +2422,17 @@
         } catch (e) {}
       }
 
+      // Lưu build mới vào localStorage để không bị lặp popup sau reload
+      try {
+        localStorage.setItem('hsk_app_build', String(remote.build));
+        localStorage.setItem('hsk_app_version', String(remote.version));
+        window.APP_BUILD = Number(remote.build);
+        window.APP_VERSION = String(remote.version);
+      } catch (e) {}
+
       setStatus('Hoàn tất! Đang khởi động lại ứng dụng...', 100);
       setTimeout(() => {
-        window.location.reload(true);
+        window.location.reload();
       }, 500);
     } catch (err) {
       alert('Không thể cập nhật OTA: ' + err.message + '. Vui lòng tải file APK mới!');
@@ -2343,7 +2449,7 @@
       document.body.appendChild(toast);
     }
 
-    const isAndroidApp = !!window.AndroidTTS || location.host.includes('androidplatform');
+    const isAndroidApp = !!window.AndroidTTS || (typeof location !== 'undefined' && location.host.includes('androidplatform'));
     // Multi-CDN Fallback URLs for fast APK download
     const apkDownloadUrl = 'https://cdn.jsdelivr.net/gh/aKa368/hsk-3.0@main/HSK_3.0.apk';
     const apkPagesUrl = 'https://aka368.github.io/hsk-3.0/HSK_3.0.apk';
@@ -2412,6 +2518,7 @@
 
   window.checkAppUpdate = checkRemoteVersion;
   window.showUpdateNotification = showUpdateNotification;
+  window.handleWebSeamlessAutoUpdate = handleWebSeamlessAutoUpdate;
 
   
   // ==========================================================================
@@ -2633,7 +2740,7 @@
     const feedback = document.getElementById('sync-feedback');
     const syncData = {
       timestamp: Date.now(),
-      version: '1.3.0',
+      version: window.APP_VERSION || '1.3.2',
       theme: localStorage.getItem('hsk_app_theme') || 'paper',
       char_variant: localStorage.getItem('hsk_char_variant') || 'simp',
       srs_state: localStorage.getItem('hsk_srs_storage_v1') || null,

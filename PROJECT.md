@@ -3,8 +3,8 @@
 ## 1. Quickstart & Cấu hình
 - Build APK: `Build_Android_APK.bat --non-interactive` (dùng JDK 17 `D:\Build\jdk-17`, Android SDK `D:\Build\android_sdk`).
 - Config phiên bản: `version.json` & `android/app/build.gradle` (`versionCode`, `versionName`).
-- Kiểm tra cú pháp JS: `node -c strokes.js data.js curriculum_data.js dict_data.js visual_vocab_data.js stroke_cache_db.js pinyin-pro.min.js chaizi_data.js app.js test_stroke_engine.js test_hsk_upgrade.js`.
-- Chạy kiểm thử: `node test_stroke_engine.js && node test_hsk_upgrade.js`.
+- Kiểm tra cú pháp JS: `node -c strokes.js data.js curriculum_data.js dict_data.js visual_vocab_data.js stroke_cache_db.js pinyin-pro.min.js chaizi_data.js app.js test_stroke_engine.js test_hsk_upgrade.js test_auto_update.js`.
+- Chạy kiểm thử: `node test_stroke_engine.js && node test_hsk_upgrade.js && node test_auto_update.js`.
 
 ## 2. Kiến trúc & File trọng yếu
 - `index.html`, `app.js`, `style.css`: Giao diện SPA & logic học tập HSK 3.0 (phong cách Hallmark Vellum/Ink).
@@ -15,16 +15,18 @@
 - `stroke_cache_db.js`: Động cơ lưu trữ IndexedDB/LocalStorage Offline-First 3 tầng & `SvgStrokeEngine` render nét động SVG thuần (clipPath, stroke-dasharray/stroke-dashoffset).
 - `test_stroke_engine.js`: Bộ kiểm thử toàn diện cho cấu trúc nét chữ, SVG path parser, median path calculator, và offline fallback (25 checks PASS 100%).
 - `test_hsk_upgrade.js`: Bộ kiểm thử tích hợp Typography Heti, Pinyin-Pro match, Chaizi lookup và UI integration (14 checks PASS 100%).
+- `test_auto_update.js`: Bộ kiểm thử tự động cập nhật trực tuyến ngầm Web/PWA, reload loop guard và đồng bộ lockstep manifest (23 checks PASS 100%).
 - `version.json`: Chứa metadata phiên bản cho OTA update qua GitHub Pages / Raw CDN.
 - `android/`: Dự án Android WebView wrapper nạp assets từ `android/app/src/main/assets`.
 - `HSK_3.0.apk`: File APK artifact tại gốc repo cho phép người dùng/updater tải trực tiếp.
 
 ## 3. Vấn đề phát sinh & Cạm bẫy (Gotchas & Issues Log)
+- `[2026-11-12/v1.3.2] [Khắc phục triệt để lỗi lặp thông báo cập nhật & Chuyển đổi Web sang Seamless Zero-Click Auto-Update] → [Nguyên nhân gốc rễ: 1) app.js hardcode cũ APP_VERSION='1.3.0'/APP_BUILD=2026102701 khiến checkRemoteVersion luôn phát hiện remote.build > currentBuild; 2) performOTADataUpdate không lưu build vào localStorage, đồng thời initMainApp() xóa sạch key hsk_ota_* sau khi reload khiến trang quay về build cũ; 3) Môi trường Web/PWA hiển thị modal bắt bấm nút thủ công không cần thiết. Giải pháp: Đồng bộ lockstep v1.3.2 (build 2026111201) trên mọi manifest; Chuyển đổi Web sang cơ chế tự động cập nhật ngầm (tự xóa cache, SW skipWaiting, lưu build vào localStorage, có sessionStorage reload loop guard 30s và tự reload mượt mà); Phân biệt rõ Web vs Android Native WebView; Toàn bộ 62 checks PASS 100%].`
 - `[2026-11-10/v1.3.1] [Phát hành bản nâng cấp toàn diện v1.3.1: Heti Typography, Pinyin-Pro Smart Search, Chaizi Breakdown & Vector Stroke Engine] → [Tích hợp heti.min.css tối ưu hóa giãn dòng và dấu câu CJK trong các bài đọc Tab 2, 4, 7; Nhúng pinyin-pro.min.js tăng tốc tìm kiếm từ điển Tab 6 cho phép gõ tắt Pinyin; Tạo chaizi_data.js 14.562 chữ Hán hiển thị badge Chiết tự; Đồng bộ toàn bộ assets vào Android WebView và build HSK_3.0.apk (18.7MB) thành công; Tất cả 39/39 test PASS 100%]`.
 - `[2026-11-10/v1.3.1] [Tối ưu hóa Vector nét chữ Hán & Offline First Giai đoạn 4 - Phần 1] → [Nâng cấp stroke_cache_db.js cơ chế 3 tầng RAM -> IndexedDB/localStorage -> Multi-CDN -> Local Fallback Generator; Tích hợp SvgStrokeEngine mượt mà 60fps bằng clipPath & stroke-dashoffset; Tích hợp dự phòng tự động khi HanziWriter vắng mặt; Tạo test_stroke_engine.js đạt 25/25 checks PASS 100%]`.
 - `[2026-10-26/v1.2.12] [Quên build APK & tag release sau khi redesign] → [Chỉ commit code web mà quên chạy Build_Android_APK.bat, chưa tag git và chưa tạo GitHub Release] → [Bắt buộc: Sau khi hoàn thiện code/UI, PHẢI chạy build APK, commit artifact HSK_3.0.apk, tạo git tag vX.Y.Z, push và tạo GitHub Release]`.
 - `[2026-10-19/v1.2.9] [Tab click bị trễ/kẹt do DOM state] → [Event listener gán sau khi render chậm] → [Bảo đảm gán event handler 100% trước khi DOM render nội dung nặng]`.
 
 ## 4. Trạng thái hiện tại & Việc tiếp theo
-- Hiện tại: Hoàn thành trọn gói phát hành phiên bản v1.3.1 (Heti typography CJK, Pinyin-Pro tra cứu viết tắt, Chaizi chiết tự 14.562 chữ, SvgStrokeEngine vector nét 60fps, build APK 18.7MB).
+- Hiện tại: Hoàn thành trọn gói phát hành phiên bản v1.3.2 (Seamless Zero-Click Auto-Update trên Web, chấm dứt hoàn toàn thông báo lặp, đồng bộ lockstep manifest v1.3.2 build 2026111201, 62/62 test PASS, build APK 18.0MB).
 - Tiếp theo: Triển khai Giai đoạn 4 - Phần 2 (Tối ưu hóa âm thanh phát âm và chế độ luyện nghe nói HSK 3.0).
